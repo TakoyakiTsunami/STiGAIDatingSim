@@ -23,6 +23,7 @@ The Cafeteria is west of West Upperclassmen Hall. "Serving barely-edible food su
 
 The Great Outdoors is outside of the Steps. "Its pleasent and breezy. Much better than that that big block of concrete they call a school"
 
+Understand "talk to [someone]" as a mistake ("To start a conversation, try to ASK [the noun] ABOUT something or TELL [the noun] ABOUT something.").
 
 understand "fuck [something]" as fuck. 
 understand "fuck the [something]" as fuck. 
