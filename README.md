@@ -1,2 +1,2 @@
 # STiGAIDatingSim
-Final Project for Special Topics in Game AI
+Final Project for EECS 396: Special Topics in Game AI with Ian "Motherfucking" Horswill.
