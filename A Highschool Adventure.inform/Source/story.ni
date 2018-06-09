@@ -1,6 +1,5 @@
 "Classic Highschool Drama But with Murder" by a bunch of nerds
 
-
 [the map of the high school]
 School is a region.
 
@@ -27,13 +26,13 @@ The Gym is east of East Upperclassmen Hall. "A smelly old gymnasium. Full of swe
 The Cafeteria is west of West Upperclassmen Hall. "Serving barely-edible food substance since 1989."
 The Great Outdoors is north of the Steps. "Its pleasent and breezy. Much better than that that big block of concrete they call a school"
 
-[things]
-My Locker is a thing in the Underclassmen Hallway. The description of the locker is "Ah, my sweet old locker. Smells like teen spirit."
-Diamonds Locker is a thing in the Underclassmen Hallway. The description of the Diamonds Locker is "Mhmmmm, it even smills like her..."
-Inside Diamonds Locker is Diamonds Pencil. Diamonds Pencil is a thing. The description of Diamonds Pencil is "Pink and Sparkly. Also good for stabbing. And writing."
-
 [general world rules]
 Understand "talk to [someone]" as a mistake ("To start a conversation, try to ASK [the noun] ABOUT something or TELL [the noun] ABOUT something.").
+
+A Locker is a kind of container. A locker is closed. 
+Instead of opening a locker, say "You need the right combination to open this locker. Spin the lock to _-_-_ to open".
+Spinning it to is an action applying to one thing and one number. Check spinning it to: if the noun is not a Locker, say "[The noun] does not spin." instead. Report spinning it to: say "Click! and nothing else happens."
+Understand "spin [something] to [a number]" as spinning it to.
 
 understand "fuck [something]" as fuck. 
 understand "fuck the [something]" as fuck. 
@@ -43,14 +42,20 @@ fuck is an action applying to one thing.
 Instead of fuck, say "You fucked it".
 
 [characters]
-Mr Redman, Mrs Ford, Mr Hartman, Ms Belvod, and Ricky are people. 
-Mr Redman is in Room 211. Understand "Mr Redmans Classroom" as Room 211. 
-Mrs Ford is in room 212. Understand "Mrs Fords Classroom" as Room 212. 
-Mr Hartman is in Room 213. Understand "Mr Hartmans Classroom " as Room 213.
-Ms Belvod is in Room 214. Understand "Mrs Belvods Classroom" as Room 214. 
+Mr Redman, Mrs Ford, Mr Hartman, and Ms Belvod are people. 
+Mr Redman is in Room 211. Understand "Mr Redmans Classroom" as Room 211.  Understand "Mr R" and "Redman" as Mr Redman.
+Mrs Ford is in room 212. Understand "Mrs Fords Classroom" as Room 212. Understand "Mrs F" and "Ford" as Mrs Ford.
+Mr Hartman is in Room 213. Understand "Mr Hartmans Classroom " as Room 213. Understand "Mr H" and "Hartman" as Mr Hartman.
+Ms Belvod is in Room 214. Understand "Mrs Belvods Classroom" as Room 214. Understand "Ms B" and "Belvod" as Ms Belvod. 
 
-Inside Room 213 is a woman called Diamond. the description of Diamond is "An angel that has graced this school with her presence. She's soooooo hot."
+Inside Room 213 is a woman called Diamond. Understand "D" as Diamond. The description of Diamond is "An angel that has graced this school with her presence. She's soooooo hot."
  
+[things]
+My Locker is a Locker in the Underclassmen Hallway. The description of the locker is "Ah, my sweet old locker. Smells like teen spirit.".
+After spinning the closed My Locker to 1999: now My Locker is open; say "[noun] opens, revealing [a list of things in noun]."
+Diamonds Locker is a locker in the Underclassmen Hallway. The description of the Diamonds Locker is "Mhmmmm, it even smills like her...". After spinning the closed Diamonds Locker to 0112: now Diamonds Locker is open; say "[noun] opens, revealing [a list of things in noun]."
+Inside Diamonds Locker is Diamonds Pencil. Diamonds Pencil is a thing. The description of Diamonds Pencil is "Pink and Sparkly. Also good for stabbing. And writing."
+
 
 [Begining code that is implemented when we start to play the game]
 [When play begins: 
