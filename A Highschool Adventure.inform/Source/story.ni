@@ -33,12 +33,11 @@ Understand "talk to [someone]" as a mistake ("To start a conversation, try to AS
 A Locker is a kind of container. A locker is closed. 
 Instead of opening a locker, say "You need the right combination to open this locker. Spin the lock to _ _ _ _ to open".
 Spinning it to is an action applying to one thing and one number. Check spinning it to: if the noun is not a Locker, say "[The noun] does not spin." instead. Report spinning it to: say "Click! and nothing else happens."
+
 Understand "spin [something] to [a number]" as spinning it to.
 understand "fuck [something]" as fuck. 
 understand "fuck the [something]" as fuck. 
-
 fuck is an action applying to one thing.
-
 Instead of fuck, say "You fucked it".
 
 [characters]
@@ -51,15 +50,18 @@ Ms Belvod is in Room 214. Understand "Mrs Belvods Classroom" as Room 214. Unders
 Inside Room 213 is a woman called Diamond. Understand "D" as Diamond. The description of Diamond is "An angel that has graced this school with her presence. She's soooooo hot."
  
 [things]
-My Locker is a Locker in the Underclassmen Hallway. The description of the locker is "Ah, my sweet old locker. Smells like teen spirit.".
+My Locker is a Locker in the Underclassmen Hallway. The description of my locker is "Ah, my sweet old locker. Smells like teen spirit.".
 After spinning the closed My Locker to 1999: now My Locker is open; say "[noun] opens, revealing [a list of things in noun]."
 After going from room containing my locker, now my locker is closed. 
-Diamonds Locker is a locker in the Underclassmen Hallway. The description of the Diamonds Locker is "Mhmmmm, it even smills like her...". 
+Diamonds Locker is a locker in the Underclassmen Hallway. The description of Diamonds Locker is "Mhmmmm, it even smills like her...". 
 After spinning the closed Diamonds Locker to 0112: now Diamonds Locker is open; say "[noun] opens, revealing [a list of things in noun]."
 After going from room containing diamonds locker, now diamonds locker is closed. 
 Inside Diamonds Locker is Diamonds Pencil. Diamonds Pencil is a thing. The description of Diamonds Pencil is "Pink and Sparkly. Also good for stabbing. And writing."
 
+[clues]
+There is a hankerchief. The description of the hankerchief is "Interesting. I don't know anyone who uses one of these anymore. And there's someone's lipstick stained on it. I think it might be Diamond's.". 
+There is a spyglass. The description of the spyglass is "This could only be used by someone to spy on someone else....".
+There is a note. The description of the note is "Looks like someone put this in Diamond's cubby to confess their love to her. Seeing as its crumpled up on the floor, I can't imagine that went very well.".
 
 [Begining code that is implemented when we start to play the game]
-[When play begins: 
-	move the player to Steps. ]
+[When play begins: ]

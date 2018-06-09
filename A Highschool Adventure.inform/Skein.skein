@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Skein rootNode="node-1">
   <generator>Windows Inform 7 6M62</generator>
-  <activeNode nodeId="node-70"/>
+  <activeNode nodeId="node-79"/>
   <item nodeId="node-1">
     <command xml:space="preserve">A Highschool Adventure</command>
     <result xml:space="preserve">Classic Highschool Drama But with Murder&#x000A;An Interactive Fiction by a bunch of nerds&#x000A;Release 1 / Serial number 180609 / Inform 7 build 6M62 (I6/v6.33 lib 6/12N) SD&#x000A;&#x000A;Underclassmen Hallway&#x000A;The normally busy hallway seems eeriely quiet after school hours.&#x000A;&#x000A;You can see My Locker (closed) and Diamonds Locker (closed) here.&#x000A;&#x000A;&gt;</result>
@@ -20,6 +20,7 @@
       <child nodeId="node-53"/>
       <child nodeId="node-61"/>
       <child nodeId="node-66"/>
+      <child nodeId="node-74"/>
     </children>
   </item>
   <item nodeId="node-2">
@@ -569,6 +570,7 @@
     <changed>NO</changed>
     <children>
       <child nodeId="node-68"/>
+      <child nodeId="node-71"/>
     </children>
   </item>
   <item nodeId="node-68">
@@ -592,6 +594,81 @@
   <item nodeId="node-70">
     <command xml:space="preserve">go south</command>
     <result xml:space="preserve">Underclassmen Hallway&#x000A;The normally busy hallway seems eeriely quiet after school hours.&#x000A;&#x000A;You can see My Locker (empty) and Diamonds Locker (closed) here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-71">
+    <command xml:space="preserve">go north</command>
+    <result xml:space="preserve">&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-72"/>
+    </children>
+  </item>
+  <item nodeId="node-72">
+    <command xml:space="preserve">look</command>
+    <result xml:space="preserve">Steps&#x000A;Hundreds of kids go up and down these steps everyday.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-73"/>
+    </children>
+  </item>
+  <item nodeId="node-73">
+    <command xml:space="preserve">go south</command>
+    <result xml:space="preserve">Underclassmen Hallway&#x000A;The normally busy hallway seems eeriely quiet after school hours.&#x000A;&#x000A;You can see My Locker (closed) and Diamonds Locker (closed) here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-74">
+    <command xml:space="preserve">go south</command>
+    <result xml:space="preserve">&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-75"/>
+    </children>
+  </item>
+  <item nodeId="node-75">
+    <command xml:space="preserve">look</command>
+    <result xml:space="preserve">Upperclassmen Junction&#x000A;Long coridors stretching left and right. An intimidating sight for underclassman.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-76"/>
+    </children>
+  </item>
+  <item nodeId="node-76">
+    <command xml:space="preserve">go east</command>
+    <result xml:space="preserve">East Upperclassmen Hall&#x000A;Senior side of the hallway. Close to the Gym.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-77"/>
+    </children>
+  </item>
+  <item nodeId="node-77">
+    <command xml:space="preserve">go west</command>
+    <result xml:space="preserve">Upperclassmen Junction&#x000A;Long coridors stretching left and right. An intimidating sight for underclassman.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-78"/>
+    </children>
+  </item>
+  <item nodeId="node-78">
+    <command xml:space="preserve">go west</command>
+    <result xml:space="preserve">West Upperclassmen Hall&#x000A;Junior side of the hallway. Close to the Cafeteria.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-79"/>
+    </children>
+  </item>
+  <item nodeId="node-79">
+    <command xml:space="preserve">go west</command>
+    <result xml:space="preserve">Cafeteria&#x000A;Serving barely-edible food substance since 1989.&#x000A;&#x000A;You can see a hankerchief here.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
   </item>

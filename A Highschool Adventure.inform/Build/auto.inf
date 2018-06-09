@@ -4402,7 +4402,7 @@ Global lightflag = false;
 ! ListWriter.i6t: Memory
 ! ==== ==== ==== ==== ==== ==== ==== ==== ==== ====
 
-Constant REQUISITION_STACK_SIZE = 3*38;
+Constant REQUISITION_STACK_SIZE = 3*41;
 Array requisition_stack --> REQUISITION_STACK_SIZE;
 Global requisition_stack_pointer = 0;
 
@@ -10794,8 +10794,8 @@ Class K15_player_s_holdall
 Class K16_locker 
     class K5_container
     with plural BC_73
-    with description BC_74
     has ~open
+    with description BC_74
     with initial BC_75
     with list_together BC_76
     with short_name BC_77
@@ -11045,7 +11045,7 @@ Object out_obj "" Compass
 Object selfobj ""
     class K8_person
 
-    	with saved_short_name TX_L_33,
+    	with saved_short_name TX_L_32,
      
     with short_name BC_147
     with description BC_148
@@ -11140,6 +11140,7 @@ Object I127_underclassmen_hallway ""
 Object -> I148_my_locker ""
     class K16_locker
     with short_name BC_171
+    with description BC_172
     has proper
     with vector 0
     has mark_as_thing
@@ -11152,7 +11153,6 @@ Object -> I148_my_locker ""
     with KD_Count 16
     with name 'my' 'locker' 'lockers//p' 
     with action_bitmap 0 0 0 0 0 
-    with description BC_172
     with initial BC_173
     with list_together BC_174
     with plural BC_175
@@ -11439,7 +11439,7 @@ Object -> I146_ms_belvod ""
     with vector 0
     has mark_as_thing
     with IK2_Count 4
-    with IK2_Link nothing
+    with IK2_Link I151_hankerchief
     with IK8_Count 4
     with IK8_Link nothing
     with KD_Count 8
@@ -11538,6 +11538,57 @@ Object I141_cageteria ""
     with article BC_283
 ;
 
+Object I151_hankerchief ""
+    class K2_thing
+    with short_name BC_284
+    with description BC_285
+    with vector 0
+    has mark_as_thing
+    with IK2_Count 9
+    with IK2_Link I152_spyglass
+    with KD_Count 2
+    with name 'hankerchief' 'things//p' 
+    with action_bitmap 0 0 0 0 0 
+    with initial BC_286
+    with list_together BC_287
+    with plural BC_288
+    with article BC_289
+;
+
+Object I152_spyglass ""
+    class K2_thing
+    with short_name BC_290
+    with description BC_291
+    with vector 0
+    has mark_as_thing
+    with IK2_Count 10
+    with IK2_Link I153_note
+    with KD_Count 2
+    with name 'spyglass' 'things//p' 
+    with action_bitmap 0 0 0 0 0 
+    with initial BC_292
+    with list_together BC_293
+    with plural BC_294
+    with article BC_295
+;
+
+Object I153_note ""
+    class K2_thing
+    with short_name BC_296
+    with description BC_297
+    with vector 0
+    has mark_as_thing
+    with IK2_Count 11
+    with IK2_Link nothing
+    with KD_Count 2
+    with name 'note' 'things//p' 
+    with action_bitmap 0 0 0 0 0 
+    with initial BC_298
+    with list_together BC_299
+    with plural BC_300
+    with article BC_301
+;
+
 Constant I71_english_language = 1;
 Constant I72_french_language = 2;
 Constant I73_german_language = 3;
@@ -11589,12 +11640,12 @@ Constant I123_masculine_gender = 2;
 Constant I124_feminine_gender = 3;
 Array Global_Vars -->
   (false) ! 7 darkness witnessed
-  (BC_284) ! 25 command prompt
+  (BC_302) ! 25 command prompt
   (I71_english_language) ! 29 language of play
-  (BC_285) ! 32 story author
-  (BC_286) ! 33 story headline
-  (BC_287) ! 34 story genre
-  (BC_288) ! 35 story description
+  (BC_303) ! 32 story author
+  (BC_304) ! 33 story headline
+  (BC_305) ! 34 story genre
+  (BC_306) ! 35 story description
   (1) ! 36 release number
   (0) ! 37 story creation year
   (0) ! 45 locale paragraph count
@@ -11609,14 +11660,14 @@ Array Global_Vars -->
 
 
 Array T0_final_question_options table  tab_0_0 tab_0_1 tab_0_2 tab_0_3 tab_0_4;
-Array tab_0_0 table $0664 0 (BC_289) (BC_290) (BC_291) (BC_292) (BC_293) ;
+Array tab_0_0 table $0664 0 (BC_307) (BC_308) (BC_309) (BC_310) (BC_311) ;
 Array tab_0_1 table $0465 1 (0) (0) (1) (0) (0) ;
 Array tab_0_2 table $2066 2 (Consult_Grammar_105) (Consult_Grammar_106) (Consult_Grammar_107) (Consult_Grammar_108) (Consult_Grammar_109) ;
 Array tab_0_3 table $0067 3 (IMMEDIATELY_RESTART_VM_R) (IMMEDIATELY_RESTORE_SAVED_R) ( TABLE_NOVALUE) (IMMEDIATELY_QUIT_R) (IMMEDIATELY_UNDO_R) ;
 Array tab_0_4 table $0068 4 ( TABLE_NOVALUE) ( TABLE_NOVALUE) (V27_amusing_a_victorious_pla) ( TABLE_NOVALUE) ( TABLE_NOVALUE) ;
 Array T1_locale_priorities table  tab_1_0 tab_1_1;
-Array tab_1_0 table $0869 NULL ( TABLE_NOVALUE)  TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE;
-Array tab_1_1 table $446a 5 ( TABLE_NOVALUE)  TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE;
+Array tab_1_0 table $0869 NULL ( TABLE_NOVALUE)  TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE;
+Array tab_1_1 table $446a 5 ( TABLE_NOVALUE)  TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE;
 Array TB_Blanks -> 
   ! For table T0_final_question_options
   $00  ! Column 0
@@ -11626,7 +11677,7 @@ Array TB_Blanks ->
   $1b  ! Column 4
   
   ! For table T1_locale_priorities
-  $ff $03  ! Column 1
+  $ff $1f  ! Column 1
   
   ! End of table
   NULL NULL;
@@ -12148,7 +12199,7 @@ Array ActionHappened --> 0 0 0 0 0;
 
 [ MistakeActionSub ;
     switch(understand_as_mistake_number) {
-        261: ParserError(BC_294);
+        261: ParserError(BC_312);
         default: "I didn't understand that sentence.";
     }
     say__p = 1;
@@ -28666,7 +28717,7 @@ Array FWMatrix --> NUM_ROOMS*NUM_ROOMS;
 ! Relations.i6t: Relation Route-Finding
 ! ==== ==== ==== ==== ==== ==== ==== ==== ==== ====
 
-Constant MAX_ROUTE_LENGTH = 38 + 32;
+Constant MAX_ROUTE_LENGTH = 41 + 32;
 
 [ RelationRouteTo relation from to count  handler;
 	if (count) {
@@ -50049,30 +50100,32 @@ Verb 'fuck'
 
 
 
-Constant TX_PS_76 = ">";
+Constant TX_PS_82 = ">";
 Constant TX_PS_70 = "A smelly old gymnasium. Full of sweat and humilation.";
-Constant TX_PS_15 = "Ah, my sweet old locker. Smells like teen spirit.";
+Constant TX_PS_41 = "Ah, my sweet old locker. Smells like teen spirit.";
 Constant TX_PS_3 = "An Interactive Fiction";
 Constant TX_PS_63 = "An angel that has graced this school with her presence. She's soooooo hot.";
-Constant TX_PS_34 = "As good-looking as ever.";
+Constant TX_PS_33 = "As good-looking as ever.";
 Constant TX_PS_71 = "Cafeteria";
 Constant TX_PS_75 = "Cageteria";
 Constant TX_PS_2 = "Classic Highschool Drama But with Murder";
-Constant TX_PS_38 = "Classrooms";
+Constant TX_PS_37 = "Classrooms";
 Constant TX_PS_62 = "Diamond";
 Constant TX_PS_42 = "Diamonds Locker";
 Constant TX_PS_44 = "Diamonds Pencil";
 Constant TX_PS_52 = "East Upperclassman Hall";
 Constant TX_PS_46 = "East Upperclassmen Hall";
-Constant TX_PS_77 = "Fiction";
+Constant TX_PS_83 = "Fiction";
 Constant TX_PS_73 = "Great Outdoors";
 Constant TX_PS_69 = "Gym";
-Constant TX_PS_37 = "Hallway";
+Constant TX_PS_36 = "Hallway";
 Constant TX_PS_68 = "Hundreds of kids go up and down these steps everyday.";
+Constant TX_PS_77 = "Interesting. I don't know anyone who uses one of these anymore. And there's someone's lipstick stained on it. I think it might be Diamond's.";
 Constant TX_PS_74 = "Its pleasent and breezy. Much better than that that big block of concrete they call a school";
 Constant TX_PS_51 = "Junior side of the hallway. Close to the Cafeteria.";
 Constant TX_PS_14 = "Lockers";
 Constant TX_PS_49 = "Long coridors stretching left and right. An intimidating sight for underclassman.";
+Constant TX_PS_81 = "Looks like someone put this in Diamond's cubby to confess their love to her. Seeing as its crumpled up on the floor, I can't imagine that went very well.";
 Constant TX_PS_43 = "Mhmmmm, it even smills like her...";
 Constant TX_PS_61 = "Mr Hartman";
 Constant TX_PS_55 = "Mr Redman";
@@ -50082,55 +50135,59 @@ Constant TX_PS_58 = "Mrs Ford";
 Constant TX_PS_57 = "Mrs Ford's Classroom. She's a real stickler for the rules. Everything with its purpose, everything in its place.";
 Constant TX_PS_66 = "Ms Belvod";
 Constant TX_PS_65 = "Ms. Belvod's Classroom. Apparently she has a thing for Mr Redman. I certinly don't see the appeal...";
-Constant TX_PS_41 = "My Locker";
+Constant TX_PS_40 = "My Locker";
 Constant TX_PS_45 = "Pink and Sparkly. Also good for stabbing. And writing.";
-Constant TX_PS_81 = "QUIT";
-Constant TX_PS_78 = "RESTART";
-Constant TX_PS_79 = "RESTORE a saved game";
+Constant TX_PS_87 = "QUIT";
+Constant TX_PS_84 = "RESTART";
+Constant TX_PS_85 = "RESTORE a saved game";
 Constant TX_PS_53 = "Room 211";
 Constant TX_PS_56 = "Room 212";
 Constant TX_PS_59 = "Room 213";
 Constant TX_PS_64 = "Room 214";
-Constant TX_PS_36 = "School";
+Constant TX_PS_35 = "School";
 Constant TX_PS_47 = "Senior side of the hallway. Close to the Gym.";
 Constant TX_PS_72 = "Serving barely-edible food substance since 1989.";
 Constant TX_PS_67 = "Steps";
-Constant TX_PS_40 = "The normally busy hallway seems eeriely quiet after school hours.";
-Constant TX_PS_82 = "UNDO the last command";
-Constant TX_PS_39 = "Underclassmen Hallway";
+Constant TX_PS_39 = "The normally busy hallway seems eeriely quiet after school hours.";
+Constant TX_PS_79 = "This could only be used by someone to spy on someone else....";
+Constant TX_PS_88 = "UNDO the last command";
+Constant TX_PS_38 = "Underclassmen Hallway";
 Constant TX_PS_48 = "Upperclassmen Junction";
 Constant TX_PS_50 = "West Upperclassmen Hall";
-Constant TX_PS_35 = "Yourself";
+Constant TX_PS_34 = "Yourself";
 Constant TX_PS_4 = "a bunch of nerds";
 Constant TX_PS_9 = "animals";
-Constant TX_PS_16 = "backdrops";
+Constant TX_PS_15 = "backdrops";
 Constant TX_PS_11 = "containers";
-Constant TX_PS_17 = "devices";
-Constant TX_PS_19 = "directions";
+Constant TX_PS_16 = "devices";
+Constant TX_PS_18 = "directions";
 Constant TX_PS_10 = "doors";
-Constant TX_PS_30 = "down";
-Constant TX_PS_27 = "east";
-Constant TX_PS_31 = "inside";
+Constant TX_PS_29 = "down";
+Constant TX_PS_26 = "east";
+Constant TX_PS_76 = "hankerchief";
+Constant TX_PS_30 = "inside";
 Constant TX_PS_7 = "men";
-Constant TX_PS_20 = "north";
-Constant TX_PS_22 = "northeast";
-Constant TX_PS_23 = "northwest";
-Constant TX_PS_32 = "outside";
+Constant TX_PS_19 = "north";
+Constant TX_PS_21 = "northeast";
+Constant TX_PS_22 = "northwest";
+Constant TX_PS_80 = "note";
+Constant TX_PS_31 = "outside";
 Constant TX_PS_6 = "people";
 Constant TX_PS_13 = "player's holdalls";
-Constant TX_PS_18 = "regions";
-Constant TX_PS_80 = "see some suggestions for AMUSING things to do";
-Constant TX_PS_24 = "south";
-Constant TX_PS_25 = "southeast";
-Constant TX_PS_26 = "southwest";
+Constant TX_PS_17 = "regions";
+Constant TX_PS_86 = "see some suggestions for AMUSING things to do";
+Constant TX_PS_23 = "south";
+Constant TX_PS_24 = "southeast";
+Constant TX_PS_25 = "southwest";
+Constant TX_PS_78 = "spyglass";
 Constant TX_PS_5 = "supporters";
-Constant TX_PS_21 = "the";
-Constant TX_PS_29 = "up";
+Constant TX_PS_20 = "the";
+Constant TX_PS_28 = "up";
 Constant TX_PS_12 = "vehicles";
-Constant TX_PS_28 = "west";
+Constant TX_PS_27 = "west";
 Constant TX_PS_8 = "women";
-Constant TX_PS_33 = "yourself";
-Array TX_L_33 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_33;
+Constant TX_PS_32 = "yourself";
+Array TX_L_32 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_32;
 
 #ifndef p0_specification; Constant p0_specification = 0; #endif;
 #ifndef p1_indefinite_appearance_tex; Constant p1_indefinite_appearance_tex = 0; #endif;
@@ -57359,105 +57416,105 @@ Array BC_70 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_71 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_72 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_73 --> PACKED_TEXT_STORAGE TX_PS_14;
-Array BC_74 --> PACKED_TEXT_STORAGE TX_PS_15;
+Array BC_74 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_75 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_76 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_77 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_78 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
-Array BC_79 --> PACKED_TEXT_STORAGE TX_PS_16;
+Array BC_79 --> PACKED_TEXT_STORAGE TX_PS_15;
 Array BC_80 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_81 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_82 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_83 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_84 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
-Array BC_85 --> PACKED_TEXT_STORAGE TX_PS_17;
+Array BC_85 --> PACKED_TEXT_STORAGE TX_PS_16;
 Array BC_86 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_87 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_88 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_89 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_90 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
-Array BC_91 --> PACKED_TEXT_STORAGE TX_PS_18;
+Array BC_91 --> PACKED_TEXT_STORAGE TX_PS_17;
 Array BC_92 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_93 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_94 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
-Array BC_95 --> PACKED_TEXT_STORAGE TX_PS_19;
+Array BC_95 --> PACKED_TEXT_STORAGE TX_PS_18;
 Array BC_96 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_97 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_98 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
-Array BC_99 --> PACKED_TEXT_STORAGE TX_PS_20;
-Array BC_100 --> PACKED_TEXT_STORAGE TX_PS_21;
+Array BC_99 --> PACKED_TEXT_STORAGE TX_PS_19;
+Array BC_100 --> PACKED_TEXT_STORAGE TX_PS_20;
 Array BC_101 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
-Array BC_102 --> PACKED_TEXT_STORAGE TX_PS_19;
-Array BC_103 --> PACKED_TEXT_STORAGE TX_PS_22;
-Array BC_104 --> PACKED_TEXT_STORAGE TX_PS_21;
+Array BC_102 --> PACKED_TEXT_STORAGE TX_PS_18;
+Array BC_103 --> PACKED_TEXT_STORAGE TX_PS_21;
+Array BC_104 --> PACKED_TEXT_STORAGE TX_PS_20;
 Array BC_105 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
-Array BC_106 --> PACKED_TEXT_STORAGE TX_PS_19;
-Array BC_107 --> PACKED_TEXT_STORAGE TX_PS_23;
-Array BC_108 --> PACKED_TEXT_STORAGE TX_PS_21;
+Array BC_106 --> PACKED_TEXT_STORAGE TX_PS_18;
+Array BC_107 --> PACKED_TEXT_STORAGE TX_PS_22;
+Array BC_108 --> PACKED_TEXT_STORAGE TX_PS_20;
 Array BC_109 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
-Array BC_110 --> PACKED_TEXT_STORAGE TX_PS_19;
-Array BC_111 --> PACKED_TEXT_STORAGE TX_PS_24;
-Array BC_112 --> PACKED_TEXT_STORAGE TX_PS_21;
+Array BC_110 --> PACKED_TEXT_STORAGE TX_PS_18;
+Array BC_111 --> PACKED_TEXT_STORAGE TX_PS_23;
+Array BC_112 --> PACKED_TEXT_STORAGE TX_PS_20;
 Array BC_113 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
-Array BC_114 --> PACKED_TEXT_STORAGE TX_PS_19;
-Array BC_115 --> PACKED_TEXT_STORAGE TX_PS_25;
-Array BC_116 --> PACKED_TEXT_STORAGE TX_PS_21;
+Array BC_114 --> PACKED_TEXT_STORAGE TX_PS_18;
+Array BC_115 --> PACKED_TEXT_STORAGE TX_PS_24;
+Array BC_116 --> PACKED_TEXT_STORAGE TX_PS_20;
 Array BC_117 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
-Array BC_118 --> PACKED_TEXT_STORAGE TX_PS_19;
-Array BC_119 --> PACKED_TEXT_STORAGE TX_PS_26;
-Array BC_120 --> PACKED_TEXT_STORAGE TX_PS_21;
+Array BC_118 --> PACKED_TEXT_STORAGE TX_PS_18;
+Array BC_119 --> PACKED_TEXT_STORAGE TX_PS_25;
+Array BC_120 --> PACKED_TEXT_STORAGE TX_PS_20;
 Array BC_121 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
-Array BC_122 --> PACKED_TEXT_STORAGE TX_PS_19;
-Array BC_123 --> PACKED_TEXT_STORAGE TX_PS_27;
-Array BC_124 --> PACKED_TEXT_STORAGE TX_PS_21;
+Array BC_122 --> PACKED_TEXT_STORAGE TX_PS_18;
+Array BC_123 --> PACKED_TEXT_STORAGE TX_PS_26;
+Array BC_124 --> PACKED_TEXT_STORAGE TX_PS_20;
 Array BC_125 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
-Array BC_126 --> PACKED_TEXT_STORAGE TX_PS_19;
-Array BC_127 --> PACKED_TEXT_STORAGE TX_PS_28;
-Array BC_128 --> PACKED_TEXT_STORAGE TX_PS_21;
+Array BC_126 --> PACKED_TEXT_STORAGE TX_PS_18;
+Array BC_127 --> PACKED_TEXT_STORAGE TX_PS_27;
+Array BC_128 --> PACKED_TEXT_STORAGE TX_PS_20;
 Array BC_129 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
-Array BC_130 --> PACKED_TEXT_STORAGE TX_PS_19;
-Array BC_131 --> PACKED_TEXT_STORAGE TX_PS_29;
-Array BC_132 --> PACKED_TEXT_STORAGE TX_PS_21;
+Array BC_130 --> PACKED_TEXT_STORAGE TX_PS_18;
+Array BC_131 --> PACKED_TEXT_STORAGE TX_PS_28;
+Array BC_132 --> PACKED_TEXT_STORAGE TX_PS_20;
 Array BC_133 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
-Array BC_134 --> PACKED_TEXT_STORAGE TX_PS_19;
-Array BC_135 --> PACKED_TEXT_STORAGE TX_PS_30;
-Array BC_136 --> PACKED_TEXT_STORAGE TX_PS_21;
+Array BC_134 --> PACKED_TEXT_STORAGE TX_PS_18;
+Array BC_135 --> PACKED_TEXT_STORAGE TX_PS_29;
+Array BC_136 --> PACKED_TEXT_STORAGE TX_PS_20;
 Array BC_137 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
-Array BC_138 --> PACKED_TEXT_STORAGE TX_PS_19;
-Array BC_139 --> PACKED_TEXT_STORAGE TX_PS_31;
-Array BC_140 --> PACKED_TEXT_STORAGE TX_PS_21;
+Array BC_138 --> PACKED_TEXT_STORAGE TX_PS_18;
+Array BC_139 --> PACKED_TEXT_STORAGE TX_PS_30;
+Array BC_140 --> PACKED_TEXT_STORAGE TX_PS_20;
 Array BC_141 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
-Array BC_142 --> PACKED_TEXT_STORAGE TX_PS_19;
-Array BC_143 --> PACKED_TEXT_STORAGE TX_PS_32;
-Array BC_144 --> PACKED_TEXT_STORAGE TX_PS_21;
+Array BC_142 --> PACKED_TEXT_STORAGE TX_PS_18;
+Array BC_143 --> PACKED_TEXT_STORAGE TX_PS_31;
+Array BC_144 --> PACKED_TEXT_STORAGE TX_PS_20;
 Array BC_145 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
-Array BC_146 --> PACKED_TEXT_STORAGE TX_PS_19;
-Array BC_147 --> PACKED_TEXT_STORAGE TX_PS_33;
-Array BC_148 --> PACKED_TEXT_STORAGE TX_PS_34;
-Array BC_149 --> PACKED_TEXT_STORAGE TX_PS_35;
+Array BC_146 --> PACKED_TEXT_STORAGE TX_PS_18;
+Array BC_147 --> PACKED_TEXT_STORAGE TX_PS_32;
+Array BC_148 --> PACKED_TEXT_STORAGE TX_PS_33;
+Array BC_149 --> PACKED_TEXT_STORAGE TX_PS_34;
 Array BC_150 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_151 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_152 --> PACKED_TEXT_STORAGE TX_PS_6;
 Array BC_153 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
-Array BC_154 --> PACKED_TEXT_STORAGE TX_PS_36;
+Array BC_154 --> PACKED_TEXT_STORAGE TX_PS_35;
 Array BC_155 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
-Array BC_156 --> PACKED_TEXT_STORAGE TX_PS_18;
+Array BC_156 --> PACKED_TEXT_STORAGE TX_PS_17;
 Array BC_157 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
-Array BC_158 --> PACKED_TEXT_STORAGE TX_PS_37;
+Array BC_158 --> PACKED_TEXT_STORAGE TX_PS_36;
 Array BC_159 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
-Array BC_160 --> PACKED_TEXT_STORAGE TX_PS_18;
+Array BC_160 --> PACKED_TEXT_STORAGE TX_PS_17;
 Array BC_161 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
-Array BC_162 --> PACKED_TEXT_STORAGE TX_PS_38;
+Array BC_162 --> PACKED_TEXT_STORAGE TX_PS_37;
 Array BC_163 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
-Array BC_164 --> PACKED_TEXT_STORAGE TX_PS_18;
+Array BC_164 --> PACKED_TEXT_STORAGE TX_PS_17;
 Array BC_165 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
-Array BC_166 --> PACKED_TEXT_STORAGE TX_PS_39;
-Array BC_167 --> PACKED_TEXT_STORAGE TX_PS_40;
+Array BC_166 --> PACKED_TEXT_STORAGE TX_PS_38;
+Array BC_167 --> PACKED_TEXT_STORAGE TX_PS_39;
 Array BC_168 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_169 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_170 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
-Array BC_171 --> PACKED_TEXT_STORAGE TX_PS_41;
-Array BC_172 --> PACKED_TEXT_STORAGE TX_PS_15;
+Array BC_171 --> PACKED_TEXT_STORAGE TX_PS_40;
+Array BC_172 --> PACKED_TEXT_STORAGE TX_PS_41;
 Array BC_173 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_174 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_175 --> PACKED_TEXT_STORAGE TX_PS_14;
@@ -57570,16 +57627,34 @@ Array BC_281 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_282 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_283 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_284 --> PACKED_TEXT_STORAGE TX_PS_76;
-Array BC_285 --> PACKED_TEXT_STORAGE TX_PS_4;
-Array BC_286 --> PACKED_TEXT_STORAGE TX_PS_3;
-Array BC_287 --> PACKED_TEXT_STORAGE TX_PS_77;
+Array BC_285 --> PACKED_TEXT_STORAGE TX_PS_77;
+Array BC_286 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
+Array BC_287 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_288 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
-Array BC_289 --> PACKED_TEXT_STORAGE TX_PS_78;
-Array BC_290 --> PACKED_TEXT_STORAGE TX_PS_79;
-Array BC_291 --> PACKED_TEXT_STORAGE TX_PS_80;
-Array BC_292 --> PACKED_TEXT_STORAGE TX_PS_81;
-Array BC_293 --> PACKED_TEXT_STORAGE TX_PS_82;
-Array BC_294 --> CONSTANT_PACKED_TEXT_STORAGE R_TX_S_134;
+Array BC_289 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
+Array BC_290 --> PACKED_TEXT_STORAGE TX_PS_78;
+Array BC_291 --> PACKED_TEXT_STORAGE TX_PS_79;
+Array BC_292 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
+Array BC_293 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
+Array BC_294 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
+Array BC_295 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
+Array BC_296 --> PACKED_TEXT_STORAGE TX_PS_80;
+Array BC_297 --> PACKED_TEXT_STORAGE TX_PS_81;
+Array BC_298 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
+Array BC_299 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
+Array BC_300 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
+Array BC_301 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
+Array BC_302 --> PACKED_TEXT_STORAGE TX_PS_82;
+Array BC_303 --> PACKED_TEXT_STORAGE TX_PS_4;
+Array BC_304 --> PACKED_TEXT_STORAGE TX_PS_3;
+Array BC_305 --> PACKED_TEXT_STORAGE TX_PS_83;
+Array BC_306 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
+Array BC_307 --> PACKED_TEXT_STORAGE TX_PS_84;
+Array BC_308 --> PACKED_TEXT_STORAGE TX_PS_85;
+Array BC_309 --> PACKED_TEXT_STORAGE TX_PS_86;
+Array BC_310 --> PACKED_TEXT_STORAGE TX_PS_87;
+Array BC_311 --> PACKED_TEXT_STORAGE TX_PS_88;
+Array BC_312 --> CONSTANT_PACKED_TEXT_STORAGE R_TX_S_134;
 
 
 
