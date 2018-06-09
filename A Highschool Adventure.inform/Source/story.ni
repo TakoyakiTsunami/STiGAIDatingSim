@@ -21,19 +21,19 @@ Room 214 is a room. Room 214 is south of West Upperclassmen Hall. "Ms. Belvod's 
 Room 211, Room 212, Room 213, and Room 214 are in Classrooms. 
 
 [misc places]
-Steps is north of the Underclassmen Hallway. "Hundreds of kids go up and down these steps everyday."
-The Gym is east of East Upperclassmen Hall. "A smelly old gymnasium. Full of sweat and humilation."
-The Cafeteria is west of West Upperclassmen Hall. "Serving barely-edible food substance since 1989."
-The Great Outdoors is north of the Steps. "Its pleasent and breezy. Much better than that that big block of concrete they call a school"
+Steps is north of the Underclassmen Hallway. "Hundreds of kids go up and down these steps everyday.".
+The Gym is east of East Upperclassmen Hall. "A smelly old gymnasium. Full of sweat and humilation.".
+The Cafeteria is west of West Upperclassmen Hall. "Serving barely-edible food substance since 1989.".
+The Great Outdoors is north of the Steps. "Its pleasent and breezy. Much better than that that big block of concrete they call a school".
+Steps, the Gym, the Cageteria, and the great outdoors are in school. 
 
 [general world rules]
 Understand "talk to [someone]" as a mistake ("To start a conversation, try to ASK [the noun] ABOUT something or TELL [the noun] ABOUT something.").
 
 A Locker is a kind of container. A locker is closed. 
-Instead of opening a locker, say "You need the right combination to open this locker. Spin the lock to _-_-_ to open".
+Instead of opening a locker, say "You need the right combination to open this locker. Spin the lock to _ _ _ _ to open".
 Spinning it to is an action applying to one thing and one number. Check spinning it to: if the noun is not a Locker, say "[The noun] does not spin." instead. Report spinning it to: say "Click! and nothing else happens."
 Understand "spin [something] to [a number]" as spinning it to.
-
 understand "fuck [something]" as fuck. 
 understand "fuck the [something]" as fuck. 
 
@@ -53,7 +53,10 @@ Inside Room 213 is a woman called Diamond. Understand "D" as Diamond. The descri
 [things]
 My Locker is a Locker in the Underclassmen Hallway. The description of the locker is "Ah, my sweet old locker. Smells like teen spirit.".
 After spinning the closed My Locker to 1999: now My Locker is open; say "[noun] opens, revealing [a list of things in noun]."
-Diamonds Locker is a locker in the Underclassmen Hallway. The description of the Diamonds Locker is "Mhmmmm, it even smills like her...". After spinning the closed Diamonds Locker to 0112: now Diamonds Locker is open; say "[noun] opens, revealing [a list of things in noun]."
+After going from room containing my locker, now my locker is closed. 
+Diamonds Locker is a locker in the Underclassmen Hallway. The description of the Diamonds Locker is "Mhmmmm, it even smills like her...". 
+After spinning the closed Diamonds Locker to 0112: now Diamonds Locker is open; say "[noun] opens, revealing [a list of things in noun]."
+After going from room containing diamonds locker, now diamonds locker is closed. 
 Inside Diamonds Locker is Diamonds Pencil. Diamonds Pencil is a thing. The description of Diamonds Pencil is "Pink and Sparkly. Also good for stabbing. And writing."
 
 

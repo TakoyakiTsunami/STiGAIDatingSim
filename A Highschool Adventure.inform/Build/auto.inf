@@ -4402,7 +4402,7 @@ Global lightflag = false;
 ! ListWriter.i6t: Memory
 ! ==== ==== ==== ==== ==== ==== ==== ==== ==== ====
 
-Constant REQUISITION_STACK_SIZE = 3*37;
+Constant REQUISITION_STACK_SIZE = 3*38;
 Array requisition_stack --> REQUISITION_STACK_SIZE;
 Global requisition_stack_pointer = 0;
 
@@ -10553,18 +10553,18 @@ Constant IK1_First = I127_underclassmen_hallway;
 Constant IK2_First = selfobj;
 Constant IK3_First = I51_north;
 Constant IK4_First = nothing;
-Constant IK5_First = I147_my_locker;
+Constant IK5_First = I148_my_locker;
 Constant IK6_First = nothing;
 Constant IK7_First = nothing;
 Constant IK8_First = selfobj;
 Constant IK9_First = I125_school;
 Constant IK10_First = nothing;
-Constant IK11_First = I146_diamond;
+Constant IK11_First = I147_diamond;
 Constant IK12_First = nothing;
 Constant IK13_First = nothing;
 Constant IK14_First = nothing;
 Constant IK15_First = nothing;
-Constant IK16_First = I147_my_locker;
+Constant IK16_First = I148_my_locker;
 Constant No_Directions = 12;
 ! Table of direction object alias constants:
 Constant DirectionObject_0 = I51_north;
@@ -10593,6 +10593,7 @@ Array Map_Storage -->
  0 0 0 0 0 0 0 I128_east_upperclassmen_hall 0 0 0 0 ! Exits from: I138_gym
  0 0 0 0 0 0 I130_west_upperclassmen_hall 0 0 0 0 0 ! Exits from: I139_cafeteria
  0 0 0 I137_steps 0 0 0 0 0 0 0 0 ! Exits from: I140_great_outdoors
+ 0 0 0 0 0 0 0 0 0 0 0 0 ! Exits from: I141_cageteria
 ;
 
 Class VPH_Class;
@@ -11055,9 +11056,9 @@ Object selfobj ""
     with cap_short_name BC_149
     has mark_as_thing
     with IK2_Count 0
-    with IK2_Link I147_my_locker
+    with IK2_Link I148_my_locker
     with IK8_Count 0
-    with IK8_Link I142_mr_redman
+    with IK8_Link I143_mr_redman
     with KD_Count 8
     with parse_name Parse_Name_GV13
     with action_bitmap 0 0 0 0 0 
@@ -11136,18 +11137,18 @@ Object I127_underclassmen_hallway ""
     with article BC_170
 ;
 
-Object -> I147_my_locker ""
+Object -> I148_my_locker ""
     class K16_locker
     with short_name BC_171
     has proper
     with vector 0
     has mark_as_thing
     with IK2_Count 6
-    with IK2_Link I148_diamonds_locker
+    with IK2_Link I149_diamonds_locker
     with IK5_Count 0
-    with IK5_Link I148_diamonds_locker
+    with IK5_Link I149_diamonds_locker
     with IK16_Count 0
-    with IK16_Link I148_diamonds_locker
+    with IK16_Link I149_diamonds_locker
     with KD_Count 16
     with name 'my' 'locker' 'lockers//p' 
     with action_bitmap 0 0 0 0 0 
@@ -11158,7 +11159,7 @@ Object -> I147_my_locker ""
     with article BC_176
 ;
 
-Object -> I148_diamonds_locker ""
+Object -> I149_diamonds_locker ""
     class K16_locker
     with short_name BC_177
     with description BC_178
@@ -11166,7 +11167,7 @@ Object -> I148_diamonds_locker ""
     with vector 0
     has mark_as_thing
     with IK2_Count 7
-    with IK2_Link I149_diamonds_pencil
+    with IK2_Link I150_diamonds_pencil
     with IK5_Count 1
     with IK5_Link nothing
     with IK16_Count 1
@@ -11180,7 +11181,7 @@ Object -> I148_diamonds_locker ""
     with article BC_182
 ;
 
-Object -> -> I149_diamonds_pencil ""
+Object -> -> I150_diamonds_pencil ""
     class K2_thing
     with short_name BC_183
     with description BC_184
@@ -11188,7 +11189,7 @@ Object -> -> I149_diamonds_pencil ""
     with vector 0
     has mark_as_thing
     with IK2_Count 8
-    with IK2_Link I142_mr_redman
+    with IK2_Link I143_mr_redman
     with KD_Count 2
     with name 'diamonds' 'pencil' 'things//p' 
     with action_bitmap 0 0 0 0 0 
@@ -11288,16 +11289,16 @@ Object I133_room_211 ""
     with article BC_213
 ;
 
-Object -> I142_mr_redman ""
+Object -> I143_mr_redman ""
     class K8_person
     with short_name BC_214
     has proper
     with vector 0
     has mark_as_thing
     with IK2_Count 1
-    with IK2_Link I143_mrs_ford
+    with IK2_Link I144_mrs_ford
     with IK8_Count 1
-    with IK8_Link I143_mrs_ford
+    with IK8_Link I144_mrs_ford
     with KD_Count 8
     with name 'mr' 'redman' 'people//p' 'redman' 
     with parse_name Parse_Name_GV97
@@ -11328,16 +11329,16 @@ Object I134_room_212 ""
     with article BC_224
 ;
 
-Object -> I143_mrs_ford ""
+Object -> I144_mrs_ford ""
     class K8_person
     with short_name BC_225
     has proper
     with vector 0
     has mark_as_thing
     with IK2_Count 2
-    with IK2_Link I144_mr_hartman
+    with IK2_Link I145_mr_hartman
     with IK8_Count 2
-    with IK8_Link I144_mr_hartman
+    with IK8_Link I145_mr_hartman
     with KD_Count 8
     with name 'mrs' 'ford' 'people//p' 'ford' 
     with parse_name Parse_Name_GV99
@@ -11368,16 +11369,16 @@ Object I135_room_213 ""
     with article BC_235
 ;
 
-Object -> I144_mr_hartman ""
+Object -> I145_mr_hartman ""
     class K8_person
     with short_name BC_236
     has proper
     with vector 0
     has mark_as_thing
     with IK2_Count 3
-    with IK2_Link I146_diamond
+    with IK2_Link I147_diamond
     with IK8_Count 3
-    with IK8_Link I146_diamond
+    with IK8_Link I147_diamond
     with KD_Count 8
     with name 'mr' 'hartman' 'people//p' 'hartman' 
     with parse_name Parse_Name_GV101
@@ -11389,7 +11390,7 @@ Object -> I144_mr_hartman ""
     with article BC_241
 ;
 
-Object -> I146_diamond ""
+Object -> I147_diamond ""
     class K11_woman
     with short_name BC_242
     with description BC_243
@@ -11397,9 +11398,9 @@ Object -> I146_diamond ""
     with vector 0
     has mark_as_thing
     with IK2_Count 5
-    with IK2_Link I145_ms_belvod
+    with IK2_Link I146_ms_belvod
     with IK8_Count 5
-    with IK8_Link I145_ms_belvod
+    with IK8_Link I146_ms_belvod
     with IK11_Count 0
     with IK11_Link nothing
     with KD_Count 11
@@ -11431,7 +11432,7 @@ Object I136_room_214 ""
     with article BC_252
 ;
 
-Object -> I145_ms_belvod ""
+Object -> I146_ms_belvod ""
     class K8_person
     with short_name BC_253
     has proper
@@ -11456,6 +11457,7 @@ Object I137_steps ""
     class K1_room
     with short_name BC_259
     with description BC_260
+    with map_region I125_school
     has proper
     with vector 0
     with room_index -1
@@ -11473,6 +11475,7 @@ Object I138_gym ""
     class K1_room
     with short_name BC_264
     with description BC_265
+    with map_region I125_school
     with vector 0
     with room_index -1
     has mark_as_room
@@ -11505,16 +11508,34 @@ Object I140_great_outdoors ""
     class K1_room
     with short_name BC_274
     with description BC_275
+    with map_region I125_school
     with vector 0
     with room_index -1
     has mark_as_room
     with IK1_Count 12
-    with IK1_Link nothing
+    with IK1_Link I141_cageteria
     with KD_Count 1
     with name 'great' 'outdoors' 'rooms//p' 
     with list_together BC_276
     with plural BC_277
     with article BC_278
+;
+
+Object I141_cageteria ""
+    class K1_room
+    with short_name BC_279
+    with map_region I125_school
+    with vector 0
+    with room_index -1
+    has mark_as_room
+    with IK1_Count 13
+    with IK1_Link nothing
+    with KD_Count 1
+    with name 'cageteria' 'rooms//p' 
+    with description BC_280
+    with list_together BC_281
+    with plural BC_282
+    with article BC_283
 ;
 
 Constant I71_english_language = 1;
@@ -11568,12 +11589,12 @@ Constant I123_masculine_gender = 2;
 Constant I124_feminine_gender = 3;
 Array Global_Vars -->
   (false) ! 7 darkness witnessed
-  (BC_279) ! 25 command prompt
+  (BC_284) ! 25 command prompt
   (I71_english_language) ! 29 language of play
-  (BC_280) ! 32 story author
-  (BC_281) ! 33 story headline
-  (BC_282) ! 34 story genre
-  (BC_283) ! 35 story description
+  (BC_285) ! 32 story author
+  (BC_286) ! 33 story headline
+  (BC_287) ! 34 story genre
+  (BC_288) ! 35 story description
   (1) ! 36 release number
   (0) ! 37 story creation year
   (0) ! 45 locale paragraph count
@@ -11588,7 +11609,7 @@ Array Global_Vars -->
 
 
 Array T0_final_question_options table  tab_0_0 tab_0_1 tab_0_2 tab_0_3 tab_0_4;
-Array tab_0_0 table $0664 0 (BC_284) (BC_285) (BC_286) (BC_287) (BC_288) ;
+Array tab_0_0 table $0664 0 (BC_289) (BC_290) (BC_291) (BC_292) (BC_293) ;
 Array tab_0_1 table $0465 1 (0) (0) (1) (0) (0) ;
 Array tab_0_2 table $2066 2 (Consult_Grammar_105) (Consult_Grammar_106) (Consult_Grammar_107) (Consult_Grammar_108) (Consult_Grammar_109) ;
 Array tab_0_3 table $0067 3 (IMMEDIATELY_RESTART_VM_R) (IMMEDIATELY_RESTORE_SAVED_R) ( TABLE_NOVALUE) (IMMEDIATELY_QUIT_R) (IMMEDIATELY_UNDO_R) ;
@@ -12127,7 +12148,7 @@ Array ActionHappened --> 0 0 0 0 0;
 
 [ MistakeActionSub ;
     switch(understand_as_mistake_number) {
-        261: ParserError(BC_289);
+        261: ParserError(BC_294);
         default: "I didn't understand that sentence.";
     }
     say__p = 1;
@@ -12784,9 +12805,9 @@ Array ActionHappened --> 0 0 0 0 0;
     if ((((action ==##Open) &&  (actor==player) && ((noun ofclass K16_locker))))) { ! Runs only when pattern matches
     self = noun;
     if (debug_rules) DB_Rule(R_799, 799);
-    ! [2: say ~You need the right combination to open this locker. Spin the lock to _-_-_ to open~]
-    say__p=1;! [3: ~You need the right combination to open this locker. Spin the lock to _-_-_ to open~]
-    ParaContent(); print "You need the right combination to open this locker. Spin the lock to _-_-_ to open"; .L_Say3; .L_SayX3;RulebookFails(); rtrue;
+    ! [2: say ~You need the right combination to open this locker. Spin the lock to _ _ _ _ to open~]
+    say__p=1;! [3: ~You need the right combination to open this locker. Spin the lock to _ _ _ _ to open~]
+    ParaContent(); print "You need the right combination to open this locker. Spin the lock to _ _ _ _ to open"; .L_Say3; .L_SayX3;RulebookFails(); rtrue;
     } else if (debug_rules > 1) DB_Rule(R_799, 799, 'action');
     rfalse;
 ];
@@ -12807,20 +12828,48 @@ Array ActionHappened --> 0 0 0 0 0;
 ! ----------------------------------------------------------------------------------------------------
 ! Rules in rulebook: After (B23_after)
 ! ----------------------------------------------------------------------------------------------------
-! Rule 1/2 ! After spinning the closed My Locker to 1999:
+! Rule 1/4 ! After going from room containing my locker:
 !   === equally specific with ===
-! Rule 2/2 ! After spinning the closed Diamonds Locker to 0112:
+! Rule 2/4 ! After going from room containing diamonds locker:
+!   >>> III.2.2 - Action/Where/Room Where Action Takes Place >>>
+! Rule 3/4 ! After spinning the closed My Locker to 1999:
+!   === equally specific with ===
+! Rule 4/4 ! After spinning the closed Diamonds Locker to 0112:
 ! ----------------------------------------------------------------------------------------------------
+! No specific request
+! After going from room containing my locker:
+[ R_804 ;
+    if ((((action ==##Go) &&  (actor==player) && (((MStack-->MstVON(20007,0)) ofclass K1_room) && ((MStack-->MstVON(20007,0)) == ContainerOf(I148_my_locker))) && ((MStack-->MstVON(20007,1)) ~= nothing)))) { ! Runs only when pattern matches
+    self = noun;
+    if (debug_rules) DB_Rule(R_804, 804);
+    ! [2: now my locker is closed]
+    (Adj_73_t2_v10(I148_my_locker));
+    RulebookSucceeds(); rtrue;
+    } else if (debug_rules > 1) DB_Rule(R_804, 804, 'action');
+    rfalse;
+];
+! No specific request
+! After going from room containing diamonds locker:
+[ R_806 ;
+    if ((((action ==##Go) &&  (actor==player) && (((MStack-->MstVON(20007,0)) ofclass K1_room) && ((MStack-->MstVON(20007,0)) == ContainerOf(I149_diamonds_locker))) && ((MStack-->MstVON(20007,1)) ~= nothing)))) { ! Runs only when pattern matches
+    self = noun;
+    if (debug_rules) DB_Rule(R_806, 806);
+    ! [2: now diamonds locker is closed]
+    (Adj_73_t2_v10(I149_diamonds_locker));
+    RulebookSucceeds(); rtrue;
+    } else if (debug_rules > 1) DB_Rule(R_806, 806, 'action');
+    rfalse;
+];
 ! No specific request
 ! After spinning the closed My Locker to 1999:
 [ R_803 
     tmp_0 ! Let/loop value (deallocated by end of phrase)
     ;
-    if ((((action ==##A77_spinning_it_to) &&  (actor==player) && ((noun == I147_my_locker) && ((Adj_73_t1_v10(noun)))) && ((parsed_number == 1999) && (true))))) { ! Runs only when pattern matches
+    if ((((action ==##A77_spinning_it_to) &&  (actor==player) && ((noun == I148_my_locker) && ((Adj_73_t1_v10(noun)))) && ((parsed_number == 1999) && (true))))) { ! Runs only when pattern matches
     self = noun;
     if (debug_rules) DB_Rule(R_803, 803);
     ! [2: now my locker is open]
-    (Adj_72_t2_v10(I147_my_locker));
+    (Adj_72_t2_v10(I148_my_locker));
     ! [3: say ~[noun] opens, revealing [a list of things in noun].~]
     say__p=1;! [4: noun]
     ParaContent(); PrintShortName(noun);! [5: ~ opens, revealing ~]
@@ -12837,25 +12886,26 @@ Array ActionHappened --> 0 0 0 0 0;
 ];
 ! No specific request
 ! After spinning the closed Diamonds Locker to 0112:
-[ R_804 
+[ R_805 
     tmp_0 ! Let/loop value (deallocated by end of phrase)
     ;
-    if ((((action ==##A77_spinning_it_to) &&  (actor==player) && ((noun == I148_diamonds_locker) && ((Adj_73_t1_v10(noun)))) && ((parsed_number == 112) && (true))))) { ! Runs only when pattern matches
+    if ((((action ==##A77_spinning_it_to) &&  (actor==player) && ((noun == I149_diamonds_locker) && ((Adj_73_t1_v10(noun)))) && ((parsed_number == 112) && (true))))) { ! Runs only when pattern matches
     self = noun;
-    if (debug_rules) DB_Rule(R_804, 804);
+    if (debug_rules) DB_Rule(R_805, 805);
     ! [2: now diamonds locker is open]
-    (Adj_72_t2_v10(I148_diamonds_locker));
-    ! [3: say ~Clonk! and the safe door swings slowly open, revealing [a list of things in Diamonds Locker].~]
-    say__p=1;! [4: ~Clonk! and the safe door swings slowly open, revealing ~]
-    ParaContent(); print "Clonk! and the safe door swings slowly open, revealing ";! [5: a list of things in diamonds locker]
+    (Adj_72_t2_v10(I149_diamonds_locker));
+    ! [3: say ~[noun] opens, revealing [a list of things in noun].~]
+    say__p=1;! [4: noun]
+    ParaContent(); PrintShortName(noun);! [5: ~ opens, revealing ~]
+    ParaContent(); print " opens, revealing ";! [6: a list of things in noun]
     ParaContent(); objectloop(tmp_0 ofclass Object)
-    			if (((tmp_0 ofclass K2_thing) && (I148_diamonds_locker == ContainerOf(tmp_0))))
+    			if (((tmp_0 ofclass K2_thing) && (noun == ContainerOf(tmp_0))))
     				give tmp_0 workflag2;
     			else
     				give tmp_0 ~workflag2;
-    		WriteListOfMarkedObjects(ENGLISH_BIT);! [6: ~.~]
+    		WriteListOfMarkedObjects(ENGLISH_BIT);! [7: ~.~]
     ParaContent(); print "."; new_line; .L_Say6; .L_SayX6;RulebookSucceeds(); rtrue;
-    } else if (debug_rules > 1) DB_Rule(R_804, 804, 'action');
+    } else if (debug_rules > 1) DB_Rule(R_805, 805, 'action');
     rfalse;
 ];
 ! ----------------------------------------------------------------------------------------------------
@@ -22207,7 +22257,27 @@ Constant B22_carry_out = EMPTY_RULEBOOK;
     original_deadflag ! saved state
     ;
     original_deadflag = deadflag;
+    if (action == ##Go) {
+        rv = R_804();
+        if (rv) {
+            if (rv == 2) return reason_the_action_failed;
+            return R_804;
+        }
+        latest_rule_result-->0 = 0;
+        if (original_deadflag ~= deadflag) return 0;
+        if (say__p) RulebookParBreak(forbid_breaks);
+        rv = R_806();
+        if (rv) {
+            if (rv == 2) return reason_the_action_failed;
+            return R_806;
+        }
+        latest_rule_result-->0 = 0;
+    } else {
+        if (say__p) RulebookParBreak(forbid_breaks);
+    }
     if (action == ##A77_spinning_it_to) {
+        if (original_deadflag ~= deadflag) return 0;
+        if (say__p) RulebookParBreak(forbid_breaks);
         rv = R_803();
         if (rv) {
             if (rv == 2) return reason_the_action_failed;
@@ -22216,16 +22286,16 @@ Constant B22_carry_out = EMPTY_RULEBOOK;
         latest_rule_result-->0 = 0;
         if (original_deadflag ~= deadflag) return 0;
         if (say__p) RulebookParBreak(forbid_breaks);
-        rv = R_804();
+        rv = R_805();
         if (rv) {
             if (rv == 2) return reason_the_action_failed;
-            return R_804;
+            return R_805;
         }
         latest_rule_result-->0 = 0;
     } else {
         if (say__p) RulebookParBreak(forbid_breaks);
     }
-    return 0; ! 2 rule(s)
+    return 0; ! 4 rule(s)
 ];
 Constant B24_report = EMPTY_RULEBOOK;
 [ B25_does_the_player_mean 
@@ -28394,7 +28464,7 @@ Constant SLOW_ROUTE_FINDING;
 ! ==== ==== ==== ==== ==== ==== ==== ==== ==== ====
 
 Constant NUM_DOORS = 0;
-Constant NUM_ROOMS = 13;
+Constant NUM_ROOMS = 14;
 
 Array DoorRoutingViable -> NUM_DOORS+1;
 
@@ -28596,7 +28666,7 @@ Array FWMatrix --> NUM_ROOMS*NUM_ROOMS;
 ! Relations.i6t: Relation Route-Finding
 ! ==== ==== ==== ==== ==== ==== ==== ==== ==== ====
 
-Constant MAX_ROUTE_LENGTH = 37 + 32;
+Constant MAX_ROUTE_LENGTH = 38 + 32;
 
 [ RelationRouteTo relation from to count  handler;
 	if (count) {
@@ -30117,7 +30187,9 @@ Array RulebookNames -->
         if (R == R_801) { print "Report spinning it to"; rtrue; } ! rule 350
         if (R == R_802) { print "Instead of fuck"; rtrue; } ! rule 351
         if (R == R_803) { print "After spinning the closed My Locker to 1999"; rtrue; } ! rule 352
-        if (R == R_804) { print "After spinning the closed Diamonds Locker to 0112"; rtrue; } ! rule 353
+        if (R == R_804) { print "After going from room containing my locker"; rtrue; } ! rule 353
+        if (R == R_805) { print "After spinning the closed Diamonds Locker to 0112"; rtrue; } ! rule 354
+        if (R == R_806) { print "After going from room containing diamonds locker"; rtrue; } ! rule 355
 
 		print "(nameless rule at address ", R, ")";
 	}
@@ -49977,13 +50049,14 @@ Verb 'fuck'
 
 
 
-Constant TX_PS_75 = ">";
+Constant TX_PS_76 = ">";
 Constant TX_PS_70 = "A smelly old gymnasium. Full of sweat and humilation.";
 Constant TX_PS_15 = "Ah, my sweet old locker. Smells like teen spirit.";
 Constant TX_PS_3 = "An Interactive Fiction";
 Constant TX_PS_63 = "An angel that has graced this school with her presence. She's soooooo hot.";
 Constant TX_PS_34 = "As good-looking as ever.";
 Constant TX_PS_71 = "Cafeteria";
+Constant TX_PS_75 = "Cageteria";
 Constant TX_PS_2 = "Classic Highschool Drama But with Murder";
 Constant TX_PS_38 = "Classrooms";
 Constant TX_PS_62 = "Diamond";
@@ -49991,7 +50064,7 @@ Constant TX_PS_42 = "Diamonds Locker";
 Constant TX_PS_44 = "Diamonds Pencil";
 Constant TX_PS_52 = "East Upperclassman Hall";
 Constant TX_PS_46 = "East Upperclassmen Hall";
-Constant TX_PS_76 = "Fiction";
+Constant TX_PS_77 = "Fiction";
 Constant TX_PS_73 = "Great Outdoors";
 Constant TX_PS_69 = "Gym";
 Constant TX_PS_37 = "Hallway";
@@ -50011,9 +50084,9 @@ Constant TX_PS_66 = "Ms Belvod";
 Constant TX_PS_65 = "Ms. Belvod's Classroom. Apparently she has a thing for Mr Redman. I certinly don't see the appeal...";
 Constant TX_PS_41 = "My Locker";
 Constant TX_PS_45 = "Pink and Sparkly. Also good for stabbing. And writing.";
-Constant TX_PS_80 = "QUIT";
-Constant TX_PS_77 = "RESTART";
-Constant TX_PS_78 = "RESTORE a saved game";
+Constant TX_PS_81 = "QUIT";
+Constant TX_PS_78 = "RESTART";
+Constant TX_PS_79 = "RESTORE a saved game";
 Constant TX_PS_53 = "Room 211";
 Constant TX_PS_56 = "Room 212";
 Constant TX_PS_59 = "Room 213";
@@ -50023,7 +50096,7 @@ Constant TX_PS_47 = "Senior side of the hallway. Close to the Gym.";
 Constant TX_PS_72 = "Serving barely-edible food substance since 1989.";
 Constant TX_PS_67 = "Steps";
 Constant TX_PS_40 = "The normally busy hallway seems eeriely quiet after school hours.";
-Constant TX_PS_81 = "UNDO the last command";
+Constant TX_PS_82 = "UNDO the last command";
 Constant TX_PS_39 = "Underclassmen Hallway";
 Constant TX_PS_48 = "Upperclassmen Junction";
 Constant TX_PS_50 = "West Upperclassmen Hall";
@@ -50046,7 +50119,7 @@ Constant TX_PS_32 = "outside";
 Constant TX_PS_6 = "people";
 Constant TX_PS_13 = "player's holdalls";
 Constant TX_PS_18 = "regions";
-Constant TX_PS_79 = "see some suggestions for AMUSING things to do";
+Constant TX_PS_80 = "see some suggestions for AMUSING things to do";
 Constant TX_PS_24 = "south";
 Constant TX_PS_25 = "southeast";
 Constant TX_PS_26 = "southwest";
@@ -57492,16 +57565,21 @@ Array BC_276 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_277 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_278 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_279 --> PACKED_TEXT_STORAGE TX_PS_75;
-Array BC_280 --> PACKED_TEXT_STORAGE TX_PS_4;
-Array BC_281 --> PACKED_TEXT_STORAGE TX_PS_3;
-Array BC_282 --> PACKED_TEXT_STORAGE TX_PS_76;
+Array BC_280 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
+Array BC_281 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
+Array BC_282 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_283 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
-Array BC_284 --> PACKED_TEXT_STORAGE TX_PS_77;
-Array BC_285 --> PACKED_TEXT_STORAGE TX_PS_78;
-Array BC_286 --> PACKED_TEXT_STORAGE TX_PS_79;
-Array BC_287 --> PACKED_TEXT_STORAGE TX_PS_80;
-Array BC_288 --> PACKED_TEXT_STORAGE TX_PS_81;
-Array BC_289 --> CONSTANT_PACKED_TEXT_STORAGE R_TX_S_134;
+Array BC_284 --> PACKED_TEXT_STORAGE TX_PS_76;
+Array BC_285 --> PACKED_TEXT_STORAGE TX_PS_4;
+Array BC_286 --> PACKED_TEXT_STORAGE TX_PS_3;
+Array BC_287 --> PACKED_TEXT_STORAGE TX_PS_77;
+Array BC_288 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
+Array BC_289 --> PACKED_TEXT_STORAGE TX_PS_78;
+Array BC_290 --> PACKED_TEXT_STORAGE TX_PS_79;
+Array BC_291 --> PACKED_TEXT_STORAGE TX_PS_80;
+Array BC_292 --> PACKED_TEXT_STORAGE TX_PS_81;
+Array BC_293 --> PACKED_TEXT_STORAGE TX_PS_82;
+Array BC_294 --> CONSTANT_PACKED_TEXT_STORAGE R_TX_S_134;
 
 
 
