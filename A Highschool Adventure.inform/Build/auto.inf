@@ -43,7 +43,7 @@ Global Story = BC_0;
 Constant Headline BC_1;
 Constant Story_Author BC_2;
 Release 1;
-Serial "180607";
+Serial "180609";
 
 Default Story 0;
 Default Headline 0;
@@ -4402,7 +4402,7 @@ Global lightflag = false;
 ! ListWriter.i6t: Memory
 ! ==== ==== ==== ==== ==== ==== ==== ==== ==== ====
 
-Constant REQUISITION_STACK_SIZE = 3*29;
+Constant REQUISITION_STACK_SIZE = 3*38;
 Array requisition_stack --> REQUISITION_STACK_SIZE;
 Global requisition_stack_pointer = 0;
 
@@ -9182,7 +9182,7 @@ Constant START_ROOM_INIS = 2;
 Constant START_TIME_INIS = 3;
 Constant DONE_INIS = 4;
 
-Array InitialSituation --> selfobj nothing I125_underclassmen_hallway 540 0;
+Array InitialSituation --> selfobj nothing I127_underclassmen_hallway 540 0;
 
 
 
@@ -10540,17 +10540,17 @@ Constant RBNO_12 = "it does";
 
 
 Array KindHierarchy --> K0_kind (0) K1_room (0) K2_thing (0) K3_direction (0) K4_door (2) K5_container (2) K6_supporter (2) K7_backdrop (2) K8_person (2) K9_region (0) K10_man (8) K11_woman (8) K12_animal (8) K13_device (2) K14_vehicle (5) K15_player_s_holdall (5) ;
-Constant IK1_First = I125_underclassmen_hallway;
+Constant IK1_First = I127_underclassmen_hallway;
 Constant IK2_First = selfobj;
 Constant IK3_First = I51_north;
 Constant IK4_First = nothing;
-Constant IK5_First = I127_diamonds_locker;
+Constant IK5_First = I142_diamonds_locker;
 Constant IK6_First = nothing;
 Constant IK7_First = nothing;
 Constant IK8_First = selfobj;
-Constant IK9_First = nothing;
+Constant IK9_First = I125_school;
 Constant IK10_First = nothing;
-Constant IK11_First = I136_diamond;
+Constant IK11_First = I149_diamond;
 Constant IK12_First = nothing;
 Constant IK13_First = nothing;
 Constant IK14_First = nothing;
@@ -10570,18 +10570,19 @@ Constant DirectionObject_9 = I60_down;
 Constant DirectionObject_10 = in_obj;
 Constant DirectionObject_11 = out_obj;
 Array Map_Storage -->
- I131_steps 0 0 I132_upperclassmen_junction 0 0 I130_mrs_fords_classroom I129_mr_redmans_classroom 0 0 0 0 ! Exits from: I125_underclassmen_hallway
- 0 0 0 0 0 0 I125_underclassmen_hallway 0 0 0 0 0 ! Exits from: I129_mr_redmans_classroom
- 0 0 0 0 0 0 0 I125_underclassmen_hallway 0 0 0 0 ! Exits from: I130_mrs_fords_classroom
- 0 0 0 I125_underclassmen_hallway 0 0 0 0 0 0 0 I140_great_outdoors ! Exits from: I131_steps
- I125_underclassmen_hallway 0 0 0 0 0 I133_east_upperclassmen_hall I137_west_upperclassmen_hall 0 0 0 0 ! Exits from: I132_upperclassmen_junction
- 0 0 0 I135_mr_hartmans_classroom 0 0 I134_gym I132_upperclassmen_junction 0 0 0 0 ! Exits from: I133_east_upperclassmen_hall
- 0 0 0 0 0 0 0 I133_east_upperclassmen_hall 0 0 0 0 ! Exits from: I134_gym
- I133_east_upperclassmen_hall 0 0 0 0 0 0 0 0 0 0 0 ! Exits from: I135_mr_hartmans_classroom
- 0 0 0 I138_mrs_belvods_classroom 0 0 I132_upperclassmen_junction I139_cafeteria 0 0 0 0 ! Exits from: I137_west_upperclassmen_hall
- I137_west_upperclassmen_hall 0 0 0 0 0 0 0 0 0 0 0 ! Exits from: I138_mrs_belvods_classroom
- 0 0 0 0 0 0 I137_west_upperclassmen_hall 0 0 0 0 0 ! Exits from: I139_cafeteria
- 0 0 0 0 0 0 0 0 0 0 I131_steps 0 ! Exits from: I140_great_outdoors
+ I137_steps 0 0 I129_upperclassmen_junction 0 0 I134_room_212 I133_room_211 0 0 0 0 ! Exits from: I127_underclassmen_hallway
+ 0 0 0 I135_room_213 0 0 I138_gym I129_upperclassmen_junction 0 0 0 0 ! Exits from: I128_east_upperclassmen_hall
+ I127_underclassmen_hallway 0 0 0 0 0 I128_east_upperclassmen_hall I130_west_upperclassmen_hall 0 0 0 0 ! Exits from: I129_upperclassmen_junction
+ 0 0 0 I136_room_214 0 0 I129_upperclassmen_junction I139_cafeteria 0 0 0 0 ! Exits from: I130_west_upperclassmen_hall
+ 0 0 0 0 0 0 0 0 0 0 0 0 ! Exits from: I131_east_upperclassman_hall
+ 0 0 0 0 0 0 I127_underclassmen_hallway 0 0 0 0 0 ! Exits from: I133_room_211
+ 0 0 0 0 0 0 0 I127_underclassmen_hallway 0 0 0 0 ! Exits from: I134_room_212
+ I128_east_upperclassmen_hall 0 0 0 0 0 0 0 0 0 0 0 ! Exits from: I135_room_213
+ I130_west_upperclassmen_hall 0 0 0 0 0 0 0 0 0 0 0 ! Exits from: I136_room_214
+ I140_great_outdoors 0 0 I127_underclassmen_hallway 0 0 0 0 0 0 0 0 ! Exits from: I137_steps
+ 0 0 0 0 0 0 0 I128_east_upperclassmen_hall 0 0 0 0 ! Exits from: I138_gym
+ 0 0 0 0 0 0 I130_west_upperclassmen_hall 0 0 0 0 0 ! Exits from: I139_cafeteria
+ 0 0 0 I137_steps 0 0 0 0 0 0 0 0 ! Exits from: I140_great_outdoors
 ;
 
 Class VPH_Class;
@@ -11033,9 +11034,9 @@ Object selfobj ""
     with cap_short_name BC_143
     has mark_as_thing
     with IK2_Count 0
-    with IK2_Link I126_my_locker
+    with IK2_Link I141_my_locker
     with IK8_Count 0
-    with IK8_Link I136_diamond
+    with IK8_Link I144_mr_redman
     with KD_Count 8
     with parse_name Parse_Name_GV13
     with action_bitmap 0 0 0 0 0 
@@ -11045,72 +11046,86 @@ Object selfobj ""
     with article BC_147
 ;
 
-Object I125_underclassmen_hallway ""
-    class K1_room
+Object I125_school ""
+    class K9_region
     with short_name BC_148
-    with description BC_149
+    has proper
+    with vector 0
+    with regional_found_in [ ;
+        if (TestRegionalContainment(location, I125_school)) rtrue; rfalse;],
+    with IK9_Count 0
+    with IK9_Link I126_hallway
+    with KD_Count 9
+    with name 'school' 'regions//p' 
+    with action_bitmap 0 0 0 0 0 
+    with list_together BC_149
+    with plural BC_150
+    with article BC_151
+;
+
+Object -> I126_hallway ""
+    class K9_region
+    with short_name BC_152
+    has proper
+    with vector 0
+    with regional_found_in [ ;
+        if (TestRegionalContainment(location, I126_hallway)) rtrue; rfalse;],
+    with IK9_Count 1
+    with IK9_Link I132_classrooms
+    with KD_Count 9
+    with name 'hallway' 'regions//p' 
+    with action_bitmap 0 0 0 0 0 
+    with list_together BC_153
+    with plural BC_154
+    with article BC_155
+;
+
+Object -> I132_classrooms ""
+    class K9_region
+    with short_name BC_156
+    has proper
+    with vector 0
+    with regional_found_in [ ;
+        if (TestRegionalContainment(location, I132_classrooms)) rtrue; rfalse;],
+    with IK9_Count 2
+    with IK9_Link nothing
+    with KD_Count 9
+    with name 'classrooms' 'regions//p' 
+    with action_bitmap 0 0 0 0 0 
+    with list_together BC_157
+    with plural BC_158
+    with article BC_159
+;
+
+Object I127_underclassmen_hallway ""
+    class K1_room
+    with short_name BC_160
+    with description BC_161
+    with map_region I126_hallway
     has proper
     with vector 0
     with room_index -1
     has mark_as_room
     with IK1_Count 0
-    with IK1_Link I129_mr_redmans_classroom
+    with IK1_Link I128_east_upperclassmen_hall
     with KD_Count 1
     with name 'underclassmen' 'hallway' 'rooms//p' 
-    with list_together BC_150
-    with plural BC_151
-    with article BC_152
-;
-
-Object -> I126_my_locker ""
-    class K2_thing
-    with short_name BC_153
-    with description BC_154
-    has proper
-    with vector 0
-    has mark_as_thing
-    with IK2_Count 1
-    with IK2_Link I127_diamonds_locker
-    with KD_Count 2
-    with name 'my' 'locker' 'things//p' 
-    with action_bitmap 0 0 0 0 0 
-    with initial BC_155
-    with list_together BC_156
-    with plural BC_157
-    with article BC_158
-;
-
-Object -> I127_diamonds_locker ""
-    class K5_container
-    with short_name BC_159
-    with description BC_160
-    has proper
-    with vector 0
-    has mark_as_thing
-    with IK2_Count 2
-    with IK2_Link I128_diamonds_pencil
-    with IK5_Count 0
-    with IK5_Link nothing
-    with KD_Count 5
-    with name 'diamonds' 'locker' 'containers//p' 
-    with action_bitmap 0 0 0 0 0 
-    with initial BC_161
     with list_together BC_162
     with plural BC_163
     with article BC_164
 ;
 
-Object -> -> I128_diamonds_pencil ""
+Object -> I141_my_locker ""
     class K2_thing
     with short_name BC_165
     with description BC_166
     has proper
     with vector 0
     has mark_as_thing
-    with IK2_Count 3
-    with IK2_Link I136_diamond
+    with IK2_Count 1
+    with IK2_Link I142_diamonds_locker
     with KD_Count 2
-    with name 'diamonds' 'pencil' 'things//p' 
+    with name 'my' 'locker' 'things//p' 
     with action_bitmap 0 0 0 0 0 
     with initial BC_167
     with list_together BC_168
@@ -11118,210 +11133,376 @@ Object -> -> I128_diamonds_pencil ""
     with article BC_170
 ;
 
-Object I129_mr_redmans_classroom ""
-    class K1_room
+Object -> I142_diamonds_locker ""
+    class K5_container
     with short_name BC_171
     with description BC_172
+    has proper
+    with vector 0
+    has mark_as_thing
+    with IK2_Count 2
+    with IK2_Link I143_diamonds_pencil
+    with IK5_Count 0
+    with IK5_Link nothing
+    with KD_Count 5
+    with name 'diamonds' 'locker' 'containers//p' 
+    with action_bitmap 0 0 0 0 0 
+    with initial BC_173
+    with list_together BC_174
+    with plural BC_175
+    with article BC_176
+;
+
+Object -> -> I143_diamonds_pencil ""
+    class K2_thing
+    with short_name BC_177
+    with description BC_178
+    has proper
+    with vector 0
+    has mark_as_thing
+    with IK2_Count 3
+    with IK2_Link I144_mr_redman
+    with KD_Count 2
+    with name 'diamonds' 'pencil' 'things//p' 
+    with action_bitmap 0 0 0 0 0 
+    with initial BC_179
+    with list_together BC_180
+    with plural BC_181
+    with article BC_182
+;
+
+Object I128_east_upperclassmen_hall ""
+    class K1_room
+    with short_name BC_183
+    with description BC_184
     has proper
     with vector 0
     with room_index -1
     has mark_as_room
     with IK1_Count 1
-    with IK1_Link I130_mrs_fords_classroom
+    with IK1_Link I129_upperclassmen_junction
     with KD_Count 1
-    with name 'mr' 'redmans' 'classroom' 'rooms//p' 
-    with list_together BC_173
-    with plural BC_174
-    with article BC_175
+    with name 'east' 'upperclassmen' 'hall' 'rooms//p' 
+    with list_together BC_185
+    with plural BC_186
+    with article BC_187
 ;
 
-Object I130_mrs_fords_classroom ""
+Object I129_upperclassmen_junction ""
     class K1_room
-    with short_name BC_176
-    with description BC_177
+    with short_name BC_188
+    with description BC_189
+    with map_region I126_hallway
     has proper
     with vector 0
     with room_index -1
     has mark_as_room
     with IK1_Count 2
-    with IK1_Link I131_steps
+    with IK1_Link I130_west_upperclassmen_hall
     with KD_Count 1
-    with name 'mrs' 'fords' 'classroom' 'rooms//p' 
-    with list_together BC_178
-    with plural BC_179
-    with article BC_180
+    with name 'upperclassmen' 'junction' 'rooms//p' 
+    with list_together BC_190
+    with plural BC_191
+    with article BC_192
 ;
 
-Object I131_steps ""
+Object I130_west_upperclassmen_hall ""
     class K1_room
-    with short_name BC_181
-    with description BC_182
+    with short_name BC_193
+    with description BC_194
+    with map_region I126_hallway
     has proper
     with vector 0
     with room_index -1
     has mark_as_room
     with IK1_Count 3
-    with IK1_Link I132_upperclassmen_junction
+    with IK1_Link I131_east_upperclassman_hall
     with KD_Count 1
-    with name 'steps' 'rooms//p' 
-    with list_together BC_183
-    with plural BC_184
-    with article BC_185
+    with name 'west' 'upperclassmen' 'hall' 'rooms//p' 
+    with list_together BC_195
+    with plural BC_196
+    with article BC_197
 ;
 
-Object I132_upperclassmen_junction ""
+Object I131_east_upperclassman_hall ""
     class K1_room
-    with short_name BC_186
-    with description BC_187
+    with short_name BC_198
+    with map_region I126_hallway
     has proper
     with vector 0
     with room_index -1
     has mark_as_room
     with IK1_Count 4
-    with IK1_Link I133_east_upperclassmen_hall
+    with IK1_Link I133_room_211
     with KD_Count 1
-    with name 'upperclassmen' 'junction' 'rooms//p' 
-    with list_together BC_188
-    with plural BC_189
-    with article BC_190
+    with name 'east' 'upperclassman' 'hall' 'rooms//p' 
+    with description BC_199
+    with list_together BC_200
+    with plural BC_201
+    with article BC_202
 ;
 
-Object I133_east_upperclassmen_hall ""
+Object I133_room_211 ""
     class K1_room
-    with short_name BC_191
-    with description BC_192
+    with short_name BC_203
+    with description BC_204
+    with map_region I132_classrooms
     has proper
     with vector 0
     with room_index -1
     has mark_as_room
     with IK1_Count 5
-    with IK1_Link I134_gym
+    with IK1_Link I134_room_212
     with KD_Count 1
-    with name 'east' 'upperclassmen' 'hall' 'rooms//p' 
-    with list_together BC_193
-    with plural BC_194
-    with article BC_195
+    with name 'room' '211' 'rooms//p' 
+    with parse_name Parse_Name_GV95
+    with list_together BC_205
+    with plural BC_206
+    with article BC_207
 ;
 
-Object I134_gym ""
+Object -> I144_mr_redman ""
+    class K8_person
+    with short_name BC_208
+    has proper
+    with vector 0
+    has mark_as_thing
+    with IK2_Count 4
+    with IK2_Link I145_mrs_ford
+    with IK8_Count 1
+    with IK8_Link I145_mrs_ford
+    with KD_Count 8
+    with name 'mr' 'redman' 'people//p' 
+    with action_bitmap 0 0 0 0 0 
+    with description BC_209
+    with initial BC_210
+    with list_together BC_211
+    with plural BC_212
+    with article BC_213
+;
+
+Object I134_room_212 ""
     class K1_room
-    with short_name BC_196
-    with description BC_197
+    with short_name BC_214
+    with description BC_215
+    with map_region I132_classrooms
+    has proper
     with vector 0
     with room_index -1
     has mark_as_room
     with IK1_Count 6
-    with IK1_Link I135_mr_hartmans_classroom
+    with IK1_Link I135_room_213
     with KD_Count 1
-    with name 'gym' 'rooms//p' 
-    with list_together BC_198
-    with plural BC_199
-    with article BC_200
+    with name 'room' '212' 'rooms//p' 
+    with parse_name Parse_Name_GV96
+    with list_together BC_216
+    with plural BC_217
+    with article BC_218
 ;
 
-Object I135_mr_hartmans_classroom ""
+Object -> I145_mrs_ford ""
+    class K8_person
+    with short_name BC_219
+    has proper
+    with vector 0
+    has mark_as_thing
+    with IK2_Count 5
+    with IK2_Link I146_mr_hartman
+    with IK8_Count 2
+    with IK8_Link I146_mr_hartman
+    with KD_Count 8
+    with name 'mrs' 'ford' 'people//p' 
+    with action_bitmap 0 0 0 0 0 
+    with description BC_220
+    with initial BC_221
+    with list_together BC_222
+    with plural BC_223
+    with article BC_224
+;
+
+Object I135_room_213 ""
     class K1_room
-    with short_name BC_201
-    with description BC_202
+    with short_name BC_225
+    with description BC_226
+    with map_region I132_classrooms
     has proper
     with vector 0
     with room_index -1
     has mark_as_room
     with IK1_Count 7
-    with IK1_Link I137_west_upperclassmen_hall
+    with IK1_Link I136_room_214
     with KD_Count 1
-    with name 'mr' 'hartmans' 'classroom' 'rooms//p' 
-    with list_together BC_203
-    with plural BC_204
-    with article BC_205
+    with name 'room' '213' 'rooms//p' 
+    with parse_name Parse_Name_GV97
+    with list_together BC_227
+    with plural BC_228
+    with article BC_229
 ;
 
-Object -> I136_diamond ""
-    class K11_woman
-    with short_name BC_206
-    with description BC_207
+Object -> I146_mr_hartman ""
+    class K8_person
+    with short_name BC_230
     has proper
     with vector 0
     has mark_as_thing
-    with IK2_Count 4
-    with IK2_Link nothing
-    with IK8_Count 1
-    with IK8_Link nothing
+    with IK2_Count 6
+    with IK2_Link I149_diamond
+    with IK8_Count 3
+    with IK8_Link I149_diamond
+    with KD_Count 8
+    with name 'mr' 'hartman' 'people//p' 
+    with action_bitmap 0 0 0 0 0 
+    with description BC_231
+    with initial BC_232
+    with list_together BC_233
+    with plural BC_234
+    with article BC_235
+;
+
+Object -> I149_diamond ""
+    class K11_woman
+    with short_name BC_236
+    with description BC_237
+    has proper
+    with vector 0
+    has mark_as_thing
+    with IK2_Count 9
+    with IK2_Link I147_ms_belvod
+    with IK8_Count 6
+    with IK8_Link I147_ms_belvod
     with IK11_Count 0
     with IK11_Link nothing
     with KD_Count 11
     with name 'diamond' 'women//p' 
     with action_bitmap 0 0 0 0 0 
-    with initial BC_208
-    with list_together BC_209
-    with plural BC_210
-    with article BC_211
+    with initial BC_238
+    with list_together BC_239
+    with plural BC_240
+    with article BC_241
 ;
 
-Object I137_west_upperclassmen_hall ""
+Object I136_room_214 ""
     class K1_room
-    with short_name BC_212
-    with description BC_213
+    with short_name BC_242
+    with description BC_243
+    with map_region I132_classrooms
     has proper
     with vector 0
     with room_index -1
     has mark_as_room
     with IK1_Count 8
-    with IK1_Link I138_mrs_belvods_classroom
+    with IK1_Link I137_steps
     with KD_Count 1
-    with name 'west' 'upperclassmen' 'hall' 'rooms//p' 
-    with list_together BC_214
-    with plural BC_215
-    with article BC_216
+    with name 'room' '214' 'rooms//p' 
+    with parse_name Parse_Name_GV98
+    with list_together BC_244
+    with plural BC_245
+    with article BC_246
 ;
 
-Object I138_mrs_belvods_classroom ""
+Object -> I147_ms_belvod ""
+    class K8_person
+    with short_name BC_247
+    has proper
+    with vector 0
+    has mark_as_thing
+    with IK2_Count 7
+    with IK2_Link I148_ricky
+    with IK8_Count 4
+    with IK8_Link I148_ricky
+    with KD_Count 8
+    with name 'ms' 'belvod' 'people//p' 
+    with action_bitmap 0 0 0 0 0 
+    with description BC_248
+    with initial BC_249
+    with list_together BC_250
+    with plural BC_251
+    with article BC_252
+;
+
+Object I137_steps ""
     class K1_room
-    with short_name BC_217
-    with description BC_218
+    with short_name BC_253
+    with description BC_254
     has proper
     with vector 0
     with room_index -1
     has mark_as_room
     with IK1_Count 9
-    with IK1_Link I139_cafeteria
+    with IK1_Link I138_gym
     with KD_Count 1
-    with name 'mrs' 'belvods' 'classroom' 'rooms//p' 
-    with list_together BC_219
-    with plural BC_220
-    with article BC_221
+    with name 'steps' 'rooms//p' 
+    with list_together BC_255
+    with plural BC_256
+    with article BC_257
 ;
 
-Object I139_cafeteria ""
+Object I138_gym ""
     class K1_room
-    with short_name BC_222
-    with description BC_223
+    with short_name BC_258
+    with description BC_259
     with vector 0
     with room_index -1
     has mark_as_room
     with IK1_Count 10
-    with IK1_Link I140_great_outdoors
+    with IK1_Link I139_cafeteria
     with KD_Count 1
-    with name 'cafeteria' 'rooms//p' 
-    with list_together BC_224
-    with plural BC_225
-    with article BC_226
+    with name 'gym' 'rooms//p' 
+    with list_together BC_260
+    with plural BC_261
+    with article BC_262
 ;
 
-Object I140_great_outdoors ""
+Object I139_cafeteria ""
     class K1_room
-    with short_name BC_227
-    with description BC_228
+    with short_name BC_263
+    with description BC_264
     with vector 0
     with room_index -1
     has mark_as_room
     with IK1_Count 11
+    with IK1_Link I140_great_outdoors
+    with KD_Count 1
+    with name 'cafeteria' 'rooms//p' 
+    with list_together BC_265
+    with plural BC_266
+    with article BC_267
+;
+
+Object I140_great_outdoors ""
+    class K1_room
+    with short_name BC_268
+    with description BC_269
+    with vector 0
+    with room_index -1
+    has mark_as_room
+    with IK1_Count 12
     with IK1_Link nothing
     with KD_Count 1
     with name 'great' 'outdoors' 'rooms//p' 
-    with list_together BC_229
-    with plural BC_230
-    with article BC_231
+    with list_together BC_270
+    with plural BC_271
+    with article BC_272
+;
+
+Object I148_ricky ""
+    class K8_person
+    with short_name BC_273
+    has proper
+    with vector 0
+    has mark_as_thing
+    with IK2_Count 8
+    with IK2_Link nothing
+    with IK8_Count 5
+    with IK8_Link nothing
+    with KD_Count 8
+    with name 'ricky' 'people//p' 
+    with action_bitmap 0 0 0 0 0 
+    with description BC_274
+    with initial BC_275
+    with list_together BC_276
+    with plural BC_277
+    with article BC_278
 ;
 
 Constant I71_english_language = 1;
@@ -11375,12 +11556,12 @@ Constant I123_masculine_gender = 2;
 Constant I124_feminine_gender = 3;
 Array Global_Vars -->
   (false) ! 7 darkness witnessed
-  (BC_232) ! 25 command prompt
+  (BC_279) ! 25 command prompt
   (I71_english_language) ! 29 language of play
-  (BC_233) ! 32 story author
-  (BC_234) ! 33 story headline
-  (BC_235) ! 34 story genre
-  (BC_236) ! 35 story description
+  (BC_280) ! 32 story author
+  (BC_281) ! 33 story headline
+  (BC_282) ! 34 story genre
+  (BC_283) ! 35 story description
   (1) ! 36 release number
   (0) ! 37 story creation year
   (0) ! 45 locale paragraph count
@@ -11395,14 +11576,14 @@ Array Global_Vars -->
 
 
 Array T0_final_question_options table  tab_0_0 tab_0_1 tab_0_2 tab_0_3 tab_0_4;
-Array tab_0_0 table $0664 0 (BC_237) (BC_238) (BC_239) (BC_240) (BC_241) ;
+Array tab_0_0 table $0664 0 (BC_284) (BC_285) (BC_286) (BC_287) (BC_288) ;
 Array tab_0_1 table $0465 1 (0) (0) (1) (0) (0) ;
-Array tab_0_2 table $2066 2 (Consult_Grammar_95) (Consult_Grammar_96) (Consult_Grammar_97) (Consult_Grammar_98) (Consult_Grammar_99) ;
+Array tab_0_2 table $2066 2 (Consult_Grammar_99) (Consult_Grammar_100) (Consult_Grammar_101) (Consult_Grammar_102) (Consult_Grammar_103) ;
 Array tab_0_3 table $0067 3 (IMMEDIATELY_RESTART_VM_R) (IMMEDIATELY_RESTORE_SAVED_R) ( TABLE_NOVALUE) (IMMEDIATELY_QUIT_R) (IMMEDIATELY_UNDO_R) ;
 Array tab_0_4 table $0068 4 ( TABLE_NOVALUE) ( TABLE_NOVALUE) (V27_amusing_a_victorious_pla) ( TABLE_NOVALUE) ( TABLE_NOVALUE) ;
 Array T1_locale_priorities table  tab_1_0 tab_1_1;
-Array tab_1_0 table $0869 NULL ( TABLE_NOVALUE)  TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE;
-Array tab_1_1 table $446a 5 ( TABLE_NOVALUE)  TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE;
+Array tab_1_0 table $0869 NULL ( TABLE_NOVALUE)  TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE;
+Array tab_1_1 table $446a 5 ( TABLE_NOVALUE)  TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE;
 Array TB_Blanks -> 
   ! For table T0_final_question_options
   $00  ! Column 0
@@ -11412,7 +11593,7 @@ Array TB_Blanks ->
   $1b  ! Column 4
   
   ! For table T1_locale_priorities
-  $3f  ! Column 1
+  $ff $07  ! Column 1
   
   ! End of table
   NULL NULL;
@@ -11535,7 +11716,7 @@ Constant AD_RECORDS = 78;
     state ! Implied call parameter
     ;
     if (state == 1) {
-        MStack-->pos = I125_underclassmen_hallway; pos++;
+        MStack-->pos = I127_underclassmen_hallway; pos++;
         MStack-->pos = nothing; pos++;
         MStack-->pos = nothing; pos++;
         MStack-->pos = nothing; pos++;
@@ -11929,7 +12110,7 @@ Array ActionHappened --> 0 0 0 0 0;
 
 [ MistakeActionSub ;
     switch(understand_as_mistake_number) {
-        261: ParserError(BC_242);
+        261: ParserError(BC_289);
         default: "I didn't understand that sentence.";
     }
     say__p = 1;
@@ -15593,17 +15774,17 @@ Array ActionHappened --> 0 0 0 0 0;
     {! [3: if the player is the actor]
         if (((player == actor)))
         {! [4: if the player's command includes ~stand~]
-            if (((matched_text=SnippetIncludes(Consult_Grammar_100,players_command))))
+            if (((matched_text=SnippetIncludes(Consult_Grammar_104,players_command))))
             {! [5: say ~[regarding the noun][They're] not something [we] [can] stand on.~ ( a )]
                 say__p=1;! [6: ~[regarding the noun][They're] not something [we] [can] stand on.~ ( a )]
                 ParaContent(); print (TEXT_TY_Say) (TX_R_223); new_line; .L_Say112; .L_SayX112;} else {
                 ! [7: if the player's command includes ~sit~]
-                if (((matched_text=SnippetIncludes(Consult_Grammar_101,players_command))))
+                if (((matched_text=SnippetIncludes(Consult_Grammar_105,players_command))))
                 {! [8: say ~[regarding the noun][They're] not something [we] [can] sit down on.~ ( b )]
                     say__p=1;! [9: ~[regarding the noun][They're] not something [we] [can] sit down on.~ ( b )]
                     ParaContent(); print (TEXT_TY_Say) (TX_R_224); new_line; .L_Say113; .L_SayX113;} else {
                     ! [10: if the player's command includes ~lie~]
-                    if (((matched_text=SnippetIncludes(Consult_Grammar_102,players_command))))
+                    if (((matched_text=SnippetIncludes(Consult_Grammar_106,players_command))))
                     {! [11: say ~[regarding the noun][They're] not something [we] [can] lie down on.~ ( c )]
                         say__p=1;! [12: ~[regarding the noun][They're] not something [we] [can] lie down on.~ ( c )]
                         ParaContent(); print (TEXT_TY_Say) (TX_R_225); new_line; .L_Say114; .L_SayX114;} else {
@@ -28023,7 +28204,7 @@ Constant SLOW_ROUTE_FINDING;
 ! ==== ==== ==== ==== ==== ==== ==== ==== ==== ====
 
 Constant NUM_DOORS = 0;
-Constant NUM_ROOMS = 12;
+Constant NUM_ROOMS = 13;
 
 Array DoorRoutingViable -> NUM_DOORS+1;
 
@@ -28225,7 +28406,7 @@ Array FWMatrix --> NUM_ROOMS*NUM_ROOMS;
 ! Relations.i6t: Relation Route-Finding
 ! ==== ==== ==== ==== ==== ==== ==== ==== ==== ====
 
-Constant MAX_ROUTE_LENGTH = 29 + 32;
+Constant MAX_ROUTE_LENGTH = 38 + 32;
 
 [ RelationRouteTo relation from to count  handler;
 	if (count) {
@@ -48549,7 +48730,243 @@ Array present_chronological_record-->(NO_PAST_TENSE_CONDS+1);
     DetectPluralWord(original_wn, n);
     return n;
 ];
-[ Consult_Grammar_95 
+[ Parse_Name_GV95 
+    original_wn ! first word of text parsed
+    group_wn ! first word matched against A/B/C/... disjunction
+    try_from_wn ! position to try matching from
+    n ! number of words matched
+    f ! flag: sufficiently good match found to justify success
+    w ! for use by individual grammar lines
+    rv ! for use by individual grammar lines
+    g ! temporary: success flag for parsing visibles
+    ss ! temporary: saves 'self' in distinguishing visibles
+    spn ! temporary: saves 'parsed_number' in parsing visibles
+    pass ! pass counter (1 to 3)
+    pass1_n ! value of n recorded during pass 1
+    pass2_n ! value of n recorded during pass 2
+    ;
+    #ifdef DEBUG;
+    if (parser_trace >= 3) print "Parse_name called^";
+    #endif;
+    if (parser_action == ##TheSame) return 0;
+    original_wn = wn;
+    for (pass = 1: pass <= 3: pass++) {
+        wn = original_wn;
+        try_from_wn = wn; f = false; n = 0;
+        while (true) {
+            ! On pass 1 only, advance wn past name property words
+            ! (but do not do this for ##TheSame, when wn is undefined)
+            if ((parser_action ~= ##TheSame) && (pass == 1)) {
+                while (WordInProperty(NextWordStopped(), self, name)) f = true;
+                wn--; try_from_wn = wn;
+            }
+            if (pass == 1 or 2) {
+            }
+            if ((parser_action ~= ##TheSame) && (pass == 1)) {
+                while (WordInProperty(NextWordStopped(), self, name)) f = true;
+                wn--; try_from_wn = wn;
+            }
+                if (NextWordStopped() ~= 'mr') jump Fail_1;
+                if (NextWordStopped() ~= 'redmans') jump Fail_1;
+                if (NextWordStopped() ~= 'classroom') jump Fail_1;
+                try_from_wn = wn; f = true; continue;
+                .Fail_1; wn = try_from_wn;
+            break;
+        } ! End of endless loop
+        while (WordInProperty(NextWordStopped(), self, name)) n++;
+        if ((f) || (n>0)) n = n + try_from_wn - original_wn;
+        if (pass == 1) pass1_n = n;
+        if (pass == 2) pass2_n = n;
+    } ! End of pass loop
+    #ifdef DEBUG;
+    if (parser_trace >= 3)
+        print "Pass 1: ", pass1_n, " Pass 2: ", pass2_n, " Pass 3: ", n, "^";
+    #endif;
+    if (pass1_n > n) n = pass1_n;
+    if (pass2_n > n) n = pass2_n;
+    wn = original_wn + n;
+    if (n == 0) return -1;
+    DetectPluralWord(original_wn, n);
+    return n;
+];
+[ Parse_Name_GV96 
+    original_wn ! first word of text parsed
+    group_wn ! first word matched against A/B/C/... disjunction
+    try_from_wn ! position to try matching from
+    n ! number of words matched
+    f ! flag: sufficiently good match found to justify success
+    w ! for use by individual grammar lines
+    rv ! for use by individual grammar lines
+    g ! temporary: success flag for parsing visibles
+    ss ! temporary: saves 'self' in distinguishing visibles
+    spn ! temporary: saves 'parsed_number' in parsing visibles
+    pass ! pass counter (1 to 3)
+    pass1_n ! value of n recorded during pass 1
+    pass2_n ! value of n recorded during pass 2
+    ;
+    #ifdef DEBUG;
+    if (parser_trace >= 3) print "Parse_name called^";
+    #endif;
+    if (parser_action == ##TheSame) return 0;
+    original_wn = wn;
+    for (pass = 1: pass <= 3: pass++) {
+        wn = original_wn;
+        try_from_wn = wn; f = false; n = 0;
+        while (true) {
+            ! On pass 1 only, advance wn past name property words
+            ! (but do not do this for ##TheSame, when wn is undefined)
+            if ((parser_action ~= ##TheSame) && (pass == 1)) {
+                while (WordInProperty(NextWordStopped(), self, name)) f = true;
+                wn--; try_from_wn = wn;
+            }
+            if (pass == 1 or 2) {
+            }
+            if ((parser_action ~= ##TheSame) && (pass == 1)) {
+                while (WordInProperty(NextWordStopped(), self, name)) f = true;
+                wn--; try_from_wn = wn;
+            }
+                if (NextWordStopped() ~= 'mrs') jump Fail_1;
+                if (NextWordStopped() ~= 'fords') jump Fail_1;
+                if (NextWordStopped() ~= 'classroom') jump Fail_1;
+                try_from_wn = wn; f = true; continue;
+                .Fail_1; wn = try_from_wn;
+            break;
+        } ! End of endless loop
+        while (WordInProperty(NextWordStopped(), self, name)) n++;
+        if ((f) || (n>0)) n = n + try_from_wn - original_wn;
+        if (pass == 1) pass1_n = n;
+        if (pass == 2) pass2_n = n;
+    } ! End of pass loop
+    #ifdef DEBUG;
+    if (parser_trace >= 3)
+        print "Pass 1: ", pass1_n, " Pass 2: ", pass2_n, " Pass 3: ", n, "^";
+    #endif;
+    if (pass1_n > n) n = pass1_n;
+    if (pass2_n > n) n = pass2_n;
+    wn = original_wn + n;
+    if (n == 0) return -1;
+    DetectPluralWord(original_wn, n);
+    return n;
+];
+[ Parse_Name_GV97 
+    original_wn ! first word of text parsed
+    group_wn ! first word matched against A/B/C/... disjunction
+    try_from_wn ! position to try matching from
+    n ! number of words matched
+    f ! flag: sufficiently good match found to justify success
+    w ! for use by individual grammar lines
+    rv ! for use by individual grammar lines
+    g ! temporary: success flag for parsing visibles
+    ss ! temporary: saves 'self' in distinguishing visibles
+    spn ! temporary: saves 'parsed_number' in parsing visibles
+    pass ! pass counter (1 to 3)
+    pass1_n ! value of n recorded during pass 1
+    pass2_n ! value of n recorded during pass 2
+    ;
+    #ifdef DEBUG;
+    if (parser_trace >= 3) print "Parse_name called^";
+    #endif;
+    if (parser_action == ##TheSame) return 0;
+    original_wn = wn;
+    for (pass = 1: pass <= 3: pass++) {
+        wn = original_wn;
+        try_from_wn = wn; f = false; n = 0;
+        while (true) {
+            ! On pass 1 only, advance wn past name property words
+            ! (but do not do this for ##TheSame, when wn is undefined)
+            if ((parser_action ~= ##TheSame) && (pass == 1)) {
+                while (WordInProperty(NextWordStopped(), self, name)) f = true;
+                wn--; try_from_wn = wn;
+            }
+            if (pass == 1 or 2) {
+            }
+            if ((parser_action ~= ##TheSame) && (pass == 1)) {
+                while (WordInProperty(NextWordStopped(), self, name)) f = true;
+                wn--; try_from_wn = wn;
+            }
+                if (NextWordStopped() ~= 'mr') jump Fail_1;
+                if (NextWordStopped() ~= 'hartmans') jump Fail_1;
+                if (NextWordStopped() ~= 'classroom') jump Fail_1;
+                try_from_wn = wn; f = true; continue;
+                .Fail_1; wn = try_from_wn;
+            break;
+        } ! End of endless loop
+        while (WordInProperty(NextWordStopped(), self, name)) n++;
+        if ((f) || (n>0)) n = n + try_from_wn - original_wn;
+        if (pass == 1) pass1_n = n;
+        if (pass == 2) pass2_n = n;
+    } ! End of pass loop
+    #ifdef DEBUG;
+    if (parser_trace >= 3)
+        print "Pass 1: ", pass1_n, " Pass 2: ", pass2_n, " Pass 3: ", n, "^";
+    #endif;
+    if (pass1_n > n) n = pass1_n;
+    if (pass2_n > n) n = pass2_n;
+    wn = original_wn + n;
+    if (n == 0) return -1;
+    DetectPluralWord(original_wn, n);
+    return n;
+];
+[ Parse_Name_GV98 
+    original_wn ! first word of text parsed
+    group_wn ! first word matched against A/B/C/... disjunction
+    try_from_wn ! position to try matching from
+    n ! number of words matched
+    f ! flag: sufficiently good match found to justify success
+    w ! for use by individual grammar lines
+    rv ! for use by individual grammar lines
+    g ! temporary: success flag for parsing visibles
+    ss ! temporary: saves 'self' in distinguishing visibles
+    spn ! temporary: saves 'parsed_number' in parsing visibles
+    pass ! pass counter (1 to 3)
+    pass1_n ! value of n recorded during pass 1
+    pass2_n ! value of n recorded during pass 2
+    ;
+    #ifdef DEBUG;
+    if (parser_trace >= 3) print "Parse_name called^";
+    #endif;
+    if (parser_action == ##TheSame) return 0;
+    original_wn = wn;
+    for (pass = 1: pass <= 3: pass++) {
+        wn = original_wn;
+        try_from_wn = wn; f = false; n = 0;
+        while (true) {
+            ! On pass 1 only, advance wn past name property words
+            ! (but do not do this for ##TheSame, when wn is undefined)
+            if ((parser_action ~= ##TheSame) && (pass == 1)) {
+                while (WordInProperty(NextWordStopped(), self, name)) f = true;
+                wn--; try_from_wn = wn;
+            }
+            if (pass == 1 or 2) {
+            }
+            if ((parser_action ~= ##TheSame) && (pass == 1)) {
+                while (WordInProperty(NextWordStopped(), self, name)) f = true;
+                wn--; try_from_wn = wn;
+            }
+                if (NextWordStopped() ~= 'mrs') jump Fail_1;
+                if (NextWordStopped() ~= 'belvods') jump Fail_1;
+                if (NextWordStopped() ~= 'classroom') jump Fail_1;
+                try_from_wn = wn; f = true; continue;
+                .Fail_1; wn = try_from_wn;
+            break;
+        } ! End of endless loop
+        while (WordInProperty(NextWordStopped(), self, name)) n++;
+        if ((f) || (n>0)) n = n + try_from_wn - original_wn;
+        if (pass == 1) pass1_n = n;
+        if (pass == 2) pass2_n = n;
+    } ! End of pass loop
+    #ifdef DEBUG;
+    if (parser_trace >= 3)
+        print "Pass 1: ", pass1_n, " Pass 2: ", pass2_n, " Pass 3: ", n, "^";
+    #endif;
+    if (pass1_n > n) n = pass1_n;
+    if (pass2_n > n) n = pass2_n;
+    wn = original_wn + n;
+    if (n == 0) return -1;
+    DetectPluralWord(original_wn, n);
+    return n;
+];
+[ Consult_Grammar_99 
     range_from ! call parameter: word number of snippet start
 
     range_words ! call parameter: snippet length
@@ -48569,7 +48986,7 @@ Array present_chronological_record-->(NO_PAST_TENSE_CONDS+1);
         .Fail_1; rv = GPR_PREPOSITION; wn = original_wn;
     return GPR_FAIL;
 ];
-[ Consult_Grammar_96 
+[ Consult_Grammar_100 
     range_from ! call parameter: word number of snippet start
 
     range_words ! call parameter: snippet length
@@ -48589,7 +49006,7 @@ Array present_chronological_record-->(NO_PAST_TENSE_CONDS+1);
         .Fail_1; rv = GPR_PREPOSITION; wn = original_wn;
     return GPR_FAIL;
 ];
-[ Consult_Grammar_97 
+[ Consult_Grammar_101 
     range_from ! call parameter: word number of snippet start
 
     range_words ! call parameter: snippet length
@@ -48609,7 +49026,7 @@ Array present_chronological_record-->(NO_PAST_TENSE_CONDS+1);
         .Fail_1; rv = GPR_PREPOSITION; wn = original_wn;
     return GPR_FAIL;
 ];
-[ Consult_Grammar_98 
+[ Consult_Grammar_102 
     range_from ! call parameter: word number of snippet start
 
     range_words ! call parameter: snippet length
@@ -48629,7 +49046,7 @@ Array present_chronological_record-->(NO_PAST_TENSE_CONDS+1);
         .Fail_1; rv = GPR_PREPOSITION; wn = original_wn;
     return GPR_FAIL;
 ];
-[ Consult_Grammar_99 
+[ Consult_Grammar_103 
     range_from ! call parameter: word number of snippet start
 
     range_words ! call parameter: snippet length
@@ -48649,7 +49066,7 @@ Array present_chronological_record-->(NO_PAST_TENSE_CONDS+1);
         .Fail_1; rv = GPR_PREPOSITION; wn = original_wn;
     return GPR_FAIL;
 ];
-[ Consult_Grammar_100 
+[ Consult_Grammar_104 
     range_from ! call parameter: word number of snippet start
 
     range_words ! call parameter: snippet length
@@ -48669,7 +49086,7 @@ Array present_chronological_record-->(NO_PAST_TENSE_CONDS+1);
         .Fail_1; rv = GPR_PREPOSITION; wn = original_wn;
     return GPR_FAIL;
 ];
-[ Consult_Grammar_101 
+[ Consult_Grammar_105 
     range_from ! call parameter: word number of snippet start
 
     range_words ! call parameter: snippet length
@@ -48689,7 +49106,7 @@ Array present_chronological_record-->(NO_PAST_TENSE_CONDS+1);
         .Fail_1; rv = GPR_PREPOSITION; wn = original_wn;
     return GPR_FAIL;
 ];
-[ Consult_Grammar_102 
+[ Consult_Grammar_106 
     range_from ! call parameter: word number of snippet start
 
     range_words ! call parameter: snippet length
@@ -49051,47 +49468,56 @@ Verb 'fuck'
 
 
 
-Constant TX_PS_66 = ">";
-Constant TX_PS_53 = "A smelly old gymnasium. Full of sweat and humilation.";
-Constant TX_PS_37 = "Ah, my sweet old locker. Smells like teen spirit.";
+Constant TX_PS_75 = ">";
+Constant TX_PS_69 = "A smelly old gymnasium. Full of sweat and humilation.";
+Constant TX_PS_40 = "Ah, my sweet old locker. Smells like teen spirit.";
 Constant TX_PS_3 = "An Interactive Fiction";
-Constant TX_PS_57 = "An angel that has graced this school with her presence. She's soooooo hot.";
-Constant TX_PS_61 = "Apparently Mrs Belvod has a thing for Mr Redman. I certinly don't see the appeal...";
+Constant TX_PS_62 = "An angel that has graced this school with her presence. She's soooooo hot.";
 Constant TX_PS_32 = "As good-looking as ever.";
-Constant TX_PS_62 = "Cafeteria";
+Constant TX_PS_70 = "Cafeteria";
 Constant TX_PS_2 = "Classic Highschool Drama But with Murder";
-Constant TX_PS_56 = "Diamond";
-Constant TX_PS_38 = "Diamonds Locker";
-Constant TX_PS_40 = "Diamonds Pencil";
-Constant TX_PS_50 = "East Upperclassmen Hall";
-Constant TX_PS_67 = "Fiction";
-Constant TX_PS_64 = "Great Outdoors";
-Constant TX_PS_52 = "Gym";
-Constant TX_PS_47 = "Hundreds of kids go up and down these steps everyday.";
-Constant TX_PS_55 = "I heard Mr Hartman once was caught eating out of the Cafeteria Garbage.";
-Constant TX_PS_65 = "Its pleasent and breezy. Much better than that that big block of concrete they call a school";
-Constant TX_PS_59 = "Junior side of the hallway. Close to the Cafeteria.";
-Constant TX_PS_49 = "Long coridors stretching left and right. An intimidating sight for underclassman.";
-Constant TX_PS_39 = "Mhmmmm, it even smills like her...";
-Constant TX_PS_54 = "Mr Hartmans Classroom";
-Constant TX_PS_43 = "Mr Redman is known for beating the living hell out of his kids. Not cool Mr Redman. Not cool.";
-Constant TX_PS_42 = "Mr Redmans Classroom";
-Constant TX_PS_60 = "Mrs Belvods Classroom";
-Constant TX_PS_45 = "Mrs Ford is a real stickler for the rules. Everything with its purpose, everything in its place.";
-Constant TX_PS_44 = "Mrs Fords Classroom";
-Constant TX_PS_36 = "My Locker";
-Constant TX_PS_41 = "Pink and Sparkly. Also good for stabbing. And writing.";
-Constant TX_PS_71 = "QUIT";
-Constant TX_PS_68 = "RESTART";
-Constant TX_PS_69 = "RESTORE a saved game";
-Constant TX_PS_51 = "Senior side of the hallway. Close to the Gym.";
-Constant TX_PS_63 = "Serving barely-edible food substance since 1989.";
-Constant TX_PS_46 = "Steps";
-Constant TX_PS_35 = "The normally busy hallway seems eeriely quiet after school hours.";
-Constant TX_PS_72 = "UNDO the last command";
-Constant TX_PS_34 = "Underclassmen Hallway";
-Constant TX_PS_48 = "Upperclassmen Junction";
-Constant TX_PS_58 = "West Upperclassmen Hall";
+Constant TX_PS_36 = "Classrooms";
+Constant TX_PS_61 = "Diamond";
+Constant TX_PS_41 = "Diamonds Locker";
+Constant TX_PS_43 = "Diamonds Pencil";
+Constant TX_PS_51 = "East Upperclassman Hall";
+Constant TX_PS_45 = "East Upperclassmen Hall";
+Constant TX_PS_76 = "Fiction";
+Constant TX_PS_72 = "Great Outdoors";
+Constant TX_PS_68 = "Gym";
+Constant TX_PS_35 = "Hallway";
+Constant TX_PS_67 = "Hundreds of kids go up and down these steps everyday.";
+Constant TX_PS_73 = "Its pleasent and breezy. Much better than that that big block of concrete they call a school";
+Constant TX_PS_50 = "Junior side of the hallway. Close to the Cafeteria.";
+Constant TX_PS_48 = "Long coridors stretching left and right. An intimidating sight for underclassman.";
+Constant TX_PS_42 = "Mhmmmm, it even smills like her...";
+Constant TX_PS_60 = "Mr Hartman";
+Constant TX_PS_54 = "Mr Redman";
+Constant TX_PS_53 = "Mr Redman's Classroom. He's known for beating the living hell out of his kids. Not cool Mr Redman. Not cool.";
+Constant TX_PS_59 = "Mr. Hartman's Classroom. I heard he once was caught eating out of the Cafeteria Garbage.";
+Constant TX_PS_57 = "Mrs Ford";
+Constant TX_PS_56 = "Mrs Ford's Classroom. She's a real stickler for the rules. Everything with its purpose, everything in its place.";
+Constant TX_PS_65 = "Ms Belvod";
+Constant TX_PS_64 = "Ms. Belvod's Classroom. Apparently she has a thing for Mr Redman. I certinly don't see the appeal...";
+Constant TX_PS_39 = "My Locker";
+Constant TX_PS_44 = "Pink and Sparkly. Also good for stabbing. And writing.";
+Constant TX_PS_80 = "QUIT";
+Constant TX_PS_77 = "RESTART";
+Constant TX_PS_78 = "RESTORE a saved game";
+Constant TX_PS_74 = "Ricky";
+Constant TX_PS_52 = "Room 211";
+Constant TX_PS_55 = "Room 212";
+Constant TX_PS_58 = "Room 213";
+Constant TX_PS_63 = "Room 214";
+Constant TX_PS_34 = "School";
+Constant TX_PS_46 = "Senior side of the hallway. Close to the Gym.";
+Constant TX_PS_71 = "Serving barely-edible food substance since 1989.";
+Constant TX_PS_66 = "Steps";
+Constant TX_PS_38 = "The normally busy hallway seems eeriely quiet after school hours.";
+Constant TX_PS_81 = "UNDO the last command";
+Constant TX_PS_37 = "Underclassmen Hallway";
+Constant TX_PS_47 = "Upperclassmen Junction";
+Constant TX_PS_49 = "West Upperclassmen Hall";
 Constant TX_PS_33 = "Yourself";
 Constant TX_PS_4 = "a bunch of nerds";
 Constant TX_PS_9 = "animals";
@@ -49111,7 +49537,7 @@ Constant TX_PS_30 = "outside";
 Constant TX_PS_6 = "people";
 Constant TX_PS_13 = "player's holdalls";
 Constant TX_PS_16 = "regions";
-Constant TX_PS_70 = "see some suggestions for AMUSING things to do";
+Constant TX_PS_79 = "see some suggestions for AMUSING things to do";
 Constant TX_PS_22 = "south";
 Constant TX_PS_23 = "southeast";
 Constant TX_PS_24 = "southwest";
@@ -56424,100 +56850,147 @@ Array BC_145 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_146 --> PACKED_TEXT_STORAGE TX_PS_6;
 Array BC_147 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_148 --> PACKED_TEXT_STORAGE TX_PS_34;
-Array BC_149 --> PACKED_TEXT_STORAGE TX_PS_35;
-Array BC_150 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
+Array BC_149 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
+Array BC_150 --> PACKED_TEXT_STORAGE TX_PS_16;
 Array BC_151 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
-Array BC_152 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
-Array BC_153 --> PACKED_TEXT_STORAGE TX_PS_36;
-Array BC_154 --> PACKED_TEXT_STORAGE TX_PS_37;
+Array BC_152 --> PACKED_TEXT_STORAGE TX_PS_35;
+Array BC_153 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
+Array BC_154 --> PACKED_TEXT_STORAGE TX_PS_16;
 Array BC_155 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
-Array BC_156 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
+Array BC_156 --> PACKED_TEXT_STORAGE TX_PS_36;
 Array BC_157 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
-Array BC_158 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
-Array BC_159 --> PACKED_TEXT_STORAGE TX_PS_38;
-Array BC_160 --> PACKED_TEXT_STORAGE TX_PS_39;
-Array BC_161 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
+Array BC_158 --> PACKED_TEXT_STORAGE TX_PS_16;
+Array BC_159 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
+Array BC_160 --> PACKED_TEXT_STORAGE TX_PS_37;
+Array BC_161 --> PACKED_TEXT_STORAGE TX_PS_38;
 Array BC_162 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
-Array BC_163 --> PACKED_TEXT_STORAGE TX_PS_11;
+Array BC_163 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_164 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
-Array BC_165 --> PACKED_TEXT_STORAGE TX_PS_40;
-Array BC_166 --> PACKED_TEXT_STORAGE TX_PS_41;
+Array BC_165 --> PACKED_TEXT_STORAGE TX_PS_39;
+Array BC_166 --> PACKED_TEXT_STORAGE TX_PS_40;
 Array BC_167 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_168 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_169 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_170 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
-Array BC_171 --> PACKED_TEXT_STORAGE TX_PS_42;
-Array BC_172 --> PACKED_TEXT_STORAGE TX_PS_43;
+Array BC_171 --> PACKED_TEXT_STORAGE TX_PS_41;
+Array BC_172 --> PACKED_TEXT_STORAGE TX_PS_42;
 Array BC_173 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_174 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
-Array BC_175 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
-Array BC_176 --> PACKED_TEXT_STORAGE TX_PS_44;
-Array BC_177 --> PACKED_TEXT_STORAGE TX_PS_45;
-Array BC_178 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
+Array BC_175 --> PACKED_TEXT_STORAGE TX_PS_11;
+Array BC_176 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
+Array BC_177 --> PACKED_TEXT_STORAGE TX_PS_43;
+Array BC_178 --> PACKED_TEXT_STORAGE TX_PS_44;
 Array BC_179 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_180 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
-Array BC_181 --> PACKED_TEXT_STORAGE TX_PS_46;
-Array BC_182 --> PACKED_TEXT_STORAGE TX_PS_47;
-Array BC_183 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
-Array BC_184 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
+Array BC_181 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
+Array BC_182 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
+Array BC_183 --> PACKED_TEXT_STORAGE TX_PS_45;
+Array BC_184 --> PACKED_TEXT_STORAGE TX_PS_46;
 Array BC_185 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
-Array BC_186 --> PACKED_TEXT_STORAGE TX_PS_48;
-Array BC_187 --> PACKED_TEXT_STORAGE TX_PS_49;
-Array BC_188 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
-Array BC_189 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
+Array BC_186 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
+Array BC_187 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
+Array BC_188 --> PACKED_TEXT_STORAGE TX_PS_47;
+Array BC_189 --> PACKED_TEXT_STORAGE TX_PS_48;
 Array BC_190 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
-Array BC_191 --> PACKED_TEXT_STORAGE TX_PS_50;
-Array BC_192 --> PACKED_TEXT_STORAGE TX_PS_51;
-Array BC_193 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
-Array BC_194 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
+Array BC_191 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
+Array BC_192 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
+Array BC_193 --> PACKED_TEXT_STORAGE TX_PS_49;
+Array BC_194 --> PACKED_TEXT_STORAGE TX_PS_50;
 Array BC_195 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
-Array BC_196 --> PACKED_TEXT_STORAGE TX_PS_52;
-Array BC_197 --> PACKED_TEXT_STORAGE TX_PS_53;
-Array BC_198 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
+Array BC_196 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
+Array BC_197 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
+Array BC_198 --> PACKED_TEXT_STORAGE TX_PS_51;
 Array BC_199 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_200 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
-Array BC_201 --> PACKED_TEXT_STORAGE TX_PS_54;
-Array BC_202 --> PACKED_TEXT_STORAGE TX_PS_55;
-Array BC_203 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
-Array BC_204 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
+Array BC_201 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
+Array BC_202 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
+Array BC_203 --> PACKED_TEXT_STORAGE TX_PS_52;
+Array BC_204 --> PACKED_TEXT_STORAGE TX_PS_53;
 Array BC_205 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
-Array BC_206 --> PACKED_TEXT_STORAGE TX_PS_56;
-Array BC_207 --> PACKED_TEXT_STORAGE TX_PS_57;
-Array BC_208 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
+Array BC_206 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
+Array BC_207 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
+Array BC_208 --> PACKED_TEXT_STORAGE TX_PS_54;
 Array BC_209 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
-Array BC_210 --> PACKED_TEXT_STORAGE TX_PS_8;
+Array BC_210 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_211 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
-Array BC_212 --> PACKED_TEXT_STORAGE TX_PS_58;
-Array BC_213 --> PACKED_TEXT_STORAGE TX_PS_59;
-Array BC_214 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
-Array BC_215 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
+Array BC_212 --> PACKED_TEXT_STORAGE TX_PS_6;
+Array BC_213 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
+Array BC_214 --> PACKED_TEXT_STORAGE TX_PS_55;
+Array BC_215 --> PACKED_TEXT_STORAGE TX_PS_56;
 Array BC_216 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
-Array BC_217 --> PACKED_TEXT_STORAGE TX_PS_60;
-Array BC_218 --> PACKED_TEXT_STORAGE TX_PS_61;
-Array BC_219 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
+Array BC_217 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
+Array BC_218 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
+Array BC_219 --> PACKED_TEXT_STORAGE TX_PS_57;
 Array BC_220 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_221 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
-Array BC_222 --> PACKED_TEXT_STORAGE TX_PS_62;
-Array BC_223 --> PACKED_TEXT_STORAGE TX_PS_63;
+Array BC_222 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
+Array BC_223 --> PACKED_TEXT_STORAGE TX_PS_6;
 Array BC_224 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
-Array BC_225 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
-Array BC_226 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
-Array BC_227 --> PACKED_TEXT_STORAGE TX_PS_64;
-Array BC_228 --> PACKED_TEXT_STORAGE TX_PS_65;
+Array BC_225 --> PACKED_TEXT_STORAGE TX_PS_58;
+Array BC_226 --> PACKED_TEXT_STORAGE TX_PS_59;
+Array BC_227 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
+Array BC_228 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_229 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
-Array BC_230 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
+Array BC_230 --> PACKED_TEXT_STORAGE TX_PS_60;
 Array BC_231 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
-Array BC_232 --> PACKED_TEXT_STORAGE TX_PS_66;
-Array BC_233 --> PACKED_TEXT_STORAGE TX_PS_4;
-Array BC_234 --> PACKED_TEXT_STORAGE TX_PS_3;
-Array BC_235 --> PACKED_TEXT_STORAGE TX_PS_67;
-Array BC_236 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
-Array BC_237 --> PACKED_TEXT_STORAGE TX_PS_68;
-Array BC_238 --> PACKED_TEXT_STORAGE TX_PS_69;
-Array BC_239 --> PACKED_TEXT_STORAGE TX_PS_70;
-Array BC_240 --> PACKED_TEXT_STORAGE TX_PS_71;
-Array BC_241 --> PACKED_TEXT_STORAGE TX_PS_72;
-Array BC_242 --> CONSTANT_PACKED_TEXT_STORAGE R_TX_S_134;
+Array BC_232 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
+Array BC_233 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
+Array BC_234 --> PACKED_TEXT_STORAGE TX_PS_6;
+Array BC_235 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
+Array BC_236 --> PACKED_TEXT_STORAGE TX_PS_61;
+Array BC_237 --> PACKED_TEXT_STORAGE TX_PS_62;
+Array BC_238 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
+Array BC_239 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
+Array BC_240 --> PACKED_TEXT_STORAGE TX_PS_8;
+Array BC_241 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
+Array BC_242 --> PACKED_TEXT_STORAGE TX_PS_63;
+Array BC_243 --> PACKED_TEXT_STORAGE TX_PS_64;
+Array BC_244 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
+Array BC_245 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
+Array BC_246 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
+Array BC_247 --> PACKED_TEXT_STORAGE TX_PS_65;
+Array BC_248 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
+Array BC_249 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
+Array BC_250 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
+Array BC_251 --> PACKED_TEXT_STORAGE TX_PS_6;
+Array BC_252 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
+Array BC_253 --> PACKED_TEXT_STORAGE TX_PS_66;
+Array BC_254 --> PACKED_TEXT_STORAGE TX_PS_67;
+Array BC_255 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
+Array BC_256 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
+Array BC_257 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
+Array BC_258 --> PACKED_TEXT_STORAGE TX_PS_68;
+Array BC_259 --> PACKED_TEXT_STORAGE TX_PS_69;
+Array BC_260 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
+Array BC_261 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
+Array BC_262 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
+Array BC_263 --> PACKED_TEXT_STORAGE TX_PS_70;
+Array BC_264 --> PACKED_TEXT_STORAGE TX_PS_71;
+Array BC_265 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
+Array BC_266 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
+Array BC_267 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
+Array BC_268 --> PACKED_TEXT_STORAGE TX_PS_72;
+Array BC_269 --> PACKED_TEXT_STORAGE TX_PS_73;
+Array BC_270 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
+Array BC_271 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
+Array BC_272 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
+Array BC_273 --> PACKED_TEXT_STORAGE TX_PS_74;
+Array BC_274 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
+Array BC_275 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
+Array BC_276 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
+Array BC_277 --> PACKED_TEXT_STORAGE TX_PS_6;
+Array BC_278 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
+Array BC_279 --> PACKED_TEXT_STORAGE TX_PS_75;
+Array BC_280 --> PACKED_TEXT_STORAGE TX_PS_4;
+Array BC_281 --> PACKED_TEXT_STORAGE TX_PS_3;
+Array BC_282 --> PACKED_TEXT_STORAGE TX_PS_76;
+Array BC_283 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
+Array BC_284 --> PACKED_TEXT_STORAGE TX_PS_77;
+Array BC_285 --> PACKED_TEXT_STORAGE TX_PS_78;
+Array BC_286 --> PACKED_TEXT_STORAGE TX_PS_79;
+Array BC_287 --> PACKED_TEXT_STORAGE TX_PS_80;
+Array BC_288 --> PACKED_TEXT_STORAGE TX_PS_81;
+Array BC_289 --> CONSTANT_PACKED_TEXT_STORAGE R_TX_S_134;
 
 
 
