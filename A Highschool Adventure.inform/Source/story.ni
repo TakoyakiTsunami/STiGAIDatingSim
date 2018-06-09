@@ -56,7 +56,9 @@ After going from room containing my locker, now my locker is closed.
 Diamonds Locker is a locker in the Underclassmen Hallway. The description of Diamonds Locker is "Mhmmmm, it even smills like her...". 
 After spinning the closed Diamonds Locker to 0112: now Diamonds Locker is open; say "[noun] opens, revealing [a list of things in noun]."
 After going from room containing diamonds locker, now diamonds locker is closed. 
-Inside Diamonds Locker is Diamonds Pencil. Diamonds Pencil is a thing. The description of Diamonds Pencil is "Pink and Sparkly. Also good for stabbing. And writing."
+
+a weapon is a kind of thing. A weapon has a number called damage. Damage is usually 2. 
+Inside Diamonds Locker is Diamonds Pencil. Diamonds Pencil is a weapon. The description of Diamonds Pencil is "Pink and Sparkly. Also good for stabbing. And writing." Diamonds Pencil has damage 1.
 
 [clues]
 There is a hankerchief. The description of the hankerchief is "Interesting. I don't know anyone who uses one of these anymore. And there's someone's lipstick stained on it. I think it might be Diamond's.". 
