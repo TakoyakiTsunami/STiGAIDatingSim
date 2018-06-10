@@ -2,6 +2,7 @@
 
 [the map of the high school]
 School is a region.
+the player has a number called health which is 5.
 
 [Hallway]
 Hallway is a region. Hallway is in School.
@@ -31,23 +32,20 @@ Steps, the Gym, the Cageteria, and the great outdoors are in school.
 Understand "talk to [someone]" as a mistake ("To start a conversation, try to ASK [the noun] ABOUT something or TELL [the noun] ABOUT something.").
 
 A Locker is a kind of container. A locker is closed. 
-Instead of opening a locker, say "You need the right combination to open this locker. Spin the lock to _ _ _ _ to open".
-Spinning it to is an action applying to one thing and one number. Check spinning it to: if the noun is not a Locker, say "[The noun] does not spin." instead. Report spinning it to: say "Click! and nothing else happens."
-
+Instead of opening a locker, say "You need the right combination to open this locker. Spin the locker to _ _ _ _ to open".
+Spinning it to is an action applying to one thing and one number. Check spinning it to: if the noun is not a Locker, say "[The noun] does not spin." instead. Report spinning it to: say "Click! nothing else happens."
 Understand "spin [something] to [a number]" as spinning it to.
-understand "fuck [something]" as fuck. 
-understand "fuck the [something]" as fuck. 
-fuck is an action applying to one thing.
-Instead of fuck, say "You fucked it".
+
+fuck is an action applying to one thing. understand "fuck [something]" and "fuck the [something]"  as fuck. Instead of fuck, say "You fucked it".
 
 [characters]
-Mr Redman, Mrs Ford, Mr Hartman, and Ms Belvod are people. 
+Mr Redman, Mrs Ford, Mr Hartman, and Ms Belvod are people. People have a number called health. Health is usually 5. 
 Mr Redman is in Room 211. Understand "Mr Redmans Classroom" as Room 211.  Understand "Mr R" and "Redman" as Mr Redman.
 Mrs Ford is in room 212. Understand "Mrs Fords Classroom" as Room 212. Understand "Mrs F" and "Ford" as Mrs Ford.
 Mr Hartman is in Room 213. Understand "Mr Hartmans Classroom " as Room 213. Understand "Mr H" and "Hartman" as Mr Hartman.
 Ms Belvod is in Room 214. Understand "Mrs Belvods Classroom" as Room 214. Understand "Ms B" and "Belvod" as Ms Belvod. 
-
-Inside Room 213 is a woman called Diamond. Understand "D" as Diamond. The description of Diamond is "An angel that has graced this school with her presence. She's soooooo hot."
+There is a man named Brad. Brad can be either undefeated or defeated. Brad is undefeated.
+Inside Room 213 is a woman called Diamond. Understand "D" as Diamond. The description of Diamond is "An angel that has graced this school with her presence. She's soooooo hot." Diamond can be neutral, taken, or found. Diamond is neutral. 
  
 [things]
 My Locker is a Locker in the Underclassmen Hallway. The description of my locker is "Ah, my sweet old locker. Smells like teen spirit.".
@@ -57,13 +55,34 @@ Diamonds Locker is a locker in the Underclassmen Hallway. The description of Dia
 After spinning the closed Diamonds Locker to 0112: now Diamonds Locker is open; say "[noun] opens, revealing [a list of things in noun]."
 After going from room containing diamonds locker, now diamonds locker is closed. 
 
-a weapon is a kind of thing. A weapon has a number called damage. Damage is usually 2. 
-Inside Diamonds Locker is Diamonds Pencil. Diamonds Pencil is a weapon. The description of Diamonds Pencil is "Pink and Sparkly. Also good for stabbing. And writing." Diamonds Pencil has damage 1.
+a weapon is a kind of thing. A weapon has a number called damage. Damage is usually 1. 
+Diamonds Pencil is a weapon. Understand "pencil" as Diamonds pencil. The description of Diamonds Pencil is "Pink and Sparkly. Also good for stabbing. And writing." Diamonds Pencil has damage 2.
+There is a scimitar, katana, baseball bat, monkey wrench, candlestick, and rope which are weapons. The scimitar has damage 5. the Katana has damage 5. The baseball bat has damage 3. Understand "bat" as baseball bat. The monkey wrench has damage 2. understand "wrench" as monkey wrench. 
 
 [clues]
 There is a hankerchief. The description of the hankerchief is "Interesting. I don't know anyone who uses one of these anymore. And there's someone's lipstick stained on it. I think it might be Diamond's.". 
 There is a spyglass. The description of the spyglass is "This could only be used by someone to spy on someone else....".
 There is a note. The description of the note is "Looks like someone put this in Diamond's cubby to confess their love to her. Seeing as its crumpled up on the floor, I can't imagine that went very well.".
 
+[scenes]
+Beginning, Bully Sequence, Kidnapping, and Resolution are scenes. 
+Beginning begins when play begins. Beginning ends when Diamonds Locker is open. 
+Bully Sequence begins when Beginning ends. Bully Sequence ends when Brad is defeated.
+Kidnapping begins when Bully Sequence ends. 
+Resolution begins when Kidnapping ends. 
+
+When Beginning ends:
+	Now Diamond is nowhere;
+	Now Diamond is taken;
+	say "Score! Her pencil is right where she said it would be".
+
+When Bully Sequence begins:
+	Move Brad to Underclassmen Hallway;
+	Say "You hear knuckles scraping the floor. A lightning rod shoots down your spine. Brad approaches.".
+
+When Kidnapping begins:
+	say "All of a sudden there is a loud yell from down the hall. You think it might be coming from one of the classrooms.".
+
 [Begining code that is implemented when we start to play the game]
-[When play begins: ]
+When play begins: 
+	Now Diamonds Pencil is inside Diamonds Locker.
