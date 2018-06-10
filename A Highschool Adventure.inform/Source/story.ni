@@ -1,4 +1,4 @@
-"Classic Highschool Drama But with Murder" by a bunch of nerds
+"Classic Highschool Drama But with Murder" [so basically Riverdale] by a bunch of nerds
 
 [the map of the high school]
 School is a region.
@@ -58,8 +58,8 @@ After going from room containing diamonds locker, now diamonds locker is closed.
 a weapon is a kind of thing. A weapon has a number called damage. Damage is usually 1. 
 Diamonds Pencil is a weapon. Understand "pencil" as Diamonds pencil. The description of Diamonds Pencil is "Pink and Sparkly. Also good for stabbing. And writing." Diamonds Pencil has damage 2.
 There is a scimitar, katana, baseball bat, monkey wrench, candlestick, and rope which are weapons. The scimitar has damage 5. the Katana has damage 5. The baseball bat has damage 3. Understand "bat" as baseball bat. The monkey wrench has damage 2. understand "wrench" as monkey wrench. 
-
-[clues]
+a placement is a room that varies. 
+ 
 There is a hankerchief. The description of the hankerchief is "Interesting. I don't know anyone who uses one of these anymore. And there's someone's lipstick stained on it. I think it might be Diamond's.". 
 There is a spyglass. The description of the spyglass is "This could only be used by someone to spy on someone else....".
 There is a note. The description of the note is "Looks like someone put this in Diamond's cubby to confess their love to her. Seeing as its crumpled up on the floor, I can't imagine that went very well.".
@@ -71,17 +71,28 @@ Bully Sequence begins when Beginning ends. Bully Sequence ends when Brad is defe
 Kidnapping begins when Bully Sequence ends. 
 Resolution begins when Kidnapping ends. 
 
+When Beginning begins: 
+	Move scimitar to a random room;
+	Move katana to a random room;
+	Move bat to a random room;
+	Move candlestick to a random room;
+	Move rope to a random room;
+	Move wrench to a random room. 
+
 When Beginning ends:
 	Now Diamond is nowhere;
 	Now Diamond is taken;
-	say "Score! Her pencil is right where she said it would be".
+	say "Score! Her pencil is right where she said it would be.".
 
 When Bully Sequence begins:
 	Move Brad to Underclassmen Hallway;
 	Say "You hear knuckles scraping the floor. A lightning rod shoots down your spine. Brad approaches.".
 
 When Kidnapping begins:
-	say "All of a sudden there is a loud yell from down the hall. You think it might be coming from one of the classrooms.".
+	say "All of a sudden there is a loud yell from down the hall. You think it might be coming from one of the classrooms.";
+	Now hankerchief is in cafeteria;
+	Now spyglass is in the great outdoors; 
+	Now note is in gym. 
 
 [Begining code that is implemented when we start to play the game]
 When play begins: 

@@ -11884,6 +11884,7 @@ Array Global_Vars -->
   (1) ! 36 release number
   (0) ! 37 story creation year
   (0) ! 45 locale paragraph count
+  (I127_underclassmen_hallway) ! 60 placement
 ;
 
 
@@ -12645,8 +12646,8 @@ Array ActionHappened --> 0 0 0 0 0;
 ! ----------------------------------------------------------------------------------------------------
 ! No specific request
 ! When play begins:
-[ R_810 ;
-    if (debug_rules) DB_Rule(R_810, 810);
+[ R_811 ;
+    if (debug_rules) DB_Rule(R_811, 811);
     ! [2: now diamonds pencil is inside diamonds locker]
     MoveObject(I156_diamonds_pencil,I154_diamonds_locker);
     rfalse;
@@ -20123,21 +20124,46 @@ Array ActionHappened --> 0 0 0 0 0;
 ! ----------------------------------------------------------------------------------------------------
 
 ! ----------------------------------------------------------------------------------------------------
+! Rules in rulebook: when Beginning begins (B368_when_beginning_begins)
+! ----------------------------------------------------------------------------------------------------
+! Rule 1/1 ! When Beginning begins:
+! ----------------------------------------------------------------------------------------------------
+! No specific request
+! When Beginning begins:
+[ R_807 ;
+    if (debug_rules) DB_Rule(R_807, 807);
+    ! [2: move scimitar to a random room]
+    MoveObject(I157_scimitar, (Prop_34()), 0, false);
+    ! [3: move katana to a random room]
+    MoveObject(I158_katana, (Prop_35()), 0, false);
+    ! [4: move bat to a random room]
+    MoveObject(I159_baseball_bat, (Prop_36()), 0, false);
+    ! [5: move candlestick to a random room]
+    MoveObject(I161_candlestick, (Prop_37()), 0, false);
+    ! [6: move rope to a random room]
+    MoveObject(I162_rope, (Prop_38()), 0, false);
+    ! [7: move wrench to a random room]
+    MoveObject(I160_monkey_wrench, (Prop_39()), 0, false);
+    rfalse;
+];
+! ----------------------------------------------------------------------------------------------------
+
+! ----------------------------------------------------------------------------------------------------
 ! Rules in rulebook: when Beginning ends (B369_when_beginning_ends)
 ! ----------------------------------------------------------------------------------------------------
 ! Rule 1/1 ! When Beginning ends:
 ! ----------------------------------------------------------------------------------------------------
 ! No specific request
 ! When Beginning ends:
-[ R_807 ;
-    if (debug_rules) DB_Rule(R_807, 807);
+[ R_808 ;
+    if (debug_rules) DB_Rule(R_808, 808);
     ! [2: now diamond is nowhere]
     RemoveFromPlay(I148_diamond);;
     ! [3: now diamond is taken]
     (Adj_89_t2_v10(I148_diamond));
-    ! [4: say ~Score! Her pencil is right where she said it would be~]
-    say__p=1;! [5: ~Score! Her pencil is right where she said it would be~]
-    ParaContent(); print "Score! Her pencil is right where she said it would be"; .L_Say298; .L_SayX298;rfalse;
+    ! [4: say ~Score! Her pencil is right where she said it would be.~]
+    say__p=1;! [5: ~Score! Her pencil is right where she said it would be.~]
+    ParaContent(); print "Score! Her pencil is right where she said it would be."; new_line; .L_Say298; .L_SayX298;rfalse;
 ];
 ! ----------------------------------------------------------------------------------------------------
 
@@ -20148,8 +20174,8 @@ Array ActionHappened --> 0 0 0 0 0;
 ! ----------------------------------------------------------------------------------------------------
 ! No specific request
 ! When Bully Sequence begins:
-[ R_808 ;
-    if (debug_rules) DB_Rule(R_808, 808);
+[ R_809 ;
+    if (debug_rules) DB_Rule(R_809, 809);
     ! [2: move brad to underclassmen hallway]
     MoveObject(I147_man_named_brad, I127_underclassmen_hallway, 0, false);
     ! [3: say ~You hear knuckles scraping the floor. A lightning rod shoots down your spine. Brad approaches.~]
@@ -20165,11 +20191,17 @@ Array ActionHappened --> 0 0 0 0 0;
 ! ----------------------------------------------------------------------------------------------------
 ! No specific request
 ! When Kidnapping begins:
-[ R_809 ;
-    if (debug_rules) DB_Rule(R_809, 809);
+[ R_810 ;
+    if (debug_rules) DB_Rule(R_810, 810);
     ! [2: say ~All of a sudden there is a loud yell from down the hall. You think it might be coming from one of the classrooms.~]
     say__p=1;! [3: ~All of a sudden there is a loud yell from down the hall. You think it might be coming from one of the classrooms.~]
-    ParaContent(); print "All of a sudden there is a loud yell from down the hall. You think it might be coming from one of the classrooms."; new_line; .L_Say300; .L_SayX300;rfalse;
+    ParaContent(); print "All of a sudden there is a loud yell from down the hall. You think it might be coming from one of the classrooms."; new_line; .L_Say300; .L_SayX300;! [4: now hankerchief is in cafeteria]
+    MoveObject(I163_hankerchief,I139_cafeteria);
+    ! [5: now spyglass is in the great outdoors]
+    MoveObject(I164_spyglass,I140_great_outdoors);
+    ! [6: now note is in gym]
+    MoveObject(I165_note,I138_gym);
+    rfalse;
 ];
 ! ----------------------------------------------------------------------------------------------------
 ! Definitions of displaced and unbooked rules
@@ -22328,10 +22360,10 @@ Array rulebooks_array --> B0_startup B1_turn_sequence B2_shutdown B3_scene_chang
     forbid_breaks ! Implied call parameter
     rv ! return value
     ;
-    rv = R_810();
+    rv = R_811();
     if (rv) {
         if (rv == 2) return reason_the_action_failed;
-        return R_810;
+        return R_811;
     }
     latest_rule_result-->0 = 0;
     return 0; ! 1 rule(s)
@@ -25950,8 +25982,7 @@ Constant B363_carry_out_spinning_it_t = EMPTY_RULEBOOK;
 Constant B365_check_fuck = EMPTY_RULEBOOK;
 Constant B366_carry_out_fuck = EMPTY_RULEBOOK;
 Constant B367_report_fuck = EMPTY_RULEBOOK;
-Constant B368_when_beginning_begins = EMPTY_RULEBOOK;
-[ B369_when_beginning_ends 
+[ B368_when_beginning_begins 
     forbid_breaks ! Implied call parameter
     rv ! return value
     ;
@@ -25963,7 +25994,7 @@ Constant B368_when_beginning_begins = EMPTY_RULEBOOK;
     latest_rule_result-->0 = 0;
     return 0; ! 1 rule(s)
 ];
-[ B370_when_bully_sequence_beg 
+[ B369_when_beginning_ends 
     forbid_breaks ! Implied call parameter
     rv ! return value
     ;
@@ -25975,8 +26006,7 @@ Constant B368_when_beginning_begins = EMPTY_RULEBOOK;
     latest_rule_result-->0 = 0;
     return 0; ! 1 rule(s)
 ];
-Constant B371_when_bully_sequence_end = EMPTY_RULEBOOK;
-[ B372_when_kidnapping_begins 
+[ B370_when_bully_sequence_beg 
     forbid_breaks ! Implied call parameter
     rv ! return value
     ;
@@ -25984,6 +26014,19 @@ Constant B371_when_bully_sequence_end = EMPTY_RULEBOOK;
     if (rv) {
         if (rv == 2) return reason_the_action_failed;
         return R_809;
+    }
+    latest_rule_result-->0 = 0;
+    return 0; ! 1 rule(s)
+];
+Constant B371_when_bully_sequence_end = EMPTY_RULEBOOK;
+[ B372_when_kidnapping_begins 
+    forbid_breaks ! Implied call parameter
+    rv ! return value
+    ;
+    rv = R_810();
+    if (rv) {
+        if (rv == 2) return reason_the_action_failed;
+        return R_810;
     }
     latest_rule_result-->0 = 0;
     return 0; ! 1 rule(s)
@@ -30778,10 +30821,11 @@ Array RulebookNames -->
         if (R == R_804) { print "After going from room containing my locker"; rtrue; } ! rule 353
         if (R == R_805) { print "After spinning the closed Diamonds Locker to 0112"; rtrue; } ! rule 354
         if (R == R_806) { print "After going from room containing diamonds locker"; rtrue; } ! rule 355
-        if (R == R_807) { print "When Beginning ends"; rtrue; } ! rule 356
-        if (R == R_808) { print "When Bully Sequence begins"; rtrue; } ! rule 357
-        if (R == R_809) { print "When Kidnapping begins"; rtrue; } ! rule 358
-        if (R == R_810) { print "When play begins"; rtrue; } ! rule 359
+        if (R == R_807) { print "When Beginning begins"; rtrue; } ! rule 356
+        if (R == R_808) { print "When Beginning ends"; rtrue; } ! rule 357
+        if (R == R_809) { print "When Bully Sequence begins"; rtrue; } ! rule 358
+        if (R == R_810) { print "When Kidnapping begins"; rtrue; } ! rule 359
+        if (R == R_811) { print "When play begins"; rtrue; } ! rule 360
 
 		print "(nameless rule at address ", R, ")";
 	}
@@ -42136,6 +42180,138 @@ Array TX_R_391 --> CONSTANT_PACKED_TEXT_STORAGE TX_R_391_R;
         .NextOuterLoop_5;
     }
     return counter;
+];
+! Find a random x satisfying:
+! [ room(x) ]
+[ Prop_34 
+    x ! internal use only
+    x_ix ! internal use only
+    counter ! internal use only
+    selection ! internal use only
+    ;
+    ;
+    selection = -1;
+    while (true) {
+        counter = 0;
+        for (x=IK1_First: x: x=x.IK1_Link){
+            counter++;
+            if (counter == selection) return x;
+            jump NextOuterLoop_7;
+            .NextOuterLoop_7;
+        }
+        if ((counter == 0) || (selection >= 0)) return nothing;
+        selection = random(counter);
+    }
+];
+! Find a random x satisfying:
+! [ room(x) ]
+[ Prop_35 
+    x ! internal use only
+    x_ix ! internal use only
+    counter ! internal use only
+    selection ! internal use only
+    ;
+    ;
+    selection = -1;
+    while (true) {
+        counter = 0;
+        for (x=IK1_First: x: x=x.IK1_Link){
+            counter++;
+            if (counter == selection) return x;
+            jump NextOuterLoop_7;
+            .NextOuterLoop_7;
+        }
+        if ((counter == 0) || (selection >= 0)) return nothing;
+        selection = random(counter);
+    }
+];
+! Find a random x satisfying:
+! [ room(x) ]
+[ Prop_36 
+    x ! internal use only
+    x_ix ! internal use only
+    counter ! internal use only
+    selection ! internal use only
+    ;
+    ;
+    selection = -1;
+    while (true) {
+        counter = 0;
+        for (x=IK1_First: x: x=x.IK1_Link){
+            counter++;
+            if (counter == selection) return x;
+            jump NextOuterLoop_7;
+            .NextOuterLoop_7;
+        }
+        if ((counter == 0) || (selection >= 0)) return nothing;
+        selection = random(counter);
+    }
+];
+! Find a random x satisfying:
+! [ room(x) ]
+[ Prop_37 
+    x ! internal use only
+    x_ix ! internal use only
+    counter ! internal use only
+    selection ! internal use only
+    ;
+    ;
+    selection = -1;
+    while (true) {
+        counter = 0;
+        for (x=IK1_First: x: x=x.IK1_Link){
+            counter++;
+            if (counter == selection) return x;
+            jump NextOuterLoop_7;
+            .NextOuterLoop_7;
+        }
+        if ((counter == 0) || (selection >= 0)) return nothing;
+        selection = random(counter);
+    }
+];
+! Find a random x satisfying:
+! [ room(x) ]
+[ Prop_38 
+    x ! internal use only
+    x_ix ! internal use only
+    counter ! internal use only
+    selection ! internal use only
+    ;
+    ;
+    selection = -1;
+    while (true) {
+        counter = 0;
+        for (x=IK1_First: x: x=x.IK1_Link){
+            counter++;
+            if (counter == selection) return x;
+            jump NextOuterLoop_7;
+            .NextOuterLoop_7;
+        }
+        if ((counter == 0) || (selection >= 0)) return nothing;
+        selection = random(counter);
+    }
+];
+! Find a random x satisfying:
+! [ room(x) ]
+[ Prop_39 
+    x ! internal use only
+    x_ix ! internal use only
+    counter ! internal use only
+    selection ! internal use only
+    ;
+    ;
+    selection = -1;
+    while (true) {
+        counter = 0;
+        for (x=IK1_First: x: x=x.IK1_Link){
+            counter++;
+            if (counter == selection) return x;
+            jump NextOuterLoop_7;
+            .NextOuterLoop_7;
+        }
+        if ((counter == 0) || (selection >= 0)) return nothing;
+        selection = random(counter);
+    }
 ];
 
 Constant R_11_RESP_A = 1;
