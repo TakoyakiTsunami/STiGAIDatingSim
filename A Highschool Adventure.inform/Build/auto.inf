@@ -9752,7 +9752,7 @@ Array property_metadata -->
     ! offset 166: property p60_recurring
     "recurring" NULL
     ! offset 168: property p62_corporeal
-    "corporeal" I156_man_named_brad NULL
+    "corporeal" K8_person NULL
     ! offset 171: property p64_diamond_condition
     "diamond condition" I157_diamond NULL
     ! offset 174: property vector
@@ -10751,6 +10751,7 @@ Class K8_person
     with p17_health 5
     has ~female
     has ~neuter
+    has p62_corporeal
     with description BC_30
     with initial BC_31
     with list_together BC_32
@@ -11764,7 +11765,6 @@ Object I151_rope ""
 Object I156_man_named_brad ""
     class K2_thing
     with short_name BC_341
-    has p62_corporeal
     with vector 0
     has mark_as_thing
     with IK2_Count 13
@@ -37483,14 +37483,12 @@ if (t_0 ofclass K8_person) {if (na > 0) { na = 0; print "; "; }
     if ((AllowInShowme(female)) && (t_0  has female)) { if (na++ > 0) print ", "; print "female"; }
     if ((AllowInShowme(female)) && (t_0  hasnt female)) { if (na++ > 0) print ", "; print "male"; }
     if ((AllowInShowme(neuter)) && (t_0  has neuter)) { if (na++ > 0) print ", "; print "neuter"; }
+    if ((AllowInShowme(p62_corporeal)) && (t_0  has p62_corporeal)) { if (na++ > 0) print ", "; print "corporeal"; }
+    if ((AllowInShowme(p62_corporeal)) && (t_0  hasnt p62_corporeal)) { if (na++ > 0) print ", "; print "incorporeal"; }
 }
 if (t_0 ofclass K13_device) {if (na > 0) { na = 0; print "; "; }
     if ((AllowInShowme(on)) && (t_0  has on)) { if (na++ > 0) print ", "; print "switched on"; }
     if ((AllowInShowme(on)) && (t_0  hasnt on)) { if (na++ > 0) print ", "; print "switched off"; }
-}
-if (t_0 == I156_man_named_brad) {if (na > 0) { na = 0; print "; "; }
-    if ((AllowInShowme(p62_corporeal)) && (t_0  has p62_corporeal)) { if (na++ > 0) print ", "; print "corporeal"; }
-    if ((AllowInShowme(p62_corporeal)) && (t_0  hasnt p62_corporeal)) { if (na++ > 0) print ", "; print "incorporeal"; }
 }
 if (t_0) {if (na > 0) { na = 0; print "^"; }
     print "list grouping key: "; if (TEXT_TY_Compare(GProperty(OBJECT_TY, t_0, list_together), EMPTY_TEXT_VALUE) == 0) print "none^"; else print "~", (TEXT_TY_Say) GProperty(OBJECT_TY, t_0, list_together), "~", "^";
