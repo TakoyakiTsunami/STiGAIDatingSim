@@ -88,6 +88,8 @@ When Bully Sequence begins:
 	Move Brad to Underclassmen Hallway;
 	Say "You hear knuckles scraping the floor. A lightning rod shoots down your spine. Brad approaches.".
 
+[Every turn during Bully Sequence, say "You have [health] health. Your weapons are [list of things in inventory]".]
+
 When Kidnapping begins:
 	say "All of a sudden there is a loud yell from down the hall. You think it might be coming from one of the classrooms.";
 	Now hankerchief is in cafeteria;
