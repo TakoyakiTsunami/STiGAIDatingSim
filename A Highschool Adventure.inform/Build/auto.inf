@@ -4402,7 +4402,7 @@ Global lightflag = false;
 ! ListWriter.i6t: Memory
 ! ==== ==== ==== ==== ==== ==== ==== ==== ==== ====
 
-Constant REQUISITION_STACK_SIZE = 3*49;
+Constant REQUISITION_STACK_SIZE = 3*51;
 Array requisition_stack --> REQUISITION_STACK_SIZE;
 Global requisition_stack_pointer = 0;
 
@@ -9754,7 +9754,7 @@ Array property_metadata -->
     ! offset 168: property p62_corporeal
     "corporeal" K8_person NULL
     ! offset 171: property p64_diamond_condition
-    "diamond condition" I157_diamond NULL
+    "diamond condition" I159_diamond NULL
     ! offset 174: property vector
     "<nameless>" NULL
     ! offset 176: property room_index
@@ -10052,10 +10052,10 @@ Constant REL_BLOCK_HEADER ($100*6 + $$1101)*$10000;
     ;
     switch(value) {
         I78_entire_game: print "Entire Game";
-        I167_beginning: print "Beginning";
-        I168_bully_sequence: print "Bully Sequence";
-        I169_kidnapping: print "Kidnapping";
-        I170_resolution: print "Resolution";
+        I169_beginning: print "Beginning";
+        I170_bully_sequence: print "Bully Sequence";
+        I171_kidnapping: print "Kidnapping";
+        I172_resolution: print "Resolution";
         default: print "<illegal scene>";
     }
 ];
@@ -10364,9 +10364,9 @@ Constant REL_BLOCK_HEADER ($100*6 + $$1101)*$10000;
     value ! Implied call parameter
     ;
     switch(value) {
-        I159_neutral: print "neutral";
-        I160_taken: print "taken";
-        I161_found: print "found";
+        I161_neutral: print "neutral";
+        I162_taken: print "taken";
+        I163_found: print "found";
         default: print "<illegal diamond condition>";
     }
 ];
@@ -10484,7 +10484,7 @@ Constant REL_BLOCK_HEADER ($100*6 + $$1101)*$10000;
         50: return I112_first_person_singular;
         51: return I119_nominative;
         52: return I122_neuter_gender;
-        53: return I159_neutral;
+        53: return I161_neutral;
         default: return 0;
     }
 ];
@@ -10614,18 +10614,18 @@ Constant IK1_First = I127_underclassmen_hallway;
 Constant IK2_First = selfobj;
 Constant IK3_First = I51_north;
 Constant IK4_First = nothing;
-Constant IK5_First = I162_my_locker;
+Constant IK5_First = I164_my_locker;
 Constant IK6_First = nothing;
 Constant IK7_First = nothing;
 Constant IK8_First = selfobj;
 Constant IK9_First = I125_school;
 Constant IK10_First = nothing;
-Constant IK11_First = I157_diamond;
+Constant IK11_First = I159_diamond;
 Constant IK12_First = nothing;
 Constant IK13_First = nothing;
 Constant IK14_First = nothing;
 Constant IK15_First = nothing;
-Constant IK16_First = I162_my_locker;
+Constant IK16_First = I164_my_locker;
 Constant IK17_First = I144_fist_which_has_damage_1;
 Constant No_Directions = 12;
 ! Table of direction object alias constants:
@@ -11133,7 +11133,7 @@ Object selfobj ""
     with IK2_Count 0
     with IK2_Link I144_fist_which_has_damage_1
     with IK8_Count 0
-    with IK8_Link I152_mr_redman
+    with IK8_Link I154_mr_redman
     with KD_Count 8
     with parse_name Parse_Name_GV13
     with action_bitmap 0 0 0 0 0 0 
@@ -11151,7 +11151,7 @@ Object -> I144_fist_which_has_damage_1 ""
     with vector 0
     has mark_as_thing
     with IK2_Count 1
-    with IK2_Link I162_my_locker
+    with IK2_Link I164_my_locker
     with IK17_Count 0
     with IK17_Link I145_diamonds_pencil
     with KD_Count 17
@@ -11233,19 +11233,19 @@ Object I127_underclassmen_hallway ""
     with article BC_186
 ;
 
-Object -> I162_my_locker ""
+Object -> I164_my_locker ""
     class K16_locker
     with short_name BC_187
     with description BC_188
     has proper
     with vector 0
     has mark_as_thing
-    with IK2_Count 15
-    with IK2_Link I163_diamonds_locker
+    with IK2_Count 17
+    with IK2_Link I165_diamonds_locker
     with IK5_Count 0
-    with IK5_Link I163_diamonds_locker
+    with IK5_Link I165_diamonds_locker
     with IK16_Count 0
-    with IK16_Link I163_diamonds_locker
+    with IK16_Link I165_diamonds_locker
     with KD_Count 16
     with name 'my' 'locker' 'lockers//p' 
     with action_bitmap 0 0 0 0 0 0 
@@ -11255,15 +11255,15 @@ Object -> I162_my_locker ""
     with article BC_192
 ;
 
-Object -> I163_diamonds_locker ""
+Object -> I165_diamonds_locker ""
     class K16_locker
     with short_name BC_193
     with description BC_194
     has proper
     with vector 0
     has mark_as_thing
-    with IK2_Count 16
-    with IK2_Link I152_mr_redman
+    with IK2_Count 18
+    with IK2_Link I154_mr_redman
     with IK5_Count 1
     with IK5_Link nothing
     with IK16_Count 1
@@ -11361,25 +11361,25 @@ Object I133_room_211 ""
     with IK1_Link I134_room_212
     with KD_Count 1
     with name 'room' '211' 'rooms//p' 
-    with parse_name Parse_Name_GV99
+    with parse_name Parse_Name_GV101
     with list_together BC_221
     with plural BC_222
     with article BC_223
 ;
 
-Object -> I152_mr_redman ""
+Object -> I154_mr_redman ""
     class K8_person
     with short_name BC_224
     has proper
     with vector 0
     has mark_as_thing
-    with IK2_Count 9
-    with IK2_Link I153_mrs_ford
+    with IK2_Count 11
+    with IK2_Link I155_mrs_ford
     with IK8_Count 1
-    with IK8_Link I153_mrs_ford
+    with IK8_Link I155_mrs_ford
     with KD_Count 8
     with name 'mr' 'redman' 'people//p' 'redman' 
-    with parse_name Parse_Name_GV100
+    with parse_name Parse_Name_GV102
     with action_bitmap 0 0 0 0 0 0 
     with description BC_225
     with initial BC_226
@@ -11401,25 +11401,25 @@ Object I134_room_212 ""
     with IK1_Link I135_room_213
     with KD_Count 1
     with name 'room' '212' 'rooms//p' 
-    with parse_name Parse_Name_GV101
+    with parse_name Parse_Name_GV103
     with list_together BC_232
     with plural BC_233
     with article BC_234
 ;
 
-Object -> I153_mrs_ford ""
+Object -> I155_mrs_ford ""
     class K8_person
     with short_name BC_235
     has proper
     with vector 0
     has mark_as_thing
-    with IK2_Count 10
-    with IK2_Link I154_mr_hartman
+    with IK2_Count 12
+    with IK2_Link I156_mr_hartman
     with IK8_Count 2
-    with IK8_Link I154_mr_hartman
+    with IK8_Link I156_mr_hartman
     with KD_Count 8
     with name 'mrs' 'ford' 'people//p' 'ford' 
-    with parse_name Parse_Name_GV102
+    with parse_name Parse_Name_GV104
     with action_bitmap 0 0 0 0 0 0 
     with description BC_236
     with initial BC_237
@@ -11441,25 +11441,25 @@ Object I135_room_213 ""
     with IK1_Link I136_room_214
     with KD_Count 1
     with name 'room' '213' 'rooms//p' 
-    with parse_name Parse_Name_GV103
+    with parse_name Parse_Name_GV105
     with list_together BC_243
     with plural BC_244
     with article BC_245
 ;
 
-Object -> I154_mr_hartman ""
+Object -> I156_mr_hartman ""
     class K8_person
     with short_name BC_246
     has proper
     with vector 0
     has mark_as_thing
-    with IK2_Count 11
-    with IK2_Link I157_diamond
+    with IK2_Count 13
+    with IK2_Link I159_diamond
     with IK8_Count 3
-    with IK8_Link I157_diamond
+    with IK8_Link I159_diamond
     with KD_Count 8
     with name 'mr' 'hartman' 'people//p' 'hartman' 
-    with parse_name Parse_Name_GV104
+    with parse_name Parse_Name_GV106
     with action_bitmap 0 0 0 0 0 0 
     with description BC_247
     with initial BC_248
@@ -11468,23 +11468,23 @@ Object -> I154_mr_hartman ""
     with article BC_251
 ;
 
-Object -> I157_diamond ""
+Object -> I159_diamond ""
     class K11_woman
     with short_name BC_252
     with description BC_253
     has proper
-    with p64_diamond_condition I159_neutral
+    with p64_diamond_condition I161_neutral
     with vector 0
     has mark_as_thing
-    with IK2_Count 14
-    with IK2_Link I155_ms_belvod
+    with IK2_Count 16
+    with IK2_Link I157_ms_belvod
     with IK8_Count 5
-    with IK8_Link I155_ms_belvod
+    with IK8_Link I157_ms_belvod
     with IK11_Count 0
     with IK11_Link nothing
     with KD_Count 11
     with name 'diamond' 'women//p' 'd//' 
-    with parse_name Parse_Name_GV108
+    with parse_name Parse_Name_GV110
     with action_bitmap 0 0 0 0 0 0 
     with initial BC_254
     with list_together BC_255
@@ -11505,25 +11505,25 @@ Object I136_room_214 ""
     with IK1_Link I137_steps
     with KD_Count 1
     with name 'room' '214' 'rooms//p' 
-    with parse_name Parse_Name_GV105
+    with parse_name Parse_Name_GV107
     with list_together BC_260
     with plural BC_261
     with article BC_262
 ;
 
-Object -> I155_ms_belvod ""
+Object -> I157_ms_belvod ""
     class K8_person
     with short_name BC_263
     has proper
     with vector 0
     has mark_as_thing
-    with IK2_Count 12
+    with IK2_Count 14
     with IK2_Link I145_diamonds_pencil
     with IK8_Count 4
     with IK8_Link nothing
     with KD_Count 8
     with name 'ms' 'belvod' 'people//p' 'belvod' 
-    with parse_name Parse_Name_GV106
+    with parse_name Parse_Name_GV108
     with action_bitmap 0 0 0 0 0 0 
     with description BC_264
     with initial BC_265
@@ -11621,6 +11621,7 @@ Object I145_diamonds_pencil ""
     class K17_weapon
     with short_name BC_294
     with description BC_295
+    with p16_damage 2
     has proper
     with vector 0
     has mark_as_thing
@@ -11681,6 +11682,7 @@ Object I147_katana ""
 Object I148_baseball_bat ""
     class K17_weapon
     with short_name BC_313
+    with p16_damage 4
     has proper
     with vector 0
     with cap_short_name BC_314
@@ -11691,6 +11693,7 @@ Object I148_baseball_bat ""
     with IK17_Link I149_monkey_wrench
     with KD_Count 17
     with name 'baseball' 'bat' 'weapons//p' 
+    with parse_name Parse_Name_GV100
     with action_bitmap 0 0 0 0 0 0 
     with description BC_315
     with initial BC_316
@@ -11702,6 +11705,7 @@ Object I148_baseball_bat ""
 Object I149_monkey_wrench ""
     class K17_weapon
     with short_name BC_320
+    with p16_damage 3
     has proper
     with vector 0
     with cap_short_name BC_321
@@ -11711,7 +11715,8 @@ Object I149_monkey_wrench ""
     with IK17_Count 5
     with IK17_Link I150_candlestick
     with KD_Count 17
-    with name 'monkey' 'wrench' 'weapons//p' 
+    with name 'monkey' 'wrench' 'weapons//p' 'wrench' 
+    with parse_name Parse_Name_GV99
     with action_bitmap 0 0 0 0 0 0 
     with description BC_322
     with initial BC_323
@@ -11723,14 +11728,15 @@ Object I149_monkey_wrench ""
 Object I150_candlestick ""
     class K17_weapon
     with short_name BC_327
+    with p16_damage 4
     has proper
     with vector 0
     with cap_short_name BC_328
     has mark_as_thing
     with IK2_Count 7
-    with IK2_Link I151_rope
+    with IK2_Link I151_axe
     with IK17_Count 6
-    with IK17_Link I151_rope
+    with IK17_Link I151_axe
     with KD_Count 17
     with name 'candlestick' 'weapons//p' 
     with action_bitmap 0 0 0 0 0 0 
@@ -11741,19 +11747,20 @@ Object I150_candlestick ""
     with article BC_333
 ;
 
-Object I151_rope ""
+Object I151_axe ""
     class K17_weapon
     with short_name BC_334
+    with p16_damage 3
     has proper
     with vector 0
     with cap_short_name BC_335
     has mark_as_thing
     with IK2_Count 8
-    with IK2_Link I156_man_named_brad
+    with IK2_Link I152_spear
     with IK17_Count 7
-    with IK17_Link nothing
+    with IK17_Link I152_spear
     with KD_Count 17
-    with name 'rope' 'weapons//p' 
+    with name 'axe' 'weapons//p' 
     with action_bitmap 0 0 0 0 0 0 
     with description BC_336
     with initial BC_337
@@ -11762,73 +11769,117 @@ Object I151_rope ""
     with article BC_340
 ;
 
-Object I156_man_named_brad ""
-    class K2_thing
+Object I152_spear ""
+    class K17_weapon
     with short_name BC_341
+    with p16_damage 3
+    has proper
+    with vector 0
+    with cap_short_name BC_342
+    has mark_as_thing
+    with IK2_Count 9
+    with IK2_Link I153_rope
+    with IK17_Count 8
+    with IK17_Link I153_rope
+    with KD_Count 17
+    with name 'spear' 'weapons//p' 
+    with action_bitmap 0 0 0 0 0 0 
+    with description BC_343
+    with initial BC_344
+    with list_together BC_345
+    with plural BC_346
+    with article BC_347
+;
+
+Object I153_rope ""
+    class K17_weapon
+    with short_name BC_348
+    with p16_damage 2
+    has proper
+    with vector 0
+    with cap_short_name BC_349
+    has mark_as_thing
+    with IK2_Count 10
+    with IK2_Link I158_man_named_brad
+    with IK17_Count 9
+    with IK17_Link nothing
+    with KD_Count 17
+    with name 'rope' 'weapons//p' 
+    with action_bitmap 0 0 0 0 0 0 
+    with description BC_350
+    with initial BC_351
+    with list_together BC_352
+    with plural BC_353
+    with article BC_354
+;
+
+Object I158_man_named_brad ""
+    class K2_thing
+    with short_name BC_355
     with vector 0
     has mark_as_thing
-    with IK2_Count 13
-    with IK2_Link I164_hankerchief
+    with IK2_Count 15
+    with IK2_Link I166_hankerchief
     with KD_Count 2
     with name 'man' 'named' 'brad' 'things//p' 
-    with parse_name Parse_Name_GV107
+    with parse_name Parse_Name_GV109
     with action_bitmap 0 0 0 0 0 0 
-    with description BC_342
-    with initial BC_343
-    with list_together BC_344
-    with plural BC_345
-    with article BC_346
+    with description BC_356
+    with initial BC_357
+    with list_together BC_358
+    with plural BC_359
+    with article BC_360
 ;
 
-Object I164_hankerchief ""
+Object I166_hankerchief ""
     class K2_thing
-    with short_name BC_347
-    with description BC_348
-    with vector 0
-    has mark_as_thing
-    with IK2_Count 17
-    with IK2_Link I165_spyglass
-    with KD_Count 2
-    with name 'hankerchief' 'things//p' 
-    with action_bitmap 0 0 0 0 0 0 
-    with initial BC_349
-    with list_together BC_350
-    with plural BC_351
-    with article BC_352
-;
-
-Object I165_spyglass ""
-    class K2_thing
-    with short_name BC_353
-    with description BC_354
-    with vector 0
-    has mark_as_thing
-    with IK2_Count 18
-    with IK2_Link I166_note
-    with KD_Count 2
-    with name 'spyglass' 'things//p' 
-    with action_bitmap 0 0 0 0 0 0 
-    with initial BC_355
-    with list_together BC_356
-    with plural BC_357
-    with article BC_358
-;
-
-Object I166_note ""
-    class K2_thing
-    with short_name BC_359
-    with description BC_360
+    with short_name BC_361
+    with description BC_362
     with vector 0
     has mark_as_thing
     with IK2_Count 19
+    with IK2_Link I167_spyglass
+    with KD_Count 2
+    with name 'hankerchief' 'things//p' 
+    with action_bitmap 0 0 0 0 0 0 
+    with initial BC_363
+    with list_together BC_364
+    with plural BC_365
+    with article BC_366
+;
+
+Object I167_spyglass ""
+    class K2_thing
+    with short_name BC_367
+    with description BC_368
+    with vector 0
+    has mark_as_thing
+    with IK2_Count 20
+    with IK2_Link I168_note
+    with KD_Count 2
+    with name 'spyglass' 'things//p' 
+    with action_bitmap 0 0 0 0 0 0 
+    with initial BC_369
+    with list_together BC_370
+    with plural BC_371
+    with article BC_372
+;
+
+Object I168_note ""
+    class K2_thing
+    with short_name BC_373
+    with description BC_374
+    with vector 0
+    has mark_as_thing
+    with IK2_Count 21
     with IK2_Link nothing
     with KD_Count 2
     with name 'note' 'things//p' 
     with action_bitmap 0 0 0 0 0 0 
-    with initial BC_361
-    with list_together BC_362
-    with plural BC_363
-    with article BC_364
+    with initial BC_375
+    with list_together BC_376
+    with plural BC_377
+    with article BC_378
 ;
 
 Constant I71_english_language = 1;
@@ -11880,21 +11931,21 @@ Constant I120_accusative = 2;
 Constant I122_neuter_gender = 1;
 Constant I123_masculine_gender = 2;
 Constant I124_feminine_gender = 3;
-Constant I159_neutral = 1;
-Constant I160_taken = 2;
-Constant I161_found = 3;
-Constant I167_beginning = 2;
-Constant I168_bully_sequence = 3;
-Constant I169_kidnapping = 4;
-Constant I170_resolution = 5;
+Constant I161_neutral = 1;
+Constant I162_taken = 2;
+Constant I163_found = 3;
+Constant I169_beginning = 2;
+Constant I170_bully_sequence = 3;
+Constant I171_kidnapping = 4;
+Constant I172_resolution = 5;
 Array Global_Vars -->
   (false) ! 7 darkness witnessed
-  (BC_365) ! 25 command prompt
+  (BC_379) ! 25 command prompt
   (I71_english_language) ! 29 language of play
-  (BC_366) ! 32 story author
-  (BC_367) ! 33 story headline
-  (BC_368) ! 34 story genre
-  (BC_369) ! 35 story description
+  (BC_380) ! 32 story author
+  (BC_381) ! 33 story headline
+  (BC_382) ! 34 story genre
+  (BC_383) ! 35 story description
   (1) ! 36 release number
   (0) ! 37 story creation year
   (0) ! 45 locale paragraph count
@@ -11909,14 +11960,14 @@ Array Global_Vars -->
 
 
 Array T0_final_question_options table  tab_0_0 tab_0_1 tab_0_2 tab_0_3 tab_0_4;
-Array tab_0_0 table $0664 0 (BC_370) (BC_371) (BC_372) (BC_373) (BC_374) ;
+Array tab_0_0 table $0664 0 (BC_384) (BC_385) (BC_386) (BC_387) (BC_388) ;
 Array tab_0_1 table $0465 1 (0) (0) (1) (0) (0) ;
-Array tab_0_2 table $2066 2 (Consult_Grammar_109) (Consult_Grammar_110) (Consult_Grammar_111) (Consult_Grammar_112) (Consult_Grammar_113) ;
+Array tab_0_2 table $2066 2 (Consult_Grammar_111) (Consult_Grammar_112) (Consult_Grammar_113) (Consult_Grammar_114) (Consult_Grammar_115) ;
 Array tab_0_3 table $0067 3 (IMMEDIATELY_RESTART_VM_R) (IMMEDIATELY_RESTORE_SAVED_R) ( TABLE_NOVALUE) (IMMEDIATELY_QUIT_R) (IMMEDIATELY_UNDO_R) ;
 Array tab_0_4 table $0068 4 ( TABLE_NOVALUE) ( TABLE_NOVALUE) (V27_amusing_a_victorious_pla) ( TABLE_NOVALUE) ( TABLE_NOVALUE) ;
 Array T1_locale_priorities table  tab_1_0 tab_1_1;
-Array tab_1_0 table $0869 NULL ( TABLE_NOVALUE)  TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE;
-Array tab_1_1 table $446a 5 ( TABLE_NOVALUE)  TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE;
+Array tab_1_0 table $0869 NULL ( TABLE_NOVALUE)  TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE;
+Array tab_1_1 table $446a 5 ( TABLE_NOVALUE)  TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE;
 Array TB_Blanks -> 
   ! For table T0_final_question_options
   $00  ! Column 0
@@ -11926,7 +11977,7 @@ Array TB_Blanks ->
   $1b  ! Column 4
   
   ! For table T1_locale_priorities
-  $ff $ff $1f  ! Column 1
+  $ff $ff $7f  ! Column 1
   
   ! End of table
   NULL NULL;
@@ -12470,7 +12521,7 @@ Array ActionHappened --> 0 0 0 0 0 0;
 
 [ MistakeActionSub ;
     switch(understand_as_mistake_number) {
-        261: ParserError(BC_375);
+        261: ParserError(BC_389);
         default: "I didn't understand that sentence.";
     }
     say__p = 1;
@@ -12684,7 +12735,7 @@ Array ActionHappened --> 0 0 0 0 0 0;
 [ R_814 ;
     if (debug_rules) DB_Rule(R_814, 814);
     ! [2: now diamonds pencil is inside diamonds locker]
-    MoveObject(I145_diamonds_pencil,I163_diamonds_locker);
+    MoveObject(I145_diamonds_pencil,I165_diamonds_locker);
     rfalse;
 ];
 ! ----------------------------------------------------------------------------------------------------
@@ -13176,11 +13227,11 @@ Array ActionHappened --> 0 0 0 0 0 0;
 ! No specific request
 ! After going from room containing my locker:
 [ R_806 ;
-    if ((((action ==##Go) &&  (actor==player) && (((MStack-->MstVON(20007,0)) ofclass K1_room) && ((MStack-->MstVON(20007,0)) == ContainerOf(I162_my_locker))) && ((MStack-->MstVON(20007,1)) ~= nothing)))) { ! Runs only when pattern matches
+    if ((((action ==##Go) &&  (actor==player) && (((MStack-->MstVON(20007,0)) ofclass K1_room) && ((MStack-->MstVON(20007,0)) == ContainerOf(I164_my_locker))) && ((MStack-->MstVON(20007,1)) ~= nothing)))) { ! Runs only when pattern matches
     self = noun;
     if (debug_rules) DB_Rule(R_806, 806);
     ! [2: now my locker is closed]
-    (Adj_73_t2_v10(I162_my_locker));
+    (Adj_73_t2_v10(I164_my_locker));
     RulebookSucceeds(); rtrue;
     } else if (debug_rules > 1) DB_Rule(R_806, 806, 'action');
     rfalse;
@@ -13188,11 +13239,11 @@ Array ActionHappened --> 0 0 0 0 0 0;
 ! No specific request
 ! After going from room containing diamonds locker:
 [ R_808 ;
-    if ((((action ==##Go) &&  (actor==player) && (((MStack-->MstVON(20007,0)) ofclass K1_room) && ((MStack-->MstVON(20007,0)) == ContainerOf(I163_diamonds_locker))) && ((MStack-->MstVON(20007,1)) ~= nothing)))) { ! Runs only when pattern matches
+    if ((((action ==##Go) &&  (actor==player) && (((MStack-->MstVON(20007,0)) ofclass K1_room) && ((MStack-->MstVON(20007,0)) == ContainerOf(I165_diamonds_locker))) && ((MStack-->MstVON(20007,1)) ~= nothing)))) { ! Runs only when pattern matches
     self = noun;
     if (debug_rules) DB_Rule(R_808, 808);
     ! [2: now diamonds locker is closed]
-    (Adj_73_t2_v10(I163_diamonds_locker));
+    (Adj_73_t2_v10(I165_diamonds_locker));
     RulebookSucceeds(); rtrue;
     } else if (debug_rules > 1) DB_Rule(R_808, 808, 'action');
     rfalse;
@@ -13202,11 +13253,11 @@ Array ActionHappened --> 0 0 0 0 0 0;
 [ R_805 
     tmp_0 ! Let/loop value (deallocated by end of phrase)
     ;
-    if ((((action ==##A77_spinning_it_to) &&  (actor==player) && ((noun == I162_my_locker) && ((Adj_73_t1_v10(noun)))) && ((parsed_number == 1999) && (true))))) { ! Runs only when pattern matches
+    if ((((action ==##A77_spinning_it_to) &&  (actor==player) && ((noun == I164_my_locker) && ((Adj_73_t1_v10(noun)))) && ((parsed_number == 1999) && (true))))) { ! Runs only when pattern matches
     self = noun;
     if (debug_rules) DB_Rule(R_805, 805);
     ! [2: now my locker is open]
-    (Adj_72_t2_v10(I162_my_locker));
+    (Adj_72_t2_v10(I164_my_locker));
     ! [3: say ~[noun] opens, revealing [a list of things in noun].~]
     say__p=1;! [4: noun]
     ParaContent(); PrintShortName(noun);! [5: ~ opens, revealing ~]
@@ -13226,11 +13277,11 @@ Array ActionHappened --> 0 0 0 0 0 0;
 [ R_807 
     tmp_0 ! Let/loop value (deallocated by end of phrase)
     ;
-    if ((((action ==##A77_spinning_it_to) &&  (actor==player) && ((noun == I163_diamonds_locker) && ((Adj_73_t1_v10(noun)))) && ((parsed_number == 112) && (true))))) { ! Runs only when pattern matches
+    if ((((action ==##A77_spinning_it_to) &&  (actor==player) && ((noun == I165_diamonds_locker) && ((Adj_73_t1_v10(noun)))) && ((parsed_number == 112) && (true))))) { ! Runs only when pattern matches
     self = noun;
     if (debug_rules) DB_Rule(R_807, 807);
     ! [2: now diamonds locker is open]
-    (Adj_72_t2_v10(I163_diamonds_locker));
+    (Adj_72_t2_v10(I165_diamonds_locker));
     ! [3: say ~[noun] opens, revealing [a list of things in noun].~]
     say__p=1;! [4: noun]
     ParaContent(); PrintShortName(noun);! [5: ~ opens, revealing ~]
@@ -16248,17 +16299,17 @@ Array ActionHappened --> 0 0 0 0 0 0;
     {! [3: if the player is the actor]
         if (((player == actor)))
         {! [4: if the player's command includes ~stand~]
-            if (((matched_text=SnippetIncludes(Consult_Grammar_114,players_command))))
+            if (((matched_text=SnippetIncludes(Consult_Grammar_116,players_command))))
             {! [5: say ~[regarding the noun][They're] not something [we] [can] stand on.~ ( a )]
                 say__p=1;! [6: ~[regarding the noun][They're] not something [we] [can] stand on.~ ( a )]
                 ParaContent(); print (TEXT_TY_Say) (TX_R_223); new_line; .L_Say115; .L_SayX115;} else {
                 ! [7: if the player's command includes ~sit~]
-                if (((matched_text=SnippetIncludes(Consult_Grammar_115,players_command))))
+                if (((matched_text=SnippetIncludes(Consult_Grammar_117,players_command))))
                 {! [8: say ~[regarding the noun][They're] not something [we] [can] sit down on.~ ( b )]
                     say__p=1;! [9: ~[regarding the noun][They're] not something [we] [can] sit down on.~ ( b )]
                     ParaContent(); print (TEXT_TY_Say) (TX_R_224); new_line; .L_Say116; .L_SayX116;} else {
                     ! [10: if the player's command includes ~lie~]
-                    if (((matched_text=SnippetIncludes(Consult_Grammar_116,players_command))))
+                    if (((matched_text=SnippetIncludes(Consult_Grammar_118,players_command))))
                     {! [11: say ~[regarding the noun][They're] not something [we] [can] lie down on.~ ( c )]
                         say__p=1;! [12: ~[regarding the noun][They're] not something [we] [can] lie down on.~ ( c )]
                         ParaContent(); print (TEXT_TY_Say) (TX_R_225); new_line; .L_Say117; .L_SayX117;} else {
@@ -20217,7 +20268,7 @@ Array ActionHappened --> 0 0 0 0 0 0;
     ! [5: move candlestick to a random room]
     MoveObject(I150_candlestick, (Prop_37()), 0, false);
     ! [6: move rope to a random room]
-    MoveObject(I151_rope, (Prop_38()), 0, false);
+    MoveObject(I153_rope, (Prop_38()), 0, false);
     ! [7: move wrench to a random room]
     MoveObject(I149_monkey_wrench, (Prop_39()), 0, false);
     rfalse;
@@ -20234,9 +20285,9 @@ Array ActionHappened --> 0 0 0 0 0 0;
 [ R_810 ;
     if (debug_rules) DB_Rule(R_810, 810);
     ! [2: now diamond is nowhere]
-    RemoveFromPlay(I157_diamond);;
+    RemoveFromPlay(I159_diamond);;
     ! [3: now diamond is taken]
-    (Adj_89_t2_v10(I157_diamond));
+    (Adj_89_t2_v10(I159_diamond));
     ! [4: say ~Score! Her pencil is right where she said it would be.~]
     say__p=1;! [5: ~Score! Her pencil is right where she said it would be.~]
     ParaContent(); print "Score! Her pencil is right where she said it would be."; new_line; .L_Say300; .L_SayX300;rfalse;
@@ -20253,7 +20304,7 @@ Array ActionHappened --> 0 0 0 0 0 0;
 [ R_811 ;
     if (debug_rules) DB_Rule(R_811, 811);
     ! [2: move brad to underclassmen hallway]
-    MoveObject(I156_man_named_brad, I127_underclassmen_hallway, 0, false);
+    MoveObject(I158_man_named_brad, I127_underclassmen_hallway, 0, false);
     ! [3: say ~You hear knuckles scraping the floor. A lightning rod shoots down your spine. Brad approaches.~]
     say__p=1;! [4: ~You hear knuckles scraping the floor. A lightning rod shoots down your spine. Brad approaches.~]
     ParaContent(); print "You hear knuckles scraping the floor. A lightning rod shoots down your spine. Brad approaches."; new_line; .L_Say301; .L_SayX301;rfalse;
@@ -20272,11 +20323,11 @@ Array ActionHappened --> 0 0 0 0 0 0;
     ! [2: say ~All of a sudden there is a loud yell from down the hall. You think it might be coming from one of the classrooms.~]
     say__p=1;! [3: ~All of a sudden there is a loud yell from down the hall. You think it might be coming from one of the classrooms.~]
     ParaContent(); print "All of a sudden there is a loud yell from down the hall. You think it might be coming from one of the classrooms."; new_line; .L_Say302; .L_SayX302;! [4: now hankerchief is in cafeteria]
-    MoveObject(I164_hankerchief,I139_cafeteria);
+    MoveObject(I166_hankerchief,I139_cafeteria);
     ! [5: now spyglass is in the great outdoors]
-    MoveObject(I165_spyglass,I140_great_outdoors);
+    MoveObject(I167_spyglass,I140_great_outdoors);
     ! [6: now note is in gym]
-    MoveObject(I166_note,I138_gym);
+    MoveObject(I168_note,I138_gym);
     rfalse;
 ];
 ! ----------------------------------------------------------------------------------------------------
@@ -21291,21 +21342,21 @@ Array ActionHappened --> 0 0 0 0 0 0;
     t_0 ! Call parameter: object
     ;
     ! meaning of "neutral"
-      if (t_0 == I157_diamond) return (GProperty(10, t_0, p64_diamond_condition) == 1);
+      if (t_0 == I159_diamond) return (GProperty(10, t_0, p64_diamond_condition) == 1);
     rfalse;
 ];
 [ Adj_89_t1_v10 
     t_0 ! Call parameter: object
     ;
     ! meaning of "taken"
-      if (t_0 == I157_diamond) return (GProperty(10, t_0, p64_diamond_condition) == 2);
+      if (t_0 == I159_diamond) return (GProperty(10, t_0, p64_diamond_condition) == 2);
     rfalse;
 ];
 [ Adj_90_t1_v10 
     t_0 ! Call parameter: object
     ;
     ! meaning of "found"
-      if (t_0 == I157_diamond) return (GProperty(10, t_0, p64_diamond_condition) == 3);
+      if (t_0 == I159_diamond) return (GProperty(10, t_0, p64_diamond_condition) == 3);
     rfalse;
 ];
 [ Adj_91_t1_v10 
@@ -21725,21 +21776,21 @@ Array ActionHappened --> 0 0 0 0 0 0;
     t_0 ! Call parameter: object
     ;
     ! meaning of "neutral"
-      if (t_0 == I157_diamond) return (WriteGProperty(10, t_0, p64_diamond_condition, 1));
+      if (t_0 == I159_diamond) return (WriteGProperty(10, t_0, p64_diamond_condition, 1));
     rfalse;
 ];
 [ Adj_89_t2_v10 
     t_0 ! Call parameter: object
     ;
     ! meaning of "taken"
-      if (t_0 == I157_diamond) return (WriteGProperty(10, t_0, p64_diamond_condition, 2));
+      if (t_0 == I159_diamond) return (WriteGProperty(10, t_0, p64_diamond_condition, 2));
     rfalse;
 ];
 [ Adj_90_t2_v10 
     t_0 ! Call parameter: object
     ;
     ! meaning of "found"
-      if (t_0 == I157_diamond) return (WriteGProperty(10, t_0, p64_diamond_condition, 3));
+      if (t_0 == I159_diamond) return (WriteGProperty(10, t_0, p64_diamond_condition, 3));
     rfalse;
 ];
 [ Adj_91_t2_v10 
@@ -26201,7 +26252,7 @@ Constant B380_when_resolution_begins = EMPTY_RULEBOOK;
         }
     }
     if (scene_status-->1 == 1) {
-        if (((((Adj_72_t1_v10(I163_diamonds_locker)))))) {
+        if (((((Adj_72_t1_v10(I165_diamonds_locker)))))) {
             ch = true;
             if (debug_scenes) print "[Scene 'Beginning' ends]^";
             if (GProperty(43, 2, p60_recurring)) scene_status-->1 = 0; else scene_status-->1 = 2; FollowRulebook(375);
@@ -26231,7 +26282,7 @@ Constant B380_when_resolution_begins = EMPTY_RULEBOOK;
         }
     }
     if (scene_status-->2 == 1) {
-        if (((((Adj_87_t1_v10(I156_man_named_brad)))))) {
+        if (((((Adj_87_t1_v10(I158_man_named_brad)))))) {
             ch = true;
             if (debug_scenes) print "[Scene 'Bully Sequence' ends]^";
             if (GProperty(43, 3, p60_recurring)) scene_status-->2 = 0; else scene_status-->2 = 2; FollowRulebook(377);
@@ -29419,7 +29470,7 @@ Array FWMatrix --> NUM_ROOMS*NUM_ROOMS;
 ! Relations.i6t: Relation Route-Finding
 ! ==== ==== ==== ==== ==== ==== ==== ==== ==== ====
 
-Constant MAX_ROUTE_LENGTH = 49 + 32;
+Constant MAX_ROUTE_LENGTH = 51 + 32;
 
 [ RelationRouteTo relation from to count  handler;
 	if (count) {
@@ -37531,7 +37582,7 @@ if (t_0 ofclass K17_weapon) {if (na > 0) { na = 0; print "^"; }
 if (t_0 == selfobj) {if (na > 0) { na = 0; print "^"; }
     print "health which is 5: "; print (DecimalNumber) GProperty(OBJECT_TY, t_0, p15_health_which_is_5), "^";
 }
-if (t_0 == I157_diamond) {if (na > 0) { na = 0; print "^"; }
+if (t_0 == I159_diamond) {if (na > 0) { na = 0; print "^"; }
     print "Diamond condition: "; print (E69) GProperty(OBJECT_TY, t_0, p64_diamond_condition), "^";
 }
 
@@ -50031,6 +50082,118 @@ Array present_chronological_record-->(NO_PAST_TENSE_CONDS+1);
                 while (WordInProperty(NextWordStopped(), self, name)) f = true;
                 wn--; try_from_wn = wn;
             }
+            break;
+        } ! End of endless loop
+        while (WordInProperty(NextWordStopped(), self, name)) n++;
+        if ((f) || (n>0)) n = n + try_from_wn - original_wn;
+        if (pass == 1) pass1_n = n;
+        if (pass == 2) pass2_n = n;
+    } ! End of pass loop
+    #ifdef DEBUG;
+    if (parser_trace >= 3)
+        print "Pass 1: ", pass1_n, " Pass 2: ", pass2_n, " Pass 3: ", n, "^";
+    #endif;
+    if (pass1_n > n) n = pass1_n;
+    if (pass2_n > n) n = pass2_n;
+    wn = original_wn + n;
+    if (n == 0) return -1;
+    DetectPluralWord(original_wn, n);
+    return n;
+];
+[ Parse_Name_GV100 
+    original_wn ! first word of text parsed
+    group_wn ! first word matched against A/B/C/... disjunction
+    try_from_wn ! position to try matching from
+    n ! number of words matched
+    f ! flag: sufficiently good match found to justify success
+    w ! for use by individual grammar lines
+    rv ! for use by individual grammar lines
+    g ! temporary: success flag for parsing visibles
+    ss ! temporary: saves 'self' in distinguishing visibles
+    spn ! temporary: saves 'parsed_number' in parsing visibles
+    pass ! pass counter (1 to 3)
+    pass1_n ! value of n recorded during pass 1
+    pass2_n ! value of n recorded during pass 2
+    ;
+    #ifdef DEBUG;
+    if (parser_trace >= 3) print "Parse_name called^";
+    #endif;
+    if (parser_action == ##TheSame) return 0;
+    original_wn = wn;
+    for (pass = 1: pass <= 3: pass++) {
+        wn = original_wn;
+        try_from_wn = wn; f = false; n = 0;
+        while (true) {
+            ! On pass 1 only, advance wn past name property words
+            ! (but do not do this for ##TheSame, when wn is undefined)
+            if ((parser_action ~= ##TheSame) && (pass == 1)) {
+                while (WordInProperty(NextWordStopped(), self, name)) f = true;
+                wn--; try_from_wn = wn;
+            }
+            if (pass == 1 or 2) {
+            }
+            if ((parser_action ~= ##TheSame) && (pass == 1)) {
+                while (WordInProperty(NextWordStopped(), self, name)) f = true;
+                wn--; try_from_wn = wn;
+            }
+                if (NextWordStopped() ~= 'baseball') jump Fail_1;
+                if (NextWordStopped() ~= 'bat') jump Fail_1;
+                try_from_wn = wn; f = true; continue;
+                .Fail_1; wn = try_from_wn;
+            break;
+        } ! End of endless loop
+        while (WordInProperty(NextWordStopped(), self, name)) n++;
+        if ((f) || (n>0)) n = n + try_from_wn - original_wn;
+        if (pass == 1) pass1_n = n;
+        if (pass == 2) pass2_n = n;
+    } ! End of pass loop
+    #ifdef DEBUG;
+    if (parser_trace >= 3)
+        print "Pass 1: ", pass1_n, " Pass 2: ", pass2_n, " Pass 3: ", n, "^";
+    #endif;
+    if (pass1_n > n) n = pass1_n;
+    if (pass2_n > n) n = pass2_n;
+    wn = original_wn + n;
+    if (n == 0) return -1;
+    DetectPluralWord(original_wn, n);
+    return n;
+];
+[ Parse_Name_GV101 
+    original_wn ! first word of text parsed
+    group_wn ! first word matched against A/B/C/... disjunction
+    try_from_wn ! position to try matching from
+    n ! number of words matched
+    f ! flag: sufficiently good match found to justify success
+    w ! for use by individual grammar lines
+    rv ! for use by individual grammar lines
+    g ! temporary: success flag for parsing visibles
+    ss ! temporary: saves 'self' in distinguishing visibles
+    spn ! temporary: saves 'parsed_number' in parsing visibles
+    pass ! pass counter (1 to 3)
+    pass1_n ! value of n recorded during pass 1
+    pass2_n ! value of n recorded during pass 2
+    ;
+    #ifdef DEBUG;
+    if (parser_trace >= 3) print "Parse_name called^";
+    #endif;
+    if (parser_action == ##TheSame) return 0;
+    original_wn = wn;
+    for (pass = 1: pass <= 3: pass++) {
+        wn = original_wn;
+        try_from_wn = wn; f = false; n = 0;
+        while (true) {
+            ! On pass 1 only, advance wn past name property words
+            ! (but do not do this for ##TheSame, when wn is undefined)
+            if ((parser_action ~= ##TheSame) && (pass == 1)) {
+                while (WordInProperty(NextWordStopped(), self, name)) f = true;
+                wn--; try_from_wn = wn;
+            }
+            if (pass == 1 or 2) {
+            }
+            if ((parser_action ~= ##TheSame) && (pass == 1)) {
+                while (WordInProperty(NextWordStopped(), self, name)) f = true;
+                wn--; try_from_wn = wn;
+            }
                 if (NextWordStopped() ~= 'mr') jump Fail_1;
                 if (NextWordStopped() ~= 'redmans') jump Fail_1;
                 if (NextWordStopped() ~= 'classroom') jump Fail_1;
@@ -50054,7 +50217,7 @@ Array present_chronological_record-->(NO_PAST_TENSE_CONDS+1);
     DetectPluralWord(original_wn, n);
     return n;
 ];
-[ Parse_Name_GV100 
+[ Parse_Name_GV102 
     original_wn ! first word of text parsed
     group_wn ! first word matched against A/B/C/... disjunction
     try_from_wn ! position to try matching from
@@ -50112,7 +50275,7 @@ Array present_chronological_record-->(NO_PAST_TENSE_CONDS+1);
     DetectPluralWord(original_wn, n);
     return n;
 ];
-[ Parse_Name_GV101 
+[ Parse_Name_GV103 
     original_wn ! first word of text parsed
     group_wn ! first word matched against A/B/C/... disjunction
     try_from_wn ! position to try matching from
@@ -50171,7 +50334,7 @@ Array present_chronological_record-->(NO_PAST_TENSE_CONDS+1);
     DetectPluralWord(original_wn, n);
     return n;
 ];
-[ Parse_Name_GV102 
+[ Parse_Name_GV104 
     original_wn ! first word of text parsed
     group_wn ! first word matched against A/B/C/... disjunction
     try_from_wn ! position to try matching from
@@ -50229,7 +50392,7 @@ Array present_chronological_record-->(NO_PAST_TENSE_CONDS+1);
     DetectPluralWord(original_wn, n);
     return n;
 ];
-[ Parse_Name_GV103 
+[ Parse_Name_GV105 
     original_wn ! first word of text parsed
     group_wn ! first word matched against A/B/C/... disjunction
     try_from_wn ! position to try matching from
@@ -50288,7 +50451,7 @@ Array present_chronological_record-->(NO_PAST_TENSE_CONDS+1);
     DetectPluralWord(original_wn, n);
     return n;
 ];
-[ Parse_Name_GV104 
+[ Parse_Name_GV106 
     original_wn ! first word of text parsed
     group_wn ! first word matched against A/B/C/... disjunction
     try_from_wn ! position to try matching from
@@ -50346,7 +50509,7 @@ Array present_chronological_record-->(NO_PAST_TENSE_CONDS+1);
     DetectPluralWord(original_wn, n);
     return n;
 ];
-[ Parse_Name_GV105 
+[ Parse_Name_GV107 
     original_wn ! first word of text parsed
     group_wn ! first word matched against A/B/C/... disjunction
     try_from_wn ! position to try matching from
@@ -50405,7 +50568,7 @@ Array present_chronological_record-->(NO_PAST_TENSE_CONDS+1);
     DetectPluralWord(original_wn, n);
     return n;
 ];
-[ Parse_Name_GV106 
+[ Parse_Name_GV108 
     original_wn ! first word of text parsed
     group_wn ! first word matched against A/B/C/... disjunction
     try_from_wn ! position to try matching from
@@ -50463,7 +50626,7 @@ Array present_chronological_record-->(NO_PAST_TENSE_CONDS+1);
     DetectPluralWord(original_wn, n);
     return n;
 ];
-[ Parse_Name_GV107 
+[ Parse_Name_GV109 
     original_wn ! first word of text parsed
     group_wn ! first word matched against A/B/C/... disjunction
     try_from_wn ! position to try matching from
@@ -50521,7 +50684,7 @@ Array present_chronological_record-->(NO_PAST_TENSE_CONDS+1);
     DetectPluralWord(original_wn, n);
     return n;
 ];
-[ Parse_Name_GV108 
+[ Parse_Name_GV110 
     original_wn ! first word of text parsed
     group_wn ! first word matched against A/B/C/... disjunction
     try_from_wn ! position to try matching from
@@ -50575,7 +50738,7 @@ Array present_chronological_record-->(NO_PAST_TENSE_CONDS+1);
     DetectPluralWord(original_wn, n);
     return n;
 ];
-[ Consult_Grammar_109 
+[ Consult_Grammar_111 
     range_from ! call parameter: word number of snippet start
 
     range_words ! call parameter: snippet length
@@ -50595,7 +50758,7 @@ Array present_chronological_record-->(NO_PAST_TENSE_CONDS+1);
         .Fail_1; rv = GPR_PREPOSITION; wn = original_wn;
     return GPR_FAIL;
 ];
-[ Consult_Grammar_110 
+[ Consult_Grammar_112 
     range_from ! call parameter: word number of snippet start
 
     range_words ! call parameter: snippet length
@@ -50615,7 +50778,7 @@ Array present_chronological_record-->(NO_PAST_TENSE_CONDS+1);
         .Fail_1; rv = GPR_PREPOSITION; wn = original_wn;
     return GPR_FAIL;
 ];
-[ Consult_Grammar_111 
+[ Consult_Grammar_113 
     range_from ! call parameter: word number of snippet start
 
     range_words ! call parameter: snippet length
@@ -50635,7 +50798,7 @@ Array present_chronological_record-->(NO_PAST_TENSE_CONDS+1);
         .Fail_1; rv = GPR_PREPOSITION; wn = original_wn;
     return GPR_FAIL;
 ];
-[ Consult_Grammar_112 
+[ Consult_Grammar_114 
     range_from ! call parameter: word number of snippet start
 
     range_words ! call parameter: snippet length
@@ -50655,7 +50818,7 @@ Array present_chronological_record-->(NO_PAST_TENSE_CONDS+1);
         .Fail_1; rv = GPR_PREPOSITION; wn = original_wn;
     return GPR_FAIL;
 ];
-[ Consult_Grammar_113 
+[ Consult_Grammar_115 
     range_from ! call parameter: word number of snippet start
 
     range_words ! call parameter: snippet length
@@ -50675,7 +50838,7 @@ Array present_chronological_record-->(NO_PAST_TENSE_CONDS+1);
         .Fail_1; rv = GPR_PREPOSITION; wn = original_wn;
     return GPR_FAIL;
 ];
-[ Consult_Grammar_114 
+[ Consult_Grammar_116 
     range_from ! call parameter: word number of snippet start
 
     range_words ! call parameter: snippet length
@@ -50695,7 +50858,7 @@ Array present_chronological_record-->(NO_PAST_TENSE_CONDS+1);
         .Fail_1; rv = GPR_PREPOSITION; wn = original_wn;
     return GPR_FAIL;
 ];
-[ Consult_Grammar_115 
+[ Consult_Grammar_117 
     range_from ! call parameter: word number of snippet start
 
     range_words ! call parameter: snippet length
@@ -50715,7 +50878,7 @@ Array present_chronological_record-->(NO_PAST_TENSE_CONDS+1);
         .Fail_1; rv = GPR_PREPOSITION; wn = original_wn;
     return GPR_FAIL;
 ];
-[ Consult_Grammar_116 
+[ Consult_Grammar_118 
     range_from ! call parameter: word number of snippet start
 
     range_words ! call parameter: snippet length
@@ -51086,12 +51249,13 @@ Verb 'attack' 'punch' 'destroy' 'kill' 'murder' 'hit' 'thump' 'break' 'smash' 't
 
 
 
-Constant TX_PS_96 = ">";
+Constant TX_PS_100 = ">";
 Constant TX_PS_70 = "A smelly old gymnasium. Full of sweat and humilation.";
 Constant TX_PS_43 = "Ah, my sweet old locker. Smells like teen spirit.";
 Constant TX_PS_3 = "An Interactive Fiction";
 Constant TX_PS_63 = "An angel that has graced this school with her presence. She's soooooo hot.";
 Constant TX_PS_34 = "As good-looking as ever.";
+Constant TX_PS_88 = "Axe";
 Constant TX_PS_82 = "Baseball bat";
 Constant TX_PS_71 = "Cafeteria";
 Constant TX_PS_75 = "Cageteria";
@@ -51103,18 +51267,18 @@ Constant TX_PS_44 = "Diamonds Locker";
 Constant TX_PS_76 = "Diamonds Pencil";
 Constant TX_PS_52 = "East Upperclassman Hall";
 Constant TX_PS_46 = "East Upperclassmen Hall";
-Constant TX_PS_97 = "Fiction";
+Constant TX_PS_101 = "Fiction";
 Constant TX_PS_73 = "Great Outdoors";
 Constant TX_PS_69 = "Gym";
 Constant TX_PS_38 = "Hallway";
 Constant TX_PS_68 = "Hundreds of kids go up and down these steps everyday.";
-Constant TX_PS_91 = "Interesting. I don't know anyone who uses one of these anymore. And there's someone's lipstick stained on it. I think it might be Diamond's.";
+Constant TX_PS_95 = "Interesting. I don't know anyone who uses one of these anymore. And there's someone's lipstick stained on it. I think it might be Diamond's.";
 Constant TX_PS_74 = "Its pleasent and breezy. Much better than that that big block of concrete they call a school";
 Constant TX_PS_51 = "Junior side of the hallway. Close to the Cafeteria.";
 Constant TX_PS_80 = "Katana";
 Constant TX_PS_14 = "Lockers";
 Constant TX_PS_49 = "Long coridors stretching left and right. An intimidating sight for underclassman.";
-Constant TX_PS_95 = "Looks like someone put this in Diamond's cubby to confess their love to her. Seeing as its crumpled up on the floor, I can't imagine that went very well.";
+Constant TX_PS_99 = "Looks like someone put this in Diamond's cubby to confess their love to her. Seeing as its crumpled up on the floor, I can't imagine that went very well.";
 Constant TX_PS_45 = "Mhmmmm, it even smills like her...";
 Constant TX_PS_84 = "Monkey wrench";
 Constant TX_PS_61 = "Mr Hartman";
@@ -51127,27 +51291,29 @@ Constant TX_PS_66 = "Ms Belvod";
 Constant TX_PS_65 = "Ms. Belvod's Classroom. Apparently she has a thing for Mr Redman. I certinly don't see the appeal...";
 Constant TX_PS_42 = "My Locker";
 Constant TX_PS_77 = "Pink and Sparkly. Also good for stabbing. And writing.";
-Constant TX_PS_101 = "QUIT";
-Constant TX_PS_98 = "RESTART";
-Constant TX_PS_99 = "RESTORE a saved game";
+Constant TX_PS_105 = "QUIT";
+Constant TX_PS_102 = "RESTART";
+Constant TX_PS_103 = "RESTORE a saved game";
 Constant TX_PS_53 = "Room 211";
 Constant TX_PS_56 = "Room 212";
 Constant TX_PS_59 = "Room 213";
 Constant TX_PS_64 = "Room 214";
-Constant TX_PS_88 = "Rope";
+Constant TX_PS_92 = "Rope";
 Constant TX_PS_37 = "School";
 Constant TX_PS_47 = "Senior side of the hallway. Close to the Gym.";
 Constant TX_PS_72 = "Serving barely-edible food substance since 1989.";
+Constant TX_PS_90 = "Spear";
 Constant TX_PS_67 = "Steps";
 Constant TX_PS_41 = "The normally busy hallway seems eeriely quiet after school hours.";
-Constant TX_PS_93 = "This could only be used by someone to spy on someone else....";
-Constant TX_PS_102 = "UNDO the last command";
+Constant TX_PS_97 = "This could only be used by someone to spy on someone else....";
+Constant TX_PS_106 = "UNDO the last command";
 Constant TX_PS_40 = "Underclassmen Hallway";
 Constant TX_PS_48 = "Upperclassmen Junction";
 Constant TX_PS_50 = "West Upperclassmen Hall";
 Constant TX_PS_35 = "Yourself";
 Constant TX_PS_4 = "a bunch of nerds";
 Constant TX_PS_9 = "animals";
+Constant TX_PS_87 = "axe";
 Constant TX_PS_15 = "backdrops";
 Constant TX_PS_81 = "baseball bat";
 Constant TX_PS_85 = "candlestick";
@@ -51158,27 +51324,28 @@ Constant TX_PS_10 = "doors";
 Constant TX_PS_30 = "down";
 Constant TX_PS_27 = "east";
 Constant TX_PS_36 = "fist which has damage 1";
-Constant TX_PS_90 = "hankerchief";
+Constant TX_PS_94 = "hankerchief";
 Constant TX_PS_31 = "inside";
 Constant TX_PS_79 = "katana";
-Constant TX_PS_89 = "man named Brad";
+Constant TX_PS_93 = "man named Brad";
 Constant TX_PS_7 = "men";
 Constant TX_PS_83 = "monkey wrench";
 Constant TX_PS_20 = "north";
 Constant TX_PS_22 = "northeast";
 Constant TX_PS_23 = "northwest";
-Constant TX_PS_94 = "note";
+Constant TX_PS_98 = "note";
 Constant TX_PS_32 = "outside";
 Constant TX_PS_6 = "people";
 Constant TX_PS_13 = "player's holdalls";
 Constant TX_PS_18 = "regions";
-Constant TX_PS_87 = "rope";
+Constant TX_PS_91 = "rope";
 Constant TX_PS_78 = "scimitar";
-Constant TX_PS_100 = "see some suggestions for AMUSING things to do";
+Constant TX_PS_104 = "see some suggestions for AMUSING things to do";
 Constant TX_PS_24 = "south";
 Constant TX_PS_25 = "southeast";
 Constant TX_PS_26 = "southwest";
-Constant TX_PS_92 = "spyglass";
+Constant TX_PS_89 = "spear";
+Constant TX_PS_96 = "spyglass";
 Constant TX_PS_5 = "supporters";
 Constant TX_PS_21 = "the";
 Constant TX_PS_29 = "up";
@@ -58691,40 +58858,54 @@ Array BC_338 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_339 --> PACKED_TEXT_STORAGE TX_PS_17;
 Array BC_340 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_341 --> PACKED_TEXT_STORAGE TX_PS_89;
-Array BC_342 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
+Array BC_342 --> PACKED_TEXT_STORAGE TX_PS_90;
 Array BC_343 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_344 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_345 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
-Array BC_346 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
-Array BC_347 --> PACKED_TEXT_STORAGE TX_PS_90;
+Array BC_346 --> PACKED_TEXT_STORAGE TX_PS_17;
+Array BC_347 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_348 --> PACKED_TEXT_STORAGE TX_PS_91;
-Array BC_349 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
+Array BC_349 --> PACKED_TEXT_STORAGE TX_PS_92;
 Array BC_350 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_351 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_352 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
-Array BC_353 --> PACKED_TEXT_STORAGE TX_PS_92;
-Array BC_354 --> PACKED_TEXT_STORAGE TX_PS_93;
-Array BC_355 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
+Array BC_353 --> PACKED_TEXT_STORAGE TX_PS_17;
+Array BC_354 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
+Array BC_355 --> PACKED_TEXT_STORAGE TX_PS_93;
 Array BC_356 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_357 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_358 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
-Array BC_359 --> PACKED_TEXT_STORAGE TX_PS_94;
-Array BC_360 --> PACKED_TEXT_STORAGE TX_PS_95;
-Array BC_361 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
-Array BC_362 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
+Array BC_359 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
+Array BC_360 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
+Array BC_361 --> PACKED_TEXT_STORAGE TX_PS_94;
+Array BC_362 --> PACKED_TEXT_STORAGE TX_PS_95;
 Array BC_363 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_364 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
-Array BC_365 --> PACKED_TEXT_STORAGE TX_PS_96;
-Array BC_366 --> PACKED_TEXT_STORAGE TX_PS_4;
-Array BC_367 --> PACKED_TEXT_STORAGE TX_PS_3;
+Array BC_365 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
+Array BC_366 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
+Array BC_367 --> PACKED_TEXT_STORAGE TX_PS_96;
 Array BC_368 --> PACKED_TEXT_STORAGE TX_PS_97;
 Array BC_369 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
-Array BC_370 --> PACKED_TEXT_STORAGE TX_PS_98;
-Array BC_371 --> PACKED_TEXT_STORAGE TX_PS_99;
-Array BC_372 --> PACKED_TEXT_STORAGE TX_PS_100;
-Array BC_373 --> PACKED_TEXT_STORAGE TX_PS_101;
-Array BC_374 --> PACKED_TEXT_STORAGE TX_PS_102;
-Array BC_375 --> CONSTANT_PACKED_TEXT_STORAGE R_TX_S_134;
+Array BC_370 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
+Array BC_371 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
+Array BC_372 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
+Array BC_373 --> PACKED_TEXT_STORAGE TX_PS_98;
+Array BC_374 --> PACKED_TEXT_STORAGE TX_PS_99;
+Array BC_375 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
+Array BC_376 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
+Array BC_377 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
+Array BC_378 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
+Array BC_379 --> PACKED_TEXT_STORAGE TX_PS_100;
+Array BC_380 --> PACKED_TEXT_STORAGE TX_PS_4;
+Array BC_381 --> PACKED_TEXT_STORAGE TX_PS_3;
+Array BC_382 --> PACKED_TEXT_STORAGE TX_PS_101;
+Array BC_383 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
+Array BC_384 --> PACKED_TEXT_STORAGE TX_PS_102;
+Array BC_385 --> PACKED_TEXT_STORAGE TX_PS_103;
+Array BC_386 --> PACKED_TEXT_STORAGE TX_PS_104;
+Array BC_387 --> PACKED_TEXT_STORAGE TX_PS_105;
+Array BC_388 --> PACKED_TEXT_STORAGE TX_PS_106;
+Array BC_389 --> CONSTANT_PACKED_TEXT_STORAGE R_TX_S_134;
 
 
 

@@ -50,9 +50,9 @@ The attacking it with action has a number called inflicted.
 a weapon is a kind of thing. A weapon has a number called damage. Damage is usually 5. 
 The player carries a weapon called a fist which has damage 1. 
 Diamonds Pencil is a weapon. Understand "pencil" as Diamonds pencil. The description of Diamonds Pencil is "Pink and Sparkly. Also good for stabbing. And writing." 
-There is a scimitar, katana, baseball bat, monkey wrench, candlestick, and rope which are weapons. 
+There is a scimitar, katana, baseball bat, monkey wrench, candlestick, axe, spear, and rope which are weapons. Understand "wrench" as monkey wrench. Understand "baseball bat" as bat. 
+A baseball bat and a candlestick have damage 4. A rope and pencil have damage 2. A wrench, axe, and spear have damage 3.  
 
-[generalize fighting action]
 
 [characters]
 Mr Redman, Mrs Ford, Mr Hartman, and Ms Belvod are people. People have a number called health. Health is usually 5. People can be either corporeal or incorporeal. People are usually corporeal. 
