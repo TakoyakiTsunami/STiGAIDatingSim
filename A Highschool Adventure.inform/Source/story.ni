@@ -52,10 +52,9 @@ The player carries a weapon called a fist which has damage 1.
 Diamonds Pencil is a weapon. Understand "pencil" as Diamonds pencil. The description of Diamonds Pencil is "Pink and Sparkly. Also good for stabbing. And writing." 
 There is a scimitar, katana, baseball bat, monkey wrench, candlestick, and rope which are weapons. 
 
-[generalize fighting action]
 
 [characters]
-Mr Redman, Mrs Ford, Mr Hartman, and Ms Belvod are people. People have a number called health. Health is usually 5. People can be either corporeal or incorporeal. People are usually corporeal. 
+Mr Redman, Mrs Ford, Mr Hartman, and Ms Belvod are people. People have a number called health. Health is usually 5. People can be either corporeal or incorporeal. People are usually corporeal.
 Mr Redman is in Room 211. Understand "Mr Redmans Classroom" as Room 211.  Understand "Mr R" and "Redman" as Mr Redman.
 Mrs Ford is in room 212. Understand "Mrs Fords Classroom" as Room 212. Understand "Mrs F" and "Ford" as Mrs Ford.
 Mr Hartman is in Room 213. Understand "Mr Hartmans Classroom " as Room 213. Understand "Mr H" and "Hartman" as Mr Hartman.
