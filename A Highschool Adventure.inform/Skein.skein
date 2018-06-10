@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Skein rootNode="node-1">
   <generator>Windows Inform 7 6M62</generator>
-  <activeNode nodeId="node-122"/>
+  <activeNode nodeId="node-153"/>
   <item nodeId="node-1">
     <command xml:space="preserve">A Highschool Adventure</command>
-    <result xml:space="preserve">Classic Highschool Drama But with Murder&#x000A;An Interactive Fiction by a bunch of nerds&#x000A;Release 1 / Serial number 180610 / Inform 7 build 6M62 (I6/v6.33 lib 6/12N) SD&#x000A;&#x000A;Underclassmen Hallway&#x000A;The normally busy hallway seems eeriely quiet after school hours.&#x000A;&#x000A;You can see My Locker (closed) and Diamonds Locker (closed) here.&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">Classic Highschool Drama But with Murder&#x000A;An Interactive Fiction by a bunch of nerds&#x000A;Release 1 / Serial number 180610 / Inform 7 build 6M62 (I6/v6.33 lib 6/12N) SD&#x000A;&#x000A;Underclassmen Hallway&#x000A;The normally busy hallway seems eeriely quiet after school hours.&#x000A;&#x000A;You can see rope, My Locker (closed) and Diamonds Locker (closed) here.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
+    <changed>YES</changed>
     <children>
       <child nodeId="node-2"/>
       <child nodeId="node-7"/>
@@ -23,6 +23,9 @@
       <child nodeId="node-74"/>
       <child nodeId="node-82"/>
       <child nodeId="node-120"/>
+      <child nodeId="node-123"/>
+      <child nodeId="node-147"/>
+      <child nodeId="node-153"/>
     </children>
   </item>
   <item nodeId="node-2">
@@ -1042,6 +1045,270 @@
   <item nodeId="node-122">
     <command xml:space="preserve">spin mrs ford to 3341</command>
     <result xml:space="preserve">Mrs Ford does not spin.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-123">
+    <command xml:space="preserve">go west</command>
+    <result xml:space="preserve">&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-124"/>
+      <child nodeId="node-126"/>
+    </children>
+  </item>
+  <item nodeId="node-124">
+    <command xml:space="preserve">look</command>
+    <result xml:space="preserve">Room 211&#x000A;Mr Redman's Classroom. He's known for beating the living hell out of his kids. Not cool Mr Redman. Not cool.&#x000A;&#x000A;You can see Mr Redman here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-125"/>
+      <child nodeId="node-132"/>
+      <child nodeId="node-145"/>
+    </children>
+  </item>
+  <item nodeId="node-125">
+    <command xml:space="preserve">katana damage</command>
+    <result xml:space="preserve">That's not a verb I recognise.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-132">
+    <command xml:space="preserve">go east </command>
+    <result xml:space="preserve">Underclassmen Hallway&#x000A;The normally busy hallway seems eeriely quiet after school hours.&#x000A;&#x000A;You can see My Locker (closed) and Diamonds Locker (closed) here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-133"/>
+    </children>
+  </item>
+  <item nodeId="node-133">
+    <command xml:space="preserve">go east</command>
+    <result xml:space="preserve">&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-134"/>
+    </children>
+  </item>
+  <item nodeId="node-134">
+    <command xml:space="preserve">look</command>
+    <result xml:space="preserve">Room 212&#x000A;Mrs Ford's Classroom. She's a real stickler for the rules. Everything with its purpose, everything in its place.&#x000A;&#x000A;You can see Mrs Ford here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-135"/>
+    </children>
+  </item>
+  <item nodeId="node-135">
+    <command xml:space="preserve">go west</command>
+    <result xml:space="preserve">Underclassmen Hallway&#x000A;The normally busy hallway seems eeriely quiet after school hours.&#x000A;&#x000A;You can see My Locker (closed) and Diamonds Locker (closed) here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-136"/>
+    </children>
+  </item>
+  <item nodeId="node-136">
+    <command xml:space="preserve">go north</command>
+    <result xml:space="preserve">&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-137"/>
+    </children>
+  </item>
+  <item nodeId="node-137">
+    <command xml:space="preserve">look</command>
+    <result xml:space="preserve">Steps&#x000A;Hundreds of kids go up and down these steps everyday.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-138"/>
+    </children>
+  </item>
+  <item nodeId="node-138">
+    <command xml:space="preserve">go north</command>
+    <result xml:space="preserve">Great Outdoors&#x000A;Its pleasent and breezy. Much better than that that big block of concrete they call a school&#x000A;&#x000A;You can see a scimitar here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-139"/>
+    </children>
+  </item>
+  <item nodeId="node-139">
+    <command xml:space="preserve">report scimitar damage</command>
+    <result xml:space="preserve">&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-140"/>
+    </children>
+  </item>
+  <item nodeId="node-140">
+    <command xml:space="preserve">go south </command>
+    <result xml:space="preserve">Steps&#x000A;Hundreds of kids go up and down these steps everyday.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-141"/>
+    </children>
+  </item>
+  <item nodeId="node-141">
+    <command xml:space="preserve">go south</command>
+    <result xml:space="preserve">Underclassmen Hallway&#x000A;The normally busy hallway seems eeriely quiet after school hours.&#x000A;&#x000A;You can see My Locker (closed) and Diamonds Locker (closed) here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-142"/>
+    </children>
+  </item>
+  <item nodeId="node-142">
+    <command xml:space="preserve">go east</command>
+    <result xml:space="preserve">&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-143"/>
+    </children>
+  </item>
+  <item nodeId="node-143">
+    <command xml:space="preserve">look</command>
+    <result xml:space="preserve">Room 212&#x000A;Mrs Ford's Classroom. She's a real stickler for the rules. Everything with its purpose, everything in its place.&#x000A;&#x000A;You can see Mrs Ford here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-144"/>
+    </children>
+  </item>
+  <item nodeId="node-144">
+    <command xml:space="preserve">report mrs ford damage</command>
+    <result xml:space="preserve">no damage points&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-145">
+    <command xml:space="preserve">go east</command>
+    <result xml:space="preserve">Underclassmen Hallway&#x000A;The normally busy hallway seems eeriely quiet after school hours.&#x000A;&#x000A;You can see rope, My Locker (closed) and Diamonds Locker (closed) here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-146"/>
+    </children>
+  </item>
+  <item nodeId="node-146">
+    <command xml:space="preserve">report rope damage</command>
+    <result xml:space="preserve">rope has 4 points&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-126">
+    <command xml:space="preserve">look\</command>
+    <result xml:space="preserve">That's not a verb I recognise.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-127"/>
+    </children>
+  </item>
+  <item nodeId="node-127">
+    <command xml:space="preserve">look</command>
+    <result xml:space="preserve">Room 211&#x000A;Mr Redman's Classroom. He's known for beating the living hell out of his kids. Not cool Mr Redman. Not cool.&#x000A;&#x000A;You can see Mr Redman here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-128"/>
+    </children>
+  </item>
+  <item nodeId="node-128">
+    <command xml:space="preserve">go east</command>
+    <result xml:space="preserve">Underclassmen Hallway&#x000A;The normally busy hallway seems eeriely quiet after school hours.&#x000A;&#x000A;You can see My Locker (closed) and Diamonds Locker (closed) here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-129"/>
+    </children>
+  </item>
+  <item nodeId="node-129">
+    <command xml:space="preserve">go east</command>
+    <result xml:space="preserve">&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-130"/>
+    </children>
+  </item>
+  <item nodeId="node-130">
+    <command xml:space="preserve">look</command>
+    <result xml:space="preserve">Room 212&#x000A;Mrs Ford's Classroom. She's a real stickler for the rules. Everything with its purpose, everything in its place.&#x000A;&#x000A;You can see candlestick and Mrs Ford here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-131"/>
+    </children>
+  </item>
+  <item nodeId="node-131">
+    <command xml:space="preserve">report damage candlestick</command>
+    <result xml:space="preserve">That's not a verb I recognise.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-147">
+    <command xml:space="preserve">invintory</command>
+    <result xml:space="preserve">That's not a verb I recognise.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-148"/>
+    </children>
+  </item>
+  <item nodeId="node-148">
+    <command xml:space="preserve">check inventory</command>
+    <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-149"/>
+    </children>
+  </item>
+  <item nodeId="node-149">
+    <command xml:space="preserve">inventory</command>
+    <result xml:space="preserve">You are carrying:&#x000A;  a fist which has damage 1&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-150"/>
+    </children>
+  </item>
+  <item nodeId="node-150">
+    <command xml:space="preserve">hold fist</command>
+    <result xml:space="preserve">You already have that.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-151"/>
+    </children>
+  </item>
+  <item nodeId="node-151">
+    <command xml:space="preserve">carry fist</command>
+    <result xml:space="preserve">You already have that.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-152"/>
+    </children>
+  </item>
+  <item nodeId="node-152">
+    <command xml:space="preserve">punch</command>
+    <result xml:space="preserve">(yourself with the fist which has damage 1)&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-153">
+    <command xml:space="preserve">report rope damage</command>
+    <result xml:space="preserve">rope has 5 damage points.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
   </item>

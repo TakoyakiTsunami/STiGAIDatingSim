@@ -37,6 +37,21 @@ Understand "spin [something] to [a number]" as spinning it to.
 
 fuck is an action applying to one thing. understand "fuck [something]" and "fuck the [something]"  as fuck. Instead of fuck, say "You fucked it".
 
+[combat action rules]
+report damage is an action applying to one thing. Understand "report [something] damage" as report damage. Check report damage: If the noun is not a weapon, instead say "no damage points".
+Carry out report damage: 
+	say "[noun] has [damage of noun] damage points.".
+
+Understand the commands "attack" and "punch" and "destroy" and "kill" and "murder" and "hit" and "thump" and "break" and "smash" and "torture" and "wreck" as something new.
+Attacking it with is an action applying to one thing and one carried thing. Understand "attack [someone] with [something preferably held]" as attacking it with.
+Understand the commands "punch" and "destroy" and "kill" and "murder" and "hit" and "thump" and "break" and "smash" and "torture" and "wreck" as "attack".
+The attacking it with action has a number called inflicted.
+
+a weapon is a kind of thing. A weapon has a number called damage. Damage is usually 5. 
+The player carries a weapon called a fist which has damage 1. 
+Diamonds Pencil is a weapon. Understand "pencil" as Diamonds pencil. The description of Diamonds Pencil is "Pink and Sparkly. Also good for stabbing. And writing." 
+There is a scimitar, katana, baseball bat, monkey wrench, candlestick, and rope which are weapons. 
+
 [generalize fighting action]
 
 [characters]
@@ -56,11 +71,7 @@ Diamonds Locker is a locker in the Underclassmen Hallway. The description of Dia
 After spinning the closed Diamonds Locker to 0112: now Diamonds Locker is open; say "[noun] opens, revealing [a list of things in noun]."
 After going from room containing diamonds locker, now diamonds locker is closed. 
 
-a weapon is a kind of thing. A weapon has a number called damage. Damage is usually 1. 
-Diamonds Pencil is a weapon. Understand "pencil" as Diamonds pencil. The description of Diamonds Pencil is "Pink and Sparkly. Also good for stabbing. And writing." Diamonds Pencil has damage 2.
-There is a scimitar, katana, baseball bat, monkey wrench, candlestick, and rope which are weapons. The scimitar has damage 5. the Katana has damage 5. The baseball bat has damage 3. Understand "bat" as baseball bat. The monkey wrench has damage 2. understand "wrench" as monkey wrench. 
-a placement is a room that varies. 
- 
+
 There is a hankerchief. The description of the hankerchief is "Interesting. I don't know anyone who uses one of these anymore. And there's someone's lipstick stained on it. I think it might be Diamond's.". 
 There is a spyglass. The description of the spyglass is "This could only be used by someone to spy on someone else....".
 There is a note. The description of the note is "Looks like someone put this in Diamond's cubby to confess their love to her. Seeing as its crumpled up on the floor, I can't imagine that went very well.".
@@ -68,7 +79,7 @@ There is a note. The description of the note is "Looks like someone put this in 
 [scenes]
 Beginning, Bully Sequence, Kidnapping, and Resolution are scenes. 
 Beginning begins when play begins. Beginning ends when Diamonds Locker is open. 
-Bully Sequence begins when Beginning ends. Bully Sequence ends when Brad is defeated.
+Bully Sequence begins when Beginning ends. Bully Sequence ends when Brad is incorporeal.
 Kidnapping begins when Bully Sequence ends. 
 Resolution begins when Kidnapping ends. 
 
@@ -96,6 +107,9 @@ When Kidnapping begins:
 	Now hankerchief is in cafeteria;
 	Now spyglass is in the great outdoors; 
 	Now note is in gym. 
+
+When Resolution ends: 
+	end the story. 
 
 [Begining code that is implemented when we start to play the game]
 When play begins: 
