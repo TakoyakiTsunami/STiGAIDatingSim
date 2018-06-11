@@ -14,7 +14,7 @@ Reading language definition from <C:\Program Files (x86)\Inform 7\Internal\Langu
 Phase I ... Lexical analysis
 -----------------------------------------------------
 
-I've now read your source text, which is 1721 words long.
+I've now read your source text, which is 1759 words long.
 
 
 -----------------------------------------------------
@@ -77,107 +77,29 @@ Phase X ... Tables and grammar
 Phase XI ... Phrases and rules
 -----------------------------------------------------
 
+PHUD: <instead of attacking it with>: rule attachment mode RULE_IN_RULEBOOK_EFF
+  Rule preamble: <instead of attacking it with>
+  Rule parameter: <attacking it with>
+  Owned by rulebook: Rulebook 20 (instead)
+  Placement: MIDDLE_PLACEMENT
+Bad action pattern: attacking it with =   [Invalid]  Action: unspecified
+
+PAP failure reason: 1
+Problem PM_APUnknown issued from inform7/Chapter 28/Phrase Usage.w, line 848
+
+  >--> You wrote 'Instead of attacking it with' (source text, line 92), which
+    seems to introduce a rule taking effect only if the action is 'attacking it
+    with'. But that did not make sense as a description of an action. I am
+    unable to place this rule into any rulebook.
+
 
 
 -----------------------------------------------------
-Phase XII ... Code generation
+Phase XII ... Compilation now complete
 -----------------------------------------------------
 
-
-
-==== Phase XII.1 ... Compiling the storage for the model world ====
-
-
-
-==== Phase XII.2 ... Compiling the tables ====
-
-
-
-==== Phase XII.3 ... Compiling the equations ====
-
-
-
-==== Phase XII.4 ... Compiling the named action patterns ====
-
-
-
-==== Phase XII.5 ... Compiling the action routines ====
-
-
-
-==== Phase XII.6 ... Compiling first block of phrases ====
-
-0 = object. 1 = number
-0 = object. 1 = number
-
-
-==== Phase XII.7 ... Compiling the rulebooks ====
-
-
-
-==== Phase XII.8 ... Compiling scene details ====
-
-
-
-==== Phase XII.9 ... CTNL ====
-
-
-
-==== Phase XII.10 ... Slashing grammar (G1) ====
-
-
-
-==== Phase XII.11 ... Determining grammar (G2) ====
-
-
-
-==== Phase XII.12 ... Compiling GPR tokens for parsing various kinds of value ====
-
-
-
-==== Phase XII.13 ... Compiling second block of phrases ====
-
-
-
-==== Phase XII.14 ... Compiling noun and scope filter tokens ====
-
-
-
-==== Phase XII.15 ... Compiling chronology ====
-
-
-
-==== Phase XII.16 ... Compiling I6 Verb directives ====
-
-
-
-==== Phase XII.17 ... Slashing grammar (G1) ====
-
-
-
-==== Phase XII.18 ... Determining grammar (G2) ====
-
-
-
-==== Phase XII.19 ... Sorting and compiling non-value grammar (G3, G4) ====
-
-
-
-==== Phase XII.20 ... Compiling noun and scope filter tokens ====
-
-
-
-==== Phase XII.21 ... Compiling routines from predicate calculus ====
-
-Providing for a total heap of 8192, given requirement of 8192
-
-
------------------------------------------------------
-Phase XIII ... Compilation now complete
------------------------------------------------------
-
-Total of 108 files written as streams.
-CPU time: 129 centiseconds
+Total of 4 files written as streams.
+CPU time: 31 centiseconds
 
 
 That concludes the debugging log from this run of Inform.

@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Skein rootNode="node-1">
   <generator>Windows Inform 7 6M62</generator>
-  <activeNode nodeId="node-222"/>
+  <activeNode nodeId="node-271"/>
   <item nodeId="node-1">
     <command xml:space="preserve">A Highschool Adventure</command>
-    <result xml:space="preserve">Classic Highschool Drama But with Murder&#x000A;An Interactive Fiction by a bunch of nerds&#x000A;Release 1 / Serial number 180610 / Inform 7 build 6M62 (I6/v6.33 lib 6/12N) SD&#x000A;&#x000A;Underclassmen Hallway&#x000A;The normally busy hallway seems eeriely quiet after school hours.&#x000A;&#x000A;You can see monkey wrench, rope, baseball bat, My Locker (closed) and Diamonds Locker (closed) here.&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">Classic Highschool Drama But with Murder&#x000A;An Interactive Fiction by a bunch of nerds&#x000A;Release 1 / Serial number 180610 / Inform 7 build 6M62 (I6/v6.33 lib 6/12N) SD&#x000A;&#x000A;Underclassmen Hallway&#x000A;The normally busy hallway seems eeriely quiet after school hours.&#x000A;&#x000A;You can see a scimitar, My Locker (closed) and Diamonds Locker (closed) here.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>YES</changed>
     <children>
@@ -36,6 +36,8 @@
       <child nodeId="node-204"/>
       <child nodeId="node-205"/>
       <child nodeId="node-206"/>
+      <child nodeId="node-227"/>
+      <child nodeId="node-254"/>
     </children>
   </item>
   <item nodeId="node-2">
@@ -1156,7 +1158,7 @@
   </item>
   <item nodeId="node-124">
     <command xml:space="preserve">look</command>
-    <result xml:space="preserve">Room 211&#x000A;Mr Redman's Classroom. He's known for beating the living hell out of his kids. Not cool Mr Redman. Not cool.&#x000A;&#x000A;You can see axe and Mr Redman here.&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">Room 211&#x000A;Mr Redman's Classroom. He's known for beating the living hell out of his kids. Not cool Mr Redman. Not cool.&#x000A;&#x000A;You can see Mr Redman here.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>YES</changed>
     <children>
@@ -1168,6 +1170,7 @@
       <child nodeId="node-171"/>
       <child nodeId="node-210"/>
       <child nodeId="node-211"/>
+      <child nodeId="node-223"/>
     </children>
   </item>
   <item nodeId="node-125">
@@ -1522,6 +1525,12 @@
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
   </item>
+  <item nodeId="node-223">
+    <command xml:space="preserve">attack mr redman with fish</command>
+    <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
   <item nodeId="node-141">
     <command xml:space="preserve">look\</command>
     <result xml:space="preserve">That's not a verb I recognise.&#x000A;&#x000A;&gt;</result>
@@ -1662,7 +1671,34 @@
   </item>
   <item nodeId="node-154">
     <command xml:space="preserve">inventory</command>
-    <result xml:space="preserve">You are carrying:&#x000A;  a fist which has damage 1&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">You are carrying:&#x000A;  a fish&#x000A;  a fist&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>YES</changed>
+    <children>
+      <child nodeId="node-224"/>
+    </children>
+  </item>
+  <item nodeId="node-224">
+    <command xml:space="preserve">go west</command>
+    <result xml:space="preserve">&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-225"/>
+    </children>
+  </item>
+  <item nodeId="node-225">
+    <command xml:space="preserve">look</command>
+    <result xml:space="preserve">Room 211&#x000A;Mr Redman's Classroom. He's known for beating the living hell out of his kids. Not cool Mr Redman. Not cool.&#x000A;&#x000A;You can see katana and Mr Redman here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-226"/>
+    </children>
+  </item>
+  <item nodeId="node-226">
+    <command xml:space="preserve">attack mr r with fish</command>
+    <result xml:space="preserve">The fish does not qualify as a weapon.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
   </item>
@@ -1888,6 +1924,405 @@
   <item nodeId="node-209">
     <command xml:space="preserve">katana health</command>
     <result xml:space="preserve">the katana isn't alive... yet.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-227">
+    <command xml:space="preserve">take wrench</command>
+    <result xml:space="preserve">Taken.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-228"/>
+    </children>
+  </item>
+  <item nodeId="node-228">
+    <command xml:space="preserve">go west</command>
+    <result xml:space="preserve">&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-229"/>
+    </children>
+  </item>
+  <item nodeId="node-229">
+    <command xml:space="preserve">look</command>
+    <result xml:space="preserve">Room 211&#x000A;Mr Redman's Classroom. He's known for beating the living hell out of his kids. Not cool Mr Redman. Not cool.&#x000A;&#x000A;You can see axe and Mr Redman here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-230"/>
+    </children>
+  </item>
+  <item nodeId="node-230">
+    <command xml:space="preserve">take axe</command>
+    <result xml:space="preserve">Taken.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-231"/>
+    </children>
+  </item>
+  <item nodeId="node-231">
+    <command xml:space="preserve">attack mr r with axe</command>
+    <result xml:space="preserve">You attack Mr Redman with axe, causing 3 points of damage!&#x000A;Mr Redman is now your enemy.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-232"/>
+    </children>
+  </item>
+  <item nodeId="node-232">
+    <command xml:space="preserve">attack mr r with axe</command>
+    <result xml:space="preserve">You attack Mr Redman with axe, causing 2 points of damage!&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-233"/>
+    </children>
+  </item>
+  <item nodeId="node-233">
+    <command xml:space="preserve">attack mr r with axe</command>
+    <result xml:space="preserve">You attack Mr Redman with axe, causing 1 point of damage!&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-234"/>
+    </children>
+  </item>
+  <item nodeId="node-234">
+    <command xml:space="preserve">attack mr r with wrench</command>
+    <result xml:space="preserve">You attack Mr Redman with monkey wrench, causing 3 points of damage!&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-235"/>
+    </children>
+  </item>
+  <item nodeId="node-235">
+    <command xml:space="preserve">attack mr r with wrench</command>
+    <result xml:space="preserve">You attack Mr Redman with monkey wrench, causing 2 points of damage!&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-236"/>
+    </children>
+  </item>
+  <item nodeId="node-236">
+    <command xml:space="preserve">mr r health</command>
+    <result xml:space="preserve">Mr Redman has 9 health&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-237"/>
+    </children>
+  </item>
+  <item nodeId="node-237">
+    <command xml:space="preserve">mr r health</command>
+    <result xml:space="preserve">Mr Redman has 9 health&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-238"/>
+    </children>
+  </item>
+  <item nodeId="node-238">
+    <command xml:space="preserve">attack mr r with wrench</command>
+    <result xml:space="preserve">You attack Mr Redman with monkey wrench, causing 1 point of damage!&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-239"/>
+    </children>
+  </item>
+  <item nodeId="node-239">
+    <command xml:space="preserve">attack mr r with wrench</command>
+    <result xml:space="preserve">You attack Mr Redman with monkey wrench, causing 1 point of damage!&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-240"/>
+    </children>
+  </item>
+  <item nodeId="node-240">
+    <command xml:space="preserve">attack mr r with wrench</command>
+    <result xml:space="preserve">You attack Mr Redman with monkey wrench, causing 1 point of damage!&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-241"/>
+    </children>
+  </item>
+  <item nodeId="node-241">
+    <command xml:space="preserve">attack mr r with wrench</command>
+    <result xml:space="preserve">You attack Mr Redman with monkey wrench, causing 1 point of damage!&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-242"/>
+    </children>
+  </item>
+  <item nodeId="node-242">
+    <command xml:space="preserve">attack mr r with wrench</command>
+    <result xml:space="preserve">You attack Mr Redman with monkey wrench, causing 1 point of damage!&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-243"/>
+    </children>
+  </item>
+  <item nodeId="node-243">
+    <command xml:space="preserve">attack mr r with wrench</command>
+    <result xml:space="preserve">You attack Mr Redman with monkey wrench, causing 1 point of damage!&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-244"/>
+    </children>
+  </item>
+  <item nodeId="node-244">
+    <command xml:space="preserve">attack mr r with wrench</command>
+    <result xml:space="preserve">You attack Mr Redman with monkey wrench, causing 1 point of damage!&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-245"/>
+    </children>
+  </item>
+  <item nodeId="node-245">
+    <command xml:space="preserve">attack mr r with wrench</command>
+    <result xml:space="preserve">You attack Mr Redman with monkey wrench, causing 1 point of damage!&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-246"/>
+    </children>
+  </item>
+  <item nodeId="node-246">
+    <command xml:space="preserve">attack mr r with wrench</command>
+    <result xml:space="preserve">You attack Mr Redman with monkey wrench, causing 1 point of damage!&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-247"/>
+    </children>
+  </item>
+  <item nodeId="node-247">
+    <command xml:space="preserve">attack mr r with wrench</command>
+    <result xml:space="preserve">You attack Mr Redman with monkey wrench, causing 1 point of damage!&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-248"/>
+    </children>
+  </item>
+  <item nodeId="node-248">
+    <command xml:space="preserve">attack mr r with wrench</command>
+    <result xml:space="preserve">You attack Mr Redman with monkey wrench, causing 1 point of damage!&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-249"/>
+    </children>
+  </item>
+  <item nodeId="node-249">
+    <command xml:space="preserve">attack mr r with wrench</command>
+    <result xml:space="preserve">You attack Mr Redman with monkey wrench, causing 1 point of damage!&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-250"/>
+    </children>
+  </item>
+  <item nodeId="node-250">
+    <command xml:space="preserve">attack mr r with wrench</command>
+    <result xml:space="preserve">You attack Mr Redman with monkey wrench, causing 1 point of damage!&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-251"/>
+    </children>
+  </item>
+  <item nodeId="node-251">
+    <command xml:space="preserve">attack mr r with wrench</command>
+    <result xml:space="preserve">You attack Mr Redman with monkey wrench, causing 1 point of damage!&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-252"/>
+    </children>
+  </item>
+  <item nodeId="node-252">
+    <command xml:space="preserve">mr r health</command>
+    <result xml:space="preserve">Mr Redman has -5 health&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-253"/>
+    </children>
+  </item>
+  <item nodeId="node-253">
+    <command xml:space="preserve">look</command>
+    <result xml:space="preserve">Room 211&#x000A;Mr Redman's Classroom. He's known for beating the living hell out of his kids. Not cool Mr Redman. Not cool.&#x000A;&#x000A;You can see Mr Redman here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-254">
+    <command xml:space="preserve">take scimitar</command>
+    <result xml:space="preserve">Taken.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-255"/>
+    </children>
+  </item>
+  <item nodeId="node-255">
+    <command xml:space="preserve">go west</command>
+    <result xml:space="preserve">&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-256"/>
+    </children>
+  </item>
+  <item nodeId="node-256">
+    <command xml:space="preserve">look</command>
+    <result xml:space="preserve">Room 211&#x000A;Mr Redman's Classroom. He's known for beating the living hell out of his kids. Not cool Mr Redman. Not cool.&#x000A;&#x000A;You can see Mr Redman here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-257"/>
+    </children>
+  </item>
+  <item nodeId="node-257">
+    <command xml:space="preserve">go east</command>
+    <result xml:space="preserve">Underclassmen Hallway&#x000A;The normally busy hallway seems eeriely quiet after school hours.&#x000A;&#x000A;You can see My Locker (closed) and Diamonds Locker (closed) here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-258"/>
+    </children>
+  </item>
+  <item nodeId="node-258">
+    <command xml:space="preserve">go east</command>
+    <result xml:space="preserve">&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-259"/>
+    </children>
+  </item>
+  <item nodeId="node-259">
+    <command xml:space="preserve">look</command>
+    <result xml:space="preserve">Room 212&#x000A;Mrs Ford's Classroom. She's a real stickler for the rules. Everything with its purpose, everything in its place.&#x000A;&#x000A;You can see baseball bat and Mrs Ford here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-260"/>
+    </children>
+  </item>
+  <item nodeId="node-260">
+    <command xml:space="preserve">take bat</command>
+    <result xml:space="preserve">Taken.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-261"/>
+    </children>
+  </item>
+  <item nodeId="node-261">
+    <command xml:space="preserve">attack mrs f with bat</command>
+    <result xml:space="preserve">You attack Mrs Ford with baseball bat, causing 4 points of damage!&#x000A;Mrs Ford is now your enemy.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-262"/>
+    </children>
+  </item>
+  <item nodeId="node-262">
+    <command xml:space="preserve">attack mrs f with bat</command>
+    <result xml:space="preserve">You attack Mrs Ford with baseball bat, causing 3 points of damage!&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-263"/>
+    </children>
+  </item>
+  <item nodeId="node-263">
+    <command xml:space="preserve">attack mrs f with bat</command>
+    <result xml:space="preserve">You attack Mrs Ford with baseball bat, causing 2 points of damage!&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-264"/>
+    </children>
+  </item>
+  <item nodeId="node-264">
+    <command xml:space="preserve">attack mrs f with bat</command>
+    <result xml:space="preserve">You attack Mrs Ford with baseball bat, causing 1 point of damage!&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-265"/>
+    </children>
+  </item>
+  <item nodeId="node-265">
+    <command xml:space="preserve">attack mrs f with scimitar</command>
+    <result xml:space="preserve">You attack Mrs Ford with the scimitar, causing 5 points of damage!&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-266"/>
+    </children>
+  </item>
+  <item nodeId="node-266">
+    <command xml:space="preserve">attack mrs f with scimitar</command>
+    <result xml:space="preserve">You attack Mrs Ford with the scimitar, causing 4 points of damage!&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-267"/>
+    </children>
+  </item>
+  <item nodeId="node-267">
+    <command xml:space="preserve">attack mrs f with scimitar</command>
+    <result xml:space="preserve">You attack Mrs Ford with the scimitar, causing 3 points of damage!&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-268"/>
+    </children>
+  </item>
+  <item nodeId="node-268">
+    <command xml:space="preserve">attack mrs f with scimitar</command>
+    <result xml:space="preserve">You attack Mrs Ford with the scimitar, causing 2 points of damage!&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-269"/>
+    </children>
+  </item>
+  <item nodeId="node-269">
+    <command xml:space="preserve">attack mrs f with scimitar</command>
+    <result xml:space="preserve">You attack Mrs Ford with the scimitar, causing 1 point of damage!&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-270"/>
+    </children>
+  </item>
+  <item nodeId="node-270">
+    <command xml:space="preserve">attack mrs f with scimitar</command>
+    <result xml:space="preserve">You attack Mrs Ford with the scimitar, causing 1 point of damage!&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-271"/>
+    </children>
+  </item>
+  <item nodeId="node-271">
+    <command xml:space="preserve">mrs f health</command>
+    <result xml:space="preserve">Mrs Ford has -6 health&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
   </item>
