@@ -17,11 +17,12 @@ Definition: a person is a ghost if their health is less than 1.
 Understand "help" as helping.
 Helping is an action applying to nothing.
 Report helping:
-	say "You can GO to adjacent rooms.[line break] You can OPEN doors.[line break]";
-	say "You can take, drop, and give items.[line break]";
+	say "You can GO to adjacent rooms. Use the commands n, s, e, w to go in each cardinal direction. [line break] You can OPEN doors.[line break]";
+	say "You can ATTACK someone with a WEAPON in your inventory.";
+	say "You can check your inventory by simply saying INVENTORY";
+	say "You can TAKE, DROP, and GIVE items. Taking an item puts it in your inventory. [line break]";
 	say "You can TALK to CHARACTER about TOPIC.[line break]";
-	say "You can SPIN objects to NUMBER. [line break]";
-	say "Today is the day I get Diamond to date me! Now I just gotta find her...".
+	say "You can open a locker by saying SPIN locker to NUMBER. [line break]".
 
 [Hallway]
 
@@ -94,7 +95,7 @@ Carry out report damage:
 
 Understand the commands "attack" and "punch" and "destroy" and "kill" and "murder" and "hit" and "thump" and "break" and "smash" and "torture" and "wreck" as something new.
 Attacking it with is an action applying to one thing and one carried thing. Understand "attack [someone] with [something preferably held]" as attacking it with.
-Understand the commands "punch" and "destroy" and "kill" and "murder" and "hit" and "thump" and "break" and "smash" and "torture" and "wreck" as "attack".
+Understand the commands "punch" and "destroy" and "kill" and "murder" and "hit" and "thump" and "break" and "smash" and "torture" and "wreck" as "attack". 
 The attacking it with action has a number called inflicted.
 Check an actor attacking something with something: 
 	if the second noun is not a weapon: 
@@ -136,7 +137,7 @@ There is a spyglass. The description of the spyglass is "This could only be used
 There is a note. The description of the note is "Looks like someone put this in Diamond's cubby to confess their love to her. Seeing as its crumpled up on the floor, I can't imagine that went very well.".
 
 a weapon is a kind of thing. A weapon has a number called damage. Damage is usually 5. 
-The player carries a weapon called a fist which has damage 1. 
+The player carries a weapon called a fist. A fist has damage 1. 
 Diamonds Pencil is a weapon. Understand "pencil" as Diamonds pencil. The description of Diamonds Pencil is "Pink and Sparkly. Also good for stabbing. And writing." 
 There is a scimitar, katana, baseball bat, monkey wrench, candlestick, axe, spear, and rope which are weapons. Understand "wrench" as monkey wrench. Understand "baseball bat" as bat. 
 A baseball bat and a candlestick have damage 4. A rope and pencil have damage 2. A wrench, axe, and spear have damage 3.  
