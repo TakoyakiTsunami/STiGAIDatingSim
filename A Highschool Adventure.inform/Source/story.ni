@@ -1,5 +1,16 @@
 "Classic Highschool Drama But with Murder" [so basically Riverdale] by a bunch of nerds
 
+[Help]
+
+Understand "help" as helping.
+Helping is an action applying to nothing.
+Report helping:
+	say "You can GO to adjacent rooms.[line break] You can OPEN doors.[line break]";
+	say "You can take, drop, and give items.[line break]";
+	say "You can TALK to CHARACTER about TOPIC.[line break]";
+	say "You can SPIN objects to NUMBER. [line break]";
+	say "Today is the day I get Diamond to date me! Now I just gotta find her...[new line]".
+
 [I got new rules, I count 'em]
 
 This is the death if health of player is 0 rule: 
