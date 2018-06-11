@@ -3,6 +3,7 @@
 [the map of the high school]
 School is a region.
 the player has a number called health which is 5.
+
 [I got new rules, I count 'em]
 
 This is the death if health of player is 0 rule: 
@@ -20,7 +21,7 @@ Report helping:
 	say "You can take, drop, and give items.[line break]";
 	say "You can TALK to CHARACTER about TOPIC.[line break]";
 	say "You can SPIN objects to NUMBER. [line break]";
-	say "Today is the day I get Diamond to date me! Now I just gotta find her...[new line]".
+	say "Today is the day I get Diamond to date me! Now I just gotta find her...".
 
 [Hallway]
 
@@ -61,11 +62,8 @@ Understand "talk to [someone]" as a mistake ("To start a conversation, try to AS
 
 A Locker is a kind of container. A locker is closed. 
 Instead of opening a locker, say "You need the right combination to open this locker. Spin the locker to _ _ _ _ to open".
-Spinning it to is an action applying to one thing and one number. Check spinning it to: if the noun is not a Locker, say "[The noun] does not spin." instead. Report spinning it to: say "Click! nothing else happens."
-Spinning it to is an action applying to one thing and one number. 
-Check spinning it to: if the noun is not a Locker, say "[The noun] does not spin." instead. 
-Report spinning it to: say "Click! nothing else happens.".
-Understand "spin [something] to [a number]" as spinning it to.
+Spinning it to is an action applying to one thing and one number. Understand "spin [something] to [a number]" as spinning it to.
+Check spinning it to: if the noun is not a Locker, say "[The noun] does not spin." instead. Report spinning it to: say "Click! nothing else happens."
 
 fuck is an action applying to one thing. understand "fuck [something]" and "fuck the [something]"  as fuck. Instead of fuck, say "You fucked it".
 
@@ -75,8 +73,6 @@ Instead of taking inventory:
 	list the contents of the player, with newlines, indented, giving inventory information.
 
 [combat action rules]
-report damage is an action applying to one thing. Understand "report [something] damage" as report damage. Check report damage: If the noun is not a weapon, instead say "no damage points".
-People have a number called health. Health is usually 20. 
 Check health is an action applying to one thing. Understand "check [something] health" as check health. Understand "[something] health" as check health. 
 Check check health: if the noun is not a person, instead say "the [noun] isn't alive... yet.".
 Carry out check health:
@@ -100,25 +96,6 @@ Understand the commands "attack" and "punch" and "destroy" and "kill" and "murde
 Attacking it with is an action applying to one thing and one carried thing. Understand "attack [someone] with [something preferably held]" as attacking it with.
 Understand the commands "punch" and "destroy" and "kill" and "murder" and "hit" and "thump" and "break" and "smash" and "torture" and "wreck" as "attack".
 The attacking it with action has a number called inflicted.
-
-a weapon is a kind of thing. A weapon has a number called damage. Damage is usually 5. 
-The player carries a weapon called a fist which has damage 1. 
-Diamonds Pencil is a weapon. Understand "pencil" as Diamonds pencil. The description of Diamonds Pencil is "Pink and Sparkly. Also good for stabbing. And writing." 
-There is a scimitar, katana, baseball bat, monkey wrench, candlestick, and rope which are weapons. 
-
-[generalize fighting action]
-
-[characters]
-Mr Redman, Mrs Ford, Mr Hartman, and Ms Belvod are people. People have a number called health. Health is usually 5. People can be either corporeal or incorporeal. People are usually corporeal. 
-Attacking it with is an action applying to one thing and one carried thing. Understand "attack [someone] with [something preferably held]" as attacking it with. 
-Understand the commands "punch" and "destroy" and "kill" and "murder" and "hit" and "thump" and "break" and "smash" and "torture" and "wreck" as "attack".
-
-a weapon is a kind of thing. A weapon has a number called damage. Damage is usually 5. 
-The player carries a weapon called a fist. Fist has damage 1. 
-Diamonds Pencil is a weapon. Understand "pencil" as Diamonds pencil. The description of Diamonds Pencil is "Pink and Sparkly. Also good for stabbing. And writing." 
-There is a scimitar, katana, baseball bat, monkey wrench, candlestick, axe, spear, and rope which are weapons. Understand "wrench" as monkey wrench. Understand "baseball bat" as bat. 
-A baseball bat and a candlestick have damage 4. A rope and pencil have damage 2. A wrench, axe, and spear have damage 3.  
-
 Check an actor attacking something with something: 
 	if the second noun is not a weapon: 
 		if the actor is the player, say "[The second noun] isn't a weapon, idiot."; 
@@ -132,14 +109,11 @@ Carry out an actor attacking something with something:
 
 [characters]
 
-Mr Redman, Mrs Ford, Mr Hartman, and Ms Belvod are people. 
+Mr Redman, Mrs Ford, Mr Hartman, and Ms Belvod are people. People have a number called health. Health is usually 20. 
 Mr Redman is in Room 211. Understand "Mr Redmans Classroom" as Room 211.  Understand "Mr R" and "Redman" as Mr Redman.
 Mrs Ford is in room 212. Understand "Mrs Fords Classroom" as Room 212. Understand "Mrs F" and "Ford" as Mrs Ford.
 Mr Hartman is in Room 213. Understand "Mr Hartmans Classroom " as Room 213. Understand "Mr H" and "Hartman" as Mr Hartman.
-Ms Belvod is in Room 214. Understand "Mrs Belvods Classroom" as Room 214. Understand "Ms B" and "Belvod" as Ms Belvod. 
-There is a man named Brad. Understand "ghost brad" as brad. 
-Inside Room 213 is a woman called Diamond. Understand "D" as Diamond. The description of Diamond is "An angel that has graced this school with her presence. She's soooooo hot." Diamond can be neutral, taken, or found. Diamond is neutral. 
- 
+Ms Belvod is in Room 214. Understand "Mrs Belvods Classroom" as Room 214. Understand "Ms B" and "Belvod" as Ms Belvod.  
 Brad is a person. Understand "ghost brad" as brad. The rapport of Brad is 1. 
 Inside Room 213 is a woman called Diamond. Understand "D" as Diamond. The description of Diamond is "An angel that has graced this school with her presence. She's soooooo hot." Diamond can be neutral, taken, or found. Diamond is neutral. The rapport of Diamond is 2. 
 a ghost is a kind of person. 
@@ -160,10 +134,12 @@ After going from room containing diamonds locker, now diamonds locker is closed.
 There is a hankerchief. The description of the hankerchief is "Interesting. I don't know anyone who uses one of these anymore. And there's someone's lipstick stained on it. I think it might be Diamond's.". 
 There is a spyglass. The description of the spyglass is "This could only be used by someone to spy on someone else....".
 There is a note. The description of the note is "Looks like someone put this in Diamond's cubby to confess their love to her. Seeing as its crumpled up on the floor, I can't imagine that went very well.".
-There is a hankerchief. A hankerchief is a thing. The description of the hankerchief is "Interesting. I don't know anyone who uses one of these anymore. And there's someone's lipstick stained on it. I think it might be Diamond's.". 
-There is a spyglass. A spyglass is a thing. The description of the spyglass is "This could only be used by someone to spy on someone else....".
-There is a note. A note is a thing. The description of the note is "Looks like someone put this in Diamond's cubby to confess their love to her. Seeing as its crumpled up on the floor, I can't imagine that went very well.".
 
+a weapon is a kind of thing. A weapon has a number called damage. Damage is usually 5. 
+The player carries a weapon called a fist which has damage 1. 
+Diamonds Pencil is a weapon. Understand "pencil" as Diamonds pencil. The description of Diamonds Pencil is "Pink and Sparkly. Also good for stabbing. And writing." 
+There is a scimitar, katana, baseball bat, monkey wrench, candlestick, axe, spear, and rope which are weapons. Understand "wrench" as monkey wrench. Understand "baseball bat" as bat. 
+A baseball bat and a candlestick have damage 4. A rope and pencil have damage 2. A wrench, axe, and spear have damage 3.  
 The description of a scimitar is "Maybe I can go look for a genie after this. With my Magical Eye, it appears it has a damage value of 5."
 The description of a katana is "The most honorable of weapons. With my Magical Eye, it appears it has a damage value of 5."
 The description of a baseball bat is "Good for both hitting home runs and smashing melons. With my Magical Eye, it appears it has a damage value of 4."
@@ -174,40 +150,13 @@ The description of the spear is "A pokey stick for the bad bois. With my Magical
 The description of the rope is "Please no bulli the cinnamon bun... it has a damage value of 2, but don't use it on yourself."
 
 
-[scenes]
-
-Beginning, Bully Sequence, Kidnapping, and Resolution are scenes. 
-Beginning begins when play begins. Beginning ends when Diamonds Locker is open. 
-Bully Sequence begins when Beginning ends. Bully Sequence ends when health of Brad is 0.
-Kidnapping begins when Bully Sequence ends. 
-Resolution begins when Kidnapping ends. 
-
-When Beginning ends:
-	Now Diamond is nowhere;
-	Now Diamond is taken;
-	say "Score! Her pencil is right where she said it would be.".
-
-When Bully Sequence begins:
-	Move Brad to Underclassmen Hallway;
-	Say "You hear knuckles scraping the floor. A lightning rod shoots down your spine. Brad approaches.".
-
-Every turn during Bully Sequence:
-	say "You have [health of player].  Brad has [health of Brad].";
-	say "Your weapon choices are [list of weapons carried by the player]".
-
-When Kidnapping begins:
-	say "All of a sudden there is a loud yell from down the hall. You think it might be coming from one of the classrooms.";
-	Now hankerchief is in cafeteria;
-	Now spyglass is in the great outdoors; 
-	Now note is in gym. 
-
 When Resolution ends: 
 	end the story. 
 	
 [scenes]
 Beginning, Bully Sequence, Kidnapping, and Resolution are scenes. 
 Beginning begins when play begins. Beginning ends when Diamonds Locker is open. 
-Bully Sequence begins when Beginning ends. Bully Sequence ends when Brad is incorporeal.
+Bully Sequence begins when Beginning ends. Bully Sequence ends when Brad is ghost.
 Kidnapping begins when Bully Sequence ends. 
 Resolution begins when Kidnapping ends. 
 
