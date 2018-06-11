@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Skein rootNode="node-1">
   <generator>Windows Inform 7 6M62</generator>
-  <activeNode nodeId="node-175"/>
+  <activeNode nodeId="node-203"/>
   <item nodeId="node-1">
     <command xml:space="preserve">A Highschool Adventure</command>
-    <result xml:space="preserve">Classic Highschool Drama But with Murder&#x000A;An Interactive Fiction by a bunch of nerds&#x000A;Release 1 / Serial number 180610 / Inform 7 build 6M62 (I6/v6.33 lib 6/12N) SD&#x000A;&#x000A;Underclassmen Hallway&#x000A;The normally busy hallway seems eeriely quiet after school hours.&#x000A;&#x000A;You can see rope, My Locker (closed) and Diamonds Locker (closed) here.&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">Classic Highschool Drama But with Murder&#x000A;An Interactive Fiction by a bunch of nerds&#x000A;Release 1 / Serial number 180610 / Inform 7 build 6M62 (I6/v6.33 lib 6/12N) SD&#x000A;&#x000A;Underclassmen Hallway&#x000A;The normally busy hallway seems eeriely quiet after school hours.&#x000A;&#x000A;You can see monkey wrench, katana, My Locker (closed) and Diamonds Locker (closed) here.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>YES</changed>
     <children>
@@ -30,6 +30,9 @@
       <child nodeId="node-158"/>
       <child nodeId="node-159"/>
       <child nodeId="node-162"/>
+      <child nodeId="node-184"/>
+      <child nodeId="node-189"/>
+      <child nodeId="node-197"/>
     </children>
   </item>
   <item nodeId="node-2">
@@ -1055,14 +1058,84 @@
     <command xml:space="preserve">look</command>
     <result xml:space="preserve">Room 212&#x000A;Mrs Ford's Classroom. She's a real stickler for the rules. Everything with its purpose, everything in its place.&#x000A;&#x000A;You can see Mrs Ford here.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
+    <changed>YES</changed>
     <children>
       <child nodeId="node-122"/>
+      <child nodeId="node-176"/>
     </children>
   </item>
   <item nodeId="node-122">
     <command xml:space="preserve">spin mrs ford to 3341</command>
     <result xml:space="preserve">Mrs Ford does not spin.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-176">
+    <command xml:space="preserve">take canflestick</command>
+    <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-177"/>
+    </children>
+  </item>
+  <item nodeId="node-177">
+    <command xml:space="preserve">take candlestick</command>
+    <result xml:space="preserve">Taken.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-178"/>
+    </children>
+  </item>
+  <item nodeId="node-178">
+    <command xml:space="preserve">attack mrs ford with candlestick</command>
+    <result xml:space="preserve">You attack Mrs Ford with candlestick, causing 4 points of damage!&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-179"/>
+    </children>
+  </item>
+  <item nodeId="node-179">
+    <command xml:space="preserve">check mrs f health</command>
+    <result xml:space="preserve">Mrs Ford has 16 health&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-180"/>
+    </children>
+  </item>
+  <item nodeId="node-180">
+    <command xml:space="preserve">report candlestick damage</command>
+    <result xml:space="preserve">candlestick has 3 damage points.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-181"/>
+    </children>
+  </item>
+  <item nodeId="node-181">
+    <command xml:space="preserve">attack mrs ford with candlestick</command>
+    <result xml:space="preserve">You attack Mrs Ford with candlestick, causing 3 points of damage!&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-182"/>
+    </children>
+  </item>
+  <item nodeId="node-182">
+    <command xml:space="preserve">check mrs f health</command>
+    <result xml:space="preserve">Mrs Ford has 13 health&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-183"/>
+    </children>
+  </item>
+  <item nodeId="node-183">
+    <command xml:space="preserve">report candlestick damage</command>
+    <result xml:space="preserve">candlestick has 2 damage points.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
   </item>
@@ -1074,6 +1147,8 @@
     <children>
       <child nodeId="node-124"/>
       <child nodeId="node-141"/>
+      <child nodeId="node-194"/>
+      <child nodeId="node-195"/>
     </children>
   </item>
   <item nodeId="node-124">
@@ -1384,6 +1459,27 @@
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
   </item>
+  <item nodeId="node-194">
+    <command xml:space="preserve">check redman rapport</command>
+    <result xml:space="preserve">I only understood you as far as wanting to check Mr Redman.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-195">
+    <command xml:space="preserve">check mr r rapport</command>
+    <result xml:space="preserve">I only understood you as far as wanting to check Mr Redman.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-196"/>
+    </children>
+  </item>
+  <item nodeId="node-196">
+    <command xml:space="preserve">check mr r relationship</command>
+    <result xml:space="preserve">I only understood you as far as wanting to check Mr Redman.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
   <item nodeId="node-147">
     <command xml:space="preserve">invintory</command>
     <result xml:space="preserve">That's not a verb I recognise.&#x000A;&#x000A;&gt;</result>
@@ -1489,6 +1585,150 @@
   <item nodeId="node-162">
     <command xml:space="preserve">check wrench health</command>
     <result xml:space="preserve">You can only do that to something animate.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-184">
+    <command xml:space="preserve">take katana</command>
+    <result xml:space="preserve">Taken.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-185"/>
+    </children>
+  </item>
+  <item nodeId="node-185">
+    <command xml:space="preserve">go west</command>
+    <result xml:space="preserve">&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-186"/>
+    </children>
+  </item>
+  <item nodeId="node-186">
+    <command xml:space="preserve">look</command>
+    <result xml:space="preserve">Room 211&#x000A;Mr Redman's Classroom. He's known for beating the living hell out of his kids. Not cool Mr Redman. Not cool.&#x000A;&#x000A;You can see Mr Redman here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-187"/>
+    </children>
+  </item>
+  <item nodeId="node-187">
+    <command xml:space="preserve">check mr r relationship</command>
+    <result xml:space="preserve">I only understood you as far as wanting to check Mr Redman.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-188"/>
+    </children>
+  </item>
+  <item nodeId="node-188">
+    <command xml:space="preserve">check mr r health</command>
+    <result xml:space="preserve">Mr Redman has 20 health&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-189">
+    <command xml:space="preserve">gow est</command>
+    <result xml:space="preserve">That's not a verb I recognise.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-190"/>
+    </children>
+  </item>
+  <item nodeId="node-190">
+    <command xml:space="preserve">go west</command>
+    <result xml:space="preserve">&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-191"/>
+    </children>
+  </item>
+  <item nodeId="node-191">
+    <command xml:space="preserve">look</command>
+    <result xml:space="preserve">Room 211&#x000A;Mr Redman's Classroom. He's known for beating the living hell out of his kids. Not cool Mr Redman. Not cool.&#x000A;&#x000A;You can see Mr Redman here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-192"/>
+    </children>
+  </item>
+  <item nodeId="node-192">
+    <command xml:space="preserve">check mr r rapport</command>
+    <result xml:space="preserve">I only understood you as far as wanting to check Mr Redman.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-193"/>
+    </children>
+  </item>
+  <item nodeId="node-193">
+    <command xml:space="preserve">check redman rapport</command>
+    <result xml:space="preserve">I only understood you as far as wanting to check Mr Redman.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-197">
+    <command xml:space="preserve">know ford relationship</command>
+    <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-198"/>
+    </children>
+  </item>
+  <item nodeId="node-198">
+    <command xml:space="preserve">go east</command>
+    <result xml:space="preserve">&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-199"/>
+    </children>
+  </item>
+  <item nodeId="node-199">
+    <command xml:space="preserve">know ford relationship</command>
+    <result xml:space="preserve">Mrs Ford thinks you're alright.&#x000A;Mrs Ford has rapport value: 3 &#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-200"/>
+    </children>
+  </item>
+  <item nodeId="node-200">
+    <command xml:space="preserve">go west </command>
+    <result xml:space="preserve">Underclassmen Hallway&#x000A;The normally busy hallway seems eeriely quiet after school hours.&#x000A;&#x000A;You can see monkey wrench, katana, My Locker (closed) and Diamonds Locker (closed) here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-201"/>
+    </children>
+  </item>
+  <item nodeId="node-201">
+    <command xml:space="preserve">go est</command>
+    <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-202"/>
+    </children>
+  </item>
+  <item nodeId="node-202">
+    <command xml:space="preserve">go west</command>
+    <result xml:space="preserve">&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-203"/>
+    </children>
+  </item>
+  <item nodeId="node-203">
+    <command xml:space="preserve">know mr r relationship</command>
+    <result xml:space="preserve">Mr Redman doesn't really ever think of you.&#x000A;Mr Redman has rapport value: 2 &#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
   </item>

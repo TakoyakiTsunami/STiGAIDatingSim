@@ -3,6 +3,7 @@
 [the map of the high school]
 School is a region.
 the player has a number called health which is 20.
+The player has a number called rapport which is 20. 
 
 [Hallway]
 Hallway is a region. Hallway is in School.
@@ -38,14 +39,22 @@ Understand "spin [something] to [a number]" as spinning it to.
 fuck is an action applying to one thing. understand "fuck [something]" and "fuck the [something]"  as fuck. Instead of fuck, say "You fucked it".
 
 People have a number called health. Health is usually 20. 
+Check health is an action applying to one thing. Understand "check [something] health" as check health. Check check health: if the noun is not a person, instead say "the [noun] isn't alive... yet.".
+Carry out check health:
+	say "[noun] has [health of noun] health".
+
+People have a number called rapport. Rapport is usually 3. 
+Know rapport is an action applying to one thing. Understand "know [something] relationship" as know rapport. Check know rapport: if the noun is not a person, instead say "the [noun] isn't sentient... yet.".
+Carry out know rapport:
+	if rapport of noun is 1, say "[noun] doesn't much care for you";
+	if rapport of noun is 2, say "[noun] doesn't really ever think of you.";
+	if rapport of noun is 3, say "[noun] thinks you're alright.".
+
 
 [combat action rules]
 report damage is an action applying to one thing. Understand "report [something] damage" as report damage. Check report damage: If the noun is not a weapon, instead say "no damage points".
 Carry out report damage: 
 	say "[noun] has [damage of noun] damage points.".
-Check health is an action applying to one thing. Understand "check [something] health" as check health. Check check health: if the noun is not a person, instead say "the [noun] isn't alive... yet.".
-Carry out check health:
-	say "[noun] has [health of noun] health".
 
 Understand the commands "attack" and "punch" and "destroy" and "kill" and "murder" and "hit" and "thump" and "break" and "smash" and "torture" and "wreck" as something new.
 Attacking it with is an action applying to one thing and one carried thing. Understand "attack [someone] with [something preferably held]" as attacking it with.
@@ -73,8 +82,8 @@ Mr Redman is in Room 211. Understand "Mr Redmans Classroom" as Room 211.  Unders
 Mrs Ford is in room 212. Understand "Mrs Fords Classroom" as Room 212. Understand "Mrs F" and "Ford" as Mrs Ford.
 Mr Hartman is in Room 213. Understand "Mr Hartmans Classroom " as Room 213. Understand "Mr H" and "Hartman" as Mr Hartman.
 Ms Belvod is in Room 214. Understand "Mrs Belvods Classroom" as Room 214. Understand "Ms B" and "Belvod" as Ms Belvod. 
-Brad is a person. Understand "ghost brad" as brad. 
-Inside Room 213 is a woman called Diamond. Understand "D" as Diamond. The description of Diamond is "An angel that has graced this school with her presence. She's soooooo hot." Diamond can be neutral, taken, or found. Diamond is neutral. 
+Brad is a person. Understand "ghost brad" as brad. The rapport of Brad is 1. 
+Inside Room 213 is a woman called Diamond. Understand "D" as Diamond. The description of Diamond is "An angel that has graced this school with her presence. She's soooooo hot." Diamond can be neutral, taken, or found. Diamond is neutral. The rapport of Diamond is 2. 
  
 [things]
 My Locker is a Locker in the Underclassmen Hallway. The description of my locker is "Ah, my sweet old locker. Smells like teen spirit.".
@@ -128,4 +137,9 @@ When play begins:
 	Move rope to a random room;
 	Move axe to a random room;
 	move spear to a random room;
-	Move wrench to a random room.
+	Move wrench to a random room;
+	Now the rapport of Mr Redman is a random number between 1 and 3;
+	Now the rapport of Mrs Ford is a random number between 1 and 3;
+	Now the rapport of Mr Hartman is a random number between 1 and 3; 
+	Now the rapport of Ms Belvod is a random number between 1 and 3. 
+	
