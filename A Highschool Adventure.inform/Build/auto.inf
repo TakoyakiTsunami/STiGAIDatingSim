@@ -9605,58 +9605,57 @@ Constant p53_locked = locked;
 Constant p55_female = female;
 Constant p57_neuter = neuter;
 Constant p58_switched_on = on;
-Constant p65 = vector;
-Constant p66 = room_index;
-Constant p67 = door_dir;
-Constant p68 = door_to;
-Constant p69 = absent;
-Constant p70 = cap_short_name;
-Constant p71 = mark_as_room;
-Constant p72 = mark_as_thing;
-Constant p73 = component_parent;
-Constant p74 = component_child;
-Constant p75 = component_sibling;
-Constant p76 = regional_found_in;
-Constant p77 = IK1_Count;
-Constant p78 = IK1_Link;
-Constant p79 = IK2_Count;
-Constant p80 = IK2_Link;
-Constant p81 = IK3_Count;
-Constant p82 = IK3_Link;
-Constant p83 = IK4_Count;
-Constant p84 = IK4_Link;
-Constant p85 = IK5_Count;
-Constant p86 = IK5_Link;
-Constant p87 = IK6_Count;
-Constant p88 = IK6_Link;
-Constant p89 = IK7_Count;
-Constant p90 = IK7_Link;
-Constant p91 = IK8_Count;
-Constant p92 = IK8_Link;
-Constant p93 = IK9_Count;
-Constant p94 = IK9_Link;
-Constant p95 = IK10_Count;
-Constant p96 = IK10_Link;
-Constant p97 = IK11_Count;
-Constant p98 = IK11_Link;
-Constant p99 = IK12_Count;
-Constant p100 = IK12_Link;
-Constant p101 = IK13_Count;
-Constant p102 = IK13_Link;
-Constant p103 = IK14_Count;
-Constant p104 = IK14_Link;
-Constant p105 = IK15_Count;
-Constant p106 = IK15_Link;
-Constant p107 = IK16_Count;
-Constant p108 = IK16_Link;
-Constant p109 = IK17_Count;
-Constant p110 = IK17_Link;
-Constant p111 = KD_Count;
-Constant p112 = name;
-Constant p113 = parse_name;
-Constant p114 = action_bitmap;
+Constant p63 = vector;
+Constant p64 = room_index;
+Constant p65 = door_dir;
+Constant p66 = door_to;
+Constant p67 = absent;
+Constant p68 = cap_short_name;
+Constant p69 = mark_as_room;
+Constant p70 = mark_as_thing;
+Constant p71 = component_parent;
+Constant p72 = component_child;
+Constant p73 = component_sibling;
+Constant p74 = regional_found_in;
+Constant p75 = IK1_Count;
+Constant p76 = IK1_Link;
+Constant p77 = IK2_Count;
+Constant p78 = IK2_Link;
+Constant p79 = IK3_Count;
+Constant p80 = IK3_Link;
+Constant p81 = IK4_Count;
+Constant p82 = IK4_Link;
+Constant p83 = IK5_Count;
+Constant p84 = IK5_Link;
+Constant p85 = IK6_Count;
+Constant p86 = IK6_Link;
+Constant p87 = IK7_Count;
+Constant p88 = IK7_Link;
+Constant p89 = IK8_Count;
+Constant p90 = IK8_Link;
+Constant p91 = IK9_Count;
+Constant p92 = IK9_Link;
+Constant p93 = IK10_Count;
+Constant p94 = IK10_Link;
+Constant p95 = IK11_Count;
+Constant p96 = IK11_Link;
+Constant p97 = IK12_Count;
+Constant p98 = IK12_Link;
+Constant p99 = IK13_Count;
+Constant p100 = IK13_Link;
+Constant p101 = IK14_Count;
+Constant p102 = IK14_Link;
+Constant p103 = IK15_Count;
+Constant p104 = IK15_Link;
+Constant p105 = IK16_Count;
+Constant p106 = IK16_Link;
+Constant p107 = IK17_Count;
+Constant p108 = IK17_Link;
+Constant p109 = KD_Count;
+Constant p110 = name;
+Constant p111 = parse_name;
+Constant p112 = action_bitmap;
 
-Attribute p62_corporeal;
 Constant FBNA_PROP_NUMBER = p60_recurring;
 Object property_numberspace_forcer
     with p60_recurring false
@@ -9695,10 +9694,10 @@ Array property_metadata -->
     "adaptive text viewpoint" NULL
     ! offset 62: property p15_health_which_is_20
     "health which is 20" selfobj NULL
-    ! offset 65: property p16_damage
-    "damage" K17_weapon NULL
-    ! offset 68: property p17_health
+    ! offset 65: property p16_health
     "health" K8_person NULL
+    ! offset 68: property p17_damage
+    "damage" K17_weapon NULL
     ! offset 71: property pluralname
     "plural-named" K1_room K2_thing K3_direction K9_region NULL
     ! offset 77: property proper
@@ -9751,115 +9750,113 @@ Array property_metadata -->
     "switched on" K13_device NULL
     ! offset 166: property p60_recurring
     "recurring" NULL
-    ! offset 168: property p62_corporeal
-    "corporeal" K8_person NULL
-    ! offset 171: property p64_diamond_condition
+    ! offset 168: property p62_diamond_condition
     "diamond condition" I157_diamond NULL
-    ! offset 174: property vector
+    ! offset 171: property vector
     "<nameless>" NULL
-    ! offset 176: property room_index
+    ! offset 173: property room_index
     "<nameless>" NULL
-    ! offset 178: property door_dir
+    ! offset 175: property door_dir
     "<nameless>" NULL
-    ! offset 180: property door_to
+    ! offset 177: property door_to
     "<nameless>" K4_door NULL
-    ! offset 183: property absent
+    ! offset 180: property absent
     "<nameless>" NULL
-    ! offset 185: property cap_short_name
+    ! offset 182: property cap_short_name
     "<nameless>" NULL
-    ! offset 187: property mark_as_room
+    ! offset 184: property mark_as_room
     "<nameless>" NULL
-    ! offset 189: property mark_as_thing
+    ! offset 186: property mark_as_thing
     "<nameless>" NULL
-    ! offset 191: property component_parent
+    ! offset 188: property component_parent
     "<nameless>" NULL
-    ! offset 193: property component_child
+    ! offset 190: property component_child
     "<nameless>" NULL
-    ! offset 195: property component_sibling
+    ! offset 192: property component_sibling
     "<nameless>" NULL
-    ! offset 197: property regional_found_in
+    ! offset 194: property regional_found_in
     "<nameless>" NULL
-    ! offset 199: property IK1_Count
+    ! offset 196: property IK1_Count
     "<nameless>" NULL
-    ! offset 201: property IK1_Link
+    ! offset 198: property IK1_Link
     "<nameless>" NULL
-    ! offset 203: property IK2_Count
+    ! offset 200: property IK2_Count
     "<nameless>" NULL
-    ! offset 205: property IK2_Link
+    ! offset 202: property IK2_Link
     "<nameless>" NULL
-    ! offset 207: property IK3_Count
+    ! offset 204: property IK3_Count
     "<nameless>" NULL
-    ! offset 209: property IK3_Link
+    ! offset 206: property IK3_Link
     "<nameless>" NULL
-    ! offset 211: property IK4_Count
+    ! offset 208: property IK4_Count
     "<nameless>" NULL
-    ! offset 213: property IK4_Link
+    ! offset 210: property IK4_Link
     "<nameless>" NULL
-    ! offset 215: property IK5_Count
+    ! offset 212: property IK5_Count
     "<nameless>" NULL
-    ! offset 217: property IK5_Link
+    ! offset 214: property IK5_Link
     "<nameless>" NULL
-    ! offset 219: property IK6_Count
+    ! offset 216: property IK6_Count
     "<nameless>" NULL
-    ! offset 221: property IK6_Link
+    ! offset 218: property IK6_Link
     "<nameless>" NULL
-    ! offset 223: property IK7_Count
+    ! offset 220: property IK7_Count
     "<nameless>" NULL
-    ! offset 225: property IK7_Link
+    ! offset 222: property IK7_Link
     "<nameless>" NULL
-    ! offset 227: property IK8_Count
+    ! offset 224: property IK8_Count
     "<nameless>" NULL
-    ! offset 229: property IK8_Link
+    ! offset 226: property IK8_Link
     "<nameless>" NULL
-    ! offset 231: property IK9_Count
+    ! offset 228: property IK9_Count
     "<nameless>" NULL
-    ! offset 233: property IK9_Link
+    ! offset 230: property IK9_Link
     "<nameless>" NULL
-    ! offset 235: property IK10_Count
+    ! offset 232: property IK10_Count
     "<nameless>" NULL
-    ! offset 237: property IK10_Link
+    ! offset 234: property IK10_Link
     "<nameless>" NULL
-    ! offset 239: property IK11_Count
+    ! offset 236: property IK11_Count
     "<nameless>" NULL
-    ! offset 241: property IK11_Link
+    ! offset 238: property IK11_Link
     "<nameless>" NULL
-    ! offset 243: property IK12_Count
+    ! offset 240: property IK12_Count
     "<nameless>" NULL
-    ! offset 245: property IK12_Link
+    ! offset 242: property IK12_Link
     "<nameless>" NULL
-    ! offset 247: property IK13_Count
+    ! offset 244: property IK13_Count
     "<nameless>" NULL
-    ! offset 249: property IK13_Link
+    ! offset 246: property IK13_Link
     "<nameless>" NULL
-    ! offset 251: property IK14_Count
+    ! offset 248: property IK14_Count
     "<nameless>" NULL
-    ! offset 253: property IK14_Link
+    ! offset 250: property IK14_Link
     "<nameless>" NULL
-    ! offset 255: property IK15_Count
+    ! offset 252: property IK15_Count
     "<nameless>" NULL
-    ! offset 257: property IK15_Link
+    ! offset 254: property IK15_Link
     "<nameless>" NULL
-    ! offset 259: property IK16_Count
+    ! offset 256: property IK16_Count
     "<nameless>" NULL
-    ! offset 261: property IK16_Link
+    ! offset 258: property IK16_Link
     "<nameless>" NULL
-    ! offset 263: property IK17_Count
+    ! offset 260: property IK17_Count
     "<nameless>" NULL
-    ! offset 265: property IK17_Link
+    ! offset 262: property IK17_Link
     "<nameless>" NULL
-    ! offset 267: property KD_Count
+    ! offset 264: property KD_Count
     "<nameless>" NULL
-    ! offset 269: property name
+    ! offset 266: property name
     "<nameless>" NULL
-    ! offset 271: property parse_name
+    ! offset 268: property parse_name
     "<nameless>" NULL
-    ! offset 273: property action_bitmap
+    ! offset 270: property action_bitmap
     "<nameless>" NULL
 ;
 
 Constant attributed_property_offsets_SIZE 48;
 Array attributed_property_offsets --> attributed_property_offsets_SIZE;
-Constant valued_property_offsets_SIZE (100 + 115 + INDIV_PROP_START-48);
+Constant valued_property_offsets_SIZE (100 + 113 + INDIV_PROP_START-48);
 Array valued_property_offsets --> valued_property_offsets_SIZE;
 
 [ CreatePropertyOffsets 
@@ -9883,8 +9880,8 @@ Array valued_property_offsets --> valued_property_offsets_SIZE;
     valued_property_offsets-->with_key = 55;
     valued_property_offsets-->p14_adaptive_text_viewpoint = 60;
     valued_property_offsets-->p15_health_which_is_20 = 62;
-    valued_property_offsets-->p16_damage = 65;
-    valued_property_offsets-->p17_health = 68;
+    valued_property_offsets-->p16_health = 65;
+    valued_property_offsets-->p17_damage = 68;
     attributed_property_offsets-->pluralname = 71;
     attributed_property_offsets-->proper = 77;
     attributed_property_offsets-->ambigpluralname = 83;
@@ -9911,58 +9908,57 @@ Array valued_property_offsets --> valued_property_offsets_SIZE;
     attributed_property_offsets-->neuter = 160;
     attributed_property_offsets-->on = 163;
     valued_property_offsets-->p60_recurring = 166;
-    attributed_property_offsets-->p62_corporeal = 168;
-    valued_property_offsets-->p64_diamond_condition = 171;
-    valued_property_offsets-->vector = 174;
-    valued_property_offsets-->room_index = 176;
-    valued_property_offsets-->door_dir = 178;
-    valued_property_offsets-->door_to = 180;
-    attributed_property_offsets-->absent = 183;
-    valued_property_offsets-->cap_short_name = 185;
-    attributed_property_offsets-->mark_as_room = 187;
-    attributed_property_offsets-->mark_as_thing = 189;
-    valued_property_offsets-->component_parent = 191;
-    valued_property_offsets-->component_child = 193;
-    valued_property_offsets-->component_sibling = 195;
-    valued_property_offsets-->regional_found_in = 197;
-    valued_property_offsets-->IK1_Count = 199;
-    valued_property_offsets-->IK1_Link = 201;
-    valued_property_offsets-->IK2_Count = 203;
-    valued_property_offsets-->IK2_Link = 205;
-    valued_property_offsets-->IK3_Count = 207;
-    valued_property_offsets-->IK3_Link = 209;
-    valued_property_offsets-->IK4_Count = 211;
-    valued_property_offsets-->IK4_Link = 213;
-    valued_property_offsets-->IK5_Count = 215;
-    valued_property_offsets-->IK5_Link = 217;
-    valued_property_offsets-->IK6_Count = 219;
-    valued_property_offsets-->IK6_Link = 221;
-    valued_property_offsets-->IK7_Count = 223;
-    valued_property_offsets-->IK7_Link = 225;
-    valued_property_offsets-->IK8_Count = 227;
-    valued_property_offsets-->IK8_Link = 229;
-    valued_property_offsets-->IK9_Count = 231;
-    valued_property_offsets-->IK9_Link = 233;
-    valued_property_offsets-->IK10_Count = 235;
-    valued_property_offsets-->IK10_Link = 237;
-    valued_property_offsets-->IK11_Count = 239;
-    valued_property_offsets-->IK11_Link = 241;
-    valued_property_offsets-->IK12_Count = 243;
-    valued_property_offsets-->IK12_Link = 245;
-    valued_property_offsets-->IK13_Count = 247;
-    valued_property_offsets-->IK13_Link = 249;
-    valued_property_offsets-->IK14_Count = 251;
-    valued_property_offsets-->IK14_Link = 253;
-    valued_property_offsets-->IK15_Count = 255;
-    valued_property_offsets-->IK15_Link = 257;
-    valued_property_offsets-->IK16_Count = 259;
-    valued_property_offsets-->IK16_Link = 261;
-    valued_property_offsets-->IK17_Count = 263;
-    valued_property_offsets-->IK17_Link = 265;
-    valued_property_offsets-->KD_Count = 267;
-    valued_property_offsets-->name = 269;
-    valued_property_offsets-->parse_name = 271;
-    valued_property_offsets-->action_bitmap = 273;
+    valued_property_offsets-->p62_diamond_condition = 168;
+    valued_property_offsets-->vector = 171;
+    valued_property_offsets-->room_index = 173;
+    valued_property_offsets-->door_dir = 175;
+    valued_property_offsets-->door_to = 177;
+    attributed_property_offsets-->absent = 180;
+    valued_property_offsets-->cap_short_name = 182;
+    attributed_property_offsets-->mark_as_room = 184;
+    attributed_property_offsets-->mark_as_thing = 186;
+    valued_property_offsets-->component_parent = 188;
+    valued_property_offsets-->component_child = 190;
+    valued_property_offsets-->component_sibling = 192;
+    valued_property_offsets-->regional_found_in = 194;
+    valued_property_offsets-->IK1_Count = 196;
+    valued_property_offsets-->IK1_Link = 198;
+    valued_property_offsets-->IK2_Count = 200;
+    valued_property_offsets-->IK2_Link = 202;
+    valued_property_offsets-->IK3_Count = 204;
+    valued_property_offsets-->IK3_Link = 206;
+    valued_property_offsets-->IK4_Count = 208;
+    valued_property_offsets-->IK4_Link = 210;
+    valued_property_offsets-->IK5_Count = 212;
+    valued_property_offsets-->IK5_Link = 214;
+    valued_property_offsets-->IK6_Count = 216;
+    valued_property_offsets-->IK6_Link = 218;
+    valued_property_offsets-->IK7_Count = 220;
+    valued_property_offsets-->IK7_Link = 222;
+    valued_property_offsets-->IK8_Count = 224;
+    valued_property_offsets-->IK8_Link = 226;
+    valued_property_offsets-->IK9_Count = 228;
+    valued_property_offsets-->IK9_Link = 230;
+    valued_property_offsets-->IK10_Count = 232;
+    valued_property_offsets-->IK10_Link = 234;
+    valued_property_offsets-->IK11_Count = 236;
+    valued_property_offsets-->IK11_Link = 238;
+    valued_property_offsets-->IK12_Count = 240;
+    valued_property_offsets-->IK12_Link = 242;
+    valued_property_offsets-->IK13_Count = 244;
+    valued_property_offsets-->IK13_Link = 246;
+    valued_property_offsets-->IK14_Count = 248;
+    valued_property_offsets-->IK14_Link = 250;
+    valued_property_offsets-->IK15_Count = 252;
+    valued_property_offsets-->IK15_Link = 254;
+    valued_property_offsets-->IK16_Count = 256;
+    valued_property_offsets-->IK16_Link = 258;
+    valued_property_offsets-->IK17_Count = 260;
+    valued_property_offsets-->IK17_Link = 262;
+    valued_property_offsets-->KD_Count = 264;
+    valued_property_offsets-->name = 266;
+    valued_property_offsets-->parse_name = 268;
+    valued_property_offsets-->action_bitmap = 270;
 ];
 
 
@@ -10746,10 +10742,9 @@ Class K8_person
 
     with plural BC_29
     with capacity 100
-    with p17_health 20
+    with p16_health 20
     has ~female
     has ~neuter
-    has p62_corporeal
     with description BC_30
     with initial BC_31
     with list_together BC_32
@@ -10892,7 +10887,7 @@ Class K13_device
 Class K17_weapon 
     class K2_thing
     with plural BC_95
-    with p16_damage 5
+    with p17_damage 5
     with description BC_96
     with initial BC_97
     with list_together BC_98
@@ -11454,7 +11449,7 @@ Object -> I157_diamond ""
     with short_name BC_247
     with description BC_248
     has proper
-    with p64_diamond_condition I159_neutral
+    with p62_diamond_condition I159_neutral
     with vector 0
     has mark_as_thing
     with IK2_Count 16
@@ -11586,7 +11581,7 @@ Object I143_diamonds_pencil ""
     class K17_weapon
     with short_name BC_284
     with description BC_285
-    with p16_damage 2
+    with p17_damage 2
     has proper
     with vector 0
     has mark_as_thing
@@ -11647,7 +11642,7 @@ Object I145_katana ""
 Object I146_baseball_bat ""
     class K17_weapon
     with short_name BC_303
-    with p16_damage 4
+    with p17_damage 4
     has proper
     with vector 0
     with cap_short_name BC_304
@@ -11670,7 +11665,7 @@ Object I146_baseball_bat ""
 Object I147_monkey_wrench ""
     class K17_weapon
     with short_name BC_310
-    with p16_damage 3
+    with p17_damage 3
     has proper
     with vector 0
     with cap_short_name BC_311
@@ -11693,7 +11688,7 @@ Object I147_monkey_wrench ""
 Object I148_candlestick ""
     class K17_weapon
     with short_name BC_317
-    with p16_damage 4
+    with p17_damage 4
     has proper
     with vector 0
     with cap_short_name BC_318
@@ -11715,7 +11710,7 @@ Object I148_candlestick ""
 Object I149_axe ""
     class K17_weapon
     with short_name BC_324
-    with p16_damage 3
+    with p17_damage 3
     has proper
     with vector 0
     with cap_short_name BC_325
@@ -11737,7 +11732,7 @@ Object I149_axe ""
 Object I150_spear ""
     class K17_weapon
     with short_name BC_331
-    with p16_damage 3
+    with p17_damage 3
     has proper
     with vector 0
     with cap_short_name BC_332
@@ -11759,7 +11754,7 @@ Object I150_spear ""
 Object I151_rope ""
     class K17_weapon
     with short_name BC_338
-    with p16_damage 2
+    with p17_damage 2
     has proper
     with vector 0
     with cap_short_name BC_339
@@ -12757,9 +12752,9 @@ Array ActionHappened --> 0 0 0 0 0 0;
     ! [2: say ~You have [health of player].  Brad has [health of Brad].~]
     say__p=1;! [3: ~You have ~]
     ParaContent(); print "You have ";! [4: health of player]
-    ParaContent(); @push self; print (say__n=GProperty(10, self=player,p17_health));@pull self; ! [5: ~.  Brad has ~]
+    ParaContent(); @push self; print (say__n=GProperty(10, self=player,p16_health));@pull self; ! [5: ~.  Brad has ~]
     ParaContent(); print ".  Brad has ";! [6: health of brad]
-    ParaContent(); @push self; print (say__n=GProperty(10, self=I156_brad,p17_health));@pull self; ! [7: ~.~]
+    ParaContent(); @push self; print (say__n=GProperty(10, self=I156_brad,p16_health));@pull self; ! [7: ~.~]
     ParaContent(); print "."; new_line; .L_Say2; .L_SayX2;! [8: say ~Your weapon choices are [list of weapons carried by the player]~]
     say__p=1;! [9: ~Your weapon choices are ~]
     ParaContent(); print "Your weapon choices are ";! [10: list of weapons carried by the player]
@@ -20253,7 +20248,7 @@ Array ActionHappened --> 0 0 0 0 0 0;
     say__p=1;! [3: noun]
     ParaContent(); PrintShortName(noun);! [4: ~ has ~]
     ParaContent(); print " has ";! [5: damage of noun]
-    ParaContent(); @push self; print (say__n=GProperty(OBJECT_TY, self=noun,p16_damage));@pull self; ! [6: ~ damage points.~]
+    ParaContent(); @push self; print (say__n=GProperty(OBJECT_TY, self=noun,p17_damage));@pull self; ! [6: ~ damage points.~]
     ParaContent(); print " damage points."; new_line; .L_Say301; .L_SayX301;} else if (debug_rules > 1) DB_Rule(R_804, 804, 'actor');
     rfalse;
 ];
@@ -20296,7 +20291,7 @@ Array ActionHappened --> 0 0 0 0 0 0;
     say__p=1;! [3: noun]
     ParaContent(); PrintShortName(noun);! [4: ~ has ~]
     ParaContent(); print " has ";! [5: health of noun]
-    ParaContent(); @push self; print (say__n=GProperty(OBJECT_TY, self=noun,p17_health));@pull self; ! [6: ~ health~]
+    ParaContent(); @push self; print (say__n=GProperty(OBJECT_TY, self=noun,p16_health));@pull self; ! [6: ~ health~]
     ParaContent(); print " health"; .L_Say303; .L_SayX303;} else if (debug_rules > 1) DB_Rule(R_806, 806, 'actor');
     rfalse;
 ];
@@ -20309,10 +20304,10 @@ Array ActionHappened --> 0 0 0 0 0 0;
 ! ----------------------------------------------------------------------------------------------------
 ! No specific request
 ! Check an actor attacking something with something:
-[ R_808 ;
+[ R_807 ;
     if ((((act_requester==nothing) && ((noun ofclass K2_thing)) && ((second ofclass K2_thing))))) { ! Runs only when pattern matches
     self = noun;
-    if (debug_rules) DB_Rule(R_808, 808);
+    if (debug_rules) DB_Rule(R_807, 807);
     ! [2: if the second noun is not a weapon]
     if (((~~((second ofclass K17_weapon)))))
     {! [3: if the actor is the player]
@@ -20324,35 +20319,41 @@ Array ActionHappened --> 0 0 0 0 0 0;
         ! [7: stop the action]
         rtrue;
         }
-        } else if (debug_rules > 1) DB_Rule(R_808, 808, 'action');
+        } else if (debug_rules > 1) DB_Rule(R_807, 807, 'action');
         rfalse;
 ];
 ! ----------------------------------------------------------------------------------------------------
 
 ! ----------------------------------------------------------------------------------------------------
-! Rules in rulebook: report Attacking it with (B376_report_attacking_it_wit)
+! Rules in rulebook: carry out Attacking it with (B375_carry_out_attacking_it_)
 ! ----------------------------------------------------------------------------------------------------
-! Rule 1/1 ! Report attacking someone with something:
+! Rule 1/1 ! Carry out an actor attacking something with something:
 ! ----------------------------------------------------------------------------------------------------
 ! No specific request
-! Report attacking someone with something:
-[ R_807 ;
-    if ((( (actor==player) && ((noun ofclass K8_person)) && ((second ofclass K2_thing))))) { ! Runs only when pattern matches
+! Carry out an actor attacking something with something:
+[ R_808 ;
+    if ((((act_requester==nothing) && ((noun ofclass K2_thing)) && ((second ofclass K2_thing))))) { ! Runs only when pattern matches
     self = noun;
-    if (debug_rules) DB_Rule(R_807, 807);
-    ! [2: say ~You attack [the noun] with [the second noun], causing [damage of second noun] point[s] of damage!~]
-    say__p=1;! [3: ~You attack ~]
-    ParaContent(); print "You attack ";! [4: the noun]
-    ParaContent(); print (the) noun;! [5: ~ with ~]
-    ParaContent(); print " with ";! [6: the second noun]
-    ParaContent(); print (the) second;! [7: ~, causing ~]
-    ParaContent(); print ", causing ";! [8: damage of second noun]
-    ParaContent(); @push self; print (say__n=GProperty(OBJECT_TY, self=second,p16_damage));@pull self; ! [9: ~ point~]
-    ParaContent(); print " point";! [10: s]
-    ParaContent(); STextSubstitution();! [11: ~ of damage!~]
-    ParaContent(); print " of damage!"; new_line; .L_Say305; .L_SayX305;rtrue;
-    } else if (debug_rules > 1) DB_Rule(R_807, 807, 'action');
-    rfalse;
+    if (debug_rules) DB_Rule(R_808, 808);
+    ! [2: decrease the health of the noun by the damage of the second noun]
+    WriteGProperty(OBJECT_TY, noun,p16_health,GProperty(OBJECT_TY, noun,p16_health) - GProperty(OBJECT_TY, second,p17_damage));;
+    ! [3: say ~You attack [the noun] with [the second noun], causing [damage of second noun] point[s] of damage!~]
+    say__p=1;! [4: ~You attack ~]
+    ParaContent(); print "You attack ";! [5: the noun]
+    ParaContent(); print (the) noun;! [6: ~ with ~]
+    ParaContent(); print " with ";! [7: the second noun]
+    ParaContent(); print (the) second;! [8: ~, causing ~]
+    ParaContent(); print ", causing ";! [9: damage of second noun]
+    ParaContent(); @push self; print (say__n=GProperty(OBJECT_TY, self=second,p17_damage));@pull self; ! [10: ~ point~]
+    ParaContent(); print " point";! [11: s]
+    ParaContent(); STextSubstitution();! [12: ~ of damage!~]
+    ParaContent(); print " of damage!"; new_line; .L_Say305; .L_SayX305;! [13: if the damage of the second noun is not 1]
+    if (((~~((GProperty(OBJECT_TY, second,p17_damage) == 1)))))
+    {! [14: decrease the damage of the second noun by 1]
+        WriteGProperty(OBJECT_TY, second,p17_damage,GProperty(OBJECT_TY, second,p17_damage) - 1);;
+        }
+        } else if (debug_rules > 1) DB_Rule(R_808, 808, 'action');
+        rfalse;
 ];
 ! ----------------------------------------------------------------------------------------------------
 
@@ -20368,7 +20369,7 @@ Array ActionHappened --> 0 0 0 0 0 0;
     ! [2: now diamond is nowhere]
     RemoveFromPlay(I157_diamond);;
     ! [3: now diamond is taken]
-    (Adj_89_t2_v10(I157_diamond));
+    (Adj_87_t2_v10(I157_diamond));
     ! [4: say ~Score! Her pencil is right where she said it would be.~]
     say__p=1;! [5: ~Score! Her pencil is right where she said it would be.~]
     ParaContent(); print "Score! Her pencil is right where she said it would be."; new_line; .L_Say306; .L_SayX306;rfalse;
@@ -21408,53 +21409,39 @@ Array ActionHappened --> 0 0 0 0 0 0;
 [ Adj_86_t1_v10 
     t_0 ! Call parameter: object
     ;
-    ! meaning of "corporeal"
-      if (t_0) return (GetEitherOrProperty(t_0, p62_corporeal));
+    ! meaning of "neutral"
+      if (t_0 == I157_diamond) return (GProperty(10, t_0, p62_diamond_condition) == 1);
     rfalse;
 ];
 [ Adj_87_t1_v10 
     t_0 ! Call parameter: object
     ;
-    ! meaning of "incorporeal"
-      if (t_0) return (GetEitherOrProperty(t_0, p62_corporeal) == false);
+    ! meaning of "taken"
+      if (t_0 == I157_diamond) return (GProperty(10, t_0, p62_diamond_condition) == 2);
     rfalse;
 ];
 [ Adj_88_t1_v10 
     t_0 ! Call parameter: object
     ;
-    ! meaning of "neutral"
-      if (t_0 == I157_diamond) return (GProperty(10, t_0, p64_diamond_condition) == 1);
+    ! meaning of "found"
+      if (t_0 == I157_diamond) return (GProperty(10, t_0, p62_diamond_condition) == 3);
     rfalse;
 ];
 [ Adj_89_t1_v10 
-    t_0 ! Call parameter: object
-    ;
-    ! meaning of "taken"
-      if (t_0 == I157_diamond) return (GProperty(10, t_0, p64_diamond_condition) == 2);
-    rfalse;
-];
-[ Adj_90_t1_v10 
-    t_0 ! Call parameter: object
-    ;
-    ! meaning of "found"
-      if (t_0 == I157_diamond) return (GProperty(10, t_0, p64_diamond_condition) == 3);
-    rfalse;
-];
-[ Adj_91_t1_v10 
     t_0 ! Call parameter: object
     ;
     ! meaning of "<nameless>"
       if (t_0) return (GetEitherOrProperty(t_0, absent));
     rfalse;
 ];
-[ Adj_92_t1_v10 
+[ Adj_90_t1_v10 
     t_0 ! Call parameter: object
     ;
     ! meaning of "<nameless>"
       if (t_0) return (GetEitherOrProperty(t_0, mark_as_room));
     rfalse;
 ];
-[ Adj_93_t1_v10 
+[ Adj_91_t1_v10 
     t_0 ! Call parameter: object
     ;
     ! meaning of "<nameless>"
@@ -21842,53 +21829,39 @@ Array ActionHappened --> 0 0 0 0 0 0;
 [ Adj_86_t2_v10 
     t_0 ! Call parameter: object
     ;
-    ! meaning of "corporeal"
-      if (t_0) return (SetEitherOrProperty(t_0, p62_corporeal));
+    ! meaning of "neutral"
+      if (t_0 == I157_diamond) return (WriteGProperty(10, t_0, p62_diamond_condition, 1));
     rfalse;
 ];
 [ Adj_87_t2_v10 
     t_0 ! Call parameter: object
     ;
-    ! meaning of "incorporeal"
-      if (t_0) return (SetEitherOrProperty(t_0, p62_corporeal, true));
+    ! meaning of "taken"
+      if (t_0 == I157_diamond) return (WriteGProperty(10, t_0, p62_diamond_condition, 2));
     rfalse;
 ];
 [ Adj_88_t2_v10 
     t_0 ! Call parameter: object
     ;
-    ! meaning of "neutral"
-      if (t_0 == I157_diamond) return (WriteGProperty(10, t_0, p64_diamond_condition, 1));
+    ! meaning of "found"
+      if (t_0 == I157_diamond) return (WriteGProperty(10, t_0, p62_diamond_condition, 3));
     rfalse;
 ];
 [ Adj_89_t2_v10 
-    t_0 ! Call parameter: object
-    ;
-    ! meaning of "taken"
-      if (t_0 == I157_diamond) return (WriteGProperty(10, t_0, p64_diamond_condition, 2));
-    rfalse;
-];
-[ Adj_90_t2_v10 
-    t_0 ! Call parameter: object
-    ;
-    ! meaning of "found"
-      if (t_0 == I157_diamond) return (WriteGProperty(10, t_0, p64_diamond_condition, 3));
-    rfalse;
-];
-[ Adj_91_t2_v10 
     t_0 ! Call parameter: object
     ;
     ! meaning of "<nameless>"
       if (t_0) return (SetEitherOrProperty(t_0, absent));
     rfalse;
 ];
-[ Adj_92_t2_v10 
+[ Adj_90_t2_v10 
     t_0 ! Call parameter: object
     ;
     ! meaning of "<nameless>"
       if (t_0) return (SetEitherOrProperty(t_0, mark_as_room));
     rfalse;
 ];
-[ Adj_93_t2_v10 
+[ Adj_91_t2_v10 
     t_0 ! Call parameter: object
     ;
     ! meaning of "<nameless>"
@@ -22273,35 +22246,21 @@ Array ActionHappened --> 0 0 0 0 0 0;
     return (WriteGProperty(SCENE_TY, t_0, p60_recurring, true));
     rfalse;
 ];
-[ Adj_86_t3_v10 
-    t_0 ! Call parameter: object
-    ;
-    ! meaning of "corporeal"
-      if (t_0) return (SetEitherOrProperty(t_0, p62_corporeal, true));
-    rfalse;
-];
-[ Adj_87_t3_v10 
-    t_0 ! Call parameter: object
-    ;
-    ! meaning of "incorporeal"
-      if (t_0) return (SetEitherOrProperty(t_0, p62_corporeal));
-    rfalse;
-];
-[ Adj_91_t3_v10 
+[ Adj_89_t3_v10 
     t_0 ! Call parameter: object
     ;
     ! meaning of "<nameless>"
       if (t_0) return (SetEitherOrProperty(t_0, absent, true));
     rfalse;
 ];
-[ Adj_92_t3_v10 
+[ Adj_90_t3_v10 
     t_0 ! Call parameter: object
     ;
     ! meaning of "<nameless>"
       if (t_0) return (SetEitherOrProperty(t_0, mark_as_room, true));
     rfalse;
 ];
-[ Adj_93_t3_v10 
+[ Adj_91_t3_v10 
     t_0 ! Call parameter: object
     ;
     ! meaning of "<nameless>"
@@ -26270,19 +26229,6 @@ Constant B373_report_check_health = EMPTY_RULEBOOK;
     forbid_breaks ! Implied call parameter
     rv ! return value
     ;
-    rv = R_808();
-    if (rv) {
-        if (rv == 2) return reason_the_action_failed;
-        return R_808;
-    }
-    latest_rule_result-->0 = 0;
-    return 0; ! 1 rule(s)
-];
-Constant B375_carry_out_attacking_it_ = EMPTY_RULEBOOK;
-[ B376_report_attacking_it_wit 
-    forbid_breaks ! Implied call parameter
-    rv ! return value
-    ;
     rv = R_807();
     if (rv) {
         if (rv == 2) return reason_the_action_failed;
@@ -26291,6 +26237,19 @@ Constant B375_carry_out_attacking_it_ = EMPTY_RULEBOOK;
     latest_rule_result-->0 = 0;
     return 0; ! 1 rule(s)
 ];
+[ B375_carry_out_attacking_it_ 
+    forbid_breaks ! Implied call parameter
+    rv ! return value
+    ;
+    rv = R_808();
+    if (rv) {
+        if (rv == 2) return reason_the_action_failed;
+        return R_808;
+    }
+    latest_rule_result-->0 = 0;
+    return 0; ! 1 rule(s)
+];
+Constant B376_report_attacking_it_wit = EMPTY_RULEBOOK;
 Constant B377_when_beginning_begins = EMPTY_RULEBOOK;
 [ B378_when_beginning_ends 
     forbid_breaks ! Implied call parameter
@@ -26410,24 +26369,6 @@ Constant B383_when_resolution_begins = EMPTY_RULEBOOK;
         }
     }
     if (scene_status-->2 == 1) {
-        if (((((Adj_87_t1_v10(I156_brad)))))) {
-            ch = true;
-            if (debug_scenes) print "[Scene 'Bully Sequence' ends]^";
-            if (GProperty(43, 3, p60_recurring)) scene_status-->2 = 0; else scene_status-->2 = 2; FollowRulebook(380);
-            FollowRulebook(WHEN_SCENE_ENDS_RB, 3);
-            scene_ended-->2 = the_time;
-            scene_endings-->2 = (scene_endings-->2)|2;
-            scene_latest_ending-->2 = 1;
-            if (scene_status-->3 == 0) {
-                if (debug_scenes) print "[Scene 'Kidnapping' begins]^";
-                scene_status-->3 = 1; FollowRulebook(WHEN_SCENE_BEGINS_RB, 4);
-                FollowRulebook(381);
-                scene_started-->3 = the_time;
-                scene_endings-->3 = (scene_endings-->3)|1;
-                scene_latest_ending-->3 = 0;
-            }
-            jump CScene;
-        }
     }
     if (scene_status-->2 == 0) {
     }
@@ -31139,8 +31080,8 @@ Array RulebookNames -->
         if (R == R_804) { print "Carry out report damage"; rtrue; } ! rule 353
         if (R == R_805) { print "Check check health"; rtrue; } ! rule 354
         if (R == R_806) { print "Carry out check health"; rtrue; } ! rule 355
-        if (R == R_807) { print "Report attacking someone with something"; rtrue; } ! rule 356
-        if (R == R_808) { print "Check an actor attacking something with something"; rtrue; } ! rule 357
+        if (R == R_807) { print "Check an actor attacking something with something"; rtrue; } ! rule 356
+        if (R == R_808) { print "Carry out an actor attacking something with something"; rtrue; } ! rule 357
         if (R == R_809) { print "After spinning the closed My Locker to 1999"; rtrue; } ! rule 358
         if (R == R_810) { print "After going from room containing my locker"; rtrue; } ! rule 359
         if (R == R_811) { print "After spinning the closed Diamonds Locker to 0112"; rtrue; } ! rule 360
@@ -37669,8 +37610,6 @@ if (t_0 ofclass K8_person) {if (na > 0) { na = 0; print "; "; }
     if ((AllowInShowme(female)) && (t_0  has female)) { if (na++ > 0) print ", "; print "female"; }
     if ((AllowInShowme(female)) && (t_0  hasnt female)) { if (na++ > 0) print ", "; print "male"; }
     if ((AllowInShowme(neuter)) && (t_0  has neuter)) { if (na++ > 0) print ", "; print "neuter"; }
-    if ((AllowInShowme(p62_corporeal)) && (t_0  has p62_corporeal)) { if (na++ > 0) print ", "; print "corporeal"; }
-    if ((AllowInShowme(p62_corporeal)) && (t_0  hasnt p62_corporeal)) { if (na++ > 0) print ", "; print "incorporeal"; }
 }
 if (t_0 ofclass K13_device) {if (na > 0) { na = 0; print "; "; }
     if ((AllowInShowme(on)) && (t_0  has on)) { if (na++ > 0) print ", "; print "switched on"; }
@@ -37709,16 +37648,16 @@ if (t_0 ofclass K6_supporter) {if (na > 0) { na = 0; print "^"; }
 }
 if (t_0 ofclass K8_person) {if (na > 0) { na = 0; print "^"; }
     print "carrying capacity: "; print (DecimalNumber) GProperty(OBJECT_TY, t_0, capacity), "^";
-    print "health: "; print (DecimalNumber) GProperty(OBJECT_TY, t_0, p17_health), "^";
+    print "health: "; print (DecimalNumber) GProperty(OBJECT_TY, t_0, p16_health), "^";
 }
 if (t_0 ofclass K17_weapon) {if (na > 0) { na = 0; print "^"; }
-    print "damage: "; print (DecimalNumber) GProperty(OBJECT_TY, t_0, p16_damage), "^";
+    print "damage: "; print (DecimalNumber) GProperty(OBJECT_TY, t_0, p17_damage), "^";
 }
 if (t_0 == selfobj) {if (na > 0) { na = 0; print "^"; }
     print "health which is 20: "; print (DecimalNumber) GProperty(OBJECT_TY, t_0, p15_health_which_is_20), "^";
 }
 if (t_0 == I157_diamond) {if (na > 0) { na = 0; print "^"; }
-    print "Diamond condition: "; print (E69) GProperty(OBJECT_TY, t_0, p64_diamond_condition), "^";
+    print "Diamond condition: "; print (E69) GProperty(OBJECT_TY, t_0, p62_diamond_condition), "^";
 }
 
 ];
@@ -51550,8 +51489,8 @@ Array TX_L_33 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_33;
 #ifndef with_key; Constant with_key = 0; #endif;
 #ifndef p14_adaptive_text_viewpoint; Constant p14_adaptive_text_viewpoint = 0; #endif;
 #ifndef p15_health_which_is_20; Constant p15_health_which_is_20 = 0; #endif;
-#ifndef p16_damage; Constant p16_damage = 0; #endif;
-#ifndef p17_health; Constant p17_health = 0; #endif;
+#ifndef p16_health; Constant p16_health = 0; #endif;
+#ifndef p17_damage; Constant p17_damage = 0; #endif;
 #ifndef pluralname; Constant pluralname = 0; #endif;
 #ifndef proper; Constant proper = 0; #endif;
 #ifndef ambigpluralname; Constant ambigpluralname = 0; #endif;
@@ -51578,8 +51517,7 @@ Array TX_L_33 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_33;
 #ifndef neuter; Constant neuter = 0; #endif;
 #ifndef on; Constant on = 0; #endif;
 #ifndef p60_recurring; Constant p60_recurring = 0; #endif;
-#ifndef p62_corporeal; Constant p62_corporeal = 0; #endif;
-#ifndef p64_diamond_condition; Constant p64_diamond_condition = 0; #endif;
+#ifndef p62_diamond_condition; Constant p62_diamond_condition = 0; #endif;
 #ifndef vector; Constant vector = 0; #endif;
 #ifndef room_index; Constant room_index = 0; #endif;
 #ifndef door_dir; Constant door_dir = 0; #endif;

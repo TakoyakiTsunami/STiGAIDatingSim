@@ -37,6 +37,8 @@ Understand "spin [something] to [a number]" as spinning it to.
 
 fuck is an action applying to one thing. understand "fuck [something]" and "fuck the [something]"  as fuck. Instead of fuck, say "You fucked it".
 
+People have a number called health. Health is usually 20. 
+
 [combat action rules]
 report damage is an action applying to one thing. Understand "report [something] damage" as report damage. Check report damage: If the noun is not a weapon, instead say "no damage points".
 Carry out report damage: 
@@ -55,20 +57,18 @@ Diamonds Pencil is a weapon. Understand "pencil" as Diamonds pencil. The descrip
 There is a scimitar, katana, baseball bat, monkey wrench, candlestick, axe, spear, and rope which are weapons. Understand "wrench" as monkey wrench. Understand "baseball bat" as bat. 
 A baseball bat and a candlestick have damage 4. A rope and pencil have damage 2. A wrench, axe, and spear have damage 3.  
 
-Report attacking someone with something: 
-	say "You attack [the noun] with [the second noun], causing [damage of second noun] point[s] of damage!" instead.
 Check an actor attacking something with something: 
 	if the second noun is not a weapon: 
 		if the actor is the player, say "[The second noun] does not qualify as a weapon."; 
 		stop the action.
-[Carry out an actor attacking something with something: 
-	now 
-	decrease the current health of the noun by inflicted; 
-	if the noun is dead: 
-		now the noun is nowhere.
-	]
+Carry out an actor attacking something with something: 
+	decrease the health of the noun by the damage of the second noun;
+	say "You attack [the noun] with [the second noun], causing [damage of second noun] point[s] of damage!" ;
+	if the damage of the second noun is not 1, decrease the damage of the second noun by 1. 
+	
+	
 [characters]
-Mr Redman, Mrs Ford, Mr Hartman, and Ms Belvod are people. People have a number called health. Health is usually 20. People can be either corporeal or incorporeal. People are usually corporeal. 
+Mr Redman, Mrs Ford, Mr Hartman, and Ms Belvod are people. 
 Mr Redman is in Room 211. Understand "Mr Redmans Classroom" as Room 211.  Understand "Mr R" and "Redman" as Mr Redman.
 Mrs Ford is in room 212. Understand "Mrs Fords Classroom" as Room 212. Understand "Mrs F" and "Ford" as Mrs Ford.
 Mr Hartman is in Room 213. Understand "Mr Hartmans Classroom " as Room 213. Understand "Mr H" and "Hartman" as Mr Hartman.
@@ -92,7 +92,7 @@ There is a note. A note is a thing. The description of the note is "Looks like s
 [scenes]
 Beginning, Bully Sequence, Kidnapping, and Resolution are scenes. 
 Beginning begins when play begins. Beginning ends when Diamonds Locker is open. 
-Bully Sequence begins when Beginning ends. Bully Sequence ends when Brad is incorporeal.
+Bully Sequence begins when Beginning ends. [Bully Sequence ends when Brad is incorporeal.]
 Kidnapping begins when Bully Sequence ends. 
 Resolution begins when Kidnapping ends. 
 
