@@ -10,7 +10,8 @@ This is the death if health of player is 0 rule:
 	say "You died in combat and failed Diamond. She gets Stockholm syndrome and falls in love with Brad, and they (live) happily ever after. You will haunt these halls for eternity, but because you died so pathetically, everyone forgets that you existed pretty quickly. Sucks to be you, loser.";
 	end the story.
 
-Definition: a person is a ghost if their health is less than 1.
+[This is the names if person is ghost for the first turn rule:
+	Now the printed name of person is "Ghost [person]".]
 
 [Help]
 
@@ -87,8 +88,6 @@ Carry out know rapport:
 	if rapport of noun is 2, say "[noun] doesn't really ever think of you.";
 	if rapport of noun is 3, say "[noun] thinks you're alright.".
 
-[combat action rules]
-
 report damage is an action applying to one thing. Understand "report [something] damage" as report damage. Understand "[something] damage" as report damage. Check report damage: If the noun is not a weapon, instead say "no damage points".
 Carry out report damage: 
 	say "[noun] has [damage of noun] damage points.".
@@ -106,18 +105,19 @@ Carry out an actor attacking something with something:
 	say "You attack [the noun] with [the second noun], causing [damage of second noun] point[s] of damage!" ;
 	if the rapport of the noun is not 1, say "[noun] is now your enemy.";
 	if the rapport of the noun is not 1, now rapport of the noun is 1;
-	if the damage of the second noun is not 1, decrease the damage of the second noun by 1.
+	if the damage of the second noun is not 1, decrease the damage of the second noun by 1;
+	if health of the noun is 0, now the noun is a ghost.
 
 [characters]
 
 Mr Redman, Mrs Ford, Mr Hartman, and Ms Belvod are people. People have a number called health. Health is usually 20. 
 Mr Redman is in Room 211. Understand "Mr Redmans Classroom" as Room 211.  Understand "Mr R" and "Redman" as Mr Redman.
-Mrs Ford is in room 212. Understand "Mrs Fords Classroom" as Room 212. Understand "Mrs F" and "Ford" as Mrs Ford.
+Mrs Ford is in room 212. Understand "Mrs Fords Classroom" as Room 212. Understand "Mrs F" and "Ford" as Mrs Ford. 
 Mr Hartman is in Room 213. Understand "Mr Hartmans Classroom " as Room 213. Understand "Mr H" and "Hartman" as Mr Hartman.
 Ms Belvod is in Room 214. Understand "Mrs Belvods Classroom" as Room 214. Understand "Ms B" and "Belvod" as Ms Belvod.  
 Brad is a person. Understand "ghost brad" as brad. The rapport of Brad is 1. 
 Inside Room 213 is a woman called Diamond. Understand "D" as Diamond. The description of Diamond is "An angel that has graced this school with her presence. She's soooooo hot." Diamond can be neutral, taken, or found. Diamond is neutral. The rapport of Diamond is 2. 
-a ghost is a kind of person. 
+A person is either alive or ghost. A person is usually alive. 
 
 [things]
 
@@ -157,7 +157,7 @@ When Resolution ends:
 [scenes]
 Beginning, Bully Sequence, Kidnapping, and Resolution are scenes. 
 Beginning begins when play begins. Beginning ends when Diamonds Locker is open. 
-Bully Sequence begins when Beginning ends. Bully Sequence ends when Brad is ghost.
+Bully Sequence begins when Beginning ends. [Bully Sequence ends when Brad is ghost.]
 Kidnapping begins when Bully Sequence ends. 
 Resolution begins when Kidnapping ends. 
 

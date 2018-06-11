@@ -9605,57 +9605,58 @@ Constant p55_locked = locked;
 Constant p57_female = female;
 Constant p59_neuter = neuter;
 Constant p60_switched_on = on;
-Constant p65 = vector;
-Constant p66 = room_index;
-Constant p67 = door_dir;
-Constant p68 = door_to;
-Constant p69 = absent;
-Constant p70 = cap_short_name;
-Constant p71 = mark_as_room;
-Constant p72 = mark_as_thing;
-Constant p73 = component_parent;
-Constant p74 = component_child;
-Constant p75 = component_sibling;
-Constant p76 = regional_found_in;
-Constant p77 = IK1_Count;
-Constant p78 = IK1_Link;
-Constant p79 = IK2_Count;
-Constant p80 = IK2_Link;
-Constant p81 = IK3_Count;
-Constant p82 = IK3_Link;
-Constant p83 = IK4_Count;
-Constant p84 = IK4_Link;
-Constant p85 = IK5_Count;
-Constant p86 = IK5_Link;
-Constant p87 = IK6_Count;
-Constant p88 = IK6_Link;
-Constant p89 = IK7_Count;
-Constant p90 = IK7_Link;
-Constant p91 = IK8_Count;
-Constant p92 = IK8_Link;
-Constant p93 = IK9_Count;
-Constant p94 = IK9_Link;
-Constant p95 = IK10_Count;
-Constant p96 = IK10_Link;
-Constant p97 = IK11_Count;
-Constant p98 = IK11_Link;
-Constant p99 = IK12_Count;
-Constant p100 = IK12_Link;
-Constant p101 = IK13_Count;
-Constant p102 = IK13_Link;
-Constant p103 = IK14_Count;
-Constant p104 = IK14_Link;
-Constant p105 = IK15_Count;
-Constant p106 = IK15_Link;
-Constant p107 = IK16_Count;
-Constant p108 = IK16_Link;
-Constant p109 = IK17_Count;
-Constant p110 = IK17_Link;
-Constant p111 = KD_Count;
-Constant p112 = name;
-Constant p113 = parse_name;
-Constant p114 = action_bitmap;
+Constant p67 = vector;
+Constant p68 = room_index;
+Constant p69 = door_dir;
+Constant p70 = door_to;
+Constant p71 = absent;
+Constant p72 = cap_short_name;
+Constant p73 = mark_as_room;
+Constant p74 = mark_as_thing;
+Constant p75 = component_parent;
+Constant p76 = component_child;
+Constant p77 = component_sibling;
+Constant p78 = regional_found_in;
+Constant p79 = IK1_Count;
+Constant p80 = IK1_Link;
+Constant p81 = IK2_Count;
+Constant p82 = IK2_Link;
+Constant p83 = IK3_Count;
+Constant p84 = IK3_Link;
+Constant p85 = IK4_Count;
+Constant p86 = IK4_Link;
+Constant p87 = IK5_Count;
+Constant p88 = IK5_Link;
+Constant p89 = IK6_Count;
+Constant p90 = IK6_Link;
+Constant p91 = IK7_Count;
+Constant p92 = IK7_Link;
+Constant p93 = IK8_Count;
+Constant p94 = IK8_Link;
+Constant p95 = IK9_Count;
+Constant p96 = IK9_Link;
+Constant p97 = IK10_Count;
+Constant p98 = IK10_Link;
+Constant p99 = IK11_Count;
+Constant p100 = IK11_Link;
+Constant p101 = IK12_Count;
+Constant p102 = IK12_Link;
+Constant p103 = IK13_Count;
+Constant p104 = IK13_Link;
+Constant p105 = IK14_Count;
+Constant p106 = IK14_Link;
+Constant p107 = IK15_Count;
+Constant p108 = IK15_Link;
+Constant p109 = IK16_Count;
+Constant p110 = IK16_Link;
+Constant p111 = IK17_Count;
+Constant p112 = IK17_Link;
+Constant p113 = KD_Count;
+Constant p114 = name;
+Constant p115 = parse_name;
+Constant p116 = action_bitmap;
 
+Attribute p65_alive;
 Constant FBNA_PROP_NUMBER = p62_recurring;
 Object property_numberspace_forcer
     with p62_recurring false
@@ -9756,111 +9757,113 @@ Array property_metadata -->
     "recurring" NULL
     ! offset 174: property p64_diamond_condition
     "diamond condition" I148_diamond NULL
-    ! offset 177: property vector
+    ! offset 177: property p65_alive
+    "alive" K8_person NULL
+    ! offset 180: property vector
     "<nameless>" NULL
-    ! offset 179: property room_index
+    ! offset 182: property room_index
     "<nameless>" NULL
-    ! offset 181: property door_dir
+    ! offset 184: property door_dir
     "<nameless>" NULL
-    ! offset 183: property door_to
+    ! offset 186: property door_to
     "<nameless>" K4_door NULL
-    ! offset 186: property absent
+    ! offset 189: property absent
     "<nameless>" NULL
-    ! offset 188: property cap_short_name
+    ! offset 191: property cap_short_name
     "<nameless>" NULL
-    ! offset 190: property mark_as_room
+    ! offset 193: property mark_as_room
     "<nameless>" NULL
-    ! offset 192: property mark_as_thing
+    ! offset 195: property mark_as_thing
     "<nameless>" NULL
-    ! offset 194: property component_parent
+    ! offset 197: property component_parent
     "<nameless>" NULL
-    ! offset 196: property component_child
+    ! offset 199: property component_child
     "<nameless>" NULL
-    ! offset 198: property component_sibling
+    ! offset 201: property component_sibling
     "<nameless>" NULL
-    ! offset 200: property regional_found_in
+    ! offset 203: property regional_found_in
     "<nameless>" NULL
-    ! offset 202: property IK1_Count
+    ! offset 205: property IK1_Count
     "<nameless>" NULL
-    ! offset 204: property IK1_Link
+    ! offset 207: property IK1_Link
     "<nameless>" NULL
-    ! offset 206: property IK2_Count
+    ! offset 209: property IK2_Count
     "<nameless>" NULL
-    ! offset 208: property IK2_Link
+    ! offset 211: property IK2_Link
     "<nameless>" NULL
-    ! offset 210: property IK3_Count
+    ! offset 213: property IK3_Count
     "<nameless>" NULL
-    ! offset 212: property IK3_Link
+    ! offset 215: property IK3_Link
     "<nameless>" NULL
-    ! offset 214: property IK4_Count
+    ! offset 217: property IK4_Count
     "<nameless>" NULL
-    ! offset 216: property IK4_Link
+    ! offset 219: property IK4_Link
     "<nameless>" NULL
-    ! offset 218: property IK5_Count
+    ! offset 221: property IK5_Count
     "<nameless>" NULL
-    ! offset 220: property IK5_Link
+    ! offset 223: property IK5_Link
     "<nameless>" NULL
-    ! offset 222: property IK6_Count
+    ! offset 225: property IK6_Count
     "<nameless>" NULL
-    ! offset 224: property IK6_Link
+    ! offset 227: property IK6_Link
     "<nameless>" NULL
-    ! offset 226: property IK7_Count
+    ! offset 229: property IK7_Count
     "<nameless>" NULL
-    ! offset 228: property IK7_Link
+    ! offset 231: property IK7_Link
     "<nameless>" NULL
-    ! offset 230: property IK8_Count
+    ! offset 233: property IK8_Count
     "<nameless>" NULL
-    ! offset 232: property IK8_Link
+    ! offset 235: property IK8_Link
     "<nameless>" NULL
-    ! offset 234: property IK9_Count
+    ! offset 237: property IK9_Count
     "<nameless>" NULL
-    ! offset 236: property IK9_Link
+    ! offset 239: property IK9_Link
     "<nameless>" NULL
-    ! offset 238: property IK10_Count
+    ! offset 241: property IK10_Count
     "<nameless>" NULL
-    ! offset 240: property IK10_Link
+    ! offset 243: property IK10_Link
     "<nameless>" NULL
-    ! offset 242: property IK11_Count
+    ! offset 245: property IK11_Count
     "<nameless>" NULL
-    ! offset 244: property IK11_Link
+    ! offset 247: property IK11_Link
     "<nameless>" NULL
-    ! offset 246: property IK12_Count
+    ! offset 249: property IK12_Count
     "<nameless>" NULL
-    ! offset 248: property IK12_Link
+    ! offset 251: property IK12_Link
     "<nameless>" NULL
-    ! offset 250: property IK13_Count
+    ! offset 253: property IK13_Count
     "<nameless>" NULL
-    ! offset 252: property IK13_Link
+    ! offset 255: property IK13_Link
     "<nameless>" NULL
-    ! offset 254: property IK14_Count
+    ! offset 257: property IK14_Count
     "<nameless>" NULL
-    ! offset 256: property IK14_Link
+    ! offset 259: property IK14_Link
     "<nameless>" NULL
-    ! offset 258: property IK15_Count
+    ! offset 261: property IK15_Count
     "<nameless>" NULL
-    ! offset 260: property IK15_Link
+    ! offset 263: property IK15_Link
     "<nameless>" NULL
-    ! offset 262: property IK16_Count
+    ! offset 265: property IK16_Count
     "<nameless>" NULL
-    ! offset 264: property IK16_Link
+    ! offset 267: property IK16_Link
     "<nameless>" NULL
-    ! offset 266: property IK17_Count
+    ! offset 269: property IK17_Count
     "<nameless>" NULL
-    ! offset 268: property IK17_Link
+    ! offset 271: property IK17_Link
     "<nameless>" NULL
-    ! offset 270: property KD_Count
+    ! offset 273: property KD_Count
     "<nameless>" NULL
-    ! offset 272: property name
+    ! offset 275: property name
     "<nameless>" NULL
-    ! offset 274: property parse_name
+    ! offset 277: property parse_name
     "<nameless>" NULL
-    ! offset 276: property action_bitmap
+    ! offset 279: property action_bitmap
     "<nameless>" NULL
 ;
 
 Constant attributed_property_offsets_SIZE 48;
 Array attributed_property_offsets --> attributed_property_offsets_SIZE;
-Constant valued_property_offsets_SIZE (100 + 115 + INDIV_PROP_START-48);
+Constant valued_property_offsets_SIZE (100 + 117 + INDIV_PROP_START-48);
 Array valued_property_offsets --> valued_property_offsets_SIZE;
 
 [ CreatePropertyOffsets 
@@ -9915,56 +9918,57 @@ Array valued_property_offsets --> valued_property_offsets_SIZE;
     attributed_property_offsets-->on = 169;
     valued_property_offsets-->p62_recurring = 172;
     valued_property_offsets-->p64_diamond_condition = 174;
-    valued_property_offsets-->vector = 177;
-    valued_property_offsets-->room_index = 179;
-    valued_property_offsets-->door_dir = 181;
-    valued_property_offsets-->door_to = 183;
-    attributed_property_offsets-->absent = 186;
-    valued_property_offsets-->cap_short_name = 188;
-    attributed_property_offsets-->mark_as_room = 190;
-    attributed_property_offsets-->mark_as_thing = 192;
-    valued_property_offsets-->component_parent = 194;
-    valued_property_offsets-->component_child = 196;
-    valued_property_offsets-->component_sibling = 198;
-    valued_property_offsets-->regional_found_in = 200;
-    valued_property_offsets-->IK1_Count = 202;
-    valued_property_offsets-->IK1_Link = 204;
-    valued_property_offsets-->IK2_Count = 206;
-    valued_property_offsets-->IK2_Link = 208;
-    valued_property_offsets-->IK3_Count = 210;
-    valued_property_offsets-->IK3_Link = 212;
-    valued_property_offsets-->IK4_Count = 214;
-    valued_property_offsets-->IK4_Link = 216;
-    valued_property_offsets-->IK5_Count = 218;
-    valued_property_offsets-->IK5_Link = 220;
-    valued_property_offsets-->IK6_Count = 222;
-    valued_property_offsets-->IK6_Link = 224;
-    valued_property_offsets-->IK7_Count = 226;
-    valued_property_offsets-->IK7_Link = 228;
-    valued_property_offsets-->IK8_Count = 230;
-    valued_property_offsets-->IK8_Link = 232;
-    valued_property_offsets-->IK9_Count = 234;
-    valued_property_offsets-->IK9_Link = 236;
-    valued_property_offsets-->IK10_Count = 238;
-    valued_property_offsets-->IK10_Link = 240;
-    valued_property_offsets-->IK11_Count = 242;
-    valued_property_offsets-->IK11_Link = 244;
-    valued_property_offsets-->IK12_Count = 246;
-    valued_property_offsets-->IK12_Link = 248;
-    valued_property_offsets-->IK13_Count = 250;
-    valued_property_offsets-->IK13_Link = 252;
-    valued_property_offsets-->IK14_Count = 254;
-    valued_property_offsets-->IK14_Link = 256;
-    valued_property_offsets-->IK15_Count = 258;
-    valued_property_offsets-->IK15_Link = 260;
-    valued_property_offsets-->IK16_Count = 262;
-    valued_property_offsets-->IK16_Link = 264;
-    valued_property_offsets-->IK17_Count = 266;
-    valued_property_offsets-->IK17_Link = 268;
-    valued_property_offsets-->KD_Count = 270;
-    valued_property_offsets-->name = 272;
-    valued_property_offsets-->parse_name = 274;
-    valued_property_offsets-->action_bitmap = 276;
+    attributed_property_offsets-->p65_alive = 177;
+    valued_property_offsets-->vector = 180;
+    valued_property_offsets-->room_index = 182;
+    valued_property_offsets-->door_dir = 184;
+    valued_property_offsets-->door_to = 186;
+    attributed_property_offsets-->absent = 189;
+    valued_property_offsets-->cap_short_name = 191;
+    attributed_property_offsets-->mark_as_room = 193;
+    attributed_property_offsets-->mark_as_thing = 195;
+    valued_property_offsets-->component_parent = 197;
+    valued_property_offsets-->component_child = 199;
+    valued_property_offsets-->component_sibling = 201;
+    valued_property_offsets-->regional_found_in = 203;
+    valued_property_offsets-->IK1_Count = 205;
+    valued_property_offsets-->IK1_Link = 207;
+    valued_property_offsets-->IK2_Count = 209;
+    valued_property_offsets-->IK2_Link = 211;
+    valued_property_offsets-->IK3_Count = 213;
+    valued_property_offsets-->IK3_Link = 215;
+    valued_property_offsets-->IK4_Count = 217;
+    valued_property_offsets-->IK4_Link = 219;
+    valued_property_offsets-->IK5_Count = 221;
+    valued_property_offsets-->IK5_Link = 223;
+    valued_property_offsets-->IK6_Count = 225;
+    valued_property_offsets-->IK6_Link = 227;
+    valued_property_offsets-->IK7_Count = 229;
+    valued_property_offsets-->IK7_Link = 231;
+    valued_property_offsets-->IK8_Count = 233;
+    valued_property_offsets-->IK8_Link = 235;
+    valued_property_offsets-->IK9_Count = 237;
+    valued_property_offsets-->IK9_Link = 239;
+    valued_property_offsets-->IK10_Count = 241;
+    valued_property_offsets-->IK10_Link = 243;
+    valued_property_offsets-->IK11_Count = 245;
+    valued_property_offsets-->IK11_Link = 247;
+    valued_property_offsets-->IK12_Count = 249;
+    valued_property_offsets-->IK12_Link = 251;
+    valued_property_offsets-->IK13_Count = 253;
+    valued_property_offsets-->IK13_Link = 255;
+    valued_property_offsets-->IK14_Count = 257;
+    valued_property_offsets-->IK14_Link = 259;
+    valued_property_offsets-->IK15_Count = 261;
+    valued_property_offsets-->IK15_Link = 263;
+    valued_property_offsets-->IK16_Count = 265;
+    valued_property_offsets-->IK16_Link = 267;
+    valued_property_offsets-->IK17_Count = 269;
+    valued_property_offsets-->IK17_Link = 271;
+    valued_property_offsets-->KD_Count = 273;
+    valued_property_offsets-->name = 275;
+    valued_property_offsets-->parse_name = 277;
+    valued_property_offsets-->action_bitmap = 279;
 ];
 
 
@@ -10753,6 +10757,7 @@ Class K8_person
     with p18_health 20
     has ~female
     has ~neuter
+    has p65_alive
     with description BC_30
     with initial BC_31
     with list_together BC_32
@@ -12599,7 +12604,7 @@ Array ActionHappened --> 0 0 0 0 0 0;
     ! [2: repeat with item running through things]
     for (tmp_0=Prop_0(0), tmp_1=Prop_0(tmp_0): tmp_0: tmp_0=tmp_1, tmp_1=Prop_0(tmp_1))
     {! [3: now the item is not mentioned]
-        (Adj_68_t3_v10(tmp_0));
+        (Adj_67_t3_v10(tmp_0));
         }
         rfalse;
 ];
@@ -12760,16 +12765,16 @@ Array ActionHappened --> 0 0 0 0 0 0;
 ! ----------------------------------------------------------------------------------------------------
 ! No specific request
 ! When play begins:
-[ R_825 ;
-    if (debug_rules) DB_Rule(R_825, 825);
+[ R_824 ;
+    if (debug_rules) DB_Rule(R_824, 824);
     ! [2: now diamonds pencil is inside diamonds locker]
     MoveObject(I160_diamonds_pencil,I154_diamonds_locker);
     rfalse;
 ];
 ! No specific request
 ! When play begins:
-[ R_827 ;
-    if (debug_rules) DB_Rule(R_827, 827);
+[ R_826 ;
+    if (debug_rules) DB_Rule(R_826, 826);
     ! [2: now diamonds pencil is inside diamonds locker]
     MoveObject(I160_diamonds_pencil,I154_diamonds_locker);
     ! [3: move scimitar to a random room]
@@ -12938,7 +12943,7 @@ Array ActionHappened --> 0 0 0 0 0 0;
     ! [3: now the room gone from is the location of the actor]
     (MStack-->MstVO(20007,0)) = LocationOf(actor);
     ! [4: if the actor is in an enterable vehicle ( called the carriage )]
-    if (((ContainerOf(actor) ofclass K14_vehicle) && ((Adj_70_t1_v10(ContainerOf(actor)))) && (tmp_0=(ContainerOf(actor)), true)))
+    if (((ContainerOf(actor) ofclass K14_vehicle) && ((Adj_69_t1_v10(ContainerOf(actor)))) && (tmp_0=(ContainerOf(actor)), true)))
     {! [5: now the vehicle gone by is the carriage]
         (MStack-->MstVO(20007,3)) = tmp_0;
         }
@@ -13251,34 +13256,34 @@ Array ActionHappened --> 0 0 0 0 0 0;
 ! ----------------------------------------------------------------------------------------------------
 ! No specific request
 ! Instead of opening a locker:
-[ R_802 ;
+[ R_801 ;
     if ((((action ==##Open) &&  (actor==player) && ((noun ofclass K16_locker))))) { ! Runs only when pattern matches
     self = noun;
-    if (debug_rules) DB_Rule(R_802, 802);
+    if (debug_rules) DB_Rule(R_801, 801);
     ! [2: say ~You need the right combination to open this locker. Spin the locker to _ _ _ _ to open~]
     say__p=1;! [3: ~You need the right combination to open this locker. Spin the locker to _ _ _ _ to open~]
     ParaContent(); print "You need the right combination to open this locker. Spin the locker to _ _ _ _ to open"; .L_Say3; .L_SayX3;RulebookFails(); rtrue;
-    } else if (debug_rules > 1) DB_Rule(R_802, 802, 'action');
+    } else if (debug_rules > 1) DB_Rule(R_801, 801, 'action');
     rfalse;
 ];
 ! No specific request
 ! Instead of fuck:
-[ R_805 ;
+[ R_804 ;
     if ((((action ==##A79_fuck) &&  (actor==player)))) { ! Runs only when pattern matches
     self = noun;
-    if (debug_rules) DB_Rule(R_805, 805);
+    if (debug_rules) DB_Rule(R_804, 804);
     ! [2: say ~You fucked it~]
     say__p=1;! [3: ~You fucked it~]
     ParaContent(); print "You fucked it"; .L_Say4; .L_SayX4;RulebookFails(); rtrue;
-    } else if (debug_rules > 1) DB_Rule(R_805, 805, 'action');
+    } else if (debug_rules > 1) DB_Rule(R_804, 804, 'action');
     rfalse;
 ];
 ! No specific request
 ! Instead of taking inventory:
-[ R_806 ;
+[ R_805 ;
     if ((((action ==##Inv) &&  (actor==player)))) { ! Runs only when pattern matches
     self = noun;
-    if (debug_rules) DB_Rule(R_806, 806);
+    if (debug_rules) DB_Rule(R_805, 805);
     ! [2: if the number of things enclosed by the player is 0]
     if ((((Prop_9()) == 0)))
     {! [3: say ~I got nothing on me.~]
@@ -13291,7 +13296,7 @@ Array ActionHappened --> 0 0 0 0 0 0;
     ParaContent(); new_line; .L_Say6; .L_SayX6;! [9: list the contents of the player , with newlines , indented , giving inventory information]
     WriteListFrom(child(player), 7);
     RulebookFails(); rtrue;
-    } else if (debug_rules > 1) DB_Rule(R_806, 806, 'action');
+    } else if (debug_rules > 1) DB_Rule(R_805, 805, 'action');
     rfalse;
 ];
 ! ----------------------------------------------------------------------------------------------------
@@ -13309,38 +13314,38 @@ Array ActionHappened --> 0 0 0 0 0 0;
 ! ----------------------------------------------------------------------------------------------------
 ! No specific request
 ! After going from room containing my locker:
-[ R_816 ;
+[ R_815 ;
     if ((((action ==##Go) &&  (actor==player) && (((MStack-->MstVON(20007,0)) ofclass K1_room) && ((MStack-->MstVON(20007,0)) == ContainerOf(I153_my_locker))) && ((MStack-->MstVON(20007,1)) ~= nothing)))) { ! Runs only when pattern matches
     self = noun;
-    if (debug_rules) DB_Rule(R_816, 816);
+    if (debug_rules) DB_Rule(R_815, 815);
     ! [2: now my locker is closed]
-    (Adj_74_t2_v10(I153_my_locker));
+    (Adj_73_t2_v10(I153_my_locker));
     RulebookSucceeds(); rtrue;
-    } else if (debug_rules > 1) DB_Rule(R_816, 816, 'action');
+    } else if (debug_rules > 1) DB_Rule(R_815, 815, 'action');
     rfalse;
 ];
 ! No specific request
 ! After going from room containing diamonds locker:
-[ R_818 ;
+[ R_817 ;
     if ((((action ==##Go) &&  (actor==player) && (((MStack-->MstVON(20007,0)) ofclass K1_room) && ((MStack-->MstVON(20007,0)) == ContainerOf(I154_diamonds_locker))) && ((MStack-->MstVON(20007,1)) ~= nothing)))) { ! Runs only when pattern matches
     self = noun;
-    if (debug_rules) DB_Rule(R_818, 818);
+    if (debug_rules) DB_Rule(R_817, 817);
     ! [2: now diamonds locker is closed]
-    (Adj_74_t2_v10(I154_diamonds_locker));
+    (Adj_73_t2_v10(I154_diamonds_locker));
     RulebookSucceeds(); rtrue;
-    } else if (debug_rules > 1) DB_Rule(R_818, 818, 'action');
+    } else if (debug_rules > 1) DB_Rule(R_817, 817, 'action');
     rfalse;
 ];
 ! No specific request
 ! After spinning the closed My Locker to 1999:
-[ R_815 
+[ R_814 
     tmp_0 ! Let/loop value (deallocated by end of phrase)
     ;
-    if ((((action ==##A78_spinning_it_to) &&  (actor==player) && ((noun == I153_my_locker) && ((Adj_74_t1_v10(noun)))) && ((parsed_number == 1999) && (true))))) { ! Runs only when pattern matches
+    if ((((action ==##A78_spinning_it_to) &&  (actor==player) && ((noun == I153_my_locker) && ((Adj_73_t1_v10(noun)))) && ((parsed_number == 1999) && (true))))) { ! Runs only when pattern matches
     self = noun;
-    if (debug_rules) DB_Rule(R_815, 815);
+    if (debug_rules) DB_Rule(R_814, 814);
     ! [2: now my locker is open]
-    (Adj_73_t2_v10(I153_my_locker));
+    (Adj_72_t2_v10(I153_my_locker));
     ! [3: say ~[noun] opens, revealing [a list of things in noun].~]
     say__p=1;! [4: noun]
     ParaContent(); PrintShortName(noun);! [5: ~ opens, revealing ~]
@@ -13352,19 +13357,19 @@ Array ActionHappened --> 0 0 0 0 0 0;
     				give tmp_0 ~workflag2;
     		WriteListOfMarkedObjects(ENGLISH_BIT);! [7: ~.~]
     ParaContent(); print "."; new_line; .L_Say7; .L_SayX7;RulebookSucceeds(); rtrue;
-    } else if (debug_rules > 1) DB_Rule(R_815, 815, 'action');
+    } else if (debug_rules > 1) DB_Rule(R_814, 814, 'action');
     rfalse;
 ];
 ! No specific request
 ! After spinning the closed Diamonds Locker to 0112:
-[ R_817 
+[ R_816 
     tmp_0 ! Let/loop value (deallocated by end of phrase)
     ;
-    if ((((action ==##A78_spinning_it_to) &&  (actor==player) && ((noun == I154_diamonds_locker) && ((Adj_74_t1_v10(noun)))) && ((parsed_number == 112) && (true))))) { ! Runs only when pattern matches
+    if ((((action ==##A78_spinning_it_to) &&  (actor==player) && ((noun == I154_diamonds_locker) && ((Adj_73_t1_v10(noun)))) && ((parsed_number == 112) && (true))))) { ! Runs only when pattern matches
     self = noun;
-    if (debug_rules) DB_Rule(R_817, 817);
+    if (debug_rules) DB_Rule(R_816, 816);
     ! [2: now diamonds locker is open]
-    (Adj_73_t2_v10(I154_diamonds_locker));
+    (Adj_72_t2_v10(I154_diamonds_locker));
     ! [3: say ~[noun] opens, revealing [a list of things in noun].~]
     say__p=1;! [4: noun]
     ParaContent(); PrintShortName(noun);! [5: ~ opens, revealing ~]
@@ -13376,7 +13381,7 @@ Array ActionHappened --> 0 0 0 0 0 0;
     				give tmp_0 ~workflag2;
     		WriteListOfMarkedObjects(ENGLISH_BIT);! [7: ~.~]
     ParaContent(); print "."; new_line; .L_Say8; .L_SayX8;RulebookSucceeds(); rtrue;
-    } else if (debug_rules > 1) DB_Rule(R_817, 817, 'action');
+    } else if (debug_rules > 1) DB_Rule(R_816, 816, 'action');
     rfalse;
 ];
 ! ----------------------------------------------------------------------------------------------------
@@ -13435,7 +13440,7 @@ Array ActionHappened --> 0 0 0 0 0 0;
         rfalse;
         }
     ! [4: now the item being printed is mentioned]
-    (Adj_68_t2_v10(tmp_0));
+    (Adj_67_t2_v10(tmp_0));
     } else if (debug_rules > 1) DB_Rule(R_66, 66, 'action');
     rfalse;
 ];
@@ -13509,8 +13514,8 @@ Array ActionHappened --> 0 0 0 0 0 0;
 ! ----------------------------------------------------------------------------------------------------
 ! No specific request
 ! After printing the banner text:
-[ R_826 ;
-    if (debug_rules) DB_Rule(R_826, 826);
+[ R_825 ;
+    if (debug_rules) DB_Rule(R_825, 825);
     ! [2: say ~[line break] [line break] Hey, Diamond, its ya boi..... no that's wrong.... What's hangin girl you lookin... nah she knows she looks amazing...[line break] [line break] Damn, this is way too hard. [line break][line break] ~]
     say__p=1;! [3: line break]
     ParaContent(); new_line;! [4: ~ ~]
@@ -13561,7 +13566,7 @@ Array ActionHappened --> 0 0 0 0 0 0;
 ! No specific request
 ! Rule for deciding whether all includes scenery while taking or taking off or removing ( this is the exclude scenery from take all rule ):
 [ R_70 ;
-    if ((((((Adj_60_t1_v10(parameter_value))) && (true))))) { ! Runs only when pattern matches
+    if ((((((Adj_59_t1_v10(parameter_value))) && (true))))) { ! Runs only when pattern matches
     if (((((((action ==##Take) &&  (actor==player))))) || (((((action ==##Disrobe) &&  (actor==player))))) || (((((action ==##Remove) &&  (actor==player))))))) { ! Runs only while condition holds
     if (debug_rules) DB_Rule(R_70, 70);
     ! [2: it does not]
@@ -13591,7 +13596,7 @@ Array ActionHappened --> 0 0 0 0 0 0;
 ! No specific request
 ! Rule for deciding whether all includes fixed in place things while taking or taking off or removing ( this is the exclude fixed in place things from take all rule ):
 [ R_72 ;
-    if (((((parameter_value ofclass K2_thing) && ((Adj_58_t1_v10(parameter_value))))))) { ! Runs only when pattern matches
+    if (((((parameter_value ofclass K2_thing) && ((Adj_57_t1_v10(parameter_value))))))) { ! Runs only when pattern matches
     if (((((((action ==##Take) &&  (actor==player))))) || (((((action ==##Disrobe) &&  (actor==player))))) || (((((action ==##Remove) &&  (actor==player))))))) { ! Runs only while condition holds
     if (debug_rules) DB_Rule(R_72, 72);
     ! [2: it does not]
@@ -13944,7 +13949,7 @@ Array ActionHappened --> 0 0 0 0 0 0;
     ! [4: repeat with item running through things]
     for (tmp_2=Prop_11(0), tmp_3=Prop_11(tmp_2): tmp_2: tmp_2=tmp_3, tmp_3=Prop_11(tmp_3))
     {! [5: now the item is not marked for listing]
-        (Adj_66_t3_v10(tmp_2));
+        (Adj_65_t3_v10(tmp_2));
         }
     ! [6: repeat through the table of locale priorities]
     @push ct_0; @push ct_1;
@@ -13955,7 +13960,7 @@ Array ActionHappened --> 0 0 0 0 0 0;
     {! [7: if the locale description priority entry is greater than 0]
         if (((TableLookUpEntry(ct_0,106,ct_1) > 0)))
         {! [8: now the notable-object entry is marked for listing]
-            (Adj_66_t2_v10(TableLookUpEntry(ct_0,105,ct_1)));
+            (Adj_65_t2_v10(TableLookUpEntry(ct_0,105,ct_1)));
             }
         ! [9: increase the mentionable count by 1]
         tmp_1 = tmp_1 + 1;;
@@ -13965,9 +13970,9 @@ Array ActionHappened --> 0 0 0 0 0 0;
     {! [11: repeat with item running through things]
         for (tmp_2=Prop_12(0), tmp_3=Prop_12(tmp_2): tmp_2: tmp_2=tmp_3, tmp_3=Prop_12(tmp_3))
         {! [12: if the item is mentioned]
-            if ((((Adj_68_t1_v10(tmp_2)))))
+            if ((((Adj_67_t1_v10(tmp_2)))))
             {! [13: now the item is not marked for listing]
-                (Adj_66_t3_v10(tmp_2));
+                (Adj_65_t3_v10(tmp_2));
                 }
                 }
         ! [14: begin the listing nondescript items activity with the domain]
@@ -14021,9 +14026,9 @@ Array ActionHappened --> 0 0 0 0 0 0;
                             }
                             }
                     ! [38: if the list item is mentioned]
-                    if ((((Adj_68_t1_v10(tmp_4)))))
+                    if ((((Adj_67_t1_v10(tmp_4)))))
                     {! [39: now the list item is not marked for listing]
-                        (Adj_66_t3_v10(tmp_4));
+                        (Adj_65_t3_v10(tmp_4));
                         }
                         }
                 ! [40: filter list recursion to unmentioned things]
@@ -14036,7 +14041,7 @@ Array ActionHappened --> 0 0 0 0 0 0;
                     ! [43: say ~[a list of marked for listing things including contents]~]
                     say__p=1;! [44: a list of marked for listing things including contents]
                     ParaContent(); objectloop(tmp_4 ofclass Object)
-                    			if (((tmp_4 ofclass K2_thing) && ((Adj_66_t1_v10(tmp_4)))))
+                    			if (((tmp_4 ofclass K2_thing) && ((Adj_65_t1_v10(tmp_4)))))
                     				give tmp_4 workflag2;
                     			else
                     				give tmp_4 ~workflag2;
@@ -14131,9 +14136,9 @@ Array ActionHappened --> 0 0 0 0 0 0;
     ! [2: repeat with item running through not handled things on the tabletop which provide the property initial appearance]
     for (tmp_1=Prop_16(tmp_0,tmp_0,tmp_0,0), tmp_2=Prop_16(tmp_0,tmp_0,tmp_0,tmp_1): tmp_1: tmp_1=tmp_2, tmp_2=Prop_16(tmp_0,tmp_0,tmp_0,tmp_2))
     {! [3: if the item is not a person and the initial appearance of the item is not ~~ and the item is not undescribed]
-        if ((((~~((tmp_1 ofclass K8_person))))) && ((((~~(( BlkValueCompare(GProperty(10, tmp_1,initial), EMPTY_TEXT_VALUE) == 0))))) && (((~~(((Adj_65_t1_v10(tmp_1)))))))))
+        if ((((~~((tmp_1 ofclass K8_person))))) && ((((~~(( BlkValueCompare(GProperty(10, tmp_1,initial), EMPTY_TEXT_VALUE) == 0))))) && (((~~(((Adj_64_t1_v10(tmp_1)))))))))
         {! [4: now the item is mentioned]
-            (Adj_68_t2_v10(tmp_1));
+            (Adj_67_t2_v10(tmp_1));
             ! [5: say initial appearance of the item]
             say__p=1;! [6: initial appearance of the item]
             ParaContent(); @push self; print (TEXT_TY_Say) GProperty(10, self=tmp_1,initial);@pull self;  .L_Say30; .L_SayX30;! [7: say paragraph break]
@@ -14174,7 +14179,7 @@ Array ActionHappened --> 0 0 0 0 0 0;
     if ((((tmp_0 = parameter_value, (((parameter_value ofclass K2_thing) && (tmp_0=(parameter_value), true))))) || (tmp_0 = 0,false))) { ! Runs only when pattern matches
     if (debug_rules) DB_Rule(R_89, 89);
     ! [2: if the item is scenery]
-    if ((((Adj_60_t1_v10(tmp_0)))))
+    if ((((Adj_59_t1_v10(tmp_0)))))
     {! [3: set the locale priority of the item to 0]
         (PHR_82_r0 (tmp_0,0));
         }
@@ -14193,7 +14198,7 @@ Array ActionHappened --> 0 0 0 0 0 0;
     if ((((tmp_0 = parameter_value, (((parameter_value ofclass K2_thing) && (tmp_0=(parameter_value), true))))) || (tmp_0 = 0,false))) { ! Runs only when pattern matches
     if (debug_rules) DB_Rule(R_90, 90);
     ! [2: if the item is undescribed]
-    if ((((Adj_65_t1_v10(tmp_0)))))
+    if ((((Adj_64_t1_v10(tmp_0)))))
     {! [3: set the locale priority of the item to 0]
         (PHR_82_r0 (tmp_0,0));
         }
@@ -14212,7 +14217,7 @@ Array ActionHappened --> 0 0 0 0 0 0;
     if ((((tmp_0 = parameter_value, (((parameter_value ofclass K2_thing) && (tmp_0=(parameter_value), true))))) || (tmp_0 = 0,false))) { ! Runs only when pattern matches
     if (debug_rules) DB_Rule(R_91, 91);
     ! [2: if the item is not mentioned]
-    if (((~~(((Adj_68_t1_v10(tmp_0)))))))
+    if (((~~(((Adj_67_t1_v10(tmp_0)))))))
     {! [3: set pronouns from the item]
         PronounNotice(tmp_0);
         }
@@ -14231,7 +14236,7 @@ Array ActionHappened --> 0 0 0 0 0 0;
     if ((((tmp_0 = parameter_value, (((parameter_value ofclass K2_thing) && (tmp_0=(parameter_value), true))))) || (tmp_0 = 0,false))) { ! Runs only when pattern matches
     if (debug_rules) DB_Rule(R_92, 92);
     ! [2: if the item is not mentioned]
-    if (((~~(((Adj_68_t1_v10(tmp_0)))))))
+    if (((~~(((Adj_67_t1_v10(tmp_0)))))))
     {! [3: if a paragraph break is pending]
         if (((say__p)))
         {! [4: say ~[conditional paragraph break]~]
@@ -14244,7 +14249,7 @@ Array ActionHappened --> 0 0 0 0 0 0;
         {! [8: increase the locale paragraph count by 1]
             (Global_Vars-->9) = (Global_Vars-->9) + 1;;
             ! [9: now the item is mentioned]
-            (Adj_68_t2_v10(tmp_0));
+            (Adj_67_t2_v10(tmp_0));
             ! [10: say ~[conditional paragraph break]~]
             say__p=1;! [11: conditional paragraph break]
             ParaContent(); DivideParagraphPoint(); .L_Say33; .L_SayX33;}
@@ -14266,9 +14271,9 @@ Array ActionHappened --> 0 0 0 0 0 0;
     if ((((tmp_0 = parameter_value, (((parameter_value ofclass K2_thing) && (tmp_0=(parameter_value), true))))) || (tmp_0 = 0,false))) { ! Runs only when pattern matches
     if (debug_rules) DB_Rule(R_93, 93);
     ! [2: if the item is not mentioned]
-    if (((~~(((Adj_68_t1_v10(tmp_0)))))))
+    if (((~~(((Adj_67_t1_v10(tmp_0)))))))
     {! [3: if the item provides the property initial appearance and the item is not handled and the initial appearance of the item is not ~~]
-        if ((((WhetherProvides(tmp_0, false, initial)))) && ((((~~(((Adj_63_t1_v10(tmp_0))))))) && (((~~(( BlkValueCompare(GProperty(10, tmp_0,initial), EMPTY_TEXT_VALUE) == 0)))))))
+        if ((((WhetherProvides(tmp_0, false, initial)))) && ((((~~(((Adj_62_t1_v10(tmp_0))))))) && (((~~(( BlkValueCompare(GProperty(10, tmp_0,initial), EMPTY_TEXT_VALUE) == 0)))))))
         {! [4: increase the locale paragraph count by 1]
             (Global_Vars-->9) = (Global_Vars-->9) + 1;;
             ! [5: say ~[initial appearance of the item]~]
@@ -14280,11 +14285,11 @@ Array ActionHappened --> 0 0 0 0 0 0;
             {! [10: repeat with possibility running through things on the item]
                 for (tmp_1=Prop_18(tmp_0,0), tmp_2=Prop_18(tmp_0,tmp_1): tmp_1: tmp_1=tmp_2, tmp_2=Prop_18(tmp_0,tmp_2))
                 {! [11: now the possibility is marked for listing]
-                    (Adj_66_t2_v10(tmp_1));
+                    (Adj_65_t2_v10(tmp_1));
                     ! [12: if the possibility is mentioned]
-                    if ((((Adj_68_t1_v10(tmp_1)))))
+                    if ((((Adj_67_t1_v10(tmp_1)))))
                     {! [13: now the possibility is not marked for listing]
-                        (Adj_66_t3_v10(tmp_1));
+                        (Adj_65_t3_v10(tmp_1));
                         }
                         }
                 ! [14: say ~On [the item] ~ ( a )]
@@ -14296,7 +14301,7 @@ Array ActionHappened --> 0 0 0 0 0 0;
                 ParaContent(); print ".";! [19: paragraph break]
                 ParaContent(); DivideParagraphPoint(); new_line; .L_Say37; .L_SayX37;}
             ! [20: now the item is mentioned]
-            (Adj_68_t2_v10(tmp_0));
+            (Adj_67_t2_v10(tmp_0));
             }
             }
     ! [21: continue the activity]
@@ -14316,7 +14321,7 @@ Array ActionHappened --> 0 0 0 0 0 0;
     if ((((tmp_0 = parameter_value, (((parameter_value ofclass K2_thing) && (tmp_0=(parameter_value), true))))) || (tmp_0 = 0,false))) { ! Runs only when pattern matches
     if (debug_rules) DB_Rule(R_96, 96);
     ! [2: if the item is scenery and the item does not enclose the player]
-    if (((((Adj_60_t1_v10(tmp_0))))) && (((~~((IndirectlyContains(tmp_0,player)))))))
+    if (((((Adj_59_t1_v10(tmp_0))))) && (((~~((IndirectlyContains(tmp_0,player)))))))
     {! [3: if a locale-supportable thing is on the item]
         if ((((Prop_19(tmp_0)))))
         {! [4: set pronouns from the item]
@@ -14324,11 +14329,11 @@ Array ActionHappened --> 0 0 0 0 0 0;
             ! [5: repeat with possibility running through things on the item]
             for (tmp_1=Prop_20(tmp_0,0), tmp_2=Prop_20(tmp_0,tmp_1): tmp_1: tmp_1=tmp_2, tmp_2=Prop_20(tmp_0,tmp_2))
             {! [6: now the possibility is marked for listing]
-                (Adj_66_t2_v10(tmp_1));
+                (Adj_65_t2_v10(tmp_1));
                 ! [7: if the possibility is mentioned]
-                if ((((Adj_68_t1_v10(tmp_1)))))
+                if ((((Adj_67_t1_v10(tmp_1)))))
                 {! [8: now the possibility is not marked for listing]
-                    (Adj_66_t3_v10(tmp_1));
+                    (Adj_65_t3_v10(tmp_1));
                     }
                     }
             ! [9: increase the locale paragraph count by 1]
@@ -14359,7 +14364,7 @@ Array ActionHappened --> 0 0 0 0 0 0;
     if ((((tmp_0 = parameter_value, (((parameter_value ofclass K2_thing) && (tmp_0=(parameter_value), true))))) || (tmp_0 = 0,false))) { ! Runs only when pattern matches
     if (debug_rules) DB_Rule(R_97, 97);
     ! [2: if the item is mentioned and the item is not undescribed and the item is not scenery and the item does not enclose the player]
-    if (((((Adj_68_t1_v10(tmp_0))))) && ((((~~(((Adj_65_t1_v10(tmp_0))))))) && ((((~~(((Adj_60_t1_v10(tmp_0))))))) && (((~~((IndirectlyContains(tmp_0,player)))))))))
+    if (((((Adj_67_t1_v10(tmp_0))))) && ((((~~(((Adj_64_t1_v10(tmp_0))))))) && ((((~~(((Adj_59_t1_v10(tmp_0))))))) && (((~~((IndirectlyContains(tmp_0,player)))))))))
     {! [3: if a locale-supportable thing is on the item]
         if ((((Prop_21(tmp_0)))))
         {! [4: set pronouns from the item]
@@ -14367,11 +14372,11 @@ Array ActionHappened --> 0 0 0 0 0 0;
             ! [5: repeat with possibility running through things on the item]
             for (tmp_1=Prop_22(tmp_0,0), tmp_2=Prop_22(tmp_0,tmp_1): tmp_1: tmp_1=tmp_2, tmp_2=Prop_22(tmp_0,tmp_2))
             {! [6: now the possibility is marked for listing]
-                (Adj_66_t2_v10(tmp_1));
+                (Adj_65_t2_v10(tmp_1));
                 ! [7: if the possibility is mentioned]
-                if ((((Adj_68_t1_v10(tmp_1)))))
+                if ((((Adj_67_t1_v10(tmp_1)))))
                 {! [8: now the possibility is not marked for listing]
-                    (Adj_66_t3_v10(tmp_1));
+                    (Adj_65_t3_v10(tmp_1));
                     }
                     }
             ! [9: increase the locale paragraph count by 1]
@@ -14658,7 +14663,7 @@ Array ActionHappened --> 0 0 0 0 0 0;
     self = noun;
     if (debug_rules) DB_Rule(R_108, 108);
     ! [2: if the noun is scenery]
-    if ((((Adj_60_t1_v10(noun)))))
+    if ((((Adj_59_t1_v10(noun)))))
     {! [3: if the actor is the player]
         if (((actor == player)))
         {! [4: say ~[regarding the noun][They're] hardly portable.~ ( a )]
@@ -14698,7 +14703,7 @@ Array ActionHappened --> 0 0 0 0 0 0;
     self = noun;
     if (debug_rules) DB_Rule(R_110, 110);
     ! [2: if the noun is fixed in place]
-    if ((((Adj_58_t1_v10(noun)))))
+    if ((((Adj_57_t1_v10(noun)))))
     {! [3: if the actor is the player]
         if (((actor == player)))
         {! [4: say ~[regarding the noun][They're] fixed in place.~ ( a )]
@@ -14732,7 +14737,7 @@ Array ActionHappened --> 0 0 0 0 0 0;
             ! [5: repeat with the possible item running through things carried by the actor]
             for (tmp_2=Prop_25(0), tmp_3=Prop_25(tmp_2): tmp_2: tmp_2=tmp_3, tmp_3=Prop_25(tmp_3))
             {! [6: if the possible item is not lit and the possible item is not the current working sack]
-                if ((((~~(((Adj_54_t1_v10(tmp_2))))))) && (((~~((tmp_2 == tmp_0))))))
+                if ((((~~(((Adj_53_t1_v10(tmp_2))))))) && (((~~((tmp_2 == tmp_0))))))
                 {! [7: let the transferred item be the possible item]
                     tmp_1 = tmp_2;
                     }
@@ -14801,7 +14806,7 @@ Array ActionHappened --> 0 0 0 0 0 0;
     ! [3: if the actor is the player]
     if (((actor == player)))
     {! [4: now the noun is handled]
-        (Adj_63_t2_v10(noun));
+        (Adj_62_t2_v10(noun));
         }
         } else if (debug_rules > 1) DB_Rule(R_113, 113, 'action');
         rfalse;
@@ -15477,7 +15482,7 @@ Array ActionHappened --> 0 0 0 0 0 0;
     self = noun;
     if (debug_rules) DB_Rule(R_138, 138);
     ! [2: if the second noun is a closed container]
-    if (((second ofclass K5_container) && ((Adj_74_t1_v10(second)))))
+    if (((second ofclass K5_container) && ((Adj_73_t1_v10(second)))))
     {! [3: if the actor is the player]
         if (((actor == player)))
         {! [4: say ~[The second noun] [are] closed.~ ( a )]
@@ -15650,7 +15655,7 @@ Array ActionHappened --> 0 0 0 0 0 0;
     self = noun;
     if (debug_rules) DB_Rule(R_145, 145);
     ! [2: if the noun is not a thing or the noun is not edible]
-    if ((((~~((noun ofclass K2_thing))))) || (((~~(((Adj_56_t1_v10(noun))))))))
+    if ((((~~((noun ofclass K2_thing))))) || (((~~(((Adj_55_t1_v10(noun))))))))
     {! [3: if the actor is the player]
         if (((actor == player)))
         {! [4: say ~[regarding the noun][They're] plainly inedible.~ ( a )]
@@ -15717,7 +15722,7 @@ Array ActionHappened --> 0 0 0 0 0 0;
     self = noun;
     if (debug_rules) DB_Rule(R_148, 148);
     ! [2: if the noun is portable and the actor is not carrying the noun]
-    if (((((Adj_59_t1_v10(noun))))) && (((~~((actor == CarrierOf(noun)))))))
+    if (((((Adj_58_t1_v10(noun))))) && (((~~((actor == CarrierOf(noun)))))))
     {! [3: carry out the implicitly taking activity with the noun]
         CarryOutActivity(V25_implicitly_taking, noun);
         ! [4: if the actor is not carrying the noun]
@@ -15863,7 +15868,7 @@ Array ActionHappened --> 0 0 0 0 0 0;
     self = noun;
     if (debug_rules) DB_Rule(R_154, 154);
     ! [2: if the door gone through is not nothing and the door gone through is undescribed]
-    if ((((~~(((MStack-->MstVO(20007,2)) == nothing))))) && ((((Adj_65_t1_v10((MStack-->MstVO(20007,2))))))))
+    if ((((~~(((MStack-->MstVO(20007,2)) == nothing))))) && ((((Adj_64_t1_v10((MStack-->MstVO(20007,2))))))))
     {! [3: if the actor is the player]
         if (((actor == player)))
         {! [4: say ~[We] [can't go] that way.~ ( a )]
@@ -15883,7 +15888,7 @@ Array ActionHappened --> 0 0 0 0 0 0;
     self = noun;
     if (debug_rules) DB_Rule(R_155, 155);
     ! [2: if the door gone through is not nothing and the door gone through is closed]
-    if ((((~~(((MStack-->MstVO(20007,2)) == nothing))))) && ((((Adj_74_t1_v10((MStack-->MstVO(20007,2))))))))
+    if ((((~~(((MStack-->MstVO(20007,2)) == nothing))))) && ((((Adj_73_t1_v10((MStack-->MstVO(20007,2))))))))
     {! [3: if the actor is the player]
         if (((actor == player)))
         {! [4: say ~(first opening [the door gone through])[command clarification break]~ ( a )]
@@ -15897,7 +15902,7 @@ Array ActionHappened --> 0 0 0 0 0 0;
         @pull say__pc; @pull say__p; AdjustParagraphPoint(); @pull keep_silent;
 
         ! [7: if the door gone through is open]
-        if ((((Adj_73_t1_v10((MStack-->MstVO(20007,2)))))))
+        if ((((Adj_72_t1_v10((MStack-->MstVO(20007,2)))))))
         {! [8: continue the action]
             rfalse;
             }
@@ -16405,7 +16410,7 @@ Array ActionHappened --> 0 0 0 0 0 0;
     self = noun;
     if (debug_rules) DB_Rule(R_166, 166);
     ! [2: if the noun is not enterable]
-    if (((~~(((Adj_70_t1_v10(noun)))))))
+    if (((~~(((Adj_69_t1_v10(noun)))))))
     {! [3: if the player is the actor]
         if (((player == actor)))
         {! [4: if the player's command includes ~stand~]
@@ -16443,7 +16448,7 @@ Array ActionHappened --> 0 0 0 0 0 0;
     self = noun;
     if (debug_rules) DB_Rule(R_167, 167);
     ! [2: if the noun is a closed container]
-    if (((noun ofclass K5_container) && ((Adj_74_t1_v10(noun)))))
+    if (((noun ofclass K5_container) && ((Adj_73_t1_v10(noun)))))
     {! [3: if the player is the actor]
         if (((player == actor)))
         {! [4: say ~[We] [can't get] into the closed [noun].~ ( a )]
@@ -16782,7 +16787,7 @@ Array ActionHappened --> 0 0 0 0 0 0;
     self = noun;
     if (debug_rules) DB_Rule(R_177, 177);
     ! [2: if the actor is in a closed container ( called the cage )]
-    if (((ContainerOf(actor) ofclass K5_container) && ((Adj_74_t1_v10(ContainerOf(actor)))) && (tmp_0=(ContainerOf(actor)), true)))
+    if (((ContainerOf(actor) ofclass K5_container) && ((Adj_73_t1_v10(ContainerOf(actor)))) && (tmp_0=(ContainerOf(actor)), true)))
     {! [3: if the player is the actor]
         if (((player == actor)))
         {! [4: say ~You can't get out of the closed [cage].~ ( a )]
@@ -17016,7 +17021,7 @@ Array ActionHappened --> 0 0 0 0 0 0;
     ! [2: repeat with item running through things]
     for (tmp_0=Prop_34(0), tmp_1=Prop_34(tmp_0): tmp_0: tmp_0=tmp_1, tmp_1=Prop_34(tmp_1))
     {! [3: now the item is not mentioned]
-        (Adj_68_t3_v10(tmp_0));
+        (Adj_67_t3_v10(tmp_0));
         }
         } else if (debug_rules > 1) DB_Rule(R_187, 187, 'actor');
         rfalse;
@@ -17116,7 +17121,7 @@ Array ActionHappened --> 0 0 0 0 0 0;
                 rfalse;
                 }
             ! [16: if set to sometimes abbreviated room descriptions and abbreviated form allowed is true and the location is visited]
-            if ((((lookmode == 1))) && ((((((MStack-->MstVO(20011,1)) && true) == (1 && true)))) && ((((Adj_52_t1_v10(real_location)))))))
+            if ((((lookmode == 1))) && ((((((MStack-->MstVO(20011,1)) && true) == (1 && true)))) && ((((Adj_51_t1_v10(real_location)))))))
             {! [17: continue the action]
                 rfalse;
                 }
@@ -17148,7 +17153,7 @@ Array ActionHappened --> 0 0 0 0 0 0;
         ! [5: while the ip count is greater than 0]
         while (((tmp_1 > 0)))
         {! [6: now the intermediate position is marked for listing]
-            (Adj_66_t2_v10(tmp_0));
+            (Adj_65_t2_v10(tmp_0));
             ! [7: let the intermediate position be the visibility-holder of the intermediate position]
             tmp_0 = VisibilityParent(tmp_0);
             ! [8: decrease the ip count by 1]
@@ -17195,7 +17200,7 @@ Array ActionHappened --> 0 0 0 0 0 0;
         ! [4: if the location is a room]
         if (((real_location ofclass K1_room)))
         {! [5: now the location is visited]
-            (Adj_52_t2_v10(real_location));
+            (Adj_51_t2_v10(real_location));
             }
             }
             } else if (debug_rules > 1) DB_Rule(R_191, 191, 'actor');
@@ -17282,7 +17287,7 @@ Array ActionHappened --> 0 0 0 0 0 0;
     ! [2: if the noun is a container]
     if (((noun ofclass K5_container)))
     {! [3: if the noun is open or the noun is transparent]
-        if (((((Adj_73_t1_v10(noun))))) || ((((Adj_72_t1_v10(noun))))))
+        if (((((Adj_72_t1_v10(noun))))) || ((((Adj_71_t1_v10(noun))))))
         {! [4: if something described which is not scenery is in the noun and something which is not the player is in the noun]
             if (((((Prop_35())))) && ((((Prop_36())))))
             {! [5: say ~In [the noun] ~ ( a )]
@@ -17473,7 +17478,7 @@ Array ActionHappened --> 0 0 0 0 0 0;
     self = noun;
     if (debug_rules) DB_Rule(R_203, 203);
     ! [2: if the noun is a closed opaque container]
-    if (((noun ofclass K5_container) && ((Adj_74_t1_v10(noun))) && ((Adj_71_t1_v10(noun)))))
+    if (((noun ofclass K5_container) && ((Adj_73_t1_v10(noun))) && ((Adj_70_t1_v10(noun)))))
     {! [3: if the player is the actor]
         if (((player == actor)))
         {! [4: say ~[We] [can't see] inside, since [the noun] [are] closed.~ ( a )]
@@ -17603,7 +17608,7 @@ Array ActionHappened --> 0 0 0 0 0 0;
     self = noun;
     if (debug_rules) DB_Rule(R_208, 208);
     ! [2: if the noun provides the property lockable and the noun is lockable]
-    if ((((WhetherProvides(noun, true, lockable)))) && ((((Adj_77_t1_v10(noun))))))
+    if ((((WhetherProvides(noun, true, lockable)))) && ((((Adj_76_t1_v10(noun))))))
     {! [3: continue the action]
         rfalse;
         }
@@ -17625,7 +17630,7 @@ Array ActionHappened --> 0 0 0 0 0 0;
     self = noun;
     if (debug_rules) DB_Rule(R_209, 209);
     ! [2: if the noun is locked]
-    if ((((Adj_78_t1_v10(noun)))))
+    if ((((Adj_77_t1_v10(noun)))))
     {! [3: if the actor is the player]
         if (((actor == player)))
         {! [4: say ~[regarding the noun][They're] locked at the [if story tense is present tense]moment[otherwise]time[end if].~ ( a )]
@@ -17645,7 +17650,7 @@ Array ActionHappened --> 0 0 0 0 0 0;
     self = noun;
     if (debug_rules) DB_Rule(R_210, 210);
     ! [2: if the noun is open]
-    if ((((Adj_73_t1_v10(noun)))))
+    if ((((Adj_72_t1_v10(noun)))))
     {! [3: if the actor is the player]
         if (((actor == player)))
         {! [4: say ~First [we] [would have] to close [the noun].~ ( a )]
@@ -17692,7 +17697,7 @@ Array ActionHappened --> 0 0 0 0 0 0;
     self = noun;
     if (debug_rules) DB_Rule(R_212, 212);
     ! [2: now the noun is locked]
-    (Adj_78_t2_v10(noun));
+    (Adj_77_t2_v10(noun));
     } else if (debug_rules > 1) DB_Rule(R_212, 212, 'action');
     rfalse;
 ];
@@ -17746,7 +17751,7 @@ Array ActionHappened --> 0 0 0 0 0 0;
     self = noun;
     if (debug_rules) DB_Rule(R_214, 214);
     ! [2: if the noun provides the property lockable and the noun is lockable]
-    if ((((WhetherProvides(noun, true, lockable)))) && ((((Adj_77_t1_v10(noun))))))
+    if ((((WhetherProvides(noun, true, lockable)))) && ((((Adj_76_t1_v10(noun))))))
     {! [3: continue the action]
         rfalse;
         }
@@ -17768,7 +17773,7 @@ Array ActionHappened --> 0 0 0 0 0 0;
     self = noun;
     if (debug_rules) DB_Rule(R_215, 215);
     ! [2: if the noun is not locked]
-    if (((~~(((Adj_78_t1_v10(noun)))))))
+    if (((~~(((Adj_77_t1_v10(noun)))))))
     {! [3: if the actor is the player]
         if (((actor == player)))
         {! [4: say ~[regarding the noun][They're] unlocked at the [if story tense is present tense]moment[otherwise]time[end if].~ ( a )]
@@ -17815,7 +17820,7 @@ Array ActionHappened --> 0 0 0 0 0 0;
     self = noun;
     if (debug_rules) DB_Rule(R_217, 217);
     ! [2: now the noun is not locked]
-    (Adj_78_t3_v10(noun));
+    (Adj_77_t3_v10(noun));
     } else if (debug_rules > 1) DB_Rule(R_217, 217, 'action');
     rfalse;
 ];
@@ -17889,7 +17894,7 @@ Array ActionHappened --> 0 0 0 0 0 0;
     self = noun;
     if (debug_rules) DB_Rule(R_220, 220);
     ! [2: if the noun is switched on]
-    if ((((Adj_83_t1_v10(noun)))))
+    if ((((Adj_82_t1_v10(noun)))))
     {! [3: if the actor is the player]
         if (((actor == player)))
         {! [4: say ~[regarding the noun][They're] already on.~ ( a )]
@@ -17916,7 +17921,7 @@ Array ActionHappened --> 0 0 0 0 0 0;
     self = noun;
     if (debug_rules) DB_Rule(R_221, 221);
     ! [2: now the noun is switched on]
-    (Adj_83_t2_v10(noun));
+    (Adj_82_t2_v10(noun));
     } else if (debug_rules > 1) DB_Rule(R_221, 221, 'action');
     rfalse;
 ];
@@ -17981,7 +17986,7 @@ Array ActionHappened --> 0 0 0 0 0 0;
     self = noun;
     if (debug_rules) DB_Rule(R_224, 224);
     ! [2: if the noun is switched off]
-    if ((((Adj_84_t1_v10(noun)))))
+    if ((((Adj_83_t1_v10(noun)))))
     {! [3: if the actor is the player]
         if (((actor == player)))
         {! [4: say ~[regarding the noun][They're] already off.~ ( a )]
@@ -18008,7 +18013,7 @@ Array ActionHappened --> 0 0 0 0 0 0;
     self = noun;
     if (debug_rules) DB_Rule(R_225, 225);
     ! [2: now the noun is switched off]
-    (Adj_84_t2_v10(noun));
+    (Adj_83_t2_v10(noun));
     } else if (debug_rules > 1) DB_Rule(R_225, 225, 'action');
     rfalse;
 ];
@@ -18053,7 +18058,7 @@ Array ActionHappened --> 0 0 0 0 0 0;
     self = noun;
     if (debug_rules) DB_Rule(R_227, 227);
     ! [2: if the noun provides the property openable and the noun is openable]
-    if ((((WhetherProvides(noun, true, openable)))) && ((((Adj_75_t1_v10(noun))))))
+    if ((((WhetherProvides(noun, true, openable)))) && ((((Adj_74_t1_v10(noun))))))
     {! [3: continue the action]
         rfalse;
         }
@@ -18075,7 +18080,7 @@ Array ActionHappened --> 0 0 0 0 0 0;
     self = noun;
     if (debug_rules) DB_Rule(R_228, 228);
     ! [2: if the noun provides the property lockable and the noun is locked]
-    if ((((WhetherProvides(noun, true, lockable)))) && ((((Adj_78_t1_v10(noun))))))
+    if ((((WhetherProvides(noun, true, lockable)))) && ((((Adj_77_t1_v10(noun))))))
     {! [3: if the actor is the player]
         if (((actor == player)))
         {! [4: say ~[regarding the noun][They] [seem] to be locked.~ ( a )]
@@ -18095,7 +18100,7 @@ Array ActionHappened --> 0 0 0 0 0 0;
     self = noun;
     if (debug_rules) DB_Rule(R_229, 229);
     ! [2: if the noun is open]
-    if ((((Adj_73_t1_v10(noun)))))
+    if ((((Adj_72_t1_v10(noun)))))
     {! [3: if the actor is the player]
         if (((actor == player)))
         {! [4: say ~[regarding the noun][They're] already open.~ ( a )]
@@ -18122,7 +18127,7 @@ Array ActionHappened --> 0 0 0 0 0 0;
     self = noun;
     if (debug_rules) DB_Rule(R_230, 230);
     ! [2: now the noun is open]
-    (Adj_73_t2_v10(noun));
+    (Adj_72_t2_v10(noun));
     } else if (debug_rules > 1) DB_Rule(R_230, 230, 'action');
     rfalse;
 ];
@@ -18143,7 +18148,7 @@ Array ActionHappened --> 0 0 0 0 0 0;
     self = noun;
     if (debug_rules) DB_Rule(R_231, 231);
     ! [2: if the actor is the player and the noun is an opaque container and the first thing held by the noun is not nothing and the noun does not enclose the actor]
-    if ((((actor == player))) && ((((noun ofclass K5_container) && ((Adj_71_t1_v10(noun))))) && ((((~~(((child(noun)) == nothing))))) && (((~~((IndirectlyContains(noun,actor)))))))))
+    if ((((actor == player))) && ((((noun ofclass K5_container) && ((Adj_70_t1_v10(noun))))) && ((((~~(((child(noun)) == nothing))))) && (((~~((IndirectlyContains(noun,actor)))))))))
     {! [3: if the action is not silent]
         if (((keep_silent == false)))
         {! [4: if the actor is the player]
@@ -18206,7 +18211,7 @@ Array ActionHappened --> 0 0 0 0 0 0;
     self = noun;
     if (debug_rules) DB_Rule(R_233, 233);
     ! [2: if the noun provides the property openable and the noun is openable]
-    if ((((WhetherProvides(noun, true, openable)))) && ((((Adj_75_t1_v10(noun))))))
+    if ((((WhetherProvides(noun, true, openable)))) && ((((Adj_74_t1_v10(noun))))))
     {! [3: continue the action]
         rfalse;
         }
@@ -18228,7 +18233,7 @@ Array ActionHappened --> 0 0 0 0 0 0;
     self = noun;
     if (debug_rules) DB_Rule(R_234, 234);
     ! [2: if the noun is closed]
-    if ((((Adj_74_t1_v10(noun)))))
+    if ((((Adj_73_t1_v10(noun)))))
     {! [3: if the actor is the player]
         if (((actor == player)))
         {! [4: say ~[regarding the noun][They're] already closed.~ ( a )]
@@ -18255,7 +18260,7 @@ Array ActionHappened --> 0 0 0 0 0 0;
     self = noun;
     if (debug_rules) DB_Rule(R_235, 235);
     ! [2: now the noun is closed]
-    (Adj_74_t2_v10(noun));
+    (Adj_73_t2_v10(noun));
     } else if (debug_rules > 1) DB_Rule(R_235, 235, 'action');
     rfalse;
 ];
@@ -18312,7 +18317,7 @@ Array ActionHappened --> 0 0 0 0 0 0;
     self = noun;
     if (debug_rules) DB_Rule(R_237, 237);
     ! [2: if the noun is not a thing or the noun is not wearable]
-    if ((((~~((noun ofclass K2_thing))))) || (((~~(((Adj_61_t1_v10(noun))))))))
+    if ((((~~((noun ofclass K2_thing))))) || (((~~(((Adj_60_t1_v10(noun))))))))
     {! [3: if the actor is the player]
         if (((actor == player)))
         {! [4: say ~[We] [can't wear] [regarding the noun][those]!~ ( a )]
@@ -19274,7 +19279,7 @@ Array ActionHappened --> 0 0 0 0 0 0;
     self = noun;
     if (debug_rules) DB_Rule(R_277, 277);
     ! [2: if the noun is fixed in place]
-    if ((((Adj_58_t1_v10(noun)))))
+    if ((((Adj_57_t1_v10(noun)))))
     {! [3: if the actor is the player]
         if (((actor == player)))
         {! [4: say ~[regarding the noun][They] [are] fixed in place.~ ( a )]
@@ -19294,7 +19299,7 @@ Array ActionHappened --> 0 0 0 0 0 0;
     self = noun;
     if (debug_rules) DB_Rule(R_278, 278);
     ! [2: if the noun is scenery]
-    if ((((Adj_60_t1_v10(noun)))))
+    if ((((Adj_59_t1_v10(noun)))))
     {! [3: if the actor is the player]
         if (((actor == player)))
         {! [4: say ~[We] [are] unable to.~ ( a )]
@@ -19375,7 +19380,7 @@ Array ActionHappened --> 0 0 0 0 0 0;
     self = noun;
     if (debug_rules) DB_Rule(R_281, 281);
     ! [2: if the noun is fixed in place]
-    if ((((Adj_58_t1_v10(noun)))))
+    if ((((Adj_57_t1_v10(noun)))))
     {! [3: if the actor is the player]
         if (((actor == player)))
         {! [4: say ~[regarding the noun][They] [are] fixed in place.~ ( a )]
@@ -19395,7 +19400,7 @@ Array ActionHappened --> 0 0 0 0 0 0;
     self = noun;
     if (debug_rules) DB_Rule(R_282, 282);
     ! [2: if the noun is scenery]
-    if ((((Adj_60_t1_v10(noun)))))
+    if ((((Adj_59_t1_v10(noun)))))
     {! [3: if the actor is the player]
         if (((actor == player)))
         {! [4: say ~[We] [are] unable to.~ ( a )]
@@ -19476,7 +19481,7 @@ Array ActionHappened --> 0 0 0 0 0 0;
     self = noun;
     if (debug_rules) DB_Rule(R_285, 285);
     ! [2: if the noun is fixed in place]
-    if ((((Adj_58_t1_v10(noun)))))
+    if ((((Adj_57_t1_v10(noun)))))
     {! [3: if the actor is the player]
         if (((actor == player)))
         {! [4: say ~[regarding the noun][They] [are] fixed in place.~ ( a )]
@@ -19496,7 +19501,7 @@ Array ActionHappened --> 0 0 0 0 0 0;
     self = noun;
     if (debug_rules) DB_Rule(R_286, 286);
     ! [2: if the noun is scenery]
-    if ((((Adj_60_t1_v10(noun)))))
+    if ((((Adj_59_t1_v10(noun)))))
     {! [3: if the actor is the player]
         if (((actor == player)))
         {! [4: say ~[We] [are] unable to.~ ( a )]
@@ -19583,7 +19588,7 @@ Array ActionHappened --> 0 0 0 0 0 0;
     self = noun;
     if (debug_rules) DB_Rule(R_289, 289);
     ! [2: if the noun is not pushable between rooms]
-    if (((~~(((Adj_62_t1_v10(noun)))))))
+    if (((~~(((Adj_61_t1_v10(noun)))))))
     {! [3: if the actor is the player]
         if (((actor == player)))
         {! [4: say ~[The noun] [cannot] be pushed from place to place.~ ( a )]
@@ -20287,9 +20292,9 @@ Array ActionHappened --> 0 0 0 0 0 0;
 ! ----------------------------------------------------------------------------------------------------
 ! No specific request
 ! Report helping:
-[ R_801 ;
+[ R_800 ;
     if (actor == player) {
-    if (debug_rules) DB_Rule(R_801, 801);
+    if (debug_rules) DB_Rule(R_800, 800);
     ! [2: say ~You can GO to adjacent rooms. Use the commands n, s, e, w to go in each cardinal direction. [line break] You can OPEN doors.[line break]~]
     say__p=1;! [3: ~You can GO to adjacent rooms. Use the commands n, s, e, w to go in each cardinal direction. ~]
     ParaContent(); print "You can GO to adjacent rooms. Use the commands n, s, e, w to go in each cardinal direction. ";! [4: line break]
@@ -20308,7 +20313,7 @@ Array ActionHappened --> 0 0 0 0 0 0;
     ParaContent(); new_line; .L_Say304; .L_SayX304;! [17: say ~You can open a locker by saying SPIN locker to NUMBER. [line break]~]
     say__p=1;! [18: ~You can open a locker by saying SPIN locker to NUMBER. ~]
     ParaContent(); print "You can open a locker by saying SPIN locker to NUMBER. ";! [19: line break]
-    ParaContent(); new_line; .L_Say305; .L_SayX305;} else if (debug_rules > 1) DB_Rule(R_801, 801, 'actor');
+    ParaContent(); new_line; .L_Say305; .L_SayX305;} else if (debug_rules > 1) DB_Rule(R_800, 800, 'actor');
     rfalse;
 ];
 ! ----------------------------------------------------------------------------------------------------
@@ -20320,9 +20325,9 @@ Array ActionHappened --> 0 0 0 0 0 0;
 ! ----------------------------------------------------------------------------------------------------
 ! No specific request
 ! Check spinning it to:
-[ R_803 ;
+[ R_802 ;
     if (actor == player) {
-    if (debug_rules) DB_Rule(R_803, 803);
+    if (debug_rules) DB_Rule(R_802, 802);
     ! [2: if the noun is not a locker]
     if (((~~((noun ofclass K16_locker)))))
     {! [3: say ~[The noun] does not spin.~]
@@ -20330,7 +20335,7 @@ Array ActionHappened --> 0 0 0 0 0 0;
         ParaContent(); print (The) noun;! [5: ~ does not spin.~]
         ParaContent(); print " does not spin."; new_line; .L_Say306; .L_SayX306;rtrue;
         }
-        } else if (debug_rules > 1) DB_Rule(R_803, 803, 'actor');
+        } else if (debug_rules > 1) DB_Rule(R_802, 802, 'actor');
         rfalse;
 ];
 ! ----------------------------------------------------------------------------------------------------
@@ -20342,12 +20347,12 @@ Array ActionHappened --> 0 0 0 0 0 0;
 ! ----------------------------------------------------------------------------------------------------
 ! No specific request
 ! Report spinning it to:
-[ R_804 ;
+[ R_803 ;
     if (actor == player) {
-    if (debug_rules) DB_Rule(R_804, 804);
+    if (debug_rules) DB_Rule(R_803, 803);
     ! [2: say ~Click! nothing else happens.~]
     say__p=1;! [3: ~Click! nothing else happens.~]
-    ParaContent(); print "Click! nothing else happens."; new_line; .L_Say307; .L_SayX307;} else if (debug_rules > 1) DB_Rule(R_804, 804, 'actor');
+    ParaContent(); print "Click! nothing else happens."; new_line; .L_Say307; .L_SayX307;} else if (debug_rules > 1) DB_Rule(R_803, 803, 'actor');
     rfalse;
 ];
 ! ----------------------------------------------------------------------------------------------------
@@ -20359,9 +20364,9 @@ Array ActionHappened --> 0 0 0 0 0 0;
 ! ----------------------------------------------------------------------------------------------------
 ! No specific request
 ! Check check health:
-[ R_807 ;
+[ R_806 ;
     if (actor == player) {
-    if (debug_rules) DB_Rule(R_807, 807);
+    if (debug_rules) DB_Rule(R_806, 806);
     ! [2: if the noun is not a person]
     if (((~~((noun ofclass K8_person)))))
     {! [3: say ~the [noun] isn't alive... yet.~]
@@ -20370,7 +20375,7 @@ Array ActionHappened --> 0 0 0 0 0 0;
         ParaContent(); PrintShortName(noun);! [6: ~ isn't alive... yet.~]
         ParaContent(); print " isn't alive... yet."; new_line; .L_Say308; .L_SayX308;rtrue;
         }
-        } else if (debug_rules > 1) DB_Rule(R_807, 807, 'actor');
+        } else if (debug_rules > 1) DB_Rule(R_806, 806, 'actor');
         rfalse;
 ];
 ! ----------------------------------------------------------------------------------------------------
@@ -20382,15 +20387,15 @@ Array ActionHappened --> 0 0 0 0 0 0;
 ! ----------------------------------------------------------------------------------------------------
 ! No specific request
 ! Carry out check health:
-[ R_808 ;
+[ R_807 ;
     if (actor == player) {
-    if (debug_rules) DB_Rule(R_808, 808);
+    if (debug_rules) DB_Rule(R_807, 807);
     ! [2: say ~[noun] has [health of noun] health~]
     say__p=1;! [3: noun]
     ParaContent(); PrintShortName(noun);! [4: ~ has ~]
     ParaContent(); print " has ";! [5: health of noun]
     ParaContent(); @push self; print (say__n=GProperty(OBJECT_TY, self=noun,p18_health));@pull self; ! [6: ~ health~]
-    ParaContent(); print " health"; .L_Say309; .L_SayX309;} else if (debug_rules > 1) DB_Rule(R_808, 808, 'actor');
+    ParaContent(); print " health"; .L_Say309; .L_SayX309;} else if (debug_rules > 1) DB_Rule(R_807, 807, 'actor');
     rfalse;
 ];
 ! ----------------------------------------------------------------------------------------------------
@@ -20402,9 +20407,9 @@ Array ActionHappened --> 0 0 0 0 0 0;
 ! ----------------------------------------------------------------------------------------------------
 ! No specific request
 ! Check know rapport:
-[ R_809 ;
+[ R_808 ;
     if (actor == player) {
-    if (debug_rules) DB_Rule(R_809, 809);
+    if (debug_rules) DB_Rule(R_808, 808);
     ! [2: if the noun is not a person]
     if (((~~((noun ofclass K8_person)))))
     {! [3: say ~the [noun] isn't sentient... yet.~]
@@ -20413,7 +20418,7 @@ Array ActionHappened --> 0 0 0 0 0 0;
         ParaContent(); PrintShortName(noun);! [6: ~ isn't sentient... yet.~]
         ParaContent(); print " isn't sentient... yet."; new_line; .L_Say310; .L_SayX310;rtrue;
         }
-        } else if (debug_rules > 1) DB_Rule(R_809, 809, 'actor');
+        } else if (debug_rules > 1) DB_Rule(R_808, 808, 'actor');
         rfalse;
 ];
 ! ----------------------------------------------------------------------------------------------------
@@ -20425,9 +20430,9 @@ Array ActionHappened --> 0 0 0 0 0 0;
 ! ----------------------------------------------------------------------------------------------------
 ! No specific request
 ! Carry out know rapport:
-[ R_810 ;
+[ R_809 ;
     if (actor == player) {
-    if (debug_rules) DB_Rule(R_810, 810);
+    if (debug_rules) DB_Rule(R_809, 809);
     ! [2: if rapport of noun is 1]
     if (((GProperty(OBJECT_TY, noun,p17_rapport) == 1)))
     {! [3: say ~[noun] doesn't much care for you~]
@@ -20446,7 +20451,7 @@ Array ActionHappened --> 0 0 0 0 0 0;
         say__p=1;! [12: noun]
         ParaContent(); PrintShortName(noun);! [13: ~ thinks you're alright.~]
         ParaContent(); print " thinks you're alright."; new_line; .L_Say313; .L_SayX313;}
-        } else if (debug_rules > 1) DB_Rule(R_810, 810, 'actor');
+        } else if (debug_rules > 1) DB_Rule(R_809, 809, 'actor');
         rfalse;
 ];
 ! ----------------------------------------------------------------------------------------------------
@@ -20458,16 +20463,16 @@ Array ActionHappened --> 0 0 0 0 0 0;
 ! ----------------------------------------------------------------------------------------------------
 ! No specific request
 ! Check report damage:
-[ R_811 ;
+[ R_810 ;
     if (actor == player) {
-    if (debug_rules) DB_Rule(R_811, 811);
+    if (debug_rules) DB_Rule(R_810, 810);
     ! [2: if the noun is not a weapon]
     if (((~~((noun ofclass K17_weapon)))))
     {! [3: say ~no damage points~]
         say__p=1;! [4: ~no damage points~]
         ParaContent(); print "no damage points"; .L_Say314; .L_SayX314;rtrue;
         }
-        } else if (debug_rules > 1) DB_Rule(R_811, 811, 'actor');
+        } else if (debug_rules > 1) DB_Rule(R_810, 810, 'actor');
         rfalse;
 ];
 ! ----------------------------------------------------------------------------------------------------
@@ -20479,15 +20484,15 @@ Array ActionHappened --> 0 0 0 0 0 0;
 ! ----------------------------------------------------------------------------------------------------
 ! No specific request
 ! Carry out report damage:
-[ R_812 ;
+[ R_811 ;
     if (actor == player) {
-    if (debug_rules) DB_Rule(R_812, 812);
+    if (debug_rules) DB_Rule(R_811, 811);
     ! [2: say ~[noun] has [damage of noun] damage points.~]
     say__p=1;! [3: noun]
     ParaContent(); PrintShortName(noun);! [4: ~ has ~]
     ParaContent(); print " has ";! [5: damage of noun]
     ParaContent(); @push self; print (say__n=GProperty(OBJECT_TY, self=noun,p19_damage));@pull self; ! [6: ~ damage points.~]
-    ParaContent(); print " damage points."; new_line; .L_Say315; .L_SayX315;} else if (debug_rules > 1) DB_Rule(R_812, 812, 'actor');
+    ParaContent(); print " damage points."; new_line; .L_Say315; .L_SayX315;} else if (debug_rules > 1) DB_Rule(R_811, 811, 'actor');
     rfalse;
 ];
 ! ----------------------------------------------------------------------------------------------------
@@ -20499,10 +20504,10 @@ Array ActionHappened --> 0 0 0 0 0 0;
 ! ----------------------------------------------------------------------------------------------------
 ! No specific request
 ! Check an actor attacking something with something:
-[ R_813 ;
+[ R_812 ;
     if ((((act_requester==nothing) && ((noun ofclass K2_thing)) && ((second ofclass K2_thing))))) { ! Runs only when pattern matches
     self = noun;
-    if (debug_rules) DB_Rule(R_813, 813);
+    if (debug_rules) DB_Rule(R_812, 812);
     ! [2: if the second noun is not a weapon]
     if (((~~((second ofclass K17_weapon)))))
     {! [3: if the actor is the player]
@@ -20514,7 +20519,7 @@ Array ActionHappened --> 0 0 0 0 0 0;
         ! [7: stop the action]
         rtrue;
         }
-        } else if (debug_rules > 1) DB_Rule(R_813, 813, 'action');
+        } else if (debug_rules > 1) DB_Rule(R_812, 812, 'action');
         rfalse;
 ];
 ! ----------------------------------------------------------------------------------------------------
@@ -20526,10 +20531,10 @@ Array ActionHappened --> 0 0 0 0 0 0;
 ! ----------------------------------------------------------------------------------------------------
 ! No specific request
 ! Carry out an actor attacking something with something:
-[ R_814 ;
+[ R_813 ;
     if ((((act_requester==nothing) && ((noun ofclass K2_thing)) && ((second ofclass K2_thing))))) { ! Runs only when pattern matches
     self = noun;
-    if (debug_rules) DB_Rule(R_814, 814);
+    if (debug_rules) DB_Rule(R_813, 813);
     ! [2: decrease the health of the noun by the damage of the second noun]
     WriteGProperty(OBJECT_TY, noun,p18_health,GProperty(OBJECT_TY, noun,p18_health) - GProperty(OBJECT_TY, second,p19_damage));;
     ! [3: say ~You attack [the noun] with [the second noun], causing [damage of second noun] point[s] of damage!~]
@@ -20558,7 +20563,12 @@ Array ActionHappened --> 0 0 0 0 0 0;
     {! [20: decrease the damage of the second noun by 1]
         WriteGProperty(OBJECT_TY, second,p19_damage,GProperty(OBJECT_TY, second,p19_damage) - 1);;
         }
-        } else if (debug_rules > 1) DB_Rule(R_814, 814, 'action');
+    ! [21: if health of the noun is 0]
+    if (((GProperty(OBJECT_TY, noun,p18_health) == 0)))
+    {! [22: now the noun is a ghost]
+        (Adj_90_t2_v10(noun));
+        }
+        } else if (debug_rules > 1) DB_Rule(R_813, 813, 'action');
         rfalse;
 ];
 ! ----------------------------------------------------------------------------------------------------
@@ -20570,8 +20580,8 @@ Array ActionHappened --> 0 0 0 0 0 0;
 ! ----------------------------------------------------------------------------------------------------
 ! No specific request
 ! When Beginning begins:
-[ R_820 ;
-    if (debug_rules) DB_Rule(R_820, 820);
+[ R_819 ;
+    if (debug_rules) DB_Rule(R_819, 819);
     ! [2: move scimitar to a random room]
     MoveObject(I161_scimitar, (Prop_43()), 0, false);
     ! [3: move katana to a random room]
@@ -20595,12 +20605,12 @@ Array ActionHappened --> 0 0 0 0 0 0;
 ! ----------------------------------------------------------------------------------------------------
 ! No specific request
 ! When Beginning ends:
-[ R_821 ;
-    if (debug_rules) DB_Rule(R_821, 821);
+[ R_820 ;
+    if (debug_rules) DB_Rule(R_820, 820);
     ! [2: now diamond is nowhere]
     RemoveFromPlay(I148_diamond);;
     ! [3: now diamond is taken]
-    (Adj_88_t2_v10(I148_diamond));
+    (Adj_87_t2_v10(I148_diamond));
     ! [4: say ~Score! Her pencil is right where she said it would be.~]
     say__p=1;! [5: ~Score! Her pencil is right where she said it would be.~]
     ParaContent(); print "Score! Her pencil is right where she said it would be."; new_line; .L_Say319; .L_SayX319;rfalse;
@@ -20614,8 +20624,8 @@ Array ActionHappened --> 0 0 0 0 0 0;
 ! ----------------------------------------------------------------------------------------------------
 ! No specific request
 ! When Bully Sequence begins:
-[ R_822 ;
-    if (debug_rules) DB_Rule(R_822, 822);
+[ R_821 ;
+    if (debug_rules) DB_Rule(R_821, 821);
     ! [2: move brad to underclassmen hallway]
     MoveObject(I147_brad, I127_underclassmen_hallway, 0, false);
     ! [3: say ~You hear knuckles scraping the floor. A lightning rod shoots down your spine. Brad approaches.~]
@@ -20631,8 +20641,8 @@ Array ActionHappened --> 0 0 0 0 0 0;
 ! ----------------------------------------------------------------------------------------------------
 ! No specific request
 ! When Kidnapping begins:
-[ R_823 ;
-    if (debug_rules) DB_Rule(R_823, 823);
+[ R_822 ;
+    if (debug_rules) DB_Rule(R_822, 822);
     ! [2: say ~All of a sudden there is a loud yell from down the hall. You think it might be coming from one of the classrooms.~]
     say__p=1;! [3: ~All of a sudden there is a loud yell from down the hall. You think it might be coming from one of the classrooms.~]
     ParaContent(); print "All of a sudden there is a loud yell from down the hall. You think it might be coming from one of the classrooms."; new_line; .L_Say321; .L_SayX321;! [4: now hankerchief is in cafeteria]
@@ -20654,16 +20664,16 @@ Array ActionHappened --> 0 0 0 0 0 0;
 ! ----------------------------------------------------------------------------------------------------
 ! No specific request
 ! When Resolution ends:
-[ R_819 ;
-    if (debug_rules) DB_Rule(R_819, 819);
+[ R_818 ;
+    if (debug_rules) DB_Rule(R_818, 818);
     ! [2: end the story]
     deadflag=3; story_complete=false;
     rfalse;
 ];
 ! No specific request
 ! When Resolution ends:
-[ R_824 ;
-    if (debug_rules) DB_Rule(R_824, 824);
+[ R_823 ;
+    if (debug_rules) DB_Rule(R_823, 823);
     ! [2: end the story]
     deadflag=3; story_complete=false;
     rfalse;
@@ -20967,13 +20977,6 @@ Array ActionHappened --> 0 0 0 0 0 0;
 ! No specific request
 ! Definition:
 [ R_95 
-    t_0 ! Call parameter: object
-    ;
-    return false;
-];
-! No specific request
-! Definition:
-[ R_800 
     t_0 ! Call parameter: object
     ;
     return false;
@@ -21353,360 +21356,367 @@ Array ActionHappened --> 0 0 0 0 0 0;
     t_0 ! Call parameter: thing
     ;
     ! meaning of "locale-supportable"
-      if (t_0 ofclass K2_thing) return (((((~~(((Adj_60_t1_v10(t_0))))))) && ((((~~(((Adj_68_t1_v10(t_0))))))) && (((~~(((Adj_65_t1_v10(t_0))))))))));
+      if (t_0 ofclass K2_thing) return (((((~~(((Adj_59_t1_v10(t_0))))))) && ((((~~(((Adj_67_t1_v10(t_0))))))) && (((~~(((Adj_64_t1_v10(t_0))))))))));
     rfalse;
 ];
 [ Adj_42_t1_v10 
-    t_0 ! Call parameter: person
-    ;
-    ! meaning of "a ghost"
-      if (t_0 ofclass K8_person) return ((((GProperty(10, t_0,p18_health) < 1))));
-    rfalse;
-];
-[ Adj_43_t1_v10 
     t_0 ! Call parameter: object
     ;
     ! meaning of "plural-named"
       if (t_0) return (GetEitherOrProperty(t_0, pluralname));
     rfalse;
 ];
-[ Adj_44_t1_v10 
+[ Adj_43_t1_v10 
     t_0 ! Call parameter: object
     ;
     ! meaning of "singular-named"
       if (t_0) return (GetEitherOrProperty(t_0, pluralname) == false);
     rfalse;
 ];
-[ Adj_45_t1_v10 
+[ Adj_44_t1_v10 
     t_0 ! Call parameter: object
     ;
     ! meaning of "proper-named"
       if (t_0) return (GetEitherOrProperty(t_0, proper));
     rfalse;
 ];
-[ Adj_46_t1_v10 
+[ Adj_45_t1_v10 
     t_0 ! Call parameter: object
     ;
     ! meaning of "improper-named"
       if (t_0) return (GetEitherOrProperty(t_0, proper) == false);
     rfalse;
 ];
-[ Adj_47_t1_v10 
+[ Adj_46_t1_v10 
     t_0 ! Call parameter: object
     ;
     ! meaning of "ambiguously plural"
       if (t_0) return (GetEitherOrProperty(t_0, ambigpluralname));
     rfalse;
 ];
-[ Adj_48_t1_v10 
+[ Adj_47_t1_v10 
     t_0 ! Call parameter: object
     ;
     ! meaning of "privately-named"
       if (t_0) return (GetEitherOrProperty(t_0, privately_named));
     rfalse;
 ];
-[ Adj_49_t1_v10 
+[ Adj_48_t1_v10 
     t_0 ! Call parameter: object
     ;
     ! meaning of "publicly-named"
       if (t_0) return (GetEitherOrProperty(t_0, privately_named) == false);
     rfalse;
 ];
-[ Adj_50_t1_v10 
+[ Adj_49_t1_v10 
     t_0 ! Call parameter: object
     ;
     ! meaning of "lighted"
       if (t_0) return (GetEitherOrProperty(t_0, light));
     rfalse;
 ];
-[ Adj_51_t1_v10 
+[ Adj_50_t1_v10 
     t_0 ! Call parameter: object
     ;
     ! meaning of "dark"
       if (t_0) return (GetEitherOrProperty(t_0, light) == false);
     rfalse;
 ];
-[ Adj_52_t1_v10 
+[ Adj_51_t1_v10 
     t_0 ! Call parameter: object
     ;
     ! meaning of "visited"
       if (t_0) return (GetEitherOrProperty(t_0, visited));
     rfalse;
 ];
-[ Adj_53_t1_v10 
+[ Adj_52_t1_v10 
     t_0 ! Call parameter: object
     ;
     ! meaning of "unvisited"
       if (t_0) return (GetEitherOrProperty(t_0, visited) == false);
     rfalse;
 ];
-[ Adj_54_t1_v10 
+[ Adj_53_t1_v10 
     t_0 ! Call parameter: object
     ;
     ! meaning of "lit"
       if (t_0) return (GetEitherOrProperty(t_0, light));
     rfalse;
 ];
-[ Adj_55_t1_v10 
+[ Adj_54_t1_v10 
     t_0 ! Call parameter: object
     ;
     ! meaning of "unlit"
       if (t_0) return (GetEitherOrProperty(t_0, light) == false);
     rfalse;
 ];
-[ Adj_56_t1_v10 
+[ Adj_55_t1_v10 
     t_0 ! Call parameter: object
     ;
     ! meaning of "edible"
       if (t_0) return (GetEitherOrProperty(t_0, edible));
     rfalse;
 ];
-[ Adj_57_t1_v10 
+[ Adj_56_t1_v10 
     t_0 ! Call parameter: object
     ;
     ! meaning of "inedible"
       if (t_0) return (GetEitherOrProperty(t_0, edible) == false);
     rfalse;
 ];
-[ Adj_58_t1_v10 
+[ Adj_57_t1_v10 
     t_0 ! Call parameter: object
     ;
     ! meaning of "fixed in place"
       if (t_0) return (GetEitherOrProperty(t_0, static));
     rfalse;
 ];
-[ Adj_59_t1_v10 
+[ Adj_58_t1_v10 
     t_0 ! Call parameter: object
     ;
     ! meaning of "portable"
       if (t_0) return (GetEitherOrProperty(t_0, static) == false);
     rfalse;
 ];
-[ Adj_60_t1_v10 
+[ Adj_59_t1_v10 
     t_0 ! Call parameter: object
     ;
     ! meaning of "scenery"
       if (t_0) return (GetEitherOrProperty(t_0, scenery));
     rfalse;
 ];
-[ Adj_61_t1_v10 
+[ Adj_60_t1_v10 
     t_0 ! Call parameter: object
     ;
     ! meaning of "wearable"
       if (t_0) return (GetEitherOrProperty(t_0, clothing));
     rfalse;
 ];
-[ Adj_62_t1_v10 
+[ Adj_61_t1_v10 
     t_0 ! Call parameter: object
     ;
     ! meaning of "pushable between rooms"
       if (t_0) return (GetEitherOrProperty(t_0, pushable));
     rfalse;
 ];
-[ Adj_63_t1_v10 
+[ Adj_62_t1_v10 
     t_0 ! Call parameter: object
     ;
     ! meaning of "handled"
       if (t_0) return (GetEitherOrProperty(t_0, moved));
     rfalse;
 ];
-[ Adj_64_t1_v10 
+[ Adj_63_t1_v10 
     t_0 ! Call parameter: object
     ;
     ! meaning of "described"
       if (t_0) return (GetEitherOrProperty(t_0, concealed) == false);
     rfalse;
 ];
-[ Adj_65_t1_v10 
+[ Adj_64_t1_v10 
     t_0 ! Call parameter: object
     ;
     ! meaning of "undescribed"
       if (t_0) return (GetEitherOrProperty(t_0, concealed));
     rfalse;
 ];
-[ Adj_66_t1_v10 
+[ Adj_65_t1_v10 
     t_0 ! Call parameter: object
     ;
     ! meaning of "marked for listing"
       if (t_0) return (GetEitherOrProperty(t_0, workflag));
     rfalse;
 ];
-[ Adj_67_t1_v10 
+[ Adj_66_t1_v10 
     t_0 ! Call parameter: object
     ;
     ! meaning of "unmarked for listing"
       if (t_0) return (GetEitherOrProperty(t_0, workflag) == false);
     rfalse;
 ];
-[ Adj_68_t1_v10 
+[ Adj_67_t1_v10 
     t_0 ! Call parameter: object
     ;
     ! meaning of "mentioned"
       if (t_0) return (GetEitherOrProperty(t_0, mentioned));
     rfalse;
 ];
-[ Adj_69_t1_v10 
+[ Adj_68_t1_v10 
     t_0 ! Call parameter: object
     ;
     ! meaning of "unmentioned"
       if (t_0) return (GetEitherOrProperty(t_0, mentioned) == false);
     rfalse;
 ];
-[ Adj_70_t1_v10 
+[ Adj_69_t1_v10 
     t_0 ! Call parameter: object
     ;
     ! meaning of "enterable"
       if (t_0) return (GetEitherOrProperty(t_0, enterable));
     rfalse;
 ];
-[ Adj_71_t1_v10 
+[ Adj_70_t1_v10 
     t_0 ! Call parameter: object
     ;
     ! meaning of "opaque"
       if (t_0) return (GetEitherOrProperty(t_0, transparent) == false);
     rfalse;
 ];
-[ Adj_72_t1_v10 
+[ Adj_71_t1_v10 
     t_0 ! Call parameter: object
     ;
     ! meaning of "transparent"
       if (t_0) return (GetEitherOrProperty(t_0, transparent));
     rfalse;
 ];
-[ Adj_73_t1_v10 
+[ Adj_72_t1_v10 
     t_0 ! Call parameter: object
     ;
     ! meaning of "open"
       if (t_0) return (GetEitherOrProperty(t_0, open));
     rfalse;
 ];
-[ Adj_74_t1_v10 
+[ Adj_73_t1_v10 
     t_0 ! Call parameter: object
     ;
     ! meaning of "closed"
       if (t_0) return (GetEitherOrProperty(t_0, open) == false);
     rfalse;
 ];
-[ Adj_75_t1_v10 
+[ Adj_74_t1_v10 
     t_0 ! Call parameter: object
     ;
     ! meaning of "openable"
       if (t_0) return (GetEitherOrProperty(t_0, openable));
     rfalse;
 ];
-[ Adj_76_t1_v10 
+[ Adj_75_t1_v10 
     t_0 ! Call parameter: object
     ;
     ! meaning of "unopenable"
       if (t_0) return (GetEitherOrProperty(t_0, openable) == false);
     rfalse;
 ];
-[ Adj_77_t1_v10 
+[ Adj_76_t1_v10 
     t_0 ! Call parameter: object
     ;
     ! meaning of "lockable"
       if (t_0) return (GetEitherOrProperty(t_0, lockable));
     rfalse;
 ];
-[ Adj_78_t1_v10 
+[ Adj_77_t1_v10 
     t_0 ! Call parameter: object
     ;
     ! meaning of "locked"
       if (t_0) return (GetEitherOrProperty(t_0, locked));
     rfalse;
 ];
-[ Adj_79_t1_v10 
+[ Adj_78_t1_v10 
     t_0 ! Call parameter: object
     ;
     ! meaning of "unlocked"
       if (t_0) return (GetEitherOrProperty(t_0, locked) == false);
     rfalse;
 ];
-[ Adj_80_t1_v10 
+[ Adj_79_t1_v10 
     t_0 ! Call parameter: object
     ;
     ! meaning of "female"
       if (t_0) return (GetEitherOrProperty(t_0, female));
     rfalse;
 ];
-[ Adj_81_t1_v10 
+[ Adj_80_t1_v10 
     t_0 ! Call parameter: object
     ;
     ! meaning of "male"
       if (t_0) return (GetEitherOrProperty(t_0, female) == false);
     rfalse;
 ];
-[ Adj_82_t1_v10 
+[ Adj_81_t1_v10 
     t_0 ! Call parameter: object
     ;
     ! meaning of "neuter"
       if (t_0) return (GetEitherOrProperty(t_0, neuter));
     rfalse;
 ];
-[ Adj_83_t1_v10 
+[ Adj_82_t1_v10 
     t_0 ! Call parameter: object
     ;
     ! meaning of "switched on"
       if (t_0) return (GetEitherOrProperty(t_0, on));
     rfalse;
 ];
-[ Adj_84_t1_v10 
+[ Adj_83_t1_v10 
     t_0 ! Call parameter: object
     ;
     ! meaning of "switched off"
       if (t_0) return (GetEitherOrProperty(t_0, on) == false);
     rfalse;
 ];
-[ Adj_85_t1_v43 
+[ Adj_84_t1_v43 
     t_0 ! Call parameter: scene
     ;
     ! meaning of "recurring"
     return (GProperty(SCENE_TY, t_0, p62_recurring));
     rfalse;
 ];
-[ Adj_86_t1_v43 
+[ Adj_85_t1_v43 
     t_0 ! Call parameter: scene
     ;
     ! meaning of "non-recurring"
     return (GProperty(SCENE_TY, t_0, p62_recurring) == false);
     rfalse;
 ];
-[ Adj_87_t1_v10 
+[ Adj_86_t1_v10 
     t_0 ! Call parameter: object
     ;
     ! meaning of "neutral"
       if (t_0 == I148_diamond) return (GProperty(10, t_0, p64_diamond_condition) == 1);
     rfalse;
 ];
-[ Adj_88_t1_v10 
+[ Adj_87_t1_v10 
     t_0 ! Call parameter: object
     ;
     ! meaning of "taken"
       if (t_0 == I148_diamond) return (GProperty(10, t_0, p64_diamond_condition) == 2);
     rfalse;
 ];
-[ Adj_89_t1_v10 
+[ Adj_88_t1_v10 
     t_0 ! Call parameter: object
     ;
     ! meaning of "found"
       if (t_0 == I148_diamond) return (GProperty(10, t_0, p64_diamond_condition) == 3);
     rfalse;
 ];
+[ Adj_89_t1_v10 
+    t_0 ! Call parameter: object
+    ;
+    ! meaning of "alive"
+      if (t_0) return (GetEitherOrProperty(t_0, p65_alive));
+    rfalse;
+];
 [ Adj_90_t1_v10 
     t_0 ! Call parameter: object
     ;
-    ! meaning of "<nameless>"
-      if (t_0) return (GetEitherOrProperty(t_0, absent));
+    ! meaning of "ghost"
+      if (t_0) return (GetEitherOrProperty(t_0, p65_alive) == false);
     rfalse;
 ];
 [ Adj_91_t1_v10 
     t_0 ! Call parameter: object
     ;
     ! meaning of "<nameless>"
-      if (t_0) return (GetEitherOrProperty(t_0, mark_as_room));
+      if (t_0) return (GetEitherOrProperty(t_0, absent));
     rfalse;
 ];
 [ Adj_92_t1_v10 
+    t_0 ! Call parameter: object
+    ;
+    ! meaning of "<nameless>"
+      if (t_0) return (GetEitherOrProperty(t_0, mark_as_room));
+    rfalse;
+];
+[ Adj_93_t1_v10 
     t_0 ! Call parameter: object
     ;
     ! meaning of "<nameless>"
@@ -21783,350 +21793,364 @@ Array ActionHappened --> 0 0 0 0 0 0;
     return ((RELATION_TY_VToVAdjective(t_0, true)));
     rfalse;
 ];
-[ Adj_43_t2_v10 
+[ Adj_42_t2_v10 
     t_0 ! Call parameter: object
     ;
     ! meaning of "plural-named"
       if (t_0) return (SetEitherOrProperty(t_0, pluralname));
     rfalse;
 ];
-[ Adj_44_t2_v10 
+[ Adj_43_t2_v10 
     t_0 ! Call parameter: object
     ;
     ! meaning of "singular-named"
       if (t_0) return (SetEitherOrProperty(t_0, pluralname, true));
     rfalse;
 ];
-[ Adj_45_t2_v10 
+[ Adj_44_t2_v10 
     t_0 ! Call parameter: object
     ;
     ! meaning of "proper-named"
       if (t_0) return (SetEitherOrProperty(t_0, proper));
     rfalse;
 ];
-[ Adj_46_t2_v10 
+[ Adj_45_t2_v10 
     t_0 ! Call parameter: object
     ;
     ! meaning of "improper-named"
       if (t_0) return (SetEitherOrProperty(t_0, proper, true));
     rfalse;
 ];
-[ Adj_47_t2_v10 
+[ Adj_46_t2_v10 
     t_0 ! Call parameter: object
     ;
     ! meaning of "ambiguously plural"
       if (t_0) return (SetEitherOrProperty(t_0, ambigpluralname));
     rfalse;
 ];
-[ Adj_48_t2_v10 
+[ Adj_47_t2_v10 
     t_0 ! Call parameter: object
     ;
     ! meaning of "privately-named"
       if (t_0) return (SetEitherOrProperty(t_0, privately_named));
     rfalse;
 ];
-[ Adj_49_t2_v10 
+[ Adj_48_t2_v10 
     t_0 ! Call parameter: object
     ;
     ! meaning of "publicly-named"
       if (t_0) return (SetEitherOrProperty(t_0, privately_named, true));
     rfalse;
 ];
-[ Adj_50_t2_v10 
+[ Adj_49_t2_v10 
     t_0 ! Call parameter: object
     ;
     ! meaning of "lighted"
       if (t_0) return (SetEitherOrProperty(t_0, light));
     rfalse;
 ];
-[ Adj_51_t2_v10 
+[ Adj_50_t2_v10 
     t_0 ! Call parameter: object
     ;
     ! meaning of "dark"
       if (t_0) return (SetEitherOrProperty(t_0, light, true));
     rfalse;
 ];
-[ Adj_52_t2_v10 
+[ Adj_51_t2_v10 
     t_0 ! Call parameter: object
     ;
     ! meaning of "visited"
       if (t_0) return (SetEitherOrProperty(t_0, visited));
     rfalse;
 ];
-[ Adj_53_t2_v10 
+[ Adj_52_t2_v10 
     t_0 ! Call parameter: object
     ;
     ! meaning of "unvisited"
       if (t_0) return (SetEitherOrProperty(t_0, visited, true));
     rfalse;
 ];
-[ Adj_54_t2_v10 
+[ Adj_53_t2_v10 
     t_0 ! Call parameter: object
     ;
     ! meaning of "lit"
       if (t_0) return (SetEitherOrProperty(t_0, light));
     rfalse;
 ];
-[ Adj_55_t2_v10 
+[ Adj_54_t2_v10 
     t_0 ! Call parameter: object
     ;
     ! meaning of "unlit"
       if (t_0) return (SetEitherOrProperty(t_0, light, true));
     rfalse;
 ];
-[ Adj_56_t2_v10 
+[ Adj_55_t2_v10 
     t_0 ! Call parameter: object
     ;
     ! meaning of "edible"
       if (t_0) return (SetEitherOrProperty(t_0, edible));
     rfalse;
 ];
-[ Adj_57_t2_v10 
+[ Adj_56_t2_v10 
     t_0 ! Call parameter: object
     ;
     ! meaning of "inedible"
       if (t_0) return (SetEitherOrProperty(t_0, edible, true));
     rfalse;
 ];
-[ Adj_58_t2_v10 
+[ Adj_57_t2_v10 
     t_0 ! Call parameter: object
     ;
     ! meaning of "fixed in place"
       if (t_0) return (SetEitherOrProperty(t_0, static));
     rfalse;
 ];
-[ Adj_59_t2_v10 
+[ Adj_58_t2_v10 
     t_0 ! Call parameter: object
     ;
     ! meaning of "portable"
       if (t_0) return (SetEitherOrProperty(t_0, static, true));
     rfalse;
 ];
-[ Adj_60_t2_v10 
+[ Adj_59_t2_v10 
     t_0 ! Call parameter: object
     ;
     ! meaning of "scenery"
       if (t_0) return (SetEitherOrProperty(t_0, scenery));
     rfalse;
 ];
-[ Adj_61_t2_v10 
+[ Adj_60_t2_v10 
     t_0 ! Call parameter: object
     ;
     ! meaning of "wearable"
       if (t_0) return (SetEitherOrProperty(t_0, clothing));
     rfalse;
 ];
-[ Adj_62_t2_v10 
+[ Adj_61_t2_v10 
     t_0 ! Call parameter: object
     ;
     ! meaning of "pushable between rooms"
       if (t_0) return (SetEitherOrProperty(t_0, pushable));
     rfalse;
 ];
-[ Adj_63_t2_v10 
+[ Adj_62_t2_v10 
     t_0 ! Call parameter: object
     ;
     ! meaning of "handled"
       if (t_0) return (SetEitherOrProperty(t_0, moved));
     rfalse;
 ];
-[ Adj_64_t2_v10 
+[ Adj_63_t2_v10 
     t_0 ! Call parameter: object
     ;
     ! meaning of "described"
       if (t_0) return (SetEitherOrProperty(t_0, concealed, true));
     rfalse;
 ];
-[ Adj_65_t2_v10 
+[ Adj_64_t2_v10 
     t_0 ! Call parameter: object
     ;
     ! meaning of "undescribed"
       if (t_0) return (SetEitherOrProperty(t_0, concealed));
     rfalse;
 ];
-[ Adj_66_t2_v10 
+[ Adj_65_t2_v10 
     t_0 ! Call parameter: object
     ;
     ! meaning of "marked for listing"
       if (t_0) return (SetEitherOrProperty(t_0, workflag));
     rfalse;
 ];
-[ Adj_67_t2_v10 
+[ Adj_66_t2_v10 
     t_0 ! Call parameter: object
     ;
     ! meaning of "unmarked for listing"
       if (t_0) return (SetEitherOrProperty(t_0, workflag, true));
     rfalse;
 ];
-[ Adj_68_t2_v10 
+[ Adj_67_t2_v10 
     t_0 ! Call parameter: object
     ;
     ! meaning of "mentioned"
       if (t_0) return (SetEitherOrProperty(t_0, mentioned));
     rfalse;
 ];
-[ Adj_69_t2_v10 
+[ Adj_68_t2_v10 
     t_0 ! Call parameter: object
     ;
     ! meaning of "unmentioned"
       if (t_0) return (SetEitherOrProperty(t_0, mentioned, true));
     rfalse;
 ];
-[ Adj_70_t2_v10 
+[ Adj_69_t2_v10 
     t_0 ! Call parameter: object
     ;
     ! meaning of "enterable"
       if (t_0) return (SetEitherOrProperty(t_0, enterable));
     rfalse;
 ];
-[ Adj_71_t2_v10 
+[ Adj_70_t2_v10 
     t_0 ! Call parameter: object
     ;
     ! meaning of "opaque"
       if (t_0) return (SetEitherOrProperty(t_0, transparent, true));
     rfalse;
 ];
-[ Adj_72_t2_v10 
+[ Adj_71_t2_v10 
     t_0 ! Call parameter: object
     ;
     ! meaning of "transparent"
       if (t_0) return (SetEitherOrProperty(t_0, transparent));
     rfalse;
 ];
-[ Adj_73_t2_v10 
+[ Adj_72_t2_v10 
     t_0 ! Call parameter: object
     ;
     ! meaning of "open"
       if (t_0) return (SetEitherOrProperty(t_0, open));
     rfalse;
 ];
-[ Adj_74_t2_v10 
+[ Adj_73_t2_v10 
     t_0 ! Call parameter: object
     ;
     ! meaning of "closed"
       if (t_0) return (SetEitherOrProperty(t_0, open, true));
     rfalse;
 ];
-[ Adj_75_t2_v10 
+[ Adj_74_t2_v10 
     t_0 ! Call parameter: object
     ;
     ! meaning of "openable"
       if (t_0) return (SetEitherOrProperty(t_0, openable));
     rfalse;
 ];
-[ Adj_76_t2_v10 
+[ Adj_75_t2_v10 
     t_0 ! Call parameter: object
     ;
     ! meaning of "unopenable"
       if (t_0) return (SetEitherOrProperty(t_0, openable, true));
     rfalse;
 ];
-[ Adj_77_t2_v10 
+[ Adj_76_t2_v10 
     t_0 ! Call parameter: object
     ;
     ! meaning of "lockable"
       if (t_0) return (SetEitherOrProperty(t_0, lockable));
     rfalse;
 ];
-[ Adj_78_t2_v10 
+[ Adj_77_t2_v10 
     t_0 ! Call parameter: object
     ;
     ! meaning of "locked"
       if (t_0) return (SetEitherOrProperty(t_0, locked));
     rfalse;
 ];
-[ Adj_79_t2_v10 
+[ Adj_78_t2_v10 
     t_0 ! Call parameter: object
     ;
     ! meaning of "unlocked"
       if (t_0) return (SetEitherOrProperty(t_0, locked, true));
     rfalse;
 ];
-[ Adj_80_t2_v10 
+[ Adj_79_t2_v10 
     t_0 ! Call parameter: object
     ;
     ! meaning of "female"
       if (t_0) return (SetEitherOrProperty(t_0, female));
     rfalse;
 ];
-[ Adj_81_t2_v10 
+[ Adj_80_t2_v10 
     t_0 ! Call parameter: object
     ;
     ! meaning of "male"
       if (t_0) return (SetEitherOrProperty(t_0, female, true));
     rfalse;
 ];
-[ Adj_82_t2_v10 
+[ Adj_81_t2_v10 
     t_0 ! Call parameter: object
     ;
     ! meaning of "neuter"
       if (t_0) return (SetEitherOrProperty(t_0, neuter));
     rfalse;
 ];
-[ Adj_83_t2_v10 
+[ Adj_82_t2_v10 
     t_0 ! Call parameter: object
     ;
     ! meaning of "switched on"
       if (t_0) return (SetEitherOrProperty(t_0, on));
     rfalse;
 ];
-[ Adj_84_t2_v10 
+[ Adj_83_t2_v10 
     t_0 ! Call parameter: object
     ;
     ! meaning of "switched off"
       if (t_0) return (SetEitherOrProperty(t_0, on, true));
     rfalse;
 ];
-[ Adj_85_t2_v43 
+[ Adj_84_t2_v43 
     t_0 ! Call parameter: scene
     ;
     ! meaning of "recurring"
     return (WriteGProperty(SCENE_TY, t_0, p62_recurring, true));
     rfalse;
 ];
-[ Adj_86_t2_v43 
+[ Adj_85_t2_v43 
     t_0 ! Call parameter: scene
     ;
     ! meaning of "non-recurring"
     return (WriteGProperty(SCENE_TY, t_0, p62_recurring));
     rfalse;
 ];
-[ Adj_87_t2_v10 
+[ Adj_86_t2_v10 
     t_0 ! Call parameter: object
     ;
     ! meaning of "neutral"
       if (t_0 == I148_diamond) return (WriteGProperty(10, t_0, p64_diamond_condition, 1));
     rfalse;
 ];
-[ Adj_88_t2_v10 
+[ Adj_87_t2_v10 
     t_0 ! Call parameter: object
     ;
     ! meaning of "taken"
       if (t_0 == I148_diamond) return (WriteGProperty(10, t_0, p64_diamond_condition, 2));
     rfalse;
 ];
-[ Adj_89_t2_v10 
+[ Adj_88_t2_v10 
     t_0 ! Call parameter: object
     ;
     ! meaning of "found"
       if (t_0 == I148_diamond) return (WriteGProperty(10, t_0, p64_diamond_condition, 3));
     rfalse;
 ];
+[ Adj_89_t2_v10 
+    t_0 ! Call parameter: object
+    ;
+    ! meaning of "alive"
+      if (t_0) return (SetEitherOrProperty(t_0, p65_alive));
+    rfalse;
+];
 [ Adj_90_t2_v10 
     t_0 ! Call parameter: object
     ;
-    ! meaning of "<nameless>"
-      if (t_0) return (SetEitherOrProperty(t_0, absent));
+    ! meaning of "ghost"
+      if (t_0) return (SetEitherOrProperty(t_0, p65_alive, true));
     rfalse;
 ];
 [ Adj_91_t2_v10 
     t_0 ! Call parameter: object
     ;
     ! meaning of "<nameless>"
-      if (t_0) return (SetEitherOrProperty(t_0, mark_as_room));
+      if (t_0) return (SetEitherOrProperty(t_0, absent));
     rfalse;
 ];
 [ Adj_92_t2_v10 
+    t_0 ! Call parameter: object
+    ;
+    ! meaning of "<nameless>"
+      if (t_0) return (SetEitherOrProperty(t_0, mark_as_room));
+    rfalse;
+];
+[ Adj_93_t2_v10 
     t_0 ! Call parameter: object
     ;
     ! meaning of "<nameless>"
@@ -22203,329 +22227,343 @@ Array ActionHappened --> 0 0 0 0 0 0;
     return ((RELATION_TY_VToVAdjective(t_0, false)));
     rfalse;
 ];
-[ Adj_43_t3_v10 
+[ Adj_42_t3_v10 
     t_0 ! Call parameter: object
     ;
     ! meaning of "plural-named"
       if (t_0) return (SetEitherOrProperty(t_0, pluralname, true));
     rfalse;
 ];
-[ Adj_44_t3_v10 
+[ Adj_43_t3_v10 
     t_0 ! Call parameter: object
     ;
     ! meaning of "singular-named"
       if (t_0) return (SetEitherOrProperty(t_0, pluralname));
     rfalse;
 ];
-[ Adj_45_t3_v10 
+[ Adj_44_t3_v10 
     t_0 ! Call parameter: object
     ;
     ! meaning of "proper-named"
       if (t_0) return (SetEitherOrProperty(t_0, proper, true));
     rfalse;
 ];
-[ Adj_46_t3_v10 
+[ Adj_45_t3_v10 
     t_0 ! Call parameter: object
     ;
     ! meaning of "improper-named"
       if (t_0) return (SetEitherOrProperty(t_0, proper));
     rfalse;
 ];
-[ Adj_47_t3_v10 
+[ Adj_46_t3_v10 
     t_0 ! Call parameter: object
     ;
     ! meaning of "ambiguously plural"
       if (t_0) return (SetEitherOrProperty(t_0, ambigpluralname, true));
     rfalse;
 ];
-[ Adj_48_t3_v10 
+[ Adj_47_t3_v10 
     t_0 ! Call parameter: object
     ;
     ! meaning of "privately-named"
       if (t_0) return (SetEitherOrProperty(t_0, privately_named, true));
     rfalse;
 ];
-[ Adj_49_t3_v10 
+[ Adj_48_t3_v10 
     t_0 ! Call parameter: object
     ;
     ! meaning of "publicly-named"
       if (t_0) return (SetEitherOrProperty(t_0, privately_named));
     rfalse;
 ];
-[ Adj_50_t3_v10 
+[ Adj_49_t3_v10 
     t_0 ! Call parameter: object
     ;
     ! meaning of "lighted"
       if (t_0) return (SetEitherOrProperty(t_0, light, true));
     rfalse;
 ];
-[ Adj_51_t3_v10 
+[ Adj_50_t3_v10 
     t_0 ! Call parameter: object
     ;
     ! meaning of "dark"
       if (t_0) return (SetEitherOrProperty(t_0, light));
     rfalse;
 ];
-[ Adj_52_t3_v10 
+[ Adj_51_t3_v10 
     t_0 ! Call parameter: object
     ;
     ! meaning of "visited"
       if (t_0) return (SetEitherOrProperty(t_0, visited, true));
     rfalse;
 ];
-[ Adj_53_t3_v10 
+[ Adj_52_t3_v10 
     t_0 ! Call parameter: object
     ;
     ! meaning of "unvisited"
       if (t_0) return (SetEitherOrProperty(t_0, visited));
     rfalse;
 ];
-[ Adj_54_t3_v10 
+[ Adj_53_t3_v10 
     t_0 ! Call parameter: object
     ;
     ! meaning of "lit"
       if (t_0) return (SetEitherOrProperty(t_0, light, true));
     rfalse;
 ];
-[ Adj_55_t3_v10 
+[ Adj_54_t3_v10 
     t_0 ! Call parameter: object
     ;
     ! meaning of "unlit"
       if (t_0) return (SetEitherOrProperty(t_0, light));
     rfalse;
 ];
-[ Adj_56_t3_v10 
+[ Adj_55_t3_v10 
     t_0 ! Call parameter: object
     ;
     ! meaning of "edible"
       if (t_0) return (SetEitherOrProperty(t_0, edible, true));
     rfalse;
 ];
-[ Adj_57_t3_v10 
+[ Adj_56_t3_v10 
     t_0 ! Call parameter: object
     ;
     ! meaning of "inedible"
       if (t_0) return (SetEitherOrProperty(t_0, edible));
     rfalse;
 ];
-[ Adj_58_t3_v10 
+[ Adj_57_t3_v10 
     t_0 ! Call parameter: object
     ;
     ! meaning of "fixed in place"
       if (t_0) return (SetEitherOrProperty(t_0, static, true));
     rfalse;
 ];
-[ Adj_59_t3_v10 
+[ Adj_58_t3_v10 
     t_0 ! Call parameter: object
     ;
     ! meaning of "portable"
       if (t_0) return (SetEitherOrProperty(t_0, static));
     rfalse;
 ];
-[ Adj_60_t3_v10 
+[ Adj_59_t3_v10 
     t_0 ! Call parameter: object
     ;
     ! meaning of "scenery"
       if (t_0) return (SetEitherOrProperty(t_0, scenery, true));
     rfalse;
 ];
-[ Adj_61_t3_v10 
+[ Adj_60_t3_v10 
     t_0 ! Call parameter: object
     ;
     ! meaning of "wearable"
       if (t_0) return (SetEitherOrProperty(t_0, clothing, true));
     rfalse;
 ];
-[ Adj_62_t3_v10 
+[ Adj_61_t3_v10 
     t_0 ! Call parameter: object
     ;
     ! meaning of "pushable between rooms"
       if (t_0) return (SetEitherOrProperty(t_0, pushable, true));
     rfalse;
 ];
-[ Adj_63_t3_v10 
+[ Adj_62_t3_v10 
     t_0 ! Call parameter: object
     ;
     ! meaning of "handled"
       if (t_0) return (SetEitherOrProperty(t_0, moved, true));
     rfalse;
 ];
-[ Adj_64_t3_v10 
+[ Adj_63_t3_v10 
     t_0 ! Call parameter: object
     ;
     ! meaning of "described"
       if (t_0) return (SetEitherOrProperty(t_0, concealed));
     rfalse;
 ];
-[ Adj_65_t3_v10 
+[ Adj_64_t3_v10 
     t_0 ! Call parameter: object
     ;
     ! meaning of "undescribed"
       if (t_0) return (SetEitherOrProperty(t_0, concealed, true));
     rfalse;
 ];
-[ Adj_66_t3_v10 
+[ Adj_65_t3_v10 
     t_0 ! Call parameter: object
     ;
     ! meaning of "marked for listing"
       if (t_0) return (SetEitherOrProperty(t_0, workflag, true));
     rfalse;
 ];
-[ Adj_67_t3_v10 
+[ Adj_66_t3_v10 
     t_0 ! Call parameter: object
     ;
     ! meaning of "unmarked for listing"
       if (t_0) return (SetEitherOrProperty(t_0, workflag));
     rfalse;
 ];
-[ Adj_68_t3_v10 
+[ Adj_67_t3_v10 
     t_0 ! Call parameter: object
     ;
     ! meaning of "mentioned"
       if (t_0) return (SetEitherOrProperty(t_0, mentioned, true));
     rfalse;
 ];
-[ Adj_69_t3_v10 
+[ Adj_68_t3_v10 
     t_0 ! Call parameter: object
     ;
     ! meaning of "unmentioned"
       if (t_0) return (SetEitherOrProperty(t_0, mentioned));
     rfalse;
 ];
-[ Adj_70_t3_v10 
+[ Adj_69_t3_v10 
     t_0 ! Call parameter: object
     ;
     ! meaning of "enterable"
       if (t_0) return (SetEitherOrProperty(t_0, enterable, true));
     rfalse;
 ];
-[ Adj_71_t3_v10 
+[ Adj_70_t3_v10 
     t_0 ! Call parameter: object
     ;
     ! meaning of "opaque"
       if (t_0) return (SetEitherOrProperty(t_0, transparent));
     rfalse;
 ];
-[ Adj_72_t3_v10 
+[ Adj_71_t3_v10 
     t_0 ! Call parameter: object
     ;
     ! meaning of "transparent"
       if (t_0) return (SetEitherOrProperty(t_0, transparent, true));
     rfalse;
 ];
-[ Adj_73_t3_v10 
+[ Adj_72_t3_v10 
     t_0 ! Call parameter: object
     ;
     ! meaning of "open"
       if (t_0) return (SetEitherOrProperty(t_0, open, true));
     rfalse;
 ];
-[ Adj_74_t3_v10 
+[ Adj_73_t3_v10 
     t_0 ! Call parameter: object
     ;
     ! meaning of "closed"
       if (t_0) return (SetEitherOrProperty(t_0, open));
     rfalse;
 ];
-[ Adj_75_t3_v10 
+[ Adj_74_t3_v10 
     t_0 ! Call parameter: object
     ;
     ! meaning of "openable"
       if (t_0) return (SetEitherOrProperty(t_0, openable, true));
     rfalse;
 ];
-[ Adj_76_t3_v10 
+[ Adj_75_t3_v10 
     t_0 ! Call parameter: object
     ;
     ! meaning of "unopenable"
       if (t_0) return (SetEitherOrProperty(t_0, openable));
     rfalse;
 ];
-[ Adj_77_t3_v10 
+[ Adj_76_t3_v10 
     t_0 ! Call parameter: object
     ;
     ! meaning of "lockable"
       if (t_0) return (SetEitherOrProperty(t_0, lockable, true));
     rfalse;
 ];
-[ Adj_78_t3_v10 
+[ Adj_77_t3_v10 
     t_0 ! Call parameter: object
     ;
     ! meaning of "locked"
       if (t_0) return (SetEitherOrProperty(t_0, locked, true));
     rfalse;
 ];
-[ Adj_79_t3_v10 
+[ Adj_78_t3_v10 
     t_0 ! Call parameter: object
     ;
     ! meaning of "unlocked"
       if (t_0) return (SetEitherOrProperty(t_0, locked));
     rfalse;
 ];
-[ Adj_80_t3_v10 
+[ Adj_79_t3_v10 
     t_0 ! Call parameter: object
     ;
     ! meaning of "female"
       if (t_0) return (SetEitherOrProperty(t_0, female, true));
     rfalse;
 ];
-[ Adj_81_t3_v10 
+[ Adj_80_t3_v10 
     t_0 ! Call parameter: object
     ;
     ! meaning of "male"
       if (t_0) return (SetEitherOrProperty(t_0, female));
     rfalse;
 ];
-[ Adj_82_t3_v10 
+[ Adj_81_t3_v10 
     t_0 ! Call parameter: object
     ;
     ! meaning of "neuter"
       if (t_0) return (SetEitherOrProperty(t_0, neuter, true));
     rfalse;
 ];
-[ Adj_83_t3_v10 
+[ Adj_82_t3_v10 
     t_0 ! Call parameter: object
     ;
     ! meaning of "switched on"
       if (t_0) return (SetEitherOrProperty(t_0, on, true));
     rfalse;
 ];
-[ Adj_84_t3_v10 
+[ Adj_83_t3_v10 
     t_0 ! Call parameter: object
     ;
     ! meaning of "switched off"
       if (t_0) return (SetEitherOrProperty(t_0, on));
     rfalse;
 ];
-[ Adj_85_t3_v43 
+[ Adj_84_t3_v43 
     t_0 ! Call parameter: scene
     ;
     ! meaning of "recurring"
     return (WriteGProperty(SCENE_TY, t_0, p62_recurring));
     rfalse;
 ];
-[ Adj_86_t3_v43 
+[ Adj_85_t3_v43 
     t_0 ! Call parameter: scene
     ;
     ! meaning of "non-recurring"
     return (WriteGProperty(SCENE_TY, t_0, p62_recurring, true));
     rfalse;
 ];
+[ Adj_89_t3_v10 
+    t_0 ! Call parameter: object
+    ;
+    ! meaning of "alive"
+      if (t_0) return (SetEitherOrProperty(t_0, p65_alive, true));
+    rfalse;
+];
 [ Adj_90_t3_v10 
     t_0 ! Call parameter: object
     ;
-    ! meaning of "<nameless>"
-      if (t_0) return (SetEitherOrProperty(t_0, absent, true));
+    ! meaning of "ghost"
+      if (t_0) return (SetEitherOrProperty(t_0, p65_alive));
     rfalse;
 ];
 [ Adj_91_t3_v10 
     t_0 ! Call parameter: object
     ;
     ! meaning of "<nameless>"
-      if (t_0) return (SetEitherOrProperty(t_0, mark_as_room, true));
+      if (t_0) return (SetEitherOrProperty(t_0, absent, true));
     rfalse;
 ];
 [ Adj_92_t3_v10 
+    t_0 ! Call parameter: object
+    ;
+    ! meaning of "<nameless>"
+      if (t_0) return (SetEitherOrProperty(t_0, mark_as_room, true));
+    rfalse;
+];
+[ Adj_93_t3_v10 
     t_0 ! Call parameter: object
     ;
     ! meaning of "<nameless>"
@@ -22809,18 +22847,18 @@ Array rulebooks_array --> B0_startup B1_turn_sequence B2_shutdown B3_scene_chang
     original_deadflag ! saved state
     ;
     original_deadflag = deadflag;
-    rv = R_825();
+    rv = R_824();
     if (rv) {
         if (rv == 2) return reason_the_action_failed;
-        return R_825;
+        return R_824;
     }
     latest_rule_result-->0 = 0;
     if (original_deadflag ~= deadflag) return 0;
     if (say__p) RulebookParBreak(forbid_breaks);
-    rv = R_827();
+    rv = R_826();
     if (rv) {
         if (rv == 2) return reason_the_action_failed;
-        return R_827;
+        return R_826;
     }
     latest_rule_result-->0 = 0;
     return 0; ! 2 rule(s)
@@ -23162,10 +23200,10 @@ Constant B19_before = EMPTY_RULEBOOK;
     ;
     original_deadflag = deadflag;
     if (action == ##Open) {
-        rv = R_802();
+        rv = R_801();
         if (rv) {
             if (rv == 2) return reason_the_action_failed;
-            return R_802;
+            return R_801;
         }
         latest_rule_result-->0 = 0;
     } else {
@@ -23174,10 +23212,10 @@ Constant B19_before = EMPTY_RULEBOOK;
     if (action == ##A79_fuck) {
         if (original_deadflag ~= deadflag) return 0;
         if (say__p) RulebookParBreak(forbid_breaks);
-        rv = R_805();
+        rv = R_804();
         if (rv) {
             if (rv == 2) return reason_the_action_failed;
-            return R_805;
+            return R_804;
         }
         latest_rule_result-->0 = 0;
     } else {
@@ -23186,10 +23224,10 @@ Constant B19_before = EMPTY_RULEBOOK;
     if (action == ##Inv) {
         if (original_deadflag ~= deadflag) return 0;
         if (say__p) RulebookParBreak(forbid_breaks);
-        rv = R_806();
+        rv = R_805();
         if (rv) {
             if (rv == 2) return reason_the_action_failed;
-            return R_806;
+            return R_805;
         }
         latest_rule_result-->0 = 0;
     } else {
@@ -23206,26 +23244,6 @@ Constant B22_carry_out = EMPTY_RULEBOOK;
     ;
     original_deadflag = deadflag;
     if (action == ##Go) {
-        rv = R_816();
-        if (rv) {
-            if (rv == 2) return reason_the_action_failed;
-            return R_816;
-        }
-        latest_rule_result-->0 = 0;
-        if (original_deadflag ~= deadflag) return 0;
-        if (say__p) RulebookParBreak(forbid_breaks);
-        rv = R_818();
-        if (rv) {
-            if (rv == 2) return reason_the_action_failed;
-            return R_818;
-        }
-        latest_rule_result-->0 = 0;
-    } else {
-        if (say__p) RulebookParBreak(forbid_breaks);
-    }
-    if (action == ##A78_spinning_it_to) {
-        if (original_deadflag ~= deadflag) return 0;
-        if (say__p) RulebookParBreak(forbid_breaks);
         rv = R_815();
         if (rv) {
             if (rv == 2) return reason_the_action_failed;
@@ -23238,6 +23256,26 @@ Constant B22_carry_out = EMPTY_RULEBOOK;
         if (rv) {
             if (rv == 2) return reason_the_action_failed;
             return R_817;
+        }
+        latest_rule_result-->0 = 0;
+    } else {
+        if (say__p) RulebookParBreak(forbid_breaks);
+    }
+    if (action == ##A78_spinning_it_to) {
+        if (original_deadflag ~= deadflag) return 0;
+        if (say__p) RulebookParBreak(forbid_breaks);
+        rv = R_814();
+        if (rv) {
+            if (rv == 2) return reason_the_action_failed;
+            return R_814;
+        }
+        latest_rule_result-->0 = 0;
+        if (original_deadflag ~= deadflag) return 0;
+        if (say__p) RulebookParBreak(forbid_breaks);
+        rv = R_816();
+        if (rv) {
+            if (rv == 2) return reason_the_action_failed;
+            return R_816;
         }
         latest_rule_result-->0 = 0;
     } else {
@@ -23417,10 +23455,10 @@ Constant B75_for_printing_the_banner_ = EMPTY_RULEBOOK;
     ;
     p = parameter_value;
     parameter_value = p;
-    rv = R_826();
+    rv = R_825();
     if (rv) {
         if (rv == 2) return reason_the_action_failed;
-        return R_826;
+        return R_825;
     }
     latest_rule_result-->0 = 0;
     return 0; ! 1 rule(s)
@@ -26443,15 +26481,28 @@ Constant B363_carry_out_helping = EMPTY_RULEBOOK;
     forbid_breaks ! Implied call parameter
     rv ! return value
     ;
-    rv = R_801();
+    rv = R_800();
     if (rv) {
         if (rv == 2) return reason_the_action_failed;
-        return R_801;
+        return R_800;
     }
     latest_rule_result-->0 = 0;
     return 0; ! 1 rule(s)
 ];
 [ B365_check_spinning_it_to 
+    forbid_breaks ! Implied call parameter
+    rv ! return value
+    ;
+    rv = R_802();
+    if (rv) {
+        if (rv == 2) return reason_the_action_failed;
+        return R_802;
+    }
+    latest_rule_result-->0 = 0;
+    return 0; ! 1 rule(s)
+];
+Constant B366_carry_out_spinning_it_t = EMPTY_RULEBOOK;
+[ B367_report_spinning_it_to 
     forbid_breaks ! Implied call parameter
     rv ! return value
     ;
@@ -26463,23 +26514,22 @@ Constant B363_carry_out_helping = EMPTY_RULEBOOK;
     latest_rule_result-->0 = 0;
     return 0; ! 1 rule(s)
 ];
-Constant B366_carry_out_spinning_it_t = EMPTY_RULEBOOK;
-[ B367_report_spinning_it_to 
-    forbid_breaks ! Implied call parameter
-    rv ! return value
-    ;
-    rv = R_804();
-    if (rv) {
-        if (rv == 2) return reason_the_action_failed;
-        return R_804;
-    }
-    latest_rule_result-->0 = 0;
-    return 0; ! 1 rule(s)
-];
 Constant B368_check_fuck = EMPTY_RULEBOOK;
 Constant B369_carry_out_fuck = EMPTY_RULEBOOK;
 Constant B370_report_fuck = EMPTY_RULEBOOK;
 [ B371_check_check_health 
+    forbid_breaks ! Implied call parameter
+    rv ! return value
+    ;
+    rv = R_806();
+    if (rv) {
+        if (rv == 2) return reason_the_action_failed;
+        return R_806;
+    }
+    latest_rule_result-->0 = 0;
+    return 0; ! 1 rule(s)
+];
+[ B372_carry_out_check_health 
     forbid_breaks ! Implied call parameter
     rv ! return value
     ;
@@ -26491,7 +26541,8 @@ Constant B370_report_fuck = EMPTY_RULEBOOK;
     latest_rule_result-->0 = 0;
     return 0; ! 1 rule(s)
 ];
-[ B372_carry_out_check_health 
+Constant B373_report_check_health = EMPTY_RULEBOOK;
+[ B374_check_know_rapport 
     forbid_breaks ! Implied call parameter
     rv ! return value
     ;
@@ -26503,8 +26554,7 @@ Constant B370_report_fuck = EMPTY_RULEBOOK;
     latest_rule_result-->0 = 0;
     return 0; ! 1 rule(s)
 ];
-Constant B373_report_check_health = EMPTY_RULEBOOK;
-[ B374_check_know_rapport 
+[ B375_carry_out_know_rapport 
     forbid_breaks ! Implied call parameter
     rv ! return value
     ;
@@ -26516,7 +26566,8 @@ Constant B373_report_check_health = EMPTY_RULEBOOK;
     latest_rule_result-->0 = 0;
     return 0; ! 1 rule(s)
 ];
-[ B375_carry_out_know_rapport 
+Constant B376_report_know_rapport = EMPTY_RULEBOOK;
+[ B377_check_report_damage 
     forbid_breaks ! Implied call parameter
     rv ! return value
     ;
@@ -26528,8 +26579,7 @@ Constant B373_report_check_health = EMPTY_RULEBOOK;
     latest_rule_result-->0 = 0;
     return 0; ! 1 rule(s)
 ];
-Constant B376_report_know_rapport = EMPTY_RULEBOOK;
-[ B377_check_report_damage 
+[ B378_carry_out_report_damage 
     forbid_breaks ! Implied call parameter
     rv ! return value
     ;
@@ -26541,7 +26591,8 @@ Constant B376_report_know_rapport = EMPTY_RULEBOOK;
     latest_rule_result-->0 = 0;
     return 0; ! 1 rule(s)
 ];
-[ B378_carry_out_report_damage 
+Constant B379_report_report_damage = EMPTY_RULEBOOK;
+[ B380_check_attacking_it_with 
     forbid_breaks ! Implied call parameter
     rv ! return value
     ;
@@ -26553,8 +26604,7 @@ Constant B376_report_know_rapport = EMPTY_RULEBOOK;
     latest_rule_result-->0 = 0;
     return 0; ! 1 rule(s)
 ];
-Constant B379_report_report_damage = EMPTY_RULEBOOK;
-[ B380_check_attacking_it_with 
+[ B381_carry_out_attacking_it_ 
     forbid_breaks ! Implied call parameter
     rv ! return value
     ;
@@ -26566,20 +26616,20 @@ Constant B379_report_report_damage = EMPTY_RULEBOOK;
     latest_rule_result-->0 = 0;
     return 0; ! 1 rule(s)
 ];
-[ B381_carry_out_attacking_it_ 
+Constant B382_report_attacking_it_wit = EMPTY_RULEBOOK;
+[ B383_when_beginning_begins 
     forbid_breaks ! Implied call parameter
     rv ! return value
     ;
-    rv = R_814();
+    rv = R_819();
     if (rv) {
         if (rv == 2) return reason_the_action_failed;
-        return R_814;
+        return R_819;
     }
     latest_rule_result-->0 = 0;
     return 0; ! 1 rule(s)
 ];
-Constant B382_report_attacking_it_wit = EMPTY_RULEBOOK;
-[ B383_when_beginning_begins 
+[ B384_when_beginning_ends 
     forbid_breaks ! Implied call parameter
     rv ! return value
     ;
@@ -26591,7 +26641,7 @@ Constant B382_report_attacking_it_wit = EMPTY_RULEBOOK;
     latest_rule_result-->0 = 0;
     return 0; ! 1 rule(s)
 ];
-[ B384_when_beginning_ends 
+[ B385_when_bully_sequence_beg 
     forbid_breaks ! Implied call parameter
     rv ! return value
     ;
@@ -26603,7 +26653,8 @@ Constant B382_report_attacking_it_wit = EMPTY_RULEBOOK;
     latest_rule_result-->0 = 0;
     return 0; ! 1 rule(s)
 ];
-[ B385_when_bully_sequence_beg 
+Constant B386_when_bully_sequence_end = EMPTY_RULEBOOK;
+[ B387_when_kidnapping_begins 
     forbid_breaks ! Implied call parameter
     rv ! return value
     ;
@@ -26611,19 +26662,6 @@ Constant B382_report_attacking_it_wit = EMPTY_RULEBOOK;
     if (rv) {
         if (rv == 2) return reason_the_action_failed;
         return R_822;
-    }
-    latest_rule_result-->0 = 0;
-    return 0; ! 1 rule(s)
-];
-Constant B386_when_bully_sequence_end = EMPTY_RULEBOOK;
-[ B387_when_kidnapping_begins 
-    forbid_breaks ! Implied call parameter
-    rv ! return value
-    ;
-    rv = R_823();
-    if (rv) {
-        if (rv == 2) return reason_the_action_failed;
-        return R_823;
     }
     latest_rule_result-->0 = 0;
     return 0; ! 1 rule(s)
@@ -26636,18 +26674,18 @@ Constant B389_when_resolution_begins = EMPTY_RULEBOOK;
     original_deadflag ! saved state
     ;
     original_deadflag = deadflag;
-    rv = R_819();
+    rv = R_818();
     if (rv) {
         if (rv == 2) return reason_the_action_failed;
-        return R_819;
+        return R_818;
     }
     latest_rule_result-->0 = 0;
     if (original_deadflag ~= deadflag) return 0;
     if (say__p) RulebookParBreak(forbid_breaks);
-    rv = R_824();
+    rv = R_823();
     if (rv) {
         if (rv == 2) return reason_the_action_failed;
-        return R_824;
+        return R_823;
     }
     latest_rule_result-->0 = 0;
     return 0; ! 2 rule(s)
@@ -26689,7 +26727,7 @@ Constant B389_when_resolution_begins = EMPTY_RULEBOOK;
         }
     }
     if (scene_status-->1 == 1) {
-        if (((((Adj_73_t1_v10(I154_diamonds_locker)))))) {
+        if (((((Adj_72_t1_v10(I154_diamonds_locker)))))) {
             ch = true;
             if (debug_scenes) print "[Scene 'Beginning' ends]^";
             if (GProperty(43, 2, p62_recurring)) scene_status-->1 = 0; else scene_status-->1 = 2; FollowRulebook(384);
@@ -26719,24 +26757,6 @@ Constant B389_when_resolution_begins = EMPTY_RULEBOOK;
         }
     }
     if (scene_status-->2 == 1) {
-        if (((((Adj_42_t1_v10(I147_brad)))))) {
-            ch = true;
-            if (debug_scenes) print "[Scene 'Bully Sequence' ends]^";
-            if (GProperty(43, 3, p62_recurring)) scene_status-->2 = 0; else scene_status-->2 = 2; FollowRulebook(386);
-            FollowRulebook(WHEN_SCENE_ENDS_RB, 3);
-            scene_ended-->2 = the_time;
-            scene_endings-->2 = (scene_endings-->2)|2;
-            scene_latest_ending-->2 = 1;
-            if (scene_status-->3 == 0) {
-                if (debug_scenes) print "[Scene 'Kidnapping' begins]^";
-                scene_status-->3 = 1; FollowRulebook(WHEN_SCENE_BEGINS_RB, 4);
-                FollowRulebook(387);
-                scene_started-->3 = the_time;
-                scene_endings-->3 = (scene_endings-->3)|1;
-                scene_latest_ending-->3 = 0;
-            }
-            jump CScene;
-        }
     }
     if (scene_status-->2 == 0) {
     }
@@ -31447,33 +31467,33 @@ Array RulebookNames -->
         if (R == R_32) { print "last specific action-processing rule"; rtrue; } ! rule 346
         if (R == R_174) { print "Setting action variables for exiting"; rtrue; } ! rule 347
         if (R == R_242) { print "Does the player mean taking off something worn"; rtrue; } ! rule 348
-        if (R == R_801) { print "Report helping"; rtrue; } ! rule 349
-        if (R == R_802) { print "Instead of opening a locker"; rtrue; } ! rule 350
-        if (R == R_803) { print "Check spinning it to"; rtrue; } ! rule 351
-        if (R == R_804) { print "Report spinning it to"; rtrue; } ! rule 352
-        if (R == R_805) { print "Instead of fuck"; rtrue; } ! rule 353
-        if (R == R_806) { print "Instead of taking inventory"; rtrue; } ! rule 354
-        if (R == R_807) { print "Check check health"; rtrue; } ! rule 355
-        if (R == R_808) { print "Carry out check health"; rtrue; } ! rule 356
-        if (R == R_809) { print "Check know rapport"; rtrue; } ! rule 357
-        if (R == R_810) { print "Carry out know rapport"; rtrue; } ! rule 358
-        if (R == R_811) { print "Check report damage"; rtrue; } ! rule 359
-        if (R == R_812) { print "Carry out report damage"; rtrue; } ! rule 360
-        if (R == R_813) { print "Check an actor attacking something with something"; rtrue; } ! rule 361
-        if (R == R_814) { print "Carry out an actor attacking something with something"; rtrue; } ! rule 362
-        if (R == R_815) { print "After spinning the closed My Locker to 1999"; rtrue; } ! rule 363
-        if (R == R_816) { print "After going from room containing my locker"; rtrue; } ! rule 364
-        if (R == R_817) { print "After spinning the closed Diamonds Locker to 0112"; rtrue; } ! rule 365
-        if (R == R_818) { print "After going from room containing diamonds locker"; rtrue; } ! rule 366
-        if (R == R_819) { print "When Resolution ends"; rtrue; } ! rule 367
-        if (R == R_820) { print "When Beginning begins"; rtrue; } ! rule 368
-        if (R == R_821) { print "When Beginning ends"; rtrue; } ! rule 369
-        if (R == R_822) { print "When Bully Sequence begins"; rtrue; } ! rule 370
-        if (R == R_823) { print "When Kidnapping begins"; rtrue; } ! rule 371
-        if (R == R_824) { print "When Resolution ends"; rtrue; } ! rule 372
-        if (R == R_825) { print "When play begins"; rtrue; } ! rule 373
-        if (R == R_826) { print "After printing the banner text"; rtrue; } ! rule 374
-        if (R == R_827) { print "When play begins"; rtrue; } ! rule 375
+        if (R == R_800) { print "Report helping"; rtrue; } ! rule 349
+        if (R == R_801) { print "Instead of opening a locker"; rtrue; } ! rule 350
+        if (R == R_802) { print "Check spinning it to"; rtrue; } ! rule 351
+        if (R == R_803) { print "Report spinning it to"; rtrue; } ! rule 352
+        if (R == R_804) { print "Instead of fuck"; rtrue; } ! rule 353
+        if (R == R_805) { print "Instead of taking inventory"; rtrue; } ! rule 354
+        if (R == R_806) { print "Check check health"; rtrue; } ! rule 355
+        if (R == R_807) { print "Carry out check health"; rtrue; } ! rule 356
+        if (R == R_808) { print "Check know rapport"; rtrue; } ! rule 357
+        if (R == R_809) { print "Carry out know rapport"; rtrue; } ! rule 358
+        if (R == R_810) { print "Check report damage"; rtrue; } ! rule 359
+        if (R == R_811) { print "Carry out report damage"; rtrue; } ! rule 360
+        if (R == R_812) { print "Check an actor attacking something with something"; rtrue; } ! rule 361
+        if (R == R_813) { print "Carry out an actor attacking something with something"; rtrue; } ! rule 362
+        if (R == R_814) { print "After spinning the closed My Locker to 1999"; rtrue; } ! rule 363
+        if (R == R_815) { print "After going from room containing my locker"; rtrue; } ! rule 364
+        if (R == R_816) { print "After spinning the closed Diamonds Locker to 0112"; rtrue; } ! rule 365
+        if (R == R_817) { print "After going from room containing diamonds locker"; rtrue; } ! rule 366
+        if (R == R_818) { print "When Resolution ends"; rtrue; } ! rule 367
+        if (R == R_819) { print "When Beginning begins"; rtrue; } ! rule 368
+        if (R == R_820) { print "When Beginning ends"; rtrue; } ! rule 369
+        if (R == R_821) { print "When Bully Sequence begins"; rtrue; } ! rule 370
+        if (R == R_822) { print "When Kidnapping begins"; rtrue; } ! rule 371
+        if (R == R_823) { print "When Resolution ends"; rtrue; } ! rule 372
+        if (R == R_824) { print "When play begins"; rtrue; } ! rule 373
+        if (R == R_825) { print "After printing the banner text"; rtrue; } ! rule 374
+        if (R == R_826) { print "When play begins"; rtrue; } ! rule 375
 
 		print "(nameless rule at address ", R, ")";
 	}
@@ -37992,6 +38012,8 @@ if (t_0 ofclass K8_person) {if (na > 0) { na = 0; print "; "; }
     if ((AllowInShowme(female)) && (t_0  has female)) { if (na++ > 0) print ", "; print "female"; }
     if ((AllowInShowme(female)) && (t_0  hasnt female)) { if (na++ > 0) print ", "; print "male"; }
     if ((AllowInShowme(neuter)) && (t_0  has neuter)) { if (na++ > 0) print ", "; print "neuter"; }
+    if ((AllowInShowme(p65_alive)) && (t_0  has p65_alive)) { if (na++ > 0) print ", "; print "alive"; }
+    if ((AllowInShowme(p65_alive)) && (t_0  hasnt p65_alive)) { if (na++ > 0) print ", "; print "ghost"; }
 }
 if (t_0 ofclass K13_device) {if (na > 0) { na = 0; print "; "; }
     if ((AllowInShowme(on)) && (t_0  has on)) { if (na++ > 0) print ", "; print "switched on"; }
@@ -38443,7 +38465,7 @@ Verb meta 'tree'
     {! [3: if n <= 0]
         if (((t_1 <= 0)))
         {! [4: now o is mentioned]
-            (Adj_68_t2_v10(t_0));
+            (Adj_67_t2_v10(t_0));
             }
         ! [5: if there is a notable-object of o in the table of locale priorities]
         if (((ExistsTableLookUpCorr(T1_locale_priorities,105,105,t_0))))
@@ -38608,7 +38630,7 @@ Verb meta 'tree'
     ! [9: if the story viewpoint is third person singular]
     if (((story_viewpoint == I114_third_person_singular)))
     {! [10: if the player is male]
-        if ((((Adj_81_t1_v10(player)))))
+        if ((((Adj_80_t1_v10(player)))))
         {! [11: say ~he~]
             say__p=1;! [12: ~he~]
             ParaContent(); print "he"; .L_Say329; .L_SayX327;} else {
@@ -38652,7 +38674,7 @@ Verb meta 'tree'
     ! [9: if the story viewpoint is third person singular]
     if (((story_viewpoint == I114_third_person_singular)))
     {! [10: if the player is male]
-        if ((((Adj_81_t1_v10(player)))))
+        if ((((Adj_80_t1_v10(player)))))
         {! [11: say ~him~]
             say__p=1;! [12: ~him~]
             ParaContent(); print "him"; .L_Say336; .L_SayX334;} else {
@@ -38696,7 +38718,7 @@ Verb meta 'tree'
     ! [9: if the story viewpoint is third person singular]
     if (((story_viewpoint == I114_third_person_singular)))
     {! [10: if the player is male]
-        if ((((Adj_81_t1_v10(player)))))
+        if ((((Adj_80_t1_v10(player)))))
         {! [11: say ~his~]
             say__p=1;! [12: ~his~]
             ParaContent(); print "his"; .L_Say343; .L_SayX341;} else {
@@ -38740,7 +38762,7 @@ Verb meta 'tree'
     ! [9: if the story viewpoint is third person singular]
     if (((story_viewpoint == I114_third_person_singular)))
     {! [10: if the player is male]
-        if ((((Adj_81_t1_v10(player)))))
+        if ((((Adj_80_t1_v10(player)))))
         {! [11: say ~himself~]
             say__p=1;! [12: ~himself~]
             ParaContent(); print "himself"; .L_Say350; .L_SayX348;} else {
@@ -38784,7 +38806,7 @@ Verb meta 'tree'
     ! [9: if the story viewpoint is third person singular]
     if (((story_viewpoint == I114_third_person_singular)))
     {! [10: if the player is male]
-        if ((((Adj_81_t1_v10(player)))))
+        if ((((Adj_80_t1_v10(player)))))
         {! [11: say ~his~]
             say__p=1;! [12: ~his~]
             ParaContent(); print "his"; .L_Say357; .L_SayX355;} else {
@@ -38828,7 +38850,7 @@ Verb meta 'tree'
     ! [9: if the story viewpoint is third person singular]
     if (((story_viewpoint == I114_third_person_singular)))
     {! [10: if the player is male]
-        if ((((Adj_81_t1_v10(player)))))
+        if ((((Adj_80_t1_v10(player)))))
         {! [11: say ~He~]
             say__p=1;! [12: ~He~]
             ParaContent(); print "He"; .L_Say364; .L_SayX362;} else {
@@ -38872,7 +38894,7 @@ Verb meta 'tree'
     ! [9: if the story viewpoint is third person singular]
     if (((story_viewpoint == I114_third_person_singular)))
     {! [10: if the player is male]
-        if ((((Adj_81_t1_v10(player)))))
+        if ((((Adj_80_t1_v10(player)))))
         {! [11: say ~Him~]
             say__p=1;! [12: ~Him~]
             ParaContent(); print "Him"; .L_Say371; .L_SayX369;} else {
@@ -38916,7 +38938,7 @@ Verb meta 'tree'
     ! [9: if the story viewpoint is third person singular]
     if (((story_viewpoint == I114_third_person_singular)))
     {! [10: if the player is male]
-        if ((((Adj_81_t1_v10(player)))))
+        if ((((Adj_80_t1_v10(player)))))
         {! [11: say ~His~]
             say__p=1;! [12: ~His~]
             ParaContent(); print "His"; .L_Say378; .L_SayX376;} else {
@@ -38960,7 +38982,7 @@ Verb meta 'tree'
     ! [9: if the story viewpoint is third person singular]
     if (((story_viewpoint == I114_third_person_singular)))
     {! [10: if the player is male]
-        if ((((Adj_81_t1_v10(player)))))
+        if ((((Adj_80_t1_v10(player)))))
         {! [11: say ~Himself~]
             say__p=1;! [12: ~Himself~]
             ParaContent(); print "Himself"; .L_Say385; .L_SayX383;} else {
@@ -39004,7 +39026,7 @@ Verb meta 'tree'
     ! [9: if the story viewpoint is third person singular]
     if (((story_viewpoint == I114_third_person_singular)))
     {! [10: if the player is male]
-        if ((((Adj_81_t1_v10(player)))))
+        if ((((Adj_80_t1_v10(player)))))
         {! [11: say ~His~]
             say__p=1;! [12: ~His~]
             ParaContent(); print "His"; .L_Say392; .L_SayX390;} else {
@@ -39068,12 +39090,12 @@ Verb meta 'tree'
                 say__p=1;! [9: we]
                 ParaContent(); (PHR_763_r10 ()); .L_Say400; .L_SayX398;} else {
                 ! [10: if the item is a male person and item is not neuter]
-                if ((((tmp_0 ofclass K8_person) && ((Adj_81_t1_v10(tmp_0))))) && (((~~(((Adj_82_t1_v10(tmp_0))))))))
+                if ((((tmp_0 ofclass K8_person) && ((Adj_80_t1_v10(tmp_0))))) && (((~~(((Adj_81_t1_v10(tmp_0))))))))
                 {! [11: say ~he~]
                     say__p=1;! [12: ~he~]
                     ParaContent(); print "he"; .L_Say401; .L_SayX399;} else {
                     ! [13: if the item is a female person and item is not neuter]
-                    if ((((tmp_0 ofclass K8_person) && ((Adj_80_t1_v10(tmp_0))))) && (((~~(((Adj_82_t1_v10(tmp_0))))))))
+                    if ((((tmp_0 ofclass K8_person) && ((Adj_79_t1_v10(tmp_0))))) && (((~~(((Adj_81_t1_v10(tmp_0))))))))
                     {! [14: say ~she~]
                         say__p=1;! [15: ~she~]
                         ParaContent(); print "she"; .L_Say402; .L_SayX400;} else {
@@ -39098,12 +39120,12 @@ Verb meta 'tree'
                 say__p=1;! [24: we]
                 ParaContent(); (PHR_763_r10 ()); .L_Say405; .L_SayX403;} else {
                 ! [25: if the item is a male person and item is not neuter]
-                if ((((tmp_0 ofclass K8_person) && ((Adj_81_t1_v10(tmp_0))))) && (((~~(((Adj_82_t1_v10(tmp_0))))))))
+                if ((((tmp_0 ofclass K8_person) && ((Adj_80_t1_v10(tmp_0))))) && (((~~(((Adj_81_t1_v10(tmp_0))))))))
                 {! [26: say ~him~]
                     say__p=1;! [27: ~him~]
                     ParaContent(); print "him"; .L_Say406; .L_SayX404;} else {
                     ! [28: if the item is a female person and item is not neuter]
-                    if ((((tmp_0 ofclass K8_person) && ((Adj_80_t1_v10(tmp_0))))) && (((~~(((Adj_82_t1_v10(tmp_0))))))))
+                    if ((((tmp_0 ofclass K8_person) && ((Adj_79_t1_v10(tmp_0))))) && (((~~(((Adj_81_t1_v10(tmp_0))))))))
                     {! [29: say ~her~]
                         say__p=1;! [30: ~her~]
                         ParaContent(); print "her"; .L_Say407; .L_SayX405;} else {
@@ -39139,12 +39161,12 @@ Verb meta 'tree'
                 say__p=1;! [9: we]
                 ParaContent(); (PHR_768_r15 ()); .L_Say410; .L_SayX408;} else {
                 ! [10: if the item is a male person and item is not neuter]
-                if ((((tmp_0 ofclass K8_person) && ((Adj_81_t1_v10(tmp_0))))) && (((~~(((Adj_82_t1_v10(tmp_0))))))))
+                if ((((tmp_0 ofclass K8_person) && ((Adj_80_t1_v10(tmp_0))))) && (((~~(((Adj_81_t1_v10(tmp_0))))))))
                 {! [11: say ~He~]
                     say__p=1;! [12: ~He~]
                     ParaContent(); print "He"; .L_Say411; .L_SayX409;} else {
                     ! [13: if the item is a female person and item is not neuter]
-                    if ((((tmp_0 ofclass K8_person) && ((Adj_80_t1_v10(tmp_0))))) && (((~~(((Adj_82_t1_v10(tmp_0))))))))
+                    if ((((tmp_0 ofclass K8_person) && ((Adj_79_t1_v10(tmp_0))))) && (((~~(((Adj_81_t1_v10(tmp_0))))))))
                     {! [14: say ~She~]
                         say__p=1;! [15: ~She~]
                         ParaContent(); print "She"; .L_Say412; .L_SayX410;} else {
@@ -39169,12 +39191,12 @@ Verb meta 'tree'
                 say__p=1;! [24: we]
                 ParaContent(); (PHR_768_r15 ()); .L_Say415; .L_SayX413;} else {
                 ! [25: if the item is a male person and item is not neuter]
-                if ((((tmp_0 ofclass K8_person) && ((Adj_81_t1_v10(tmp_0))))) && (((~~(((Adj_82_t1_v10(tmp_0))))))))
+                if ((((tmp_0 ofclass K8_person) && ((Adj_80_t1_v10(tmp_0))))) && (((~~(((Adj_81_t1_v10(tmp_0))))))))
                 {! [26: say ~Him~]
                     say__p=1;! [27: ~Him~]
                     ParaContent(); print "Him"; .L_Say416; .L_SayX414;} else {
                     ! [28: if the item is a female person and item is not neuter]
-                    if ((((tmp_0 ofclass K8_person) && ((Adj_80_t1_v10(tmp_0))))) && (((~~(((Adj_82_t1_v10(tmp_0))))))))
+                    if ((((tmp_0 ofclass K8_person) && ((Adj_79_t1_v10(tmp_0))))) && (((~~(((Adj_81_t1_v10(tmp_0))))))))
                     {! [29: say ~Her~]
                         say__p=1;! [30: ~Her~]
                         ParaContent(); print "Her"; .L_Say417; .L_SayX415;} else {
@@ -39207,12 +39229,12 @@ Verb meta 'tree'
             say__p=1;! [8: we]
             ParaContent(); (PHR_763_r10 ()); .L_Say420; .L_SayX418;} else {
             ! [9: if the item is a male person and item is not neuter]
-            if ((((tmp_0 ofclass K8_person) && ((Adj_81_t1_v10(tmp_0))))) && (((~~(((Adj_82_t1_v10(tmp_0))))))))
+            if ((((tmp_0 ofclass K8_person) && ((Adj_80_t1_v10(tmp_0))))) && (((~~(((Adj_81_t1_v10(tmp_0))))))))
             {! [10: say ~he~]
                 say__p=1;! [11: ~he~]
                 ParaContent(); print "he"; .L_Say421; .L_SayX419;} else {
                 ! [12: if the item is a female person and item is not neuter]
-                if ((((tmp_0 ofclass K8_person) && ((Adj_80_t1_v10(tmp_0))))) && (((~~(((Adj_82_t1_v10(tmp_0))))))))
+                if ((((tmp_0 ofclass K8_person) && ((Adj_79_t1_v10(tmp_0))))) && (((~~(((Adj_81_t1_v10(tmp_0))))))))
                 {! [13: say ~she~]
                     say__p=1;! [14: ~she~]
                     ParaContent(); print "she"; .L_Say422; .L_SayX420;} else {
@@ -39244,12 +39266,12 @@ Verb meta 'tree'
             say__p=1;! [8: we]
             ParaContent(); (PHR_768_r15 ()); .L_Say425; .L_SayX423;} else {
             ! [9: if the item is a male person and item is not neuter]
-            if ((((tmp_0 ofclass K8_person) && ((Adj_81_t1_v10(tmp_0))))) && (((~~(((Adj_82_t1_v10(tmp_0))))))))
+            if ((((tmp_0 ofclass K8_person) && ((Adj_80_t1_v10(tmp_0))))) && (((~~(((Adj_81_t1_v10(tmp_0))))))))
             {! [10: say ~He~]
                 say__p=1;! [11: ~He~]
                 ParaContent(); print "He"; .L_Say426; .L_SayX424;} else {
                 ! [12: if the item is a female person and item is not neuter]
-                if ((((tmp_0 ofclass K8_person) && ((Adj_80_t1_v10(tmp_0))))) && (((~~(((Adj_82_t1_v10(tmp_0))))))))
+                if ((((tmp_0 ofclass K8_person) && ((Adj_79_t1_v10(tmp_0))))) && (((~~(((Adj_81_t1_v10(tmp_0))))))))
                 {! [13: say ~She~]
                     say__p=1;! [14: ~She~]
                     ParaContent(); print "She"; .L_Say427; .L_SayX425;} else {
@@ -39281,12 +39303,12 @@ Verb meta 'tree'
             say__p=1;! [8: our]
             ParaContent(); (PHR_767_r14 ()); .L_Say430; .L_SayX428;} else {
             ! [9: if the item is a male person and item is not neuter]
-            if ((((tmp_0 ofclass K8_person) && ((Adj_81_t1_v10(tmp_0))))) && (((~~(((Adj_82_t1_v10(tmp_0))))))))
+            if ((((tmp_0 ofclass K8_person) && ((Adj_80_t1_v10(tmp_0))))) && (((~~(((Adj_81_t1_v10(tmp_0))))))))
             {! [10: say ~his~]
                 say__p=1;! [11: ~his~]
                 ParaContent(); print "his"; .L_Say431; .L_SayX429;} else {
                 ! [12: if the item is a female person and item is not neuter]
-                if ((((tmp_0 ofclass K8_person) && ((Adj_80_t1_v10(tmp_0))))) && (((~~(((Adj_82_t1_v10(tmp_0))))))))
+                if ((((tmp_0 ofclass K8_person) && ((Adj_79_t1_v10(tmp_0))))) && (((~~(((Adj_81_t1_v10(tmp_0))))))))
                 {! [13: say ~her~]
                     say__p=1;! [14: ~her~]
                     ParaContent(); print "her"; .L_Say432; .L_SayX430;} else {
@@ -39318,12 +39340,12 @@ Verb meta 'tree'
             say__p=1;! [8: our]
             ParaContent(); (PHR_772_r19 ()); .L_Say435; .L_SayX433;} else {
             ! [9: if the item is a male person and item is not neuter]
-            if ((((tmp_0 ofclass K8_person) && ((Adj_81_t1_v10(tmp_0))))) && (((~~(((Adj_82_t1_v10(tmp_0))))))))
+            if ((((tmp_0 ofclass K8_person) && ((Adj_80_t1_v10(tmp_0))))) && (((~~(((Adj_81_t1_v10(tmp_0))))))))
             {! [10: say ~His~]
                 say__p=1;! [11: ~His~]
                 ParaContent(); print "His"; .L_Say436; .L_SayX434;} else {
                 ! [12: if the item is a female person and item is not neuter]
-                if ((((tmp_0 ofclass K8_person) && ((Adj_80_t1_v10(tmp_0))))) && (((~~(((Adj_82_t1_v10(tmp_0))))))))
+                if ((((tmp_0 ofclass K8_person) && ((Adj_79_t1_v10(tmp_0))))) && (((~~(((Adj_81_t1_v10(tmp_0))))))))
                 {! [13: say ~Her~]
                     say__p=1;! [14: ~Her~]
                     ParaContent(); print "Her"; .L_Say437; .L_SayX435;} else {
@@ -39355,12 +39377,12 @@ Verb meta 'tree'
             say__p=1;! [8: us]
             ParaContent(); (PHR_764_r11 ()); .L_Say440; .L_SayX438;} else {
             ! [9: if the item is a male person and item is not neuter]
-            if ((((tmp_0 ofclass K8_person) && ((Adj_81_t1_v10(tmp_0))))) && (((~~(((Adj_82_t1_v10(tmp_0))))))))
+            if ((((tmp_0 ofclass K8_person) && ((Adj_80_t1_v10(tmp_0))))) && (((~~(((Adj_81_t1_v10(tmp_0))))))))
             {! [10: say ~him~]
                 say__p=1;! [11: ~him~]
                 ParaContent(); print "him"; .L_Say441; .L_SayX439;} else {
                 ! [12: if the item is a female person and item is not neuter]
-                if ((((tmp_0 ofclass K8_person) && ((Adj_80_t1_v10(tmp_0))))) && (((~~(((Adj_82_t1_v10(tmp_0))))))))
+                if ((((tmp_0 ofclass K8_person) && ((Adj_79_t1_v10(tmp_0))))) && (((~~(((Adj_81_t1_v10(tmp_0))))))))
                 {! [13: say ~her~]
                     say__p=1;! [14: ~her~]
                     ParaContent(); print "her"; .L_Say442; .L_SayX440;} else {
@@ -39392,12 +39414,12 @@ Verb meta 'tree'
             say__p=1;! [8: us]
             ParaContent(); (PHR_769_r16 ()); .L_Say445; .L_SayX443;} else {
             ! [9: if the item is a male person and item is not neuter]
-            if ((((tmp_0 ofclass K8_person) && ((Adj_81_t1_v10(tmp_0))))) && (((~~(((Adj_82_t1_v10(tmp_0))))))))
+            if ((((tmp_0 ofclass K8_person) && ((Adj_80_t1_v10(tmp_0))))) && (((~~(((Adj_81_t1_v10(tmp_0))))))))
             {! [10: say ~Him~]
                 say__p=1;! [11: ~Him~]
                 ParaContent(); print "Him"; .L_Say446; .L_SayX444;} else {
                 ! [12: if the item is a female person and item is not neuter]
-                if ((((tmp_0 ofclass K8_person) && ((Adj_80_t1_v10(tmp_0))))) && (((~~(((Adj_82_t1_v10(tmp_0))))))))
+                if ((((tmp_0 ofclass K8_person) && ((Adj_79_t1_v10(tmp_0))))) && (((~~(((Adj_81_t1_v10(tmp_0))))))))
                 {! [13: say ~Her~]
                     say__p=1;! [14: ~Her~]
                     ParaContent(); print "Her"; .L_Say447; .L_SayX445;} else {
@@ -39429,12 +39451,12 @@ Verb meta 'tree'
             say__p=1;! [8: ours]
             ParaContent(); (PHR_765_r12 ()); .L_Say450; .L_SayX448;} else {
             ! [9: if the item is a male person and item is not neuter]
-            if ((((tmp_0 ofclass K8_person) && ((Adj_81_t1_v10(tmp_0))))) && (((~~(((Adj_82_t1_v10(tmp_0))))))))
+            if ((((tmp_0 ofclass K8_person) && ((Adj_80_t1_v10(tmp_0))))) && (((~~(((Adj_81_t1_v10(tmp_0))))))))
             {! [10: say ~his~]
                 say__p=1;! [11: ~his~]
                 ParaContent(); print "his"; .L_Say451; .L_SayX449;} else {
                 ! [12: if the item is a female person and item is not neuter]
-                if ((((tmp_0 ofclass K8_person) && ((Adj_80_t1_v10(tmp_0))))) && (((~~(((Adj_82_t1_v10(tmp_0))))))))
+                if ((((tmp_0 ofclass K8_person) && ((Adj_79_t1_v10(tmp_0))))) && (((~~(((Adj_81_t1_v10(tmp_0))))))))
                 {! [13: say ~hers~]
                     say__p=1;! [14: ~hers~]
                     ParaContent(); print "hers"; .L_Say452; .L_SayX450;} else {
@@ -39466,12 +39488,12 @@ Verb meta 'tree'
             say__p=1;! [8: ours]
             ParaContent(); (PHR_770_r17 ()); .L_Say455; .L_SayX453;} else {
             ! [9: if the item is a male person and item is not neuter]
-            if ((((tmp_0 ofclass K8_person) && ((Adj_81_t1_v10(tmp_0))))) && (((~~(((Adj_82_t1_v10(tmp_0))))))))
+            if ((((tmp_0 ofclass K8_person) && ((Adj_80_t1_v10(tmp_0))))) && (((~~(((Adj_81_t1_v10(tmp_0))))))))
             {! [10: say ~His~]
                 say__p=1;! [11: ~His~]
                 ParaContent(); print "His"; .L_Say456; .L_SayX454;} else {
                 ! [12: if the item is a female person and item is not neuter]
-                if ((((tmp_0 ofclass K8_person) && ((Adj_80_t1_v10(tmp_0))))) && (((~~(((Adj_82_t1_v10(tmp_0))))))))
+                if ((((tmp_0 ofclass K8_person) && ((Adj_79_t1_v10(tmp_0))))) && (((~~(((Adj_81_t1_v10(tmp_0))))))))
                 {! [13: say ~Hers~]
                     say__p=1;! [14: ~Hers~]
                     ParaContent(); print "Hers"; .L_Say457; .L_SayX455;} else {
@@ -39503,12 +39525,12 @@ Verb meta 'tree'
             say__p=1;! [8: ourselves]
             ParaContent(); (PHR_766_r13 ()); .L_Say460; .L_SayX458;} else {
             ! [9: if the item is a male person and item is not neuter]
-            if ((((tmp_0 ofclass K8_person) && ((Adj_81_t1_v10(tmp_0))))) && (((~~(((Adj_82_t1_v10(tmp_0))))))))
+            if ((((tmp_0 ofclass K8_person) && ((Adj_80_t1_v10(tmp_0))))) && (((~~(((Adj_81_t1_v10(tmp_0))))))))
             {! [10: say ~himself~]
                 say__p=1;! [11: ~himself~]
                 ParaContent(); print "himself"; .L_Say461; .L_SayX459;} else {
                 ! [12: if the item is a female person and item is not neuter]
-                if ((((tmp_0 ofclass K8_person) && ((Adj_80_t1_v10(tmp_0))))) && (((~~(((Adj_82_t1_v10(tmp_0))))))))
+                if ((((tmp_0 ofclass K8_person) && ((Adj_79_t1_v10(tmp_0))))) && (((~~(((Adj_81_t1_v10(tmp_0))))))))
                 {! [13: say ~herself~]
                     say__p=1;! [14: ~herself~]
                     ParaContent(); print "herself"; .L_Say462; .L_SayX460;} else {
@@ -39540,12 +39562,12 @@ Verb meta 'tree'
             say__p=1;! [8: ourselves]
             ParaContent(); (PHR_771_r18 ()); .L_Say465; .L_SayX463;} else {
             ! [9: if the item is a male person and item is not neuter]
-            if ((((tmp_0 ofclass K8_person) && ((Adj_81_t1_v10(tmp_0))))) && (((~~(((Adj_82_t1_v10(tmp_0))))))))
+            if ((((tmp_0 ofclass K8_person) && ((Adj_80_t1_v10(tmp_0))))) && (((~~(((Adj_81_t1_v10(tmp_0))))))))
             {! [10: say ~Himself~]
                 say__p=1;! [11: ~Himself~]
                 ParaContent(); print "Himself"; .L_Say466; .L_SayX464;} else {
                 ! [12: if the item is a female person and item is not neuter]
-                if ((((tmp_0 ofclass K8_person) && ((Adj_80_t1_v10(tmp_0))))) && (((~~(((Adj_82_t1_v10(tmp_0))))))))
+                if ((((tmp_0 ofclass K8_person) && ((Adj_79_t1_v10(tmp_0))))) && (((~~(((Adj_81_t1_v10(tmp_0))))))))
                 {! [13: say ~Herself~]
                     say__p=1;! [14: ~Herself~]
                     ParaContent(); print "Herself"; .L_Say467; .L_SayX465;} else {
@@ -39577,12 +39599,12 @@ Verb meta 'tree'
             say__p=1;! [8: we]
             ParaContent(); (PHR_763_r10 ()); .L_Say470; .L_SayX468;} else {
             ! [9: if the item is a male person and item is not neuter]
-            if ((((tmp_0 ofclass K8_person) && ((Adj_81_t1_v10(tmp_0))))) && (((~~(((Adj_82_t1_v10(tmp_0))))))))
+            if ((((tmp_0 ofclass K8_person) && ((Adj_80_t1_v10(tmp_0))))) && (((~~(((Adj_81_t1_v10(tmp_0))))))))
             {! [10: say ~he~]
                 say__p=1;! [11: ~he~]
                 ParaContent(); print "he"; .L_Say471; .L_SayX469;} else {
                 ! [12: if the item is a female person and item is not neuter]
-                if ((((tmp_0 ofclass K8_person) && ((Adj_80_t1_v10(tmp_0))))) && (((~~(((Adj_82_t1_v10(tmp_0))))))))
+                if ((((tmp_0 ofclass K8_person) && ((Adj_79_t1_v10(tmp_0))))) && (((~~(((Adj_81_t1_v10(tmp_0))))))))
                 {! [13: say ~she~]
                     say__p=1;! [14: ~she~]
                     ParaContent(); print "she"; .L_Say472; .L_SayX470;} else {
@@ -39616,12 +39638,12 @@ Verb meta 'tree'
             say__p=1;! [8: we]
             ParaContent(); (PHR_768_r15 ()); .L_Say476; .L_SayX474;} else {
             ! [9: if the item is a male person and item is not neuter]
-            if ((((tmp_0 ofclass K8_person) && ((Adj_81_t1_v10(tmp_0))))) && (((~~(((Adj_82_t1_v10(tmp_0))))))))
+            if ((((tmp_0 ofclass K8_person) && ((Adj_80_t1_v10(tmp_0))))) && (((~~(((Adj_81_t1_v10(tmp_0))))))))
             {! [10: say ~He~]
                 say__p=1;! [11: ~He~]
                 ParaContent(); print "He"; .L_Say477; .L_SayX475;} else {
                 ! [12: if the item is a female person and item is not neuter]
-                if ((((tmp_0 ofclass K8_person) && ((Adj_80_t1_v10(tmp_0))))) && (((~~(((Adj_82_t1_v10(tmp_0))))))))
+                if ((((tmp_0 ofclass K8_person) && ((Adj_79_t1_v10(tmp_0))))) && (((~~(((Adj_81_t1_v10(tmp_0))))))))
                 {! [13: say ~She~]
                     say__p=1;! [14: ~She~]
                     ParaContent(); print "She"; .L_Say478; .L_SayX476;} else {
@@ -42383,7 +42405,7 @@ Array TX_R_391 --> CONSTANT_PACKED_TEXT_STORAGE TX_R_391_R;
     ;
     ;
     for (x=TestContainmentRange(real_location): x: x=TestContainmentRange(real_location,x)){
-        if ((x ofclass K2_thing) && ((Adj_70_t1_v10(x)))){
+        if ((x ofclass K2_thing) && ((Adj_69_t1_v10(x)))){
             deferred_calling_list-->0 = x;
             rtrue;
         }
@@ -42435,7 +42457,7 @@ Array TX_R_391 --> CONSTANT_PACKED_TEXT_STORAGE TX_R_391_R;
     ;
     ;
     for (x=IK2_First: x: x=x.IK2_Link){
-        if (((Adj_66_t1_v10(x)))){
+        if (((Adj_65_t1_v10(x)))){
             counter++;
             jump NextOuterLoop_5;
         }
@@ -42456,7 +42478,7 @@ Array TX_R_391 --> CONSTANT_PACKED_TEXT_STORAGE TX_R_391_R;
     }
     if (x) jump NextOuterLoop_4;
     for (x=IK2_First: x: x=x.IK2_Link){
-        if (((Adj_66_t1_v10(x)))){
+        if (((Adj_65_t1_v10(x)))){
             return x;
         }
         .NextOuterLoop_4;
@@ -42482,7 +42504,7 @@ Array TX_R_391 --> CONSTANT_PACKED_TEXT_STORAGE TX_R_391_R;
             if (property_loop_sign>0) best=MIN_NEGATIVE_NUMBER;
             else best=MAX_POSITIVE_NUMBER;
             for (x=IK2_First: x: x=x.IK2_Link){
-                if ((x ofclass K2_thing) && ((Adj_69_t1_v10(x)))){
+                if ((x ofclass K2_thing) && ((Adj_68_t1_v10(x)))){
                     if (property_loop_sign>0) {
                         if (x.property_to_be_totalled >= best) {
                             best = x.property_to_be_totalled;
@@ -42500,7 +42522,7 @@ Array TX_R_391 --> CONSTANT_PACKED_TEXT_STORAGE TX_R_391_R;
             return best_with;
         -5: ! Find a total property value over all x satisfying:
             for (x=IK2_First: x: x=x.IK2_Link){
-                if ((x ofclass K2_thing) && ((Adj_69_t1_v10(x)))){
+                if ((x ofclass K2_thing) && ((Adj_68_t1_v10(x)))){
                     total = total + x.property_to_be_totalled;
                     jump NextOuterLoop_6;
                 }
@@ -42512,7 +42534,7 @@ Array TX_R_391 --> CONSTANT_PACKED_TEXT_STORAGE TX_R_391_R;
             while (true) {
                 counter = 0;
                 for (x=IK2_First: x: x=x.IK2_Link){
-                    if ((x ofclass K2_thing) && ((Adj_69_t1_v10(x)))){
+                    if ((x ofclass K2_thing) && ((Adj_68_t1_v10(x)))){
                         counter++;
                         if (counter == selection) return x;
                         jump NextOuterLoop_7;
@@ -42524,7 +42546,7 @@ Array TX_R_391 --> CONSTANT_PACKED_TEXT_STORAGE TX_R_391_R;
             }
         -3: ! How many x satisfy this?
             for (x=IK2_First: x: x=x.IK2_Link){
-                if ((x ofclass K2_thing) && ((Adj_69_t1_v10(x)))){
+                if ((x ofclass K2_thing) && ((Adj_68_t1_v10(x)))){
                     counter++;
                     jump NextOuterLoop_5;
                 }
@@ -42538,14 +42560,14 @@ Array TX_R_391 --> CONSTANT_PACKED_TEXT_STORAGE TX_R_391_R;
             }
             if (x) jump NextOuterLoop_4;
             for (x=IK2_First: x: x=x.IK2_Link){
-                if ((x ofclass K2_thing) && ((Adj_69_t1_v10(x)))){
+                if ((x ofclass K2_thing) && ((Adj_68_t1_v10(x)))){
                     return x;
                 }
                 .NextOuterLoop_4;
             }
             return nothing;
         -1: ! True or false?
-            if ((x ofclass K2_thing) && (x ofclass K2_thing) && ((Adj_69_t1_v10(x)))){
+            if ((x ofclass K2_thing) && (x ofclass K2_thing) && ((Adj_68_t1_v10(x)))){
                 rtrue;
             }
             rfalse;
@@ -42567,7 +42589,7 @@ Array TX_R_391 --> CONSTANT_PACKED_TEXT_STORAGE TX_R_391_R;
     }
     if (x) jump NextOuterLoop_4;
     objectloop (x in const_2) if (SupporterOf(x)==parent(x)){
-        if ((x ofclass K2_thing) && (~~((Adj_63_t1_v10(x)))) && (const_0 ofclass K6_supporter) && (WhetherProvides(const_1, false, initial))){
+        if ((x ofclass K2_thing) && (~~((Adj_62_t1_v10(x)))) && (const_0 ofclass K6_supporter) && (WhetherProvides(const_1, false, initial))){
             return x;
         }
         .NextOuterLoop_4;
@@ -42898,8 +42920,8 @@ Array TX_R_391 --> CONSTANT_PACKED_TEXT_STORAGE TX_R_391_R;
     ;
     ;
     for (x=TestContainmentRange(noun): x: x=TestContainmentRange(noun,x)){
-        if ((x ofclass K2_thing) && ((Adj_64_t1_v10(x)))){
-            if (~~(((Adj_60_t1_v10(x))))){
+        if ((x ofclass K2_thing) && ((Adj_63_t1_v10(x)))){
+            if (~~(((Adj_59_t1_v10(x))))){
                 rtrue;
             }
         }
@@ -42930,8 +42952,8 @@ Array TX_R_391 --> CONSTANT_PACKED_TEXT_STORAGE TX_R_391_R;
     ;
     ;
     objectloop (x in noun) if (SupporterOf(x)==parent(x)){
-        if ((x ofclass K2_thing) && ((Adj_64_t1_v10(x)))){
-            if (~~(((Adj_60_t1_v10(x))))){
+        if ((x ofclass K2_thing) && ((Adj_63_t1_v10(x)))){
+            if (~~(((Adj_59_t1_v10(x))))){
                 rtrue;
             }
         }
@@ -42962,8 +42984,8 @@ Array TX_R_391 --> CONSTANT_PACKED_TEXT_STORAGE TX_R_391_R;
     ;
     ;
     for (x=TestContainmentRange(noun): x: x=TestContainmentRange(noun,x)){
-        if ((x ofclass K2_thing) && ((Adj_64_t1_v10(x)))){
-            if (~~(((Adj_60_t1_v10(x))))){
+        if ((x ofclass K2_thing) && ((Adj_63_t1_v10(x)))){
+            if (~~(((Adj_59_t1_v10(x))))){
                 rtrue;
             }
         }
@@ -42978,8 +43000,8 @@ Array TX_R_391 --> CONSTANT_PACKED_TEXT_STORAGE TX_R_391_R;
     ;
     ;
     objectloop (x in noun) if (SupporterOf(x)==parent(x)){
-        if ((x ofclass K2_thing) && ((Adj_64_t1_v10(x)))){
-            if (~~(((Adj_60_t1_v10(x))))){
+        if ((x ofclass K2_thing) && ((Adj_63_t1_v10(x)))){
+            if (~~(((Adj_59_t1_v10(x))))){
                 rtrue;
             }
         }
@@ -46971,7 +46993,7 @@ Array TX_S_256 --> CONSTANT_PACKED_TEXT_STORAGE R_TX_S_256;
     	.L_Say778; .L_SayX765;! [9: ~switched ~]
     ParaContent(); print "switched ";! [10: if the noun is switched on]
 
-    	if (~~(((((Adj_83_t1_v10(noun))))))) jump L_Say779;! [11: ~on~]
+    	if (~~(((((Adj_82_t1_v10(noun))))))) jump L_Say779;! [11: ~on~]
     ParaContent(); print "on";! [12: otherwise]
 
     	jump L_SayX766; .L_Say779;! [13: ~off~]
@@ -49757,7 +49779,7 @@ Array Rel_Record_69 -->
     x ! saved value of noun
     ;
     x=noun;
-    return ((noun ofclass K2_thing) && ((Adj_83_t1_v10(noun))));
+    return ((noun ofclass K2_thing) && ((Adj_82_t1_v10(noun))));
 ];
 [ Noun_Filter_4 
     v ! value parsed
@@ -52074,6 +52096,7 @@ Array TX_L_33 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_33;
 #ifndef on; Constant on = 0; #endif;
 #ifndef p62_recurring; Constant p62_recurring = 0; #endif;
 #ifndef p64_diamond_condition; Constant p64_diamond_condition = 0; #endif;
+#ifndef p65_alive; Constant p65_alive = 0; #endif;
 #ifndef vector; Constant vector = 0; #endif;
 #ifndef room_index; Constant room_index = 0; #endif;
 #ifndef door_dir; Constant door_dir = 0; #endif;

@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Skein rootNode="node-1">
   <generator>Windows Inform 7 6M62</generator>
-  <activeNode nodeId="node-47"/>
+  <activeNode nodeId="node-77"/>
   <item nodeId="node-1">
     <command xml:space="preserve">A Highschool Adventure</command>
-    <result xml:space="preserve">Classic Highschool Drama But with Murder&#x000A;An Interactive Fiction by a bunch of nerds&#x000A;Release 1 / Serial number 180611 / Inform 7 build 6M62 (I6/v6.33 lib 6/12N) SD&#x000A;&#x000A; &#x000A; Hey, Diamond, its ya boi..... no that's wrong.... What's hangin girl you lookin... nah she knows she looks amazing...&#x000A; &#x000A; Damn, this is way too hard. &#x000A;&#x000A; Today is the day! I'm finally going to confess my love to Diamond, the only girl that I could ever love! I think she has Mr. Hartman's Underwater Basket Weaving class first.... now where is that.....&#x000A;&#x000A;Underclassmen Hallway&#x000A;Class just started, so the normally busy hallway seems eeriely quiet.&#x000A;&#x000A;You can see My Locker (closed) and Diamonds Locker (closed) here.&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">*** Run-time problem P31: Attempt to use a property of the 'nothing' non-object: property health&#x000A;&#x000A;Classic Highschool Drama But with Murder&#x000A;An Interactive Fiction by a bunch of nerds&#x000A;Release 1 / Serial number 180611 / Inform 7 build 6M62 (I6/v6.33 lib 6/12N) SD&#x000A;&#x000A; &#x000A; Hey, Diamond, its ya boi..... no that's wrong.... What's hangin girl you lookin... nah she knows she looks amazing...&#x000A; &#x000A; Damn, this is way too hard. &#x000A;&#x000A; Today is the day! I'm finally going to confess my love to Diamond, the only girl that I could ever love! I think she has Mr. Hartman's Underwater Basket Weaving class first.... now where is that.....&#x000A;&#x000A;Underclassmen Hallway&#x000A;Class just started, so the normally busy hallway seems eeriely quiet.&#x000A;&#x000A;You can see My Locker (closed) and Diamonds Locker (closed) here.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -12,6 +12,9 @@
       <child nodeId="node-6"/>
       <child nodeId="node-8"/>
       <child nodeId="node-11"/>
+      <child nodeId="node-48"/>
+      <child nodeId="node-49"/>
+      <child nodeId="node-77"/>
     </children>
   </item>
   <item nodeId="node-2">
@@ -413,6 +416,267 @@
   <item nodeId="node-47">
     <command xml:space="preserve">mr h relationship</command>
     <result xml:space="preserve">Mr Hartman doesn't much care for you&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-48">
+    <command xml:space="preserve">help</command>
+    <result xml:space="preserve">You can GO to adjacent rooms. Use the commands n, s, e, w to go in each cardinal direction. &#x000A; You can OPEN doors.&#x000A;You can ATTACK someone with a WEAPON in your inventory.&#x000A;You can check your inventory by simply saying INVENTORYYou can TAKE, DROP, and GIVE items. Taking an item puts it in your inventory. &#x000A;You can TALK to CHARACTER about TOPIC.&#x000A;You can open a locker by saying SPIN locker to NUMBER. &#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-49">
+    <command xml:space="preserve">s</command>
+    <result xml:space="preserve">&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-50"/>
+    </children>
+  </item>
+  <item nodeId="node-50">
+    <command xml:space="preserve">w</command>
+    <result xml:space="preserve">West Upperclassmen Hall&#x000A;Junior side of the hallway. Close to the Cafeteria.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-51"/>
+    </children>
+  </item>
+  <item nodeId="node-51">
+    <command xml:space="preserve">e</command>
+    <result xml:space="preserve">Upperclassmen Junction&#x000A;Long coridors stretching left and right. An intimidating sight for underclassman.&#x000A;&#x000A;You can see spear and rope here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-52"/>
+    </children>
+  </item>
+  <item nodeId="node-52">
+    <command xml:space="preserve">s</command>
+    <result xml:space="preserve">You can't go that way.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-53"/>
+    </children>
+  </item>
+  <item nodeId="node-53">
+    <command xml:space="preserve">take spear</command>
+    <result xml:space="preserve">Taken.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-54"/>
+    </children>
+  </item>
+  <item nodeId="node-54">
+    <command xml:space="preserve">take rope</command>
+    <result xml:space="preserve">Taken.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-55"/>
+    </children>
+  </item>
+  <item nodeId="node-55">
+    <command xml:space="preserve">e</command>
+    <result xml:space="preserve">East Upperclassmen Hall&#x000A;Senior side of the hallway. Close to the Gym.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-56"/>
+    </children>
+  </item>
+  <item nodeId="node-56">
+    <command xml:space="preserve">s</command>
+    <result xml:space="preserve">Room 213&#x000A;Mr. Hartman's Classroom. I heard he once was caught eating out of the Cafeteria Garbage.&#x000A;&#x000A;You can see Mr Hartman and Diamond here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-57"/>
+    </children>
+  </item>
+  <item nodeId="node-57">
+    <command xml:space="preserve">attack mr hartman with spear</command>
+    <result xml:space="preserve">You attack Mr Hartman with spear, causing 3 points of damage!&#x000A;Mr Hartman is now your enemy.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-58"/>
+    </children>
+  </item>
+  <item nodeId="node-58">
+    <command xml:space="preserve">attack mr h with spear</command>
+    <result xml:space="preserve">You attack Mr Hartman with spear, causing 2 points of damage!&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-59"/>
+    </children>
+  </item>
+  <item nodeId="node-59">
+    <command xml:space="preserve">attack mr h with spear</command>
+    <result xml:space="preserve">You attack Mr Hartman with spear, causing 1 point of damage!&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-60"/>
+    </children>
+  </item>
+  <item nodeId="node-60">
+    <command xml:space="preserve">attack mr h with spear</command>
+    <result xml:space="preserve">You attack Mr Hartman with spear, causing 1 point of damage!&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-61"/>
+    </children>
+  </item>
+  <item nodeId="node-61">
+    <command xml:space="preserve">attack mr h with spear</command>
+    <result xml:space="preserve">You attack Mr Hartman with spear, causing 1 point of damage!&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-62"/>
+    </children>
+  </item>
+  <item nodeId="node-62">
+    <command xml:space="preserve">attack mr h with spear</command>
+    <result xml:space="preserve">You attack Mr Hartman with spear, causing 1 point of damage!&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-63"/>
+    </children>
+  </item>
+  <item nodeId="node-63">
+    <command xml:space="preserve">attack mr h with spear</command>
+    <result xml:space="preserve">You attack Mr Hartman with spear, causing 1 point of damage!&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-64"/>
+    </children>
+  </item>
+  <item nodeId="node-64">
+    <command xml:space="preserve">attack mr h with rope</command>
+    <result xml:space="preserve">You attack Mr Hartman with rope, causing 2 points of damage!&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-65"/>
+    </children>
+  </item>
+  <item nodeId="node-65">
+    <command xml:space="preserve">attack mr h with rope</command>
+    <result xml:space="preserve">You attack Mr Hartman with rope, causing 1 point of damage!&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-66"/>
+    </children>
+  </item>
+  <item nodeId="node-66">
+    <command xml:space="preserve">mr h health</command>
+    <result xml:space="preserve">Mr Hartman has 7 health&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-67"/>
+    </children>
+  </item>
+  <item nodeId="node-67">
+    <command xml:space="preserve">mr h health</command>
+    <result xml:space="preserve">Mr Hartman has 7 health&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-68"/>
+    </children>
+  </item>
+  <item nodeId="node-68">
+    <command xml:space="preserve">attack mr h with rope</command>
+    <result xml:space="preserve">You attack Mr Hartman with rope, causing 1 point of damage!&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-69"/>
+    </children>
+  </item>
+  <item nodeId="node-69">
+    <command xml:space="preserve">attack mr h with rope</command>
+    <result xml:space="preserve">You attack Mr Hartman with rope, causing 1 point of damage!&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-70"/>
+    </children>
+  </item>
+  <item nodeId="node-70">
+    <command xml:space="preserve">attack mr h with rope</command>
+    <result xml:space="preserve">You attack Mr Hartman with rope, causing 1 point of damage!&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-71"/>
+    </children>
+  </item>
+  <item nodeId="node-71">
+    <command xml:space="preserve"></command>
+    <result xml:space="preserve">I beg your pardon?&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-72"/>
+    </children>
+  </item>
+  <item nodeId="node-72">
+    <command xml:space="preserve">attack mr h with rope</command>
+    <result xml:space="preserve">You attack Mr Hartman with rope, causing 1 point of damage!&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-73"/>
+    </children>
+  </item>
+  <item nodeId="node-73">
+    <command xml:space="preserve">attack mr h with rope</command>
+    <result xml:space="preserve">You attack Mr Hartman with rope, causing 1 point of damage!&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-74"/>
+    </children>
+  </item>
+  <item nodeId="node-74">
+    <command xml:space="preserve">attack mr h with rope</command>
+    <result xml:space="preserve">You attack Mr Hartman with rope, causing 1 point of damage!&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-75"/>
+    </children>
+  </item>
+  <item nodeId="node-75">
+    <command xml:space="preserve">attack mr h with rope</command>
+    <result xml:space="preserve">You attack Mr Hartman with rope, causing 1 point of damage!&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-76"/>
+    </children>
+  </item>
+  <item nodeId="node-76">
+    <command xml:space="preserve">attack mr h with rope</command>
+    <result xml:space="preserve">You attack Ghost Ghost Ghost Ghost Ghost Ghost Ghost Ghost Ghost Ghost Ghost Ghost Ghost Ghost Ghost Ghost Ghost Ghost Ghost Ghost &#x000A;*** Run-time problem P12: Too many activities are going on at once.&#x000A;&#x000A;Glulxe fatal error: Stack overflow in function call.&#x000A;Ghost Ghost Ghost Ghost Ghost Ghost Ghost Ghost Ghost Ghost Ghost Ghost Ghost Ghost Ghost Ghost Ghost Ghost Ghost Ghost Ghost Ghost Ghost Ghost Ghost Ghost Ghost Ghost Ghost Ghost Ghost Ghost Ghost Ghost Ghost Ghost Ghost Ghost Ghost Ghost Ghost Ghost Ghost Ghost Ghost Ghost Ghost Ghost Ghost Ghost Ghost Ghost Ghost Ghost Ghost Ghost Ghost Ghost Ghost Ghost Ghost Ghost Ghost Ghost Ghost Ghost Ghost Ghost Ghost Ghost Ghost Ghost Ghost Ghost Ghost Ghost Ghost Ghost Ghost Ghost Ghost Ghost Ghost Ghost Ghost Ghost Ghost Ghost Ghost Ghost Ghost Ghost Ghost Ghost Ghost Ghost Ghost Ghost Ghost Ghost Ghost Ghost Ghost Ghost Ghost Ghost Ghost Ghost Ghost Ghost Ghost Ghost Ghost Ghost Ghost Ghost</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-77">
+    <command xml:space="preserve">e</command>
+    <result xml:space="preserve">*** Run-time problem P10: Since the east is not allowed the property "health", it is against the rules to try to use it.&#x000A;&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
   </item>
