@@ -28,7 +28,7 @@ Report helping:
 School is a region.
 
 Hallway is a region. Hallway is in School.
-Underclassmen Hallway is a room. "The normally busy hallway seems eeriely quiet after school hours."
+Underclassmen Hallway is a room. "Class just started, so the normally busy hallway seems eeriely quiet."
 East Upperclassmen Hall is east of Upperclassmen Junction. "Senior side of the hallway. Close to the Gym."
 Upperclassmen Junction is south of the Underclassmen Hallway. "Long coridors stretching left and right. An intimidating sight for underclassman."
 West Upperclassmen Hall is west of Upperclassmen Junction. "Junior side of the hallway. Close to the Cafeteria."
@@ -191,6 +191,10 @@ When Resolution ends:
 [Begining code that is implemented when we start to play the game]
 When play begins: 
 	Now Diamonds Pencil is inside Diamonds Locker.
+
+After printing the banner text:
+	say "[line break] [line break] Hey, Diamond, its ya boi..... no that's wrong.... What's hangin girl you lookin... nah she knows she looks amazing...[line break] [line break] Damn, this is way too hard. [line break][line break] ";
+	say "Today is the day! I'm finally going to confess my love to Diamond, the only girl that I could ever love! I think she has Mr. Hartman's Underwater Basket Weaving class first.... now where is that.....".
 
 When play begins: 
 	Now Diamonds Pencil is inside Diamonds Locker;
