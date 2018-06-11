@@ -80,7 +80,16 @@ a weapon is a kind of thing. A weapon has a number called damage. Damage is usua
 The player carries a weapon called a fist. Fist has damage 1. 
 Diamonds Pencil is a weapon. Understand "pencil" as Diamonds pencil. The description of Diamonds Pencil is "Pink and Sparkly. Also good for stabbing. And writing." 
 There is a scimitar, katana, baseball bat, monkey wrench, candlestick, axe, spear, and rope which are weapons. Understand "wrench" as monkey wrench. Understand "baseball bat" as bat. 
-A baseball bat and a candlestick have damage 4. A rope and pencil have damage 2. A wrench, axe, and spear have damage 3.  
+A baseball bat and a candlestick have damage 4. A rope and pencil have damage 2. A wrench, axe, and spear have damage 3. 
+
+The description of a scimitar is "Maybe I can go look for a genie after this. With my Magical Eye, it appears it has a damage value of 5."
+The description of a katana is "The most honorable of weapons. With my Magical Eye, it appears it has a damage value of 5."
+The description of a baseball bat is "Good for both hitting home runs and smashing melons. With my Magical Eye, it appears it has a damage value of 4."
+The description of the monkey wrench is "Despite its name, my brother has never been able to use it. With my Magical Eye, it appears it has a damage value of 3."
+The description of the candlestick is "NO TAKE CANDLE... it has a damage value of 4."
+The description of the axe is "Now all I need is a beard and some flannel. With my Magical Eye, it appears it has a damage value of 3."
+The description of the spear is "A pokey stick for the bad bois. With my Magical Eye, it appears it has a damage value of 3."
+The description of the rope is "Please no bulli the cinnamon bun... it has a damage value of 2, but don't use it on yourself."
 
 Check an actor attacking something with something: 
 	if the second noun is not a weapon: 
@@ -121,6 +130,13 @@ There is a hankerchief. A hankerchief is a thing. The description of the hankerc
 There is a spyglass. A spyglass is a thing. The description of the spyglass is "This could only be used by someone to spy on someone else....".
 There is a note. A note is a thing. The description of the note is "Looks like someone put this in Diamond's cubby to confess their love to her. Seeing as its crumpled up on the floor, I can't imagine that went very well.".
 
+[Inventory]
+
+Instead of taking inventory:
+	if the number of things enclosed by the player is 0, say "I got nothing on me." instead;
+	say "I got myself: [line break]";
+	list the contents of the player, with newlines, indented, giving inventory information.
+	
 [scenes]
 
 Beginning, Bully Sequence, Kidnapping, and Resolution are scenes. 
