@@ -39,29 +39,28 @@ Understand "spin [something] to [a number]" as spinning it to.
 fuck is an action applying to one thing. understand "fuck [something]" and "fuck the [something]"  as fuck. Instead of fuck, say "You fucked it".
 
 People have a number called health. Health is usually 20. 
-Check health is an action applying to one thing. Understand "check [something] health" as check health. Check check health: if the noun is not a person, instead say "the [noun] isn't alive... yet.".
+Check health is an action applying to one thing. Understand "check [something] health" as check health. Understand "[something] health" as check health. Check check health: if the noun is not a person, instead say "the [noun] isn't alive... yet.".
 Carry out check health:
 	say "[noun] has [health of noun] health".
 
 People have a number called rapport. Rapport is usually 3. 
-Know rapport is an action applying to one thing. Understand "know [something] relationship" as know rapport. Check know rapport: if the noun is not a person, instead say "the [noun] isn't sentient... yet.".
+Know rapport is an action applying to one thing. Understand "know [something] relationship" as know rapport. Understand "[something] relationship" as know rapport. Check know rapport: if the noun is not a person, instead say "the [noun] isn't sentient... yet.".
 Carry out know rapport:
 	if rapport of noun is 1, say "[noun] doesn't much care for you";
 	if rapport of noun is 2, say "[noun] doesn't really ever think of you.";
 	if rapport of noun is 3, say "[noun] thinks you're alright.".
 
-
 [combat action rules]
-report damage is an action applying to one thing. Understand "report [something] damage" as report damage. Check report damage: If the noun is not a weapon, instead say "no damage points".
+report damage is an action applying to one thing. Understand "report [something] damage" as report damage. Understand "[something] damage" as report damage. Check report damage: If the noun is not a weapon, instead say "no damage points".
 Carry out report damage: 
 	say "[noun] has [damage of noun] damage points.".
 
 Understand the commands "attack" and "punch" and "destroy" and "kill" and "murder" and "hit" and "thump" and "break" and "smash" and "torture" and "wreck" as something new.
-Attacking it with is an action applying to one thing and one carried thing. Understand "attack [someone] with [something preferably held]" as attacking it with.
+Attacking it with is an action applying to one thing and one carried thing. Understand "attack [someone] with [something preferably held]" as attacking it with. 
 Understand the commands "punch" and "destroy" and "kill" and "murder" and "hit" and "thump" and "break" and "smash" and "torture" and "wreck" as "attack".
 
 a weapon is a kind of thing. A weapon has a number called damage. Damage is usually 5. 
-The player carries a weapon called a fist which has damage 1. 
+The player carries a weapon called a fist. Fist has damage 1. 
 Diamonds Pencil is a weapon. Understand "pencil" as Diamonds pencil. The description of Diamonds Pencil is "Pink and Sparkly. Also good for stabbing. And writing." 
 There is a scimitar, katana, baseball bat, monkey wrench, candlestick, axe, spear, and rope which are weapons. Understand "wrench" as monkey wrench. Understand "baseball bat" as bat. 
 A baseball bat and a candlestick have damage 4. A rope and pencil have damage 2. A wrench, axe, and spear have damage 3.  
@@ -73,6 +72,8 @@ Check an actor attacking something with something:
 Carry out an actor attacking something with something: 
 	decrease the health of the noun by the damage of the second noun;
 	say "You attack [the noun] with [the second noun], causing [damage of second noun] point[s] of damage!" ;
+	if the rapport of the noun is not 1, say "[noun] is now your enemy.";
+	if the rapport of the noun is not 1, now rapport of the noun is 1;
 	if the damage of the second noun is not 1, decrease the damage of the second noun by 1. 
 	
 	
