@@ -11,6 +11,17 @@ This is the death if health of player is 0 rule:
 
 Definition: a person is a ghost if their health is less than 1.
 
+[Help]
+
+Understand "help" as helping.
+Helping is an action applying to nothing.
+Report helping:
+	say "You can GO to adjacent rooms.[line break] You can OPEN doors.[line break]";
+	say "You can take, drop, and give items.[line break]";
+	say "You can TALK to CHARACTER about TOPIC.[line break]";
+	say "You can SPIN objects to NUMBER. [line break]";
+	say "Today is the day I get Diamond to date me! Now I just gotta find her...[new line]".
+
 [Hallway]
 
 School is a region.
@@ -20,7 +31,6 @@ Underclassmen Hallway is a room. "The normally busy hallway seems eeriely quiet 
 East Upperclassmen Hall is east of Upperclassmen Junction. "Senior side of the hallway. Close to the Gym."
 Upperclassmen Junction is south of the Underclassmen Hallway. "Long coridors stretching left and right. An intimidating sight for underclassman."
 West Upperclassmen Hall is west of Upperclassmen Junction. "Junior side of the hallway. Close to the Cafeteria."
-<<<<<<< HEAD
 Underclassmen Hallway, East Upperclassman Hall, Upperclassmen Junction, and West Upperclassmen Hall are in Hallway. 
 Underclassmen Hallway, East Upperclassmen Hall, Upperclassmen Junction, and West Upperclassmen Hall are in Hallway. 
 
@@ -59,6 +69,10 @@ Understand "spin [something] to [a number]" as spinning it to.
 
 fuck is an action applying to one thing. understand "fuck [something]" and "fuck the [something]"  as fuck. Instead of fuck, say "You fucked it".
 
+Instead of taking inventory:
+	if the number of things enclosed by the player is 0, say "I got nothing on me." instead;
+	say "I got myself: [line break]";
+	list the contents of the player, with newlines, indented, giving inventory information.
 
 [combat action rules]
 report damage is an action applying to one thing. Understand "report [something] damage" as report damage. Check report damage: If the noun is not a weapon, instead say "no damage points".
@@ -149,6 +163,16 @@ There is a note. The description of the note is "Looks like someone put this in 
 There is a hankerchief. A hankerchief is a thing. The description of the hankerchief is "Interesting. I don't know anyone who uses one of these anymore. And there's someone's lipstick stained on it. I think it might be Diamond's.". 
 There is a spyglass. A spyglass is a thing. The description of the spyglass is "This could only be used by someone to spy on someone else....".
 There is a note. A note is a thing. The description of the note is "Looks like someone put this in Diamond's cubby to confess their love to her. Seeing as its crumpled up on the floor, I can't imagine that went very well.".
+
+The description of a scimitar is "Maybe I can go look for a genie after this. With my Magical Eye, it appears it has a damage value of 5."
+The description of a katana is "The most honorable of weapons. With my Magical Eye, it appears it has a damage value of 5."
+The description of a baseball bat is "Good for both hitting home runs and smashing melons. With my Magical Eye, it appears it has a damage value of 4."
+The description of the monkey wrench is "Despite its name, my brother has never been able to use it. With my Magical Eye, it appears it has a damage value of 3."
+The description of the candlestick is "NO TAKE CANDLE... it has a damage value of 4."
+The description of the axe is "Now all I need is a beard and some flannel. With my Magical Eye, it appears it has a damage value of 3."
+The description of the spear is "A pokey stick for the bad bois. With my Magical Eye, it appears it has a damage value of 3."
+The description of the rope is "Please no bulli the cinnamon bun... it has a damage value of 2, but don't use it on yourself."
+
 
 [scenes]
 
