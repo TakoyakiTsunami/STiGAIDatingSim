@@ -5,6 +5,11 @@ School is a region.
 the player has a number called health which is 20.
 The player has a number called rapport which is 20. 
 
+[I got new rules, I count 'em]
+This is the death if health of player is 0 rule: 
+	say "You died in combat and failed Diamond. She gets Stockholm syndrome and falls in love with Brad, and they (live) happily ever after. You will haunt these halls for eternity, but because you died so pathetically, everyone forgets that you existed pretty quickly. Sucks to be you, loser.";
+	end the story.
+
 [Hallway]
 Hallway is a region. Hallway is in School.
 Underclassmen Hallway is a room. "The normally busy hallway seems eeriely quiet after school hours."
@@ -49,6 +54,7 @@ Carry out know rapport:
 	if rapport of noun is 1, say "[noun] doesn't much care for you";
 	if rapport of noun is 2, say "[noun] doesn't really ever think of you.";
 	if rapport of noun is 3, say "[noun] thinks you're alright.".
+
 
 [combat action rules]
 report damage is an action applying to one thing. Understand "report [something] damage" as report damage. Understand "[something] damage" as report damage. Check report damage: If the noun is not a weapon, instead say "no damage points".
@@ -102,7 +108,7 @@ There is a note. A note is a thing. The description of the note is "Looks like s
 [scenes]
 Beginning, Bully Sequence, Kidnapping, and Resolution are scenes. 
 Beginning begins when play begins. Beginning ends when Diamonds Locker is open. 
-Bully Sequence begins when Beginning ends. [Bully Sequence ends when Brad is incorporeal.]
+Bully Sequence begins when Beginning ends. Bully Sequence ends when health of Brad is 0.
 Kidnapping begins when Bully Sequence ends. 
 Resolution begins when Kidnapping ends. 
 
