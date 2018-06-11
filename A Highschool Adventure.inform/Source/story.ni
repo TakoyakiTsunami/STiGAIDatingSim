@@ -1,33 +1,42 @@
 "Classic Highschool Drama But with Murder" [so basically Riverdale] by a bunch of nerds
 
-<<<<<<< HEAD
 [the map of the high school]
 School is a region.
 the player has a number called health which is 5.
-=======
+
 [I got new rules, I count 'em]
 
 This is the death if health of player is 0 rule: 
 	say "You died in combat and failed Diamond. She gets Stockholm syndrome and falls in love with Brad, and they (live) happily ever after. You will haunt these halls for eternity, but because you died so pathetically, everyone forgets that you existed pretty quickly. Sucks to be you, loser.";
 	end the story.
 
-Definition: a person is a ghost if their health is less than 1.	
->>>>>>> 067b608044b7071154b77e266f0b3304e3a8bc38
+[This is the names if person is ghost for the first turn rule:
+	Now the printed name of person is "Ghost [person]".]
+
+[Help]
+
+Understand "help" as helping.
+Helping is an action applying to nothing.
+Report helping:
+	say "You can GO to adjacent rooms. Use the commands n, s, e, w to go in each cardinal direction. [line break] You can OPEN doors.[line break]";
+	say "You can ATTACK someone with a WEAPON in your inventory.";
+	say "You can check your inventory by simply saying INVENTORY";
+	say "You can TAKE, DROP, and GIVE items. Taking an item puts it in your inventory. [line break]";
+	say "You can TALK to CHARACTER about TOPIC.[line break]";
+	say "You can open a locker by saying SPIN locker to NUMBER. [line break]".
 
 [Hallway]
 
 School is a region.
 
 Hallway is a region. Hallway is in School.
-Underclassmen Hallway is a room. "The normally busy hallway seems eeriely quiet after school hours."
+Underclassmen Hallway is a room. "Class just started, so the normally busy hallway seems eeriely quiet."
 East Upperclassmen Hall is east of Upperclassmen Junction. "Senior side of the hallway. Close to the Gym."
 Upperclassmen Junction is south of the Underclassmen Hallway. "Long coridors stretching left and right. An intimidating sight for underclassman."
 West Upperclassmen Hall is west of Upperclassmen Junction. "Junior side of the hallway. Close to the Cafeteria."
-<<<<<<< HEAD
 Underclassmen Hallway, East Upperclassman Hall, Upperclassmen Junction, and West Upperclassmen Hall are in Hallway. 
-=======
 Underclassmen Hallway, East Upperclassmen Hall, Upperclassmen Junction, and West Upperclassmen Hall are in Hallway. 
->>>>>>> 067b608044b7071154b77e266f0b3304e3a8bc38
+
 
 [classrooms]
 
@@ -55,22 +64,17 @@ Understand "talk to [someone]" as a mistake ("To start a conversation, try to AS
 
 A Locker is a kind of container. A locker is closed. 
 Instead of opening a locker, say "You need the right combination to open this locker. Spin the locker to _ _ _ _ to open".
-<<<<<<< HEAD
-Spinning it to is an action applying to one thing and one number. Check spinning it to: if the noun is not a Locker, say "[The noun] does not spin." instead. Report spinning it to: say "Click! nothing else happens."
-=======
-Spinning it to is an action applying to one thing and one number. 
-Check spinning it to: if the noun is not a Locker, say "[The noun] does not spin." instead. 
-Report spinning it to: say "Click! nothing else happens.".
->>>>>>> 067b608044b7071154b77e266f0b3304e3a8bc38
-Understand "spin [something] to [a number]" as spinning it to.
+Spinning it to is an action applying to one thing and one number. Understand "spin [something] to [a number]" as spinning it to.
+Check spinning it to: if the noun is not a Locker, say "[The noun] does not spin." instead. Report spinning it to: say "Click! nothing else happens."
 
 fuck is an action applying to one thing. understand "fuck [something]" and "fuck the [something]"  as fuck. Instead of fuck, say "You fucked it".
 
-<<<<<<< HEAD
+Instead of taking inventory:
+	if the number of things enclosed by the player is 0, say "I got nothing on me." instead;
+	say "I got myself: [line break]";
+	list the contents of the player, with newlines, indented, giving inventory information.
+
 [combat action rules]
-report damage is an action applying to one thing. Understand "report [something] damage" as report damage. Check report damage: If the noun is not a weapon, instead say "no damage points".
-=======
-People have a number called health. Health is usually 20. 
 Check health is an action applying to one thing. Understand "check [something] health" as check health. Understand "[something] health" as check health. 
 Check check health: if the noun is not a person, instead say "the [noun] isn't alive... yet.".
 Carry out check health:
@@ -84,38 +88,14 @@ Carry out know rapport:
 	if rapport of noun is 2, say "[noun] doesn't really ever think of you.";
 	if rapport of noun is 3, say "[noun] thinks you're alright.".
 
-[combat action rules]
-
 report damage is an action applying to one thing. Understand "report [something] damage" as report damage. Understand "[something] damage" as report damage. Check report damage: If the noun is not a weapon, instead say "no damage points".
->>>>>>> 067b608044b7071154b77e266f0b3304e3a8bc38
 Carry out report damage: 
 	say "[noun] has [damage of noun] damage points.".
 
 Understand the commands "attack" and "punch" and "destroy" and "kill" and "murder" and "hit" and "thump" and "break" and "smash" and "torture" and "wreck" as something new.
-<<<<<<< HEAD
 Attacking it with is an action applying to one thing and one carried thing. Understand "attack [someone] with [something preferably held]" as attacking it with.
-Understand the commands "punch" and "destroy" and "kill" and "murder" and "hit" and "thump" and "break" and "smash" and "torture" and "wreck" as "attack".
+Understand the commands "punch" and "destroy" and "kill" and "murder" and "hit" and "thump" and "break" and "smash" and "torture" and "wreck" as "attack". 
 The attacking it with action has a number called inflicted.
-
-a weapon is a kind of thing. A weapon has a number called damage. Damage is usually 5. 
-The player carries a weapon called a fist which has damage 1. 
-Diamonds Pencil is a weapon. Understand "pencil" as Diamonds pencil. The description of Diamonds Pencil is "Pink and Sparkly. Also good for stabbing. And writing." 
-There is a scimitar, katana, baseball bat, monkey wrench, candlestick, and rope which are weapons. 
-
-[generalize fighting action]
-
-[characters]
-Mr Redman, Mrs Ford, Mr Hartman, and Ms Belvod are people. People have a number called health. Health is usually 5. People can be either corporeal or incorporeal. People are usually corporeal. 
-=======
-Attacking it with is an action applying to one thing and one carried thing. Understand "attack [someone] with [something preferably held]" as attacking it with. 
-Understand the commands "punch" and "destroy" and "kill" and "murder" and "hit" and "thump" and "break" and "smash" and "torture" and "wreck" as "attack".
-
-a weapon is a kind of thing. A weapon has a number called damage. Damage is usually 5. 
-The player carries a weapon called a fist. Fist has damage 1. 
-Diamonds Pencil is a weapon. Understand "pencil" as Diamonds pencil. The description of Diamonds Pencil is "Pink and Sparkly. Also good for stabbing. And writing." 
-There is a scimitar, katana, baseball bat, monkey wrench, candlestick, axe, spear, and rope which are weapons. Understand "wrench" as monkey wrench. Understand "baseball bat" as bat. 
-A baseball bat and a candlestick have damage 4. A rope and pencil have damage 2. A wrench, axe, and spear have damage 3.  
-
 Check an actor attacking something with something: 
 	if the second noun is not a weapon: 
 		if the actor is the player, say "[The second noun] isn't a weapon, idiot."; 
@@ -125,26 +105,20 @@ Carry out an actor attacking something with something:
 	say "You attack [the noun] with [the second noun], causing [damage of second noun] point[s] of damage!" ;
 	if the rapport of the noun is not 1, say "[noun] is now your enemy.";
 	if the rapport of the noun is not 1, now rapport of the noun is 1;
-	if the damage of the second noun is not 1, decrease the damage of the second noun by 1.
+	if the damage of the second noun is not 1, decrease the damage of the second noun by 1;
+	if health of the noun is 0, now the noun is a ghost.
 
 [characters]
 
-Mr Redman, Mrs Ford, Mr Hartman, and Ms Belvod are people. 
->>>>>>> 067b608044b7071154b77e266f0b3304e3a8bc38
+Mr Redman, Mrs Ford, Mr Hartman, and Ms Belvod are people. People have a number called health. Health is usually 20. 
 Mr Redman is in Room 211. Understand "Mr Redmans Classroom" as Room 211.  Understand "Mr R" and "Redman" as Mr Redman.
-Mrs Ford is in room 212. Understand "Mrs Fords Classroom" as Room 212. Understand "Mrs F" and "Ford" as Mrs Ford.
+Mrs Ford is in room 212. Understand "Mrs Fords Classroom" as Room 212. Understand "Mrs F" and "Ford" as Mrs Ford. 
 Mr Hartman is in Room 213. Understand "Mr Hartmans Classroom " as Room 213. Understand "Mr H" and "Hartman" as Mr Hartman.
-Ms Belvod is in Room 214. Understand "Mrs Belvods Classroom" as Room 214. Understand "Ms B" and "Belvod" as Ms Belvod. 
-<<<<<<< HEAD
-There is a man named Brad. Understand "ghost brad" as brad. 
-Inside Room 213 is a woman called Diamond. Understand "D" as Diamond. The description of Diamond is "An angel that has graced this school with her presence. She's soooooo hot." Diamond can be neutral, taken, or found. Diamond is neutral. 
- 
-=======
+Ms Belvod is in Room 214. Understand "Mrs Belvods Classroom" as Room 214. Understand "Ms B" and "Belvod" as Ms Belvod.  
 Brad is a person. Understand "ghost brad" as brad. The rapport of Brad is 1. 
 Inside Room 213 is a woman called Diamond. Understand "D" as Diamond. The description of Diamond is "An angel that has graced this school with her presence. She's soooooo hot." Diamond can be neutral, taken, or found. Diamond is neutral. The rapport of Diamond is 2. 
-a ghost is a kind of person. 
+A person is either alive or ghost. A person is usually alive. 
 
->>>>>>> 067b608044b7071154b77e266f0b3304e3a8bc38
 [things]
 
 My Locker is a Locker in the Underclassmen Hallway. The description of my locker is "Ah, my sweet old locker. Smells like teen spirit.".
@@ -158,51 +132,32 @@ After spinning the closed Diamonds Locker to 0112:
 	say "[noun] opens, revealing [a list of things in noun]."
 After going from room containing diamonds locker, now diamonds locker is closed. 
 
-<<<<<<< HEAD
-
 There is a hankerchief. The description of the hankerchief is "Interesting. I don't know anyone who uses one of these anymore. And there's someone's lipstick stained on it. I think it might be Diamond's.". 
 There is a spyglass. The description of the spyglass is "This could only be used by someone to spy on someone else....".
 There is a note. The description of the note is "Looks like someone put this in Diamond's cubby to confess their love to her. Seeing as its crumpled up on the floor, I can't imagine that went very well.".
-=======
-There is a hankerchief. A hankerchief is a thing. The description of the hankerchief is "Interesting. I don't know anyone who uses one of these anymore. And there's someone's lipstick stained on it. I think it might be Diamond's.". 
-There is a spyglass. A spyglass is a thing. The description of the spyglass is "This could only be used by someone to spy on someone else....".
-There is a note. A note is a thing. The description of the note is "Looks like someone put this in Diamond's cubby to confess their love to her. Seeing as its crumpled up on the floor, I can't imagine that went very well.".
 
-[scenes]
+a weapon is a kind of thing. A weapon has a number called damage. Damage is usually 5. 
+The player carries a weapon called a fist. A fist has damage 1. 
+Diamonds Pencil is a weapon. Understand "pencil" as Diamonds pencil. The description of Diamonds Pencil is "Pink and Sparkly. Also good for stabbing. And writing." 
+There is a scimitar, katana, baseball bat, monkey wrench, candlestick, axe, spear, and rope which are weapons. Understand "wrench" as monkey wrench. Understand "baseball bat" as bat. 
+A baseball bat and a candlestick have damage 4. A rope and pencil have damage 2. A wrench, axe, and spear have damage 3.  
+The description of a scimitar is "Maybe I can go look for a genie after this. With my Magical Eye, it appears it has a damage value of 5."
+The description of a katana is "The most honorable of weapons. With my Magical Eye, it appears it has a damage value of 5."
+The description of a baseball bat is "Good for both hitting home runs and smashing melons. With my Magical Eye, it appears it has a damage value of 4."
+The description of the monkey wrench is "Despite its name, my brother has never been able to use it. With my Magical Eye, it appears it has a damage value of 3."
+The description of the candlestick is "NO TAKE CANDLE... it has a damage value of 4."
+The description of the axe is "Now all I need is a beard and some flannel. With my Magical Eye, it appears it has a damage value of 3."
+The description of the spear is "A pokey stick for the bad bois. With my Magical Eye, it appears it has a damage value of 3."
+The description of the rope is "Please no bulli the cinnamon bun... it has a damage value of 2, but don't use it on yourself."
 
-Beginning, Bully Sequence, Kidnapping, and Resolution are scenes. 
-Beginning begins when play begins. Beginning ends when Diamonds Locker is open. 
-Bully Sequence begins when Beginning ends. Bully Sequence ends when health of Brad is 0.
-Kidnapping begins when Bully Sequence ends. 
-Resolution begins when Kidnapping ends. 
-
-When Beginning ends:
-	Now Diamond is nowhere;
-	Now Diamond is taken;
-	say "Score! Her pencil is right where she said it would be.".
-
-When Bully Sequence begins:
-	Move Brad to Underclassmen Hallway;
-	Say "You hear knuckles scraping the floor. A lightning rod shoots down your spine. Brad approaches.".
-
-Every turn during Bully Sequence:
-	say "You have [health of player].  Brad has [health of Brad].";
-	say "Your weapon choices are [list of weapons carried by the player]".
-
-When Kidnapping begins:
-	say "All of a sudden there is a loud yell from down the hall. You think it might be coming from one of the classrooms.";
-	Now hankerchief is in cafeteria;
-	Now spyglass is in the great outdoors; 
-	Now note is in gym. 
 
 When Resolution ends: 
 	end the story. 
->>>>>>> 067b608044b7071154b77e266f0b3304e3a8bc38
-
+	
 [scenes]
 Beginning, Bully Sequence, Kidnapping, and Resolution are scenes. 
 Beginning begins when play begins. Beginning ends when Diamonds Locker is open. 
-Bully Sequence begins when Beginning ends. Bully Sequence ends when Brad is incorporeal.
+Bully Sequence begins when Beginning ends. [Bully Sequence ends when Brad is ghost.]
 Kidnapping begins when Bully Sequence ends. 
 Resolution begins when Kidnapping ends. 
 
@@ -235,10 +190,12 @@ When Resolution ends:
 	end the story. 
 
 [Begining code that is implemented when we start to play the game]
-<<<<<<< HEAD
 When play begins: 
 	Now Diamonds Pencil is inside Diamonds Locker.
-=======
+
+After printing the banner text:
+	say "[line break] [line break] Hey, Diamond, its ya boi..... no that's wrong.... What's hangin girl you lookin... nah she knows she looks amazing...[line break] [line break] Damn, this is way too hard. [line break][line break] ";
+	say "Today is the day! I'm finally going to confess my love to Diamond, the only girl that I could ever love! I think she has Mr. Hartman's Underwater Basket Weaving class first.... now where is that.....".
 
 When play begins: 
 	Now Diamonds Pencil is inside Diamonds Locker;
@@ -254,4 +211,3 @@ When play begins:
 	Now the rapport of Mrs Ford is a random number between 1 and 3;
 	Now the rapport of Mr Hartman is a random number between 1 and 3; 
 	Now the rapport of Ms Belvod is a random number between 1 and 3.
->>>>>>> 067b608044b7071154b77e266f0b3304e3a8bc38
