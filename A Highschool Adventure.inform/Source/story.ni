@@ -176,17 +176,47 @@ When Beginning ends:
 When Bully Sequence begins:
 	Move Brad to Underclassmen Hallway;
 	Say "You hear knuckles scraping the floor. A lightning rod shoots down your spine. Brad approaches.".
+	
+[variables]
 
+Kidnapping Started is a number that varies. Kidnapping Started is 0.
+
+[Kidnapping scene rules]
+
+after the player going to room 213:
+	if Kidnapping Started is 1, say “Wow. You literally just killed a kid. Like I know that this is just a game and all, but that’s seriously fucked up. You psychopath. Anyways, I’m sure you’re looking for Diamond, and just to make your life more difficult, the shit-for-brains creators of this game brought me back to kidnap Diamond, and yatta yatta yatta, and something something, then you fight me again and win the game. Or I kill you. Doesn’t really matter to me. Here’s a clue for you.
+	Only in America is Pizza considered a vegetable. Go get your 3 servings a day";
+	increment Kidnapping Started;
+	move brad to cafeteria.
+	
+after the player going to the cafeteria:
+	if Kidnapping Started is 2, say “Surprise! It’s me again! The Ghost of Brad, that dude you brutally slaughtered in the hallway overthere. Remember how you left me over there face down in a pool of my own blood? Good times. Anyhow, here is another inane riddle to pump some meaningless content into this sorry excuse for a game (cough cough, No Man’s Sky, cough cough). Here's your next clue: Do you even lift bro?";
+	increment Kidnapping Started;
+	move brad to gym.
+	
+after the player going to gym:
+	if Kidnapping Started is 3, say “Guess whos back, back again? Brad’s back, tell a friend! Anyways, you've managed to perserver thus far, and I guess you deserve to know where Diamond is: Go find your girly girl. She’s in Room 211";
+	increment Kidnapping Started;
+	move brad to room 211;
+	move diamond to room 211.
+	
+
+	
 [Every turn during Bully Sequence, say "You have [health] health. Your weapons are [list of things in inventory]".]
 
 When Kidnapping begins:
 	say "All of a sudden there is a loud yell from down the hall. You think it might be coming from one of the classrooms.";
+	now Kidnapping Started is 1;
+	move Brad to room 213;
+	Now the printed name of brad is "Ghost of Brad.";
 	Now hankerchief is in cafeteria;
 	Now spyglass is in the great outdoors; 
 	Now note is in gym. 
 
 When Resolution ends: 
 	end the story. 
+
+Kidnapping is a scene. Kidnapping begins when play begins.
 
 [Begining code that is implemented when we start to play the game]
 When play begins: 

@@ -1,18 +1,18 @@
 ! Blurb file created by Inform build 6M62
 
-status "C:\Program Files (x86)\Inform 7\Internal\Miscellany\CblorbModel.html" "C:\Users\Caroline DeMarco\Documents\GitHub\STiGAIDatingSim\A Highschool Adventure.inform\Build\StatusCblorb.html"
+status "C:\Program Files (x86)\Inform 7\Internal\Miscellany\CblorbModel.html" "C:\Users\rswei\Desktop\2018 Spring Quarter\EECS 396 (advanced game AI)\STiGAIDatingSim\A Highschool Adventure.inform\Build\StatusCblorb.html"
 
 
 ! Identification
 
-project folder "C:\Users\Caroline DeMarco\Documents\GitHub\STiGAIDatingSim\A Highschool Adventure.inform"
-release to "C:\Users\Caroline DeMarco\Documents\GitHub\STiGAIDatingSim\A Highschool Adventure.materials\Release"
+project folder "C:\Users\rswei\Desktop\2018 Spring Quarter\EECS 396 (advanced game AI)\STiGAIDatingSim\A Highschool Adventure.inform"
+release to "C:\Users\rswei\Desktop\2018 Spring Quarter\EECS 396 (advanced game AI)\STiGAIDatingSim\A Highschool Adventure.materials\Release"
 
 ! Blorb instructions
 
 storyfile leafname "Classic Highschool Drama But wi.gblorb"
-storyfile "C:\Users\Caroline DeMarco\Documents\GitHub\STiGAIDatingSim\A Highschool Adventure.inform\Build\output.ulx" include
-ifiction "C:\Users\Caroline DeMarco\Documents\GitHub\STiGAIDatingSim\A Highschool Adventure.inform\Metadata.iFiction" include
+storyfile "C:\Users\rswei\Desktop\2018 Spring Quarter\EECS 396 (advanced game AI)\STiGAIDatingSim\A Highschool Adventure.inform\Build\output.ulx" include
+ifiction "C:\Users\rswei\Desktop\2018 Spring Quarter\EECS 396 (advanced game AI)\STiGAIDatingSim\A Highschool Adventure.inform\Metadata.iFiction" include
 cover "C:\Program Files (x86)\Inform 7\Internal\Miscellany\Cover.jpg"
 picture 1 "C:\Program Files (x86)\Inform 7\Internal\Miscellany\Cover.jpg"
 
