@@ -10,9 +10,6 @@ This is the death if health of player is 0 rule:
 	say "You died in combat and failed Diamond. She gets Stockholm syndrome and falls in love with Brad, and they (live) happily ever after. You will haunt these halls for eternity, but because you died so pathetically, everyone forgets that you existed pretty quickly. Sucks to be you, loser.";
 	end the story.
 
-[This is the names if person is ghost for the first turn rule:
-	Now the printed name of person is "Ghost [person]".]
-
 [Help]
 
 Understand "help" as helping.
@@ -105,8 +102,7 @@ Carry out an actor attacking something with something:
 	say "You attack [the noun] with [the second noun], causing [damage of second noun] point[s] of damage!" ;
 	if the rapport of the noun is not 1, say "[noun] is now your enemy.";
 	if the rapport of the noun is not 1, now rapport of the noun is 1;
-	if the damage of the second noun is not 1, decrease the damage of the second noun by 1;
-	if health of the noun is 0, now the noun is a ghost.
+	if the damage of the second noun is not 1, decrease the damage of the second noun by 1.
 
 [characters]
 
@@ -115,9 +111,13 @@ Mr Redman is in Room 211. Understand "Mr Redmans Classroom" as Room 211.  Unders
 Mrs Ford is in room 212. Understand "Mrs Fords Classroom" as Room 212. Understand "Mrs F" and "Ford" as Mrs Ford. 
 Mr Hartman is in Room 213. Understand "Mr Hartmans Classroom " as Room 213. Understand "Mr H" and "Hartman" as Mr Hartman.
 Ms Belvod is in Room 214. Understand "Mrs Belvods Classroom" as Room 214. Understand "Ms B" and "Belvod" as Ms Belvod.  
-Brad is a person. Understand "ghost brad" as brad. The rapport of Brad is 1. 
+Brad is a person. The rapport of Brad is 1. Understasnd "ghost brad" as brad. 
 Inside Room 213 is a woman called Diamond. Understand "D" as Diamond. The description of Diamond is "An angel that has graced this school with her presence. She's soooooo hot." Diamond can be neutral, taken, or found. Diamond is neutral. The rapport of Diamond is 2. 
-A person is either alive or ghost. A person is usually alive. 
+
+Rule for printing the name of Brad: 
+	if the health of brad is greater than 0, say "Brad"; 
+	otherwise say "Ghost Brad".
+[Ghost Brad is a person. The rapport of Ghost Brad is 1. The health of Ghost Brad is 0. ]
 
 [things]
 
@@ -178,7 +178,29 @@ When Bully Sequence begins:
 	Move Brad to Underclassmen Hallway;
 	Say "You hear knuckles scraping the floor. A lightning rod shoots down your spine. Brad approaches.".
 
-[Every turn during Bully Sequence, say "You have [health] health. Your weapons are [list of things in inventory]".]
+[variables]
+
+Kidnapping Started is a number that varies. Kidnapping Started is 0.
+
+[Kidnapping scene rules]
+
+after the player going to room 213:
+	if Kidnapping Started is 1, say “Wow. You literally just killed a kid. Like I know that this is just a game and all, but that’s seriously fucked up. You psychopath. Anyways, I’m sure you’re looking for Diamond, and just to make your life more difficult, the shit-for-brains creators of this game brought me back to kidnap Diamond, and yatta yatta yatta, and something something, then you fight me again and win the game. Or I kill you. Doesn’t really matter to me. Here’s a clue for you. [line break] Only in America is Pizza considered a vegetable. Go get your 3 servings a day";
+	increment Kidnapping Started;
+	move brad to cafeteria.
+
+after the player going to the cafeteria:
+	if Kidnapping Started is 2, say “Surprise! It’s me again! The Ghost of Brad, that dude you brutally slaughtered in the hallway overthere. Remember how you left me over there face down in a pool of my own blood? Good times. Anyhow, here is another inane riddle to pump some meaningless content into this sorry excuse for a game (cough cough, No Man’s Sky, cough cough). Here's your next clue: [line break] Do you even lift bro?";
+	increment Kidnapping Started;
+	move brad to gym.
+	
+after the player going to gym:
+	if Kidnapping Started is 3, say “Guess whos back, back again? Brad’s back, tell a friend! Anyways, you've managed to perserver thus far, and I guess you deserve to know where Diamond is: Go find your girly girl. She’s in Room 211";
+	increment Kidnapping Started;
+	move brad to room 211;
+	move diamond to room 211.
+	
+Every turn during Bully Sequence, say "You have [health of player] health. Your weapons are [a list of things carried by the player]".
 
 When Kidnapping begins:
 	say "All of a sudden there is a loud yell from down the hall. You think it might be coming from one of the classrooms.";
@@ -211,3 +233,4 @@ When play begins:
 	Now the rapport of Mrs Ford is a random number between 1 and 3;
 	Now the rapport of Mr Hartman is a random number between 1 and 3; 
 	Now the rapport of Ms Belvod is a random number between 1 and 3.
+	
