@@ -111,7 +111,7 @@ Mr Redman is in Room 211. Understand "Mr Redmans Classroom" as Room 211.  Unders
 Mrs Ford is in room 212. Understand "Mrs Fords Classroom" as Room 212. Understand "Mrs F" and "Ford" as Mrs Ford. 
 Mr Hartman is in Room 213. Understand "Mr Hartmans Classroom " as Room 213. Understand "Mr H" and "Hartman" as Mr Hartman.
 Ms Belvod is in Room 214. Understand "Mrs Belvods Classroom" as Room 214. Understand "Ms B" and "Belvod" as Ms Belvod.  
-Brad is a person. The rapport of Brad is 1. Understand "ghost brad" as brad. 
+Brad is a person. The rapport of Brad is 1. Understand "ghost brad" as brad. The health of brad is 30.
 Inside Room 213 is a woman called Diamond. Understand "D" as Diamond. The description of Diamond is "An angel that has graced this school with her presence. She's soooooo hot." Diamond can be neutral, taken, or found. Diamond is neutral. The rapport of Diamond is 2. 
 
 Rule for printing the name of Brad: 
@@ -135,7 +135,7 @@ There is a hankerchief. The description of the hankerchief is "Interesting. I do
 There is a spyglass. The description of the spyglass is "This could only be used by someone to spy on someone else....".
 There is a note. The description of the note is "Looks like someone put this in Diamond's cubby to confess their love to her. Seeing as its crumpled up on the floor, I can't imagine that went very well.".
 
-a weapon is a kind of thing. A weapon has a number called damage. Damage is usually 5. 
+a weapon is a kind of thing. A weapon has a number called damage. Damage is usually 8. 
 A fist is a weapon. A fist has damage 1. The player carries a fist. 
 Redman's Fist is a weapon. Redman's fist has damage 1. Redman carries Redman's Fist. 
 Ford's Fist is a weapon. Ford's fist has damage 1. Ford carries Ford's Fist. 
@@ -143,21 +143,9 @@ Hartman's Fist is a weapon. Hartman's fist has damage 1. Hartman carries Hartman
 Belvod's Fist is a weapon. Belvod's fist has damage 1. Belvod carries Belvod's fist.
 Brad's Fist is a weapon. Brad's fist has damage 1. Brad carries Brad's fist. 
 Diamond's Fist is a weapon. Diamond's fist has damage 1. D carries Diamond's Fist. 
-
-Diamonds Pencil is a weapon. Understand "pencil" as Diamonds pencil. The description of Diamonds Pencil is "Pink and Sparkly. Also good for stabbing. And writing." 
-There is a scimitar, katana, baseball bat, monkey wrench, candlestick, axe, spear, and rope which are weapons. Understand "wrench" as monkey wrench. Understand "baseball bat" as bat. 
-A baseball bat and a candlestick have damage 4. A rope and pencil have damage 2. A wrench, axe, and spear have damage 3.  
-The description of a scimitar is "Maybe I can go look for a genie after this. With my Magical Eye, it appears it has a damage value of 5."
-The description of a katana is "The most honorable of weapons. With my Magical Eye, it appears it has a damage value of 5."
-The description of a baseball bat is "Good for both hitting home runs and smashing melons. With my Magical Eye, it appears it has a damage value of 4."
-The description of the monkey wrench is "Despite its name, my brother has never been able to use it. With my Magical Eye, it appears it has a damage value of 3."
-The description of the candlestick is "NO TAKE CANDLE... it has a damage value of 4."
-The description of the axe is "Now all I need is a beard and some flannel. With my Magical Eye, it appears it has a damage value of 3."
-The description of the spear is "A pokey stick for the bad bois. With my Magical Eye, it appears it has a damage value of 3."
-The description of the rope is "Please no bulli the cinnamon bun... it has a damage value of 2, but don't use it on yourself."
-
-When Resolution ends: 
-	end the story. 
+Diamonds Pencil is a weapon. Understand "pencil" as Diamonds pencil. The description of Diamonds Pencil is "Pink and Sparkly. Also good for stabbing. And writing."
+There is a scimitar, katana, baseball bat, monkey wrench, candlestick, axe, spear, halberd, sickle, mace, sledgehammer, chainsaw, ice pick, war hammer, pike, hockey stick, nunchucks, and rope which are weapons. Understand "wrench" as monkey wrench. Understand "baseball bat" as bat. Understand "stick" as hockey stick. 
+A baseball bat, sledgehammer, nunchucks, and a candlestick have damage 6. A rope, sickle, and pencil have damage 3. A wrench, axe, spear, halberd, stick, and pike have damage 5.  
 	
 [scenes]
 Beginning, Bully Sequence, The Kidnapper, and Resolution are scenes. 
@@ -165,14 +153,6 @@ Beginning begins when play begins. Beginning ends when Diamonds Locker is open.
 Bully Sequence begins when Beginning ends. Bully Sequence ends when the health of Brad is 0. 
 The Kidnapper begins when Bully Sequence ends. The Kidnapper ends when Diamond is found. 
 Resolution begins when The Kidnapper ends. Resolution ends when Diamond is neutral. 
-
-When Beginning begins: 
-	Move scimitar to a random room;
-	Move katana to a random room;
-	Move bat to a random room;
-	Move candlestick to a random room;
-	Move rope to a random room;
-	Move wrench to a random room. 
 
 When Beginning ends:
 	Now Diamond is nowhere;
@@ -184,7 +164,11 @@ When Bully Sequence begins:
 	Say "You hear knuckles scraping the floor. A lightning rod shoots down your spine. Brad approaches.".
 
 [Bully Scene Rules]
-Every turn during Bully Sequence, say "You have [health of player] health. Your weapons are [a list of things carried by the player]".
+Every turn during Bully Sequence:
+	say "You have [health of player] health. Your weapons are [a list of things carried by the player]";
+	Instead of going from room:
+		say "BRAD: You can't run from me!";
+		decrease health of player by 1.
 
 [Kidnapping scene rules]
 	
@@ -192,8 +176,8 @@ Kidnapping Started is a number that varies. Kidnapping Started is 0.
 When The Kidnapper begins:
 	say "All of a sudden there is a loud yell from down the hall. You think it might be coming from one of the classrooms.";
 	move Diamond to Room 213;
-	Move Brad to Room 213. 
-	Increment Kidnapping started. 
+	Move Brad to Room 213;
+	increase Kidnapping Started by 1. 
 Every Turn during The Kidnapper:
 	If the location of Diamond is the location of the player, increment kidnapping started. 
 after the player going to room 213:
@@ -233,6 +217,17 @@ When play begins:
 	Move axe to a random room;
 	move spear to a random room;
 	Move wrench to a random room;
+	Move spear to a random person;
+	Move halberd to a random person;
+	Move sickle to a random person;
+	Move mace to a random person;
+	Move sledgehammer to Brad;
+	Move chainsaw to a random person;
+	Move ice pick to a random person;
+	Move war to a random person;
+	Move pike to a random person;
+	Move hockey stick to Brad;
+	Move nunchucks to a random person;
 	Now the rapport of Mr Redman is a random number between 1 and 3;
 	Now the rapport of Mrs Ford is a random number between 1 and 3;
 	Now the rapport of Mr Hartman is a random number between 1 and 3; 
