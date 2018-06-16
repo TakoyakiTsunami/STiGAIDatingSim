@@ -61,13 +61,11 @@ A Locker is a kind of container. A locker is closed.
 Instead of opening a locker, say "You need the right combination to open this locker. Spin the locker to _ _ _ _ to open".
 Spinning it to is an action applying to one thing and one number. Understand "spin [something] to [a number]" as spinning it to.
 Check spinning it to: if the noun is not a Locker, say "[The noun] does not spin." instead. Report spinning it to: say "Click! nothing else happens."
-
+Instead of taking locker, say "I'm genuinely confused by what you are trying to do, but those lockers have been there since the fall of Rome. They aren't going anywhere.".
 fuck is an action applying to one thing. understand "fuck [something]" and "fuck the [something]"  as fuck. Instead of fuck, say "You fucked it".
 
 Instead of taking inventory:
-	if the number of things enclosed by the player is 0, say "I got nothing on me." instead;
-	say "I got myself: [line break]";
-	list the contents of the player, with newlines, indented, giving inventory information.
+	if the number of things enclosed by the player is not 0, list the contents of the player, with newlines, indented, giving brief inventory information, including contents, with extra indentation.
 
 [combat action rules]
 Check health is an action applying to one thing. Understand "check [something] health" as check health. Understand "[something] health" as check health. 
@@ -151,7 +149,26 @@ Diamond's Fist is a weapon. Diamond's fist has damage 1. Diamond carries Diamond
 Diamonds Pencil is a weapon. Understand "pencil" as Diamonds pencil. The description of Diamonds Pencil is "Pink and Sparkly. Also good for stabbing. And writing."
 There is a scimitar, katana, baseball bat, monkey wrench, candlestick, axe, spear, halberd, sickle, mace, sledgehammer, chainsaw, ice pick, war hammer, pike, hockey stick, nunchucks, and rope which are weapons. Understand "wrench" as monkey wrench. Understand "baseball bat" as bat. Understand "stick" as hockey stick. 
 A baseball bat, sledgehammer, nunchucks, and a candlestick have damage 6. A rope, sickle, and pencil have damage 3. A wrench, axe, spear, halberd, stick, and pike have damage 5.  
-	
+
+After printing the name of scimitar, say " - Damage Points: [damage of scimitar]".
+After printing the name of katana , say " - Damage Points: [damage of katana]".
+After printing the name of baseball bat , say " - Damage Points: [damage of baseball bat]".
+After printing the name of monkey wrench , say " - Damage Points: [damage of wrench]".
+After printing the name of candlestick , say " - Damage Points: [damage of candlestick]".
+After printing the name of axe, say " - Damage Points: [damage of axe]".
+After printing the name of spear, say " - Damage Points: [damage of spear]".
+After printing the name of halberd, say " - Damage Points: [damage of halberd]".
+After printing the name of sickle, say " - Damage Points: [damage of sickle]".
+After printing the name of mace, say " - Damage Points: [damage of mace]".
+After printing the name of sledgehammer, say " - Damage Points: [damage of sledgehammer]".
+After printing the name of chainsaw, say " - Damage Points: [damage of chainsaw]".
+After printing the name of ice pick, say " - Damage Points: [damage of ice pick]".
+After printing the name of war hammer, say " - Damage Points: [damage of war hammer]".
+After printing the name of pike, say " - Damage Points: [damage of pike]".
+After printing the name of hockey stick, say " - Damage Points: [damage of hockey stick]".
+After printing the name of nunchucks, say " - Damage Points: [damage of nunchucks]".
+After printing the name of rope, say " - Damage Points: [damage of rope]".
+
 [scenes]
 Scene Key is a number that varies. Scene Key is 1. 
 Beginning, Bully Sequence, The Kidnapper, and Resolution are scenes. 

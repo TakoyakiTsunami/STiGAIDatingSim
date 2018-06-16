@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Skein rootNode="node-1">
   <generator>Windows Inform 7 6M62</generator>
-  <activeNode nodeId="node-289"/>
+  <activeNode nodeId="node-291"/>
   <item nodeId="node-1">
     <command xml:space="preserve">A Highschool Adventure</command>
-    <result xml:space="preserve">Classic Highschool Drama But with Murder&#x000A;An Interactive Fiction by a bunch of nerds&#x000A;Release 1 / Serial number 180615 / Inform 7 build 6M62 (I6/v6.33 lib 6/12N) SD&#x000A;&#x000A; &#x000A; Hey, Diamond, its ya boi..... no that's wrong.... What's hangin girl you lookin... nah she knows she looks amazing...&#x000A; &#x000A; Damn, this is way too hard. &#x000A;&#x000A; Today is the day! I'm finally going to confess my love to Diamond, the only girl that I could ever love! I think she has Mr. Hartman's Underwater Basket Weaving class first.... now where is that.....&#x000A;&#x000A;Underclassmen Hallway&#x000A;Class just started, so the normally busy hallway seems eeriely quiet.&#x000A;&#x000A;You can see baseball bat, My Locker (closed) and Diamonds Locker (closed) here.&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">Classic Highschool Drama But with Murder&#x000A;An Interactive Fiction by a bunch of nerds&#x000A;Release 1 / Serial number 180615 / Inform 7 build 6M62 (I6/v6.33 lib 6/12N) SD&#x000A;&#x000A; &#x000A; Hey, Diamond, its ya boi..... no that's wrong.... What's hangin girl you lookin... nah she knows she looks amazing...&#x000A; &#x000A; Damn, this is way too hard. &#x000A;&#x000A; Today is the day! I'm finally going to confess my love to Diamond, the only girl that I could ever love! I think she has Mr. Hartman's Underwater Basket Weaving class first.... now where is that.....&#x000A;&#x000A;Underclassmen Hallway&#x000A;Class just started, so the normally busy hallway seems eeriely quiet.&#x000A;&#x000A;You can see My Locker (closed) and Diamonds Locker (closed) here.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
-    <changed>YES</changed>
+    <changed>NO</changed>
     <children>
       <child nodeId="node-2"/>
       <child nodeId="node-6"/>
@@ -22,6 +22,7 @@
       <child nodeId="node-170"/>
       <child nodeId="node-173"/>
       <child nodeId="node-182"/>
+      <child nodeId="node-290"/>
     </children>
   </item>
   <item nodeId="node-2">
@@ -74,7 +75,7 @@
   </item>
   <item nodeId="node-8">
     <command xml:space="preserve">inventory</command>
-    <result xml:space="preserve">I got myself: &#x000A;chainsaw&#x000A;a fish&#x000A;a fist&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">halberd&#x000A;  a scimitar8&#x000A;  a fish&#x000A;  a fist&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>YES</changed>
     <children>
@@ -2537,6 +2538,21 @@
   <item nodeId="node-191">
     <command xml:space="preserve">w</command>
     <result xml:space="preserve">Room 211&#x000A;Mr Redman's Classroom. He's known for beating the living hell out of his kids. Not cool Mr Redman. Not cool.&#x000A;&#x000A;You can see Mr Redman here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-290">
+    <command xml:space="preserve">incentory</command>
+    <result xml:space="preserve">I didn't understand that sentence.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-291"/>
+    </children>
+  </item>
+  <item nodeId="node-291">
+    <command xml:space="preserve">inventory</command>
+    <result xml:space="preserve">sickle - Damage Points: 3&#x000A;  a fish&#x000A;  a fist&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
   </item>
