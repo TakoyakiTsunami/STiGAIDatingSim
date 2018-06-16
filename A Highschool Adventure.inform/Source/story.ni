@@ -111,17 +111,16 @@ Mr Redman is in Room 211. Understand "Mr Redmans Classroom" as Room 211.  Unders
 Mrs Ford is in room 212. Understand "Mrs Fords Classroom" as Room 212. Understand "Mrs F" and "Ford" as Mrs Ford. 
 Mr Hartman is in Room 213. Understand "Mr Hartmans Classroom " as Room 213. Understand "Mr H" and "Hartman" as Mr Hartman.
 Ms Belvod is in Room 214. Understand "Mrs Belvods Classroom" as Room 214. Understand "Ms B" and "Belvod" as Ms Belvod.  
-Brad is a person. The rapport of Brad is 1. Understasnd "ghost brad" as brad. 
+Brad is a person. The rapport of Brad is 1. Understand "ghost brad" as brad. 
 Inside Room 213 is a woman called Diamond. Understand "D" as Diamond. The description of Diamond is "An angel that has graced this school with her presence. She's soooooo hot." Diamond can be neutral, taken, or found. Diamond is neutral. The rapport of Diamond is 2. 
 
 Rule for printing the name of Brad: 
 	if the health of brad is greater than 0, say "Brad"; 
 	otherwise say "Ghost Brad".
-[Ghost Brad is a person. The rapport of Ghost Brad is 1. The health of Ghost Brad is 0. ]
 
 [things]
 
-My Locker is a Locker in the Underclassmen Hallway. The description of my locker is "Ah, my sweet old locker. Smells like teen spirit.".
+My Locker is a Locker in the Underclassmen Hallway. The description of my locker is "Ah, my sweet old locker. Smells like teen spirit. I set the combination to something I would never forget- the year my favorite show, SponeBob SquarePants, premiered.".
 After spinning the closed My Locker to 1999: 
 	now My Locker is open; 
 	say "[noun] opens, revealing [a list of things in noun]."
@@ -137,7 +136,14 @@ There is a spyglass. The description of the spyglass is "This could only be used
 There is a note. The description of the note is "Looks like someone put this in Diamond's cubby to confess their love to her. Seeing as its crumpled up on the floor, I can't imagine that went very well.".
 
 a weapon is a kind of thing. A weapon has a number called damage. Damage is usually 5. 
-The player carries a weapon called a fist. A fist has damage 1. 
+A fist is a weapon. A fist has damage 1. The player carries a fist. 
+Redman's Fist is a weapon. Redman's fist has damage 1. Redman carries Redman's Fist. 
+Ford's Fist is a weapon. Ford's fist has damage 1. Ford carries Ford's Fist. 
+Hartman's Fist is a weapon. Hartman's fist has damage 1. Hartman carries Hartman's Fist. 
+Belvod's Fist is a weapon. Belvod's fist has damage 1. Belvod carries Belvod's fist.
+Brad's Fist is a weapon. Brad's fist has damage 1. Brad carries Brad's fist. 
+Diamond's Fist is a weapon. Diamond's fist has damage 1. D carries Diamond's Fist. 
+
 Diamonds Pencil is a weapon. Understand "pencil" as Diamonds pencil. The description of Diamonds Pencil is "Pink and Sparkly. Also good for stabbing. And writing." 
 There is a scimitar, katana, baseball bat, monkey wrench, candlestick, axe, spear, and rope which are weapons. Understand "wrench" as monkey wrench. Understand "baseball bat" as bat. 
 A baseball bat and a candlestick have damage 4. A rope and pencil have damage 2. A wrench, axe, and spear have damage 3.  
@@ -150,16 +156,15 @@ The description of the axe is "Now all I need is a beard and some flannel. With 
 The description of the spear is "A pokey stick for the bad bois. With my Magical Eye, it appears it has a damage value of 3."
 The description of the rope is "Please no bulli the cinnamon bun... it has a damage value of 2, but don't use it on yourself."
 
-
 When Resolution ends: 
 	end the story. 
 	
 [scenes]
-Beginning, Bully Sequence, Kidnapping, and Resolution are scenes. 
+Beginning, Bully Sequence, The Kidnapper, and Resolution are scenes. 
 Beginning begins when play begins. Beginning ends when Diamonds Locker is open. 
-Bully Sequence begins when Beginning ends. [Bully Sequence ends when Brad is ghost.]
-Kidnapping begins when Bully Sequence ends. 
-Resolution begins when Kidnapping ends. 
+Bully Sequence begins when Beginning ends. Bully Sequence ends when the health of Brad is 0. 
+The Kidnapper begins when Bully Sequence ends. The Kidnapper ends when Diamond is found. 
+Resolution begins when The Kidnapper ends. Resolution ends when Diamond is neutral. 
 
 When Beginning begins: 
 	Move scimitar to a random room;
@@ -178,35 +183,34 @@ When Bully Sequence begins:
 	Move Brad to Underclassmen Hallway;
 	Say "You hear knuckles scraping the floor. A lightning rod shoots down your spine. Brad approaches.".
 
-[variables]
-
-Kidnapping Started is a number that varies. Kidnapping Started is 0.
+[Bully Scene Rules]
+Every turn during Bully Sequence, say "You have [health of player] health. Your weapons are [a list of things carried by the player]".
 
 [Kidnapping scene rules]
-
-after the player going to room 213:
-	if Kidnapping Started is 1, say “Wow. You literally just killed a kid. Like I know that this is just a game and all, but that’s seriously fucked up. You psychopath. Anyways, I’m sure you’re looking for Diamond, and just to make your life more difficult, the shit-for-brains creators of this game brought me back to kidnap Diamond, and yatta yatta yatta, and something something, then you fight me again and win the game. Or I kill you. Doesn’t really matter to me. Here’s a clue for you. [line break] Only in America is Pizza considered a vegetable. Go get your 3 servings a day";
-	increment Kidnapping Started;
-	move brad to cafeteria.
-
-after the player going to the cafeteria:
-	if Kidnapping Started is 2, say “Surprise! It’s me again! The Ghost of Brad, that dude you brutally slaughtered in the hallway overthere. Remember how you left me over there face down in a pool of my own blood? Good times. Anyhow, here is another inane riddle to pump some meaningless content into this sorry excuse for a game (cough cough, No Man’s Sky, cough cough). Here's your next clue: [line break] Do you even lift bro?";
-	increment Kidnapping Started;
-	move brad to gym.
 	
+Kidnapping Started is a number that varies. Kidnapping Started is 0.
+When The Kidnapper begins:
+	say "All of a sudden there is a loud yell from down the hall. You think it might be coming from one of the classrooms.";
+	move Diamond to Room 213;
+	Move Brad to Room 213. 
+	Increment Kidnapping started. 
+Every Turn during The Kidnapper:
+	If the location of Diamond is the location of the player, increment kidnapping started. 
+after the player going to room 213:
+	if Kidnapping Started is 1, say “GHOST BRAD: Wow. You literally just killed a kid. Like I know that this is just a game and all, but that’s seriously fucked up. You psychopath. Anyways, I’m sure you’re looking for Diamond, and just to make your life more difficult, the shit-for-brains creators of this game brought me back to kidnap Diamond, and yatta yatta yatta, and something something, then you fight me again and win the game. Or I kill you. Doesn’t really matter to me. Here’s a clue for you. [line break] Only in America is Pizza considered a vegetable. Go get your 3 servings a day";
+	increment Kidnapping Started;
+	move brad to cafeteria;
+	move Diamond to cafeteria. 
+after the player going to the cafeteria:
+	if Kidnapping Started is 2, say “GHOST BRAD: Surprise! It’s me again! The Ghost of Brad, that dude you brutally slaughtered in the hallway overthere. Remember how you left me over there face down in a pool of my own blood? Good times. Anyhow, here is another inane riddle to pump some meaningless content into this sorry excuse for a game (cough cough, No Man’s Sky, cough cough). Here's your next clue: [line break] Do you even lift bro?";
+	increment Kidnapping Started;
+	move brad to gym;
+	move Diamond to gym.
 after the player going to gym:
-	if Kidnapping Started is 3, say “Guess whos back, back again? Brad’s back, tell a friend! Anyways, you've managed to perserver thus far, and I guess you deserve to know where Diamond is: Go find your girly girl. She’s in Room 211";
+	if Kidnapping Started is 3, say “GHOST BRAD: Guess whos back, back again? Brad’s back, tell a friend! Anyways, you've managed to perserver thus far, and I guess you deserve to know where Diamond is: Go find your girly girl. She’s in Room 211";
 	increment Kidnapping Started;
 	move brad to room 211;
 	move diamond to room 211.
-	
-Every turn during Bully Sequence, say "You have [health of player] health. Your weapons are [a list of things carried by the player]".
-
-When Kidnapping begins:
-	say "All of a sudden there is a loud yell from down the hall. You think it might be coming from one of the classrooms.";
-	Now hankerchief is in cafeteria;
-	Now spyglass is in the great outdoors; 
-	Now note is in gym. 
 
 When Resolution ends: 
 	end the story. 
