@@ -99,10 +99,14 @@ Check an actor attacking something with something:
 		stop the action.
 Carry out an actor attacking something with something: 
 	decrease the health of the noun by the damage of the second noun;
-	say "You attack [the noun] with [the second noun], causing [damage of second noun] point[s] of damage!" ;
-	if the rapport of the noun is not 1, say "[noun] is now your enemy.";
+	if the actor is the player, say "You attack [the noun] with [the second noun], causing [damage of second noun] point[s] of damage! [Noun] has [health of noun] left. " ;
+	if the actor is not the player, say "You are attacked with [the second noun], causing [damage of second noun] point[s] of damage! You have [health of noun] left. ";
+	if the rapport of the noun is not 1 and noun is not yourself, say "[noun] is now your enemy.";
 	if the rapport of the noun is not 1, now rapport of the noun is 1;
 	if the damage of the second noun is not 1, decrease the damage of the second noun by 1.
+
+After attacking something with something:
+	If the health of the noun is not 0, try the noun attacking the player with a random weapon which is carried by the noun.
 
 [characters]
 
@@ -164,11 +168,9 @@ When Bully Sequence begins:
 	Say "You hear knuckles scraping the floor. A lightning rod shoots down your spine. Brad approaches.".
 
 [Bully Scene Rules]
-Every turn during Bully Sequence:
-	say "You have [health of player] health. Your weapons are [a list of things carried by the player]";
-	Instead of going from room:
-		say "BRAD: You can't run from me!";
-		decrease health of player by 1.
+Instead of going from room during bully sequence:
+	say "BRAD: You can't run from me!";
+	decrease health of player by 1.
 
 [Kidnapping scene rules]
 	
