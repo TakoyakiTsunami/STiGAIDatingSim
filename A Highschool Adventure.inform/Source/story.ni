@@ -113,13 +113,13 @@ After attacking something with something:
 
 [characters]
 
-Mr Redman, Mrs Ford, Mr Hartman, and Ms Belvod are people. People have a number called health. Health is usually 20. 
+Mr Redman, Mrs Ford, Mr Hartman, Diamond and Ms Belvod are people. People have a number called health. Health is usually 20. 
 Mr Redman is in Room 211. Understand "Mr Redmans Classroom" as Room 211.  Understand "Mr R" and "Redman" as Mr Redman.
 Mrs Ford is in room 212. Understand "Mrs Fords Classroom" as Room 212. Understand "Mrs F" and "Ford" as Mrs Ford. 
-Mr Hartman is in Room 213. Understand "Mr Hartmans Classroom " as Room 213. Understand "Mr H" and "Hartman" as Mr Hartman.
+Mr Hartman and Diamond are in Room 213. Understand "Mr Hartmans Classroom " as Room 213. Understand "Mr H" and "Hartman" as Mr Hartman.
 Ms Belvod is in Room 214. Understand "Mrs Belvods Classroom" as Room 214. Understand "Ms B" and "Belvod" as Ms Belvod.  
-Brad is a person. The rapport of Brad is 1. Understand "ghost brad" as brad. The health of brad is 30.
-Inside Room 213 is a woman called Diamond. Understand "D" as Diamond. The description of Diamond is "An angel that has graced this school with her presence. She's soooooo hot.". The rapport of Diamond is 2. 
+Brad is a person. The rapport of Brad is 1. Understand "ghost brad" as brad.
+The description of Diamond is "An angel that has graced this school with her presence. She's soooooo hot.". The rapport of Diamond is 2. 
 
 Rule for printing the name of Brad: 
 	if the health of brad is greater than 0, say "Brad"; 
@@ -147,7 +147,7 @@ Ford's Fist is a weapon. Ford's fist has damage 1. Ford carries Ford's Fist.
 Hartman's Fist is a weapon. Hartman's fist has damage 1. Hartman carries Hartman's Fist. 
 Belvod's Fist is a weapon. Belvod's fist has damage 1. Belvod carries Belvod's fist.
 Brad's Fist is a weapon. Brad's fist has damage 1. Brad carries Brad's fist. 
-Diamond's Fist is a weapon. Diamond's fist has damage 1. D carries Diamond's Fist. 
+Diamond's Fist is a weapon. Diamond's fist has damage 1. Diamond carries Diamond's Fist. 
 Diamonds Pencil is a weapon. Understand "pencil" as Diamonds pencil. The description of Diamonds Pencil is "Pink and Sparkly. Also good for stabbing. And writing."
 There is a scimitar, katana, baseball bat, monkey wrench, candlestick, axe, spear, halberd, sickle, mace, sledgehammer, chainsaw, ice pick, war hammer, pike, hockey stick, nunchucks, and rope which are weapons. Understand "wrench" as monkey wrench. Understand "baseball bat" as bat. Understand "stick" as hockey stick. 
 A baseball bat, sledgehammer, nunchucks, and a candlestick have damage 6. A rope, sickle, and pencil have damage 3. A wrench, axe, spear, halberd, stick, and pike have damage 5.  
@@ -156,57 +156,79 @@ A baseball bat, sledgehammer, nunchucks, and a candlestick have damage 6. A rope
 Scene Key is a number that varies. Scene Key is 1. 
 Beginning, Bully Sequence, The Kidnapper, and Resolution are scenes. 
 Beginning begins when play begins. Beginning ends when scene key is 2. 
-Bully Sequence begins when Beginning ends. Bully Sequence ends when the health of Brad is 0. 
+Bully Sequence begins when Beginning ends. Bully Sequence ends when scene key is 3. 
 The Kidnapper begins when Bully Sequence ends. The Kidnapper ends when scene key is 4. 
 Resolution begins when The Kidnapper ends. Resolution ends when scene key is 5.  
 
-Instead of asking D about something for the first turn, say "DIAMOND: Oh thank goodness! We're supposed to start an exam in 5 minutes, and I left my pencil in my locker! Could you get it for me? The password is the birthday of my hero, RBG.".
-Instead of telling D about something for the first turn, say "DIAMOND: Oh thank goodness! We're supposed to start an exam in 5 minutes, and I left my pencil in my locker! Could you get it for me? The password is the birthday of my hero, RBG.".
+Instead of asking Diamond about something for the first turn, say "DIAMOND: Oh thank goodness! We're supposed to start an exam in 5 minutes, and I left my pencil in my locker! Could you get it for me? The password is the birthday of my hero, RBG.".
+Instead of telling Diamond about something for the first turn, say "DIAMOND: Oh thank goodness! We're supposed to start an exam in 5 minutes, and I left my pencil in my locker! Could you get it for me? The password is the birthday of my hero, RBG.".
 
-Instead of asking D about something during beginning, say "I'm freaking out, guy. Can you hurry and get my pencil? Like I said, the password is the month and day that Ruth Bater Ginsberg was born.".
-
-When Bully Sequence begins:
-	Move Brad to Underclassmen Hallway;
-	Say "You hear knuckles scraping the floor. A lightning rod shoots down your spine. Brad approaches.".
+Instead of asking Diamond about something during beginning, say "I'm freaking out, guy. Can you hurry and get my pencil? Like I said, the password is the month and day that Ruth Bater Ginsberg was born.".
 
 [Bully Scene Rules]
+When Bully Sequence begins:
+	Move Brad to Underclassmen Hallway;
+	Say "You hear knuckles scraping the floor. A lightning rod shoots down your spine. Brad approaches. [line break]
+		BRAD: Hey Ugly! What are you doing, sniffing panties? You're a loser, panty sniffer. Always will be. Now it's time for you to pay for being such a pathetic waste of space. [line break]
+		Brad always gets your blood boiling, but what's worse is you know he won't let you leave without trying to kill you. High school is rough like that. [line break]Check your inventory to see what you can preemptively attack your aggressor with".
+Every turn during bully sequence:
+	if Health of brad is less than 1, now scene key is 3. 
 Instead of going from room during bully sequence:
 	say "BRAD: You can't run from me!";
 	decrease health of player by 1;
 	say "[line break] Your health is now [health of player]".
 
+When bully sequence ends:
+	say "your hands are shaking, but you did it. You defeated your lifelong enemy. Some part of you is nervous, though. [line break]. [line break] .. [line break] ... [line break].... [line break] BRAD'S DISEMBODIED VOICE: What the actual hell!!! Why is my body on the ground??? What did you do to me, nerd!?!?!??! [line break] You've stolen my life, so I'm going to steal what you live for![line break] Your heart sinks. You know he could only be referring to one person- Diamond. You have to go find her.".
 [Kidnapping scene rules]
 	
 Kidnapping Started is a number that varies. Kidnapping Started is 0.
 When The Kidnapper begins:
 	say "All of a sudden there is a loud yell from down the hall. You think it might be coming from one of the classrooms.";
-	move Diamond to Room 213;
+	Now Diamond is nowhere;
 	Move Brad to Room 213;
 	increase Kidnapping Started by 1. 
 Every Turn during The Kidnapper:
-	If the location of Diamond is the location of the player, increment kidnapping started. 
-after the player going to room 213:
-	if Kidnapping Started is 1, say “GHOST BRAD: Wow. You literally just killed a kid. Like I know that this is just a game and all, but that’s seriously fucked up. You psychopath. Anyways, I’m sure you’re looking for Diamond, and just to make your life more difficult, the shit-for-brains creators of this game brought me back to kidnap Diamond, and yatta yatta yatta, and something something, then you fight me again and win the game. Or I kill you. Doesn’t really matter to me. Here’s a clue for you. [line break] Only in America is Pizza considered a vegetable. Go get your 3 servings a day";
-	increment Kidnapping Started;
-	move brad to cafeteria;
-	move Diamond to cafeteria. 
-after the player going to the cafeteria:
-	if Kidnapping Started is 2, say “GHOST BRAD: Surprise! It’s me again! The Ghost of Brad, that dude you brutally slaughtered in the hallway overthere. Remember how you left me over there face down in a pool of my own blood? Good times. Anyhow, here is another inane riddle to pump some meaningless content into this sorry excuse for a game (cough cough, No Man’s Sky, cough cough). Here's your next clue: [line break] Do you even lift bro?";
-	increment Kidnapping Started;
-	move brad to gym;
-	move Diamond to gym.
-after the player going to gym:
-	if Kidnapping Started is 3, say “GHOST BRAD: Guess whos back, back again? Brad’s back, tell a friend! Anyways, you've managed to perserver thus far, and I guess you deserve to know where Diamond is: Go find your girly girl. She’s in Room 211";
-	increment Kidnapping Started;
-	move brad to room 211;
-	move diamond to room 211.
+	say "[kidnapping started]";
+	If the location of brad is the location of the player:
+		if Kidnapping Started is 1: 
+			say “GHOST BRAD: Anyways, I’m sure you’re looking for Diamond, and just to make your life more difficult, the shit-for-brains creators of this game brought me back to kidnap Diamond, and yatta yatta yatta, and something something, then you fight me again and win the game. Or I kill you. Doesn’t really matter to me. Here’s a clue for you. [line break] Only in America is Pizza considered a vegetable. Go get your 3 servings a day. [line break] Brad disappears in a puff of smoke.";
+			increment Kidnapping Started;
+			move brad to cafeteria;
+			continue the action;
+		otherwise if Kidnapping Started is 2:
+			 say “GHOST BRAD: Surprise! It’s me again! The Ghost of Brad, that dude you brutally slaughtered in the hallway overthere. Remember how you left me over there face down in a pool of my own blood? Good times. Anyhow, here is another inane riddle to pump some meaningless content into this sorry excuse for a game (cough cough, No Man’s Sky, cough cough). Here's your next clue: [line break] Do you even lift bro?[line break] Brad disappears in a puff of smoke.";
+			increment Kidnapping Started;
+			move brad to gym;
+			move Diamond to gym;
+		otherwise if Kidnapping Started is 3:
+			 say “GHOST BRAD: Guess whos back, back again? Brad’s back, tell a friend! Anyways, you've managed to perserver thus far, and I guess you deserve to know where Diamond is: Go find your girly girl. She’s in Room 211.[line break] Brad disappears in a puff of smoke.";
+			increment Kidnapping Started;
+			move brad to room 211;
+			move diamond to room 211;
+			Now scene key is 4.
 
+[boss fight rules]
+When Resolution begins:
+	Now health of brad is 25;
+	say "BRAD: Just kidding. You didn't think I would let you get away that easily, did you? Prepare for pain. [line break] Quick! Attack him before he attacks you.".
+Instead of going from room during resolution:
+	say "BRAD: You can't run from me!";
+	decrease health of player by 1;
+	say "[line break] Your health is now [health of player]".
+Every turn during resolution:
+	if health of brad is less than 1: 
+		say "BRAD: I can't believe it. You killed me again. Its not even lunchtime. [line break] the ground opens up and the ghostly apparition of brad is swallowed up, and then the room returns to normal. You look at Diamond.";
+		if rapport of Diamond is 1, say "DIAMOND: well, this is awkward. Look, I appreciate what you did for me, but I'm a kendo master and could've broken free at any time, but Brad kept threatening to kill you, because you're so... well... weak as hell. Sorry.  Also its really creepy that you think I'm some maniac pixie dream girl. I thought we as a culture got over that when we started not likeing Zooey Deschanel. See you around, I guess.[line break] Diamond walks out of the room, and you are broken hearted.";
+		if rapport of Diamond is 2, say "DIAMOND: Thanks for the help. I'm so glad I can count on you. You're a really awesome friend. We should hang out more. [line break] Maybe it wasn't the happily ever after you were hoping for, but you are happy to be able to spend more time with her now. Who knows what could come from a strong friendship.";
+		if rapport of Diamond is 3, say "Diamond throws her arms around you. She starts sobbing. [line break] DIAMOND: OMG I was so scared! He kept threatening to kill us both! I'm so glad you were there. We should get dinner sometime. Get to know one another more. [line break] As she squeezes you tightly, all you can think about is how lucky you were to run into the school bully this morning.";
+		Now scene key is 5. 
+			
 When Resolution ends: 
 	end the story. 
 
 [Begining code that is implemented when we start to play the game]
 When play begins: 
-	Now Diamond is in room 213;
 	Now Diamonds Pencil is inside Diamonds Locker.
 
 After printing the banner text:
@@ -242,7 +264,8 @@ When play begins:
 Every Turn:
 	If the player is dead:
 		Say "[line break]You died in combat and failed Diamond. She gets Stockholm syndrome and falls in love with Brad, and they (live) happily ever after. You will haunt these halls for eternity, but because you died so pathetically, everyone forgets that you existed pretty quickly. Sucks to be you, loser.";
-		End the story.
+		End the story;
+	If the player is carrying Diamonds pencil, increase the rapport of diamond by 1. 
 Every Turn during beginning:
 	If Diamonds locker is open:
 		Increase Scene Key by 1;
