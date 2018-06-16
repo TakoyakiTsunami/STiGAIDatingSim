@@ -6,9 +6,6 @@ the player has a number called health which is 5.
 
 [I got new rules, I count 'em]
 
-This is the death if health of player is 0 rule: 
-	say "You died in combat and failed Diamond. She gets Stockholm syndrome and falls in love with Brad, and they (live) happily ever after. You will haunt these halls for eternity, but because you died so pathetically, everyone forgets that you existed pretty quickly. Sucks to be you, loser.";
-	end the story.
 
 [Help]
 
@@ -55,6 +52,7 @@ Steps, the Gym, the Cafeteria, and the great outdoors are in school.
 [general world rules]
 
 the player has a number called health which is 20.
+Definition: a person is dead if his health is less than 1.
 The player is carrying a thing called a fish. 
 
 Understand "talk to [someone]" as a mistake ("To start a conversation, try to ASK [the noun] ABOUT something or TELL [the noun] ABOUT something.").
@@ -97,16 +95,21 @@ Check an actor attacking something with something:
 	if the second noun is not a weapon: 
 		if the actor is the player, say "[The second noun] isn't a weapon, idiot."; 
 		stop the action.
+Check an actor attacking something with something: 
+	if the noun is dead:
+		if the actor is the player, say "stop beating a dead horse, [the noun] is already dead, dummy.";
+		stop the action.
 Carry out an actor attacking something with something: 
 	decrease the health of the noun by the damage of the second noun;
-	if the actor is the player, say "You attack [the noun] with [the second noun], causing [damage of second noun] point[s] of damage! [Noun] has [health of noun] left. " ;
-	if the actor is not the player, say "You are attacked with [the second noun], causing [damage of second noun] point[s] of damage! You have [health of noun] left. ";
+	if the actor is the player, say "You attack [the noun] with [the second noun], causing [damage of second noun] point[s] of damage! [Noun] has [health of noun] health left. " ;
+	if the actor is not the player, say "You are attacked with [the second noun], causing [damage of second noun] point[s] of damage! You have [health of noun] health left. ";
 	if the rapport of the noun is not 1 and noun is not yourself, say "[noun] is now your enemy.";
 	if the rapport of the noun is not 1, now rapport of the noun is 1;
 	if the damage of the second noun is not 1, decrease the damage of the second noun by 1.
 
 After attacking something with something:
-	If the health of the noun is not 0, try the noun attacking the player with a random weapon which is carried by the noun.
+	If the health of the noun is not 0, try the noun attacking the player with a random weapon which is carried by the noun;
+	if the health of the noun is 0, say "you have ruthlessly murdered [noun].".
 
 [characters]
 
@@ -116,24 +119,22 @@ Mrs Ford is in room 212. Understand "Mrs Fords Classroom" as Room 212. Understan
 Mr Hartman is in Room 213. Understand "Mr Hartmans Classroom " as Room 213. Understand "Mr H" and "Hartman" as Mr Hartman.
 Ms Belvod is in Room 214. Understand "Mrs Belvods Classroom" as Room 214. Understand "Ms B" and "Belvod" as Ms Belvod.  
 Brad is a person. The rapport of Brad is 1. Understand "ghost brad" as brad. The health of brad is 30.
-Inside Room 213 is a woman called Diamond. Understand "D" as Diamond. The description of Diamond is "An angel that has graced this school with her presence. She's soooooo hot." Diamond can be neutral, taken, or found. Diamond is neutral. The rapport of Diamond is 2. 
+Inside Room 213 is a woman called Diamond. Understand "D" as Diamond. The description of Diamond is "An angel that has graced this school with her presence. She's soooooo hot.". The rapport of Diamond is 2. 
 
 Rule for printing the name of Brad: 
 	if the health of brad is greater than 0, say "Brad"; 
 	otherwise say "Ghost Brad".
 
 [things]
-
+The description of a locker is "The beat up metal cages require a 4 digit code to open.".
 My Locker is a Locker in the Underclassmen Hallway. The description of my locker is "Ah, my sweet old locker. Smells like teen spirit. I set the combination to something I would never forget- the year my favorite show, SponeBob SquarePants, premiered.".
 After spinning the closed My Locker to 1999: 
 	now My Locker is open; 
 	say "[noun] opens, revealing [a list of things in noun]."
-After going from room containing my locker, now my locker is closed. 
 Diamonds Locker is a locker in the Underclassmen Hallway. The description of Diamonds Locker is "Mhmmmm, it even smells like her...". 
-After spinning the closed Diamonds Locker to 0112: 
+After spinning the closed Diamonds Locker to 0315: 
 	now Diamonds Locker is open; 
 	say "[noun] opens, revealing [a list of things in noun]."
-After going from room containing diamonds locker, now diamonds locker is closed. 
 
 There is a hankerchief. The description of the hankerchief is "Interesting. I don't know anyone who uses one of these anymore. And there's someone's lipstick stained on it. I think it might be Diamond's.". 
 There is a spyglass. The description of the spyglass is "This could only be used by someone to spy on someone else....".
@@ -152,16 +153,17 @@ There is a scimitar, katana, baseball bat, monkey wrench, candlestick, axe, spea
 A baseball bat, sledgehammer, nunchucks, and a candlestick have damage 6. A rope, sickle, and pencil have damage 3. A wrench, axe, spear, halberd, stick, and pike have damage 5.  
 	
 [scenes]
+Scene Key is a number that varies. Scene Key is 1. 
 Beginning, Bully Sequence, The Kidnapper, and Resolution are scenes. 
-Beginning begins when play begins. Beginning ends when Diamonds Locker is open. 
+Beginning begins when play begins. Beginning ends when scene key is 2. 
 Bully Sequence begins when Beginning ends. Bully Sequence ends when the health of Brad is 0. 
-The Kidnapper begins when Bully Sequence ends. The Kidnapper ends when Diamond is found. 
-Resolution begins when The Kidnapper ends. Resolution ends when Diamond is neutral. 
+The Kidnapper begins when Bully Sequence ends. The Kidnapper ends when scene key is 4. 
+Resolution begins when The Kidnapper ends. Resolution ends when scene key is 5.  
 
-When Beginning ends:
-	Now Diamond is nowhere;
-	Now Diamond is taken;
-	say "Score! Her pencil is right where she said it would be.".
+Instead of asking D about something for the first turn, say "DIAMOND: Oh thank goodness! We're supposed to start an exam in 5 minutes, and I left my pencil in my locker! Could you get it for me? The password is the birthday of my hero, RBG.".
+Instead of telling D about something for the first turn, say "DIAMOND: Oh thank goodness! We're supposed to start an exam in 5 minutes, and I left my pencil in my locker! Could you get it for me? The password is the birthday of my hero, RBG.".
+
+Instead of asking D about something during beginning, say "I'm freaking out, guy. Can you hurry and get my pencil? Like I said, the password is the month and day that Ruth Bater Ginsberg was born.".
 
 When Bully Sequence begins:
 	Move Brad to Underclassmen Hallway;
@@ -170,7 +172,8 @@ When Bully Sequence begins:
 [Bully Scene Rules]
 Instead of going from room during bully sequence:
 	say "BRAD: You can't run from me!";
-	decrease health of player by 1.
+	decrease health of player by 1;
+	say "[line break] Your health is now [health of player]".
 
 [Kidnapping scene rules]
 	
@@ -203,6 +206,7 @@ When Resolution ends:
 
 [Begining code that is implemented when we start to play the game]
 When play begins: 
+	Now Diamond is in room 213;
 	Now Diamonds Pencil is inside Diamonds Locker.
 
 After printing the banner text:
@@ -234,4 +238,12 @@ When play begins:
 	Now the rapport of Mrs Ford is a random number between 1 and 3;
 	Now the rapport of Mr Hartman is a random number between 1 and 3; 
 	Now the rapport of Ms Belvod is a random number between 1 and 3.
-	
+
+Every Turn:
+	If the player is dead:
+		Say "[line break]You died in combat and failed Diamond. She gets Stockholm syndrome and falls in love with Brad, and they (live) happily ever after. You will haunt these halls for eternity, but because you died so pathetically, everyone forgets that you existed pretty quickly. Sucks to be you, loser.";
+		End the story.
+Every Turn during beginning:
+	If Diamonds locker is open:
+		Increase Scene Key by 1;
+		say "Score! Her pencil is right where she said it would be.".
